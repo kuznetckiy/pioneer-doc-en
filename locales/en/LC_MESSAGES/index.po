@@ -24,12 +24,12 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 # b8e81fd6d77b48d9a8b388dc7cdbb6cf
-#: ../../index.rst:7
+#: ../../index.rst:6
 msgid "Документация Геоскан \"Пионер\""
 msgstr "Geoscan Pioneer documentation"
 
 # c5c37cd9f0884726bfd3248f189059b3
-#: ../../index.rst:10
+#: ../../index.rst:9
 msgid "`Вернуться на сайт \"Пионер\"`_"
 msgstr "`Return to Pioneer webpage`_"
 
