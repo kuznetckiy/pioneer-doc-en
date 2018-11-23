@@ -77,7 +77,7 @@ msgid ""
 msgstr "LPS software to sync with PC (`download latest version`_);"
 
 # a74cd463dd52476a80eb6f468f6a442c
-#: ../../indoor_nav.rst:22
+#: ../../indoor_nav.rst:21
 msgid "Установка полетной зоны"
 msgstr "Flyzone setting"
 
