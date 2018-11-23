@@ -1,0 +1,42 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018, Test author
+# This file is distributed under the same license as the Test project package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Test project \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-11-23 09:38+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../index.rst:7
+msgid "Привет!"
+msgstr ""
+
+#: ../../index.rst:8
+msgid "Это текст на русском языке"
+msgstr ""
+
+#: ../../index.rst:21
+msgid "Indices and tables"
+msgstr ""
+
+#: ../../index.rst:23
+msgid ":ref:`genindex`"
+msgstr ""
+
+#: ../../index.rst:24
+msgid ":ref:`modindex`"
+msgstr ""
+
+#: ../../index.rst:25
+msgid ":ref:`search`"
+msgstr ""
+
