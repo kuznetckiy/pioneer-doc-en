@@ -41,7 +41,7 @@ msgid ""
 "освоения."
 msgstr ""
 "Geoscan Pioneer is a multifunctional educational  complex. It was developed "
-"for schools, robotothenic  labs and for individual use. "
+"for schools, robotics labs and for individual use. "
 
 # ce7ffe34c5234861ba080bdd13128cc0
 #: ../../index.rst:20
@@ -51,7 +51,7 @@ msgstr "with Pioneer you can:"
 # 9d5c06bfe7a54fd0b2fe90806ef27018
 #: ../../index.rst:22
 msgid "изучить основы робототехники и авионики"
-msgstr "study the robototechnics and avionics basics"
+msgstr "study the robotics and avionics basics"
 
 # 33756f918b9f494f849ef8a2faee3cdb
 #: ../../index.rst:23

@@ -25,7 +25,7 @@ msgstr ""
 
 #: ../../indoor_nav.rst:1
 msgid "Система навигации в помещении Геоскан Локус"
-msgstr "Indoor navigation system Geoscan Locus"
+msgstr "Geoscan Locus indoor navigation system "
 
 #: ../../indoor_nav.rst:3
 msgid ""

@@ -136,7 +136,7 @@ msgid ""
 "Базовый набор \"Пионера\" включает в себя все необходимые элементы и "
 "инструменты для сборки и запуска квадрокоптера."
 msgstr ""
-"The stock Pioneer kit contaions all necessary parts and tools to assemble "
+"The stock Pioneer kit contains all necessary parts and tools to assemble "
 "and launch it."
 
 #: ../../const/const_main.rst:19
