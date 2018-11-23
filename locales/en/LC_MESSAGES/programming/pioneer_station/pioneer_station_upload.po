@@ -1,0 +1,126 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018, Geoscan ltd
+# This file is distributed under the same license as the pioneer-doc-en
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
+# 
+# Translators:
+# kuznetckiy <r.kuzneckiy@geoscan.aero>, 2018
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: pioneer-doc-en\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-11-20 10:28+0300\n"
+"PO-Revision-Date: 2018-11-22 14:11+0000\n"
+"Last-Translator: kuznetckiy <r.kuzneckiy@geoscan.aero>, 2018\n"
+"Language-Team: English (https://www.transifex.com/geoscan/teams/93851/en/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+"Language: en\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+# 8caf7d1ab5284c598983db4ef6f08619
+#: ../../programming/pioneer_station/pioneer_station_upload.rst:2
+msgid "Загрузка программы в \"Пионер\""
+msgstr "Program upload to Pioneer"
+
+# 060cf7ca587e4a2796f9e83aaa04dcdf
+#: ../../programming/pioneer_station/pioneer_station_upload.rst:4
+msgid ""
+"Имея код программы, созданный в TRIK Studio или написанный в Pioneer "
+"Station, можно приступить к его загрузке на квадрокоптер. Подключите "
+"\"Пионер\" к компьютеру USB кабелем и откройте нужную программу в Pioner "
+"Station."
+msgstr ""
+"After you developed program using TRIK Studio or Pioneer Station, it is time"
+" to upload it to Pioneer. Connect the drone to your PC. "
+
+# bafa9dfb8b84483d838be1cf2d5539e0
+#: ../../programming/pioneer_station/pioneer_station_upload.rst:7
+msgid ""
+"В правом нижнем углу Pioneer Station выберите вариант подключения \"По "
+"кабелю USB\". В окне программы должы появиться текущие параметры "
+"\"Пионера\", углы наклона, напряжение питания и номер."
+msgstr ""
+"Select \"USB cable\" connection in the bottom right corner of Pioneer "
+"Station window. Pioneer's current parameters, lean angles and board number "
+"should appear on the screen."
+
+# d0d434e924874734ae93b38eddee12f1
+#: ../../programming/pioneer_station/pioneer_station_upload.rst:13
+msgid ""
+"Попробуйте наклонять квадокоптер в разные стороны и убедитесь, что "
+"авиагоризонт корректно отображает его положение В случае ошибки соединения "
+"проверьте соединение кабеля и версию прошивки в Pioneer station, при "
+"необходимости `обновите`_ её."
+msgstr ""
+"Try tilting the drone in different directions and make sure the angles are "
+"represented correctly. In case of error, check cable connection and firmware"
+" version on Pioneer, `update`_ it if necessary."
+
+# e30f19fc0f8c476c8986d4c60e4302e1
+#: ../../programming/pioneer_station/pioneer_station_upload.rst:15
+msgid ""
+"Если программа изначально была создана в TRIK studio, нажмите кнопку "
+"\"Загрузить программу на \"Пионер\"\". Текст программы должен появиться в "
+"окне Pioneer Station. Теперь нажмите кнопку \"Загрузить\"."
+msgstr ""
+"If program was created in TRIK studio, press \"upload porgamm to Pioneer\". "
+"The code should appear in Pioneer Station window. Then press \"Upload\" "
+"button."
+
+# e3d695d2de47435daf0db289777cc3b5
+#: ../../programming/pioneer_station/pioneer_station_upload.rst:20
+msgid ""
+"На плате \"Пионера\" должен несколько раз мигнуть светодиод \"прием\", а в "
+"программе появиться уведомление об успешной загрузке."
+msgstr ""
+"Led should blink on Pioneer board, and a message appear in the bootom right "
+"corner, indicating successful upload. "
+
+# fb5c6b72e2ae48d3a5f60e58e88d0fd8
+#: ../../programming/pioneer_station/pioneer_station_upload.rst:22
+msgid ""
+"Запустить выполенение программы можно разными способами. Если програма не "
+"предполагает полета, не отключая кабель от квадрокоптера нажмите кнопку "
+"\"Старт прогр.\" в Pioneer Station, и через пять секунд сможете наблюдать "
+"результат ее работы. Питания от USB достаточно для работы светодиодов и "
+"некоторых `дополнительных модулей`_."
+msgstr ""
+"There are different ways to start mission execution. If flight is not "
+"required, don't disconnect USB cable and press \"Mission start\" in Pioneer "
+"Station. In five seconds you will observe mission execution. USB power is "
+"enough to turn LEDs and some `extension modules`_ on."
+
+# a0eae8a53072457eb503009854780ceb
+#: ../../programming/pioneer_station/pioneer_station_upload.rst:26
+msgid ""
+"**При более сложных сценариях**, отключите квадрокоптер от компьютера, "
+"поместите его в комнату или площадку, достаточно просторную для выполнения "
+"задач, и подключите аккумулятор. После звукового сигнала и окончания мигания"
+" светодиодов нажмите кнопку \"Старт\" и отойдите от квадрокоптера. Через "
+"пять секунд начнется выполнение заданной программы."
+msgstr ""
+"**In other cases**, disconnect Pionner from your PC and place it somewhere "
+"spacious enough to perform the mission. Plug in the battery. Wait for LEDs "
+"to stop blinking and press \"Start\" button on its board. The mission will "
+"execute in 5 seconds."
+
+# d247e82ca15b4443910bf7944c177a31
+#: ../../programming/pioneer_station/pioneer_station_upload.rst:29
+msgid ""
+"Для безопасного полета, на случай нештатной ситуации держите в руках пульт, "
+"связанный с вашим \"Пионером\". Настройте на пульте режим автоматического "
+"полёта. Для этого переведите рычаг B в нижнее положение. Рычаги А, С, D – в "
+"верхнем положении. Для экстренного завершения выполнения программы "
+"переведите рычаг В в верхнее положение, управление квадрокоптером перейдет к"
+" вам."
+msgstr ""
+"To fly safely, it is recommended to have an RC unit ready and bind it to the"
+" drone. Activate mission flight by switching SwB in lower position. All "
+"other switches should be in upper position. If necessary, switch SwB in "
+"upper position - and now you have controls of the drone. "

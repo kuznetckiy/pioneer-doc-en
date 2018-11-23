@@ -1,0 +1,79 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018, Geoscan ltd
+# This file is distributed under the same license as the pioneer-doc-en
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
+# 
+# Translators:
+# kuznetckiy <r.kuzneckiy@geoscan.aero>, 2018
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: pioneer-doc-en\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-11-20 10:28+0300\n"
+"PO-Revision-Date: 2018-11-22 14:11+0000\n"
+"Last-Translator: kuznetckiy <r.kuzneckiy@geoscan.aero>, 2018\n"
+"Language-Team: English (https://www.transifex.com/geoscan/teams/93851/en/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+"Language: en\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+# b347cbd47b574a19aedb14378c522cf4
+#: ../../programming/trik/trik_led_control.rst:2
+msgid "Пример программы"
+msgstr "Mission example"
+
+# 028d829168ea4650b1187bca9b6c0895
+#: ../../programming/trik/trik_led_control.rst:4
+msgid ""
+"Для начала, а также в качестве примера, научимся программно управлять "
+"светодиодами на плате \"Пионера\". Для этого при запуске программы нажмите "
+"\"Открыть проект\" и выберите файл LED. В рабочей области появилась блок-"
+"схема программы, которая при запуске будет включать светодиоды на одну "
+"секунду каждым цветом. Вы можете внести изменения в любой блок программы или"
+" добавить новый на свое усмотрение, главное встроить его в структуру с "
+"помощью стрелок-соединений."
+msgstr ""
+"First of all, learn to control Pioneer's LEDs. In TRIK studio, press \"open "
+"project\" and select LED file. Mission diagram should appear in the "
+"workspace. Once activated, it will change led colour every second. Feel free"
+" to configure the mission to your liking. "
+
+# 80a53265795e46a4abfe5aa668d86325
+#: ../../programming/trik/trik_led_control.rst:7
+msgid ""
+"Диаграмма работы собрана, нужно сгенерировать соответствующий код в Lua. Для"
+" этого нажмите кнопку над рабочей областью, или воспользуйтесь сочетанием "
+"клавиш ctrl+shift+G. Кнопка \"Загрузить программу на \"Пионер\"\" "
+"понадобится нам позже."
+msgstr ""
+"Now it is necessary to create correct Lua code. Press \"generate to Pioneer "
+"Lua\" button or use ctrl+shift+G key combination. "
+
+# e7d6e7be311b42769372c6d361df2237
+#: ../../programming/trik/trik_led_control.rst:12
+msgid ""
+"Если все соединено без ошибок, на экране откроется вкладка с текстом "
+"программы. При обнаружении ошибок в нижней части экрана появится окно с "
+"пояснением что нужно исправить для корректной работы программы."
+msgstr ""
+"If there's no errors in the program, a code tab will open. Otherwise, all "
+"errors will be shown in the lower part of the screen along with troubleshoot"
+" tips. "
+
+# 90b5d43b528a49a681f8e85f0a518ee6
+#: ../../programming/trik/trik_led_control.rst:14
+msgid "Код сгенерирован, осталось `загрузить его в \"Пионер\"`_."
+msgstr "When code is generated, press `upload to Pioneer`_"
+
+# a4be5ada69904ea3aab99ccc1bbd3f50
+#: ../../programming/trik/trik_led_control.rst:19
+msgid ""
+"**Научившись работать со светодиодами, попробуйте** `более сложные "
+"варианты`_."
+msgstr "**When familiar with led controls, try** `more advanced options`_."

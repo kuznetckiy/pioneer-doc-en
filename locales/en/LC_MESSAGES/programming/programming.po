@@ -1,0 +1,51 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018, Geoscan ltd
+# This file is distributed under the same license as the pioneer-doc-en
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
+# 
+# Translators:
+# kuznetckiy <r.kuzneckiy@geoscan.aero>, 2018
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: pioneer-doc-en\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-11-20 10:28+0300\n"
+"PO-Revision-Date: 2018-11-22 14:10+0000\n"
+"Last-Translator: kuznetckiy <r.kuzneckiy@geoscan.aero>, 2018\n"
+"Language-Team: English (https://www.transifex.com/geoscan/teams/93851/en/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+"Language: en\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+# 6215d47462d34f8b91a1d9ae6a945755
+#: ../../programming/programming.rst:2
+msgid "Программирование"
+msgstr "Programming"
+
+# 0da9b914d4c24c8cbcdba07ea61fcfb8
+#: ../../programming/programming.rst:4
+msgid ""
+"Кроме полета на дистанционном управлении, \"Пионер\" может следовать "
+"заложенной перед взлетом программе и автономно выполнять прописанные задачи."
+" Для удобства программирования квадрокоптер поддерживает работу с такими "
+"инструментами как Pioneer Station и TRIK Studio, которые позволяют "
+"сформировать полетное задание и загрузить его в память \"Пионера\" при "
+"подключении к компьютеру. В этом разделе вы научитесь работать с "
+"квадрокоптером через интерфейс Pioneer Station, рассмотрите примеры полетных"
+" сценариев и узнаете как программировать подключаемые модули."
+msgstr ""
+"Besides flying in RC mode, Pioneer can execute pre-loaded flight mission "
+"autonomously. It supports Pioneer Station and TRIK studio to create and "
+"upload flight mission. In this section you will learn how to use Pioneer "
+"Station and see some mission examples."
+
+# 9d06830e4abf43b393b4a4930b27a97f
+#: ../../programming/programming.rst:8
+msgid "Содержание:"
+msgstr "Contents:"

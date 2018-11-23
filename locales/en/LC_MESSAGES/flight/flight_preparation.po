@@ -1,0 +1,117 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018, Geoscan ltd
+# This file is distributed under the same license as the pioneer-doc-en
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
+# 
+# Translators:
+# kuznetckiy <r.kuzneckiy@geoscan.aero>, 2018
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: pioneer-doc-en\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-11-20 10:28+0300\n"
+"PO-Revision-Date: 2018-11-22 14:10+0000\n"
+"Last-Translator: kuznetckiy <r.kuzneckiy@geoscan.aero>, 2018\n"
+"Language-Team: English (https://www.transifex.com/geoscan/teams/93851/en/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+"Language: en\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+# 3a57245618cb4aeb8dcafa059b63f401
+#: ../../flight/flight_preparation.rst:2
+msgid "Подготовка к полету - первый старт."
+msgstr "Flight preparation - first start "
+
+# 1c26c012e6144aa0a9abb6809f705343
+#: ../../flight/flight_preparation.rst:4
+msgid "Перед полетом прочтите раздел `Управление`_"
+msgstr "Read `Controls`_ before the flight"
+
+# 46abec2a3b3a4c52ac80afd7ac6f614f
+#: ../../flight/flight_preparation.rst:6
+msgid ""
+"***Правильный старт квадрокоптера требует определенной последовательности "
+"действий, которая выглядит следующим образом:**"
+msgstr ""
+"** A proper quadcopter start requires the following action sequence :**"
+
+# 7c09672749fb4fd3bb6d61904770fd00
+#: ../../flight/flight_preparation.rst:8
+msgid ""
+"Полностью зарядите аккумуляторную батарею квадрокоптера и проверьте заряд "
+"батареек установленных в пульте."
+msgstr ""
+"Fully charge the LiPo battery and check the control unit battery charge "
+"level."
+
+# a7f13772cddc4ca99cebd6b5a176cc2a
+#: ../../flight/flight_preparation.rst:9
+msgid "Проверьте квадрокоптер на предмет отсутствия механических повреждений."
+msgstr "Check if quadcopter has no mechanical damage"
+
+# 4237ae1cd9924be2a554de9973e46a15
+#: ../../flight/flight_preparation.rst:10
+msgid "Установите стик газ/курс в положение минимум - до упора на себя."
+msgstr "Place throttle/yaw stick in the lower position"
+
+# 4e9493fe7ce24f18a0179a3542b81616
+#: ../../flight/flight_preparation.rst:11
+msgid "Включите пульт управления."
+msgstr "Turn on the control unit"
+
+# 11176a4999f0498687eeb6a6f21cedba
+#: ../../flight/flight_preparation.rst:12
+msgid ""
+"До упора вставьте аккумулятор в отсек в нижней части квадрокоптера. "
+"Убедитесь, что аккумулятор установлен надежно и хорошо закреплен."
+msgstr ""
+"Place the LiPo battery in the battery bay underneath the quadcopter. Make "
+"sure it is secured tightly"
+
+# a790fa2fee0643759111873636cd372b
+#: ../../flight/flight_preparation.rst:13
+msgid "Подключите разъем аккумулятора к разъему на базовой плате."
+msgstr "Plug in the battery connector to the board"
+
+# 9b7d498412614a1087aa67fac18bb3ad
+#: ../../flight/flight_preparation.rst:14
+msgid "Прозвучит звуковой сигнал и на квадрокоптере загорятся светодиоды."
+msgstr "A beep should be heard and the LEDs light up "
+
+# 16f2f9aff26f43f58587862d60891726
+#: ../../flight/flight_preparation.rst:15
+msgid "Дождитесь пока светодиод статуса начнет мигать синим."
+msgstr "Wait until the status LED starts blinking blue"
+
+# 6edb1ef83b1043e888bdd3eb8492575a
+#: ../../flight/flight_preparation.rst:16
+msgid ""
+"Запустите моторы. Для этого переместите и удерживайте левый стик в крайнем "
+"нижем правом положении."
+msgstr ""
+"Turn on the motors. To do this, place the left stick in the lower-right "
+"position"
+
+# 7ab5a7bea7454694a70d11c9870615ca
+#: ../../flight/flight_preparation.rst:17
+msgid ""
+"Дождитесь пока все винты начнут вращаться и плавно взлетайте. Во время "
+"полета соблюдайте правила эксплуатации. Не допускайте падения квадрокоптера."
+msgstr ""
+"Wait until all props start spinning and take off smoothly. Stick to safety "
+"rules during flight, don't let the drone crash"
+
+# 6c2efd92906a423a804972c8d54d3fd9
+#: ../../flight/flight_preparation.rst:21
+msgid ""
+"После полета остановите моторы. Для этого переместите и удерживайте левый "
+"стик в крайнем нижнем левом положении."
+msgstr ""
+"Stop the motors after landing. To do this, place the left stick in the lower"
+" left position"

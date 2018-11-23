@@ -1,0 +1,1118 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018, Geoscan ltd
+# This file is distributed under the same license as the pioneer-doc-en
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
+# 
+# Translators:
+# kuznetckiy <r.kuzneckiy@geoscan.aero>, 2018
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: pioneer-doc-en\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-11-20 10:28+0300\n"
+"PO-Revision-Date: 2018-11-22 14:11+0000\n"
+"Last-Translator: kuznetckiy <r.kuzneckiy@geoscan.aero>, 2018\n"
+"Language-Team: English (https://www.transifex.com/geoscan/teams/93851/en/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+"Language: en\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+# cdffccb3d47840ff81e158e5ac4171b5
+#: ../../programming/lua/lua.rst:2
+msgid "Lua документация по API"
+msgstr "API documentation for Lua"
+
+# 65e8b8891d7b468d8e78f4285971e5aa
+#: ../../programming/lua/lua.rst:10
+msgid "Описание API функций взаимодействия с автопилотом"
+msgstr "Autopilot interaction API functions "
+
+# d7e46a4db5cc48d28496deabfadeec8d
+#: ../../programming/lua/lua.rst:14
+msgid "Возвращает время с момента включения коптера."
+msgstr "Returns time since the moment of autopilot turn on"
+
+# a2e5e384176045f4b1929908c6417f06
+#: ../../programming/lua/lua.rst:18
+msgid ""
+"Возвращает разницу в секундах между временем коптера, которое можно получить"
+" функцией :func:`time`, и глобальным временем системы навигации."
+msgstr "Returns difference between :func:`time` and gnss time in seconds."
+
+# 10560591063e4517a6000d12a6786586
+#: ../../programming/lua/lua.rst:23
+msgid "Возвращает время запуска для системы навигации."
+msgstr "Returns launch time for navigation system."
+
+# 001bf161f8cf4519b5cb2a65259d1a2c
+#: ../../programming/lua/lua.rst:27
+msgid ""
+"Останавливает выполнение скрипта на заданное время, допустимы дробные "
+"значения аргумента. **Рекомендуется использовать** :class:`Timer` **, так "
+"как sleep блокирует дальнейшее выполнение скрипта.**"
+msgstr ""
+"Pauses script execution for stated amount of time, argument may be "
+"fractional. **Recommended use** :class:`Timer` **, as *sleep* blocks further"
+" script execution.**"
+
+# 8434eba1c87f4dbab8c845cdd1304cdf
+# 4750ff749a8d494182cfadd13452ff98
+# 2558f3fd8d3348b9b7e4f98018529762
+# d1f36e21b82143ffb7adab7bed28f1fe
+# 866554cbc39f45c8879931611e65dd2d
+# b49fb066c2cc4c6a9738394b75356dc9
+# d9c284fa337e48acbe1614ca406875b4
+# 7d490d5370204c28869e2c47430163e2
+# 812f77779357496c99ab8a11ed7c4896
+# 871b6b277f824c21976e34b9c6cdc887
+# a59c0eaa95a44bccaa81d8734edcaff4
+# cb0f11b672c14fec8e633634545b9291
+# 2778fc835f16458cbcf2d50baf0cea3d
+# 4fb41fd11ffe495e929b561f0bb068f4
+# 5e0550cea7b94156b0a2346623eb6420
+# 942476af5b824319a78b652b76df0d7c
+# a01b0579ab1c41f8ad5f30474fbfcf04
+#: ../../programming/lua/lua.rst
+msgid "Параметры"
+msgstr "Parameters"
+
+# b49c8877a7ee4adb9209ea6a19785046
+#: ../../programming/lua/lua.rst:30
+msgid "время сна в секундах."
+msgstr "Sleep time in seconds."
+
+# 0ded5d065b7c42568f498f7a31b221b7
+#: ../../programming/lua/lua.rst:34
+msgid "Получение идентификационного номера борта - доступно через переменную."
+msgstr "Returns aircraft ID - access using variable. "
+
+# 5396b3b8c50f4dfbae209125ff1118a3
+# 8226fe6478fd4e76b998788c585f8a9f
+# 155dab90aa134c6e98f94622661731f0
+# f99e6654ecaf45b5a4fa7c5ab47551a2
+# 85018ac47dab402ea3b50faaf87f33ed
+# 61c97f505e584af9a591503590b7753e
+# 1ee08eb38d824196a796a2f076238f61
+#: ../../programming/lua/lua.rst:36 ../../programming/lua/lua.rst:48
+#: ../../programming/lua/lua.rst:104 ../../programming/lua/lua.rst:161
+#: ../../programming/lua/lua.rst:206 ../../programming/lua/lua.rst:240
+#: ../../programming/lua/lua.rst:290
+msgid "**Пример**"
+msgstr "**Example**"
+
+# 7a5aa7fc86374ee4b644defa594d8061
+#: ../../programming/lua/lua.rst:44
+msgid "Добавить событие автопилоту (см. :ref:`outluaevent`)."
+msgstr "Add autopilot event (look for :ref:`outluaevent`)."
+
+# f93874c475ca42688db5ef2c9b80b6c9
+#: ../../programming/lua/lua.rst:46
+msgid "номер события или название (например, ``Ev.COPTER_LANDED``)."
+msgstr "Event number or name (for example, ``Ev.COPTER_LANDED``)."
+
+# 525878e23f414847b9fd7ea5f6d4ec60
+#: ../../programming/lua/lua.rst:57
+msgid "Для полёта с использованием GPS."
+msgstr "for GPS mode flight."
+
+# 3ac26fe73b6d4b3fbf19f7743b799b24
+#: ../../programming/lua/lua.rst:59
+msgid "задается широта в градусах, умноженных на :math:`10^{-7}`;"
+msgstr "Set latitude in degrees, multiplied by :math:`10^{-7}`;"
+
+# d6c350eb650943e7b5c4340f815b0937
+#: ../../programming/lua/lua.rst:60
+msgid "задается долгота в градусах, умноженных на :math:`10^{-7}`;"
+msgstr "Set longitude in degrees, multiplied by :math:`10^{-7}`;"
+
+# 425476bd517f4688bea608d3569178e3
+#: ../../programming/lua/lua.rst:61
+msgid "задается высота в метрах."
+msgstr "states altitude in meters."
+
+# 292f08d1e76e4e5eafede1f0a6f2c81a
+#: ../../programming/lua/lua.rst:63
+msgid "Пример `ap.goToPoint(600859810, 304206500, 50)`"
+msgstr "Example `ap.goToPoint(600859810, 304206500, 50)`"
+
+# b1700c3573fe410190460d44af1188cf
+#: ../../programming/lua/lua.rst:67
+msgid "Для полёта с использованием локальной системы координат."
+msgstr "For local coordinate system flight."
+
+# 23876c03b07e4a21a0bf913f6c7ace56
+#: ../../programming/lua/lua.rst:69
+msgid "задается координата точки по оси `x`, в метрах;"
+msgstr "set `x` coordinate of the point in meters;"
+
+# d76e7bec7e0d41448c4b98c05d9f3704
+#: ../../programming/lua/lua.rst:70
+msgid "задается координата точки по оси `y`, в метрах;"
+msgstr "set `y` coordinate of the point in meters;"
+
+# 6daaba9e23d74efa942c98e446aaac79
+#: ../../programming/lua/lua.rst:71
+msgid "задается координата точки по оси `z`, в метрах;"
+msgstr "set `z` coordinate of the point in meters;"
+
+# 30334312a0334370a197742c66b460d8
+#: ../../programming/lua/lua.rst:72
+msgid ""
+"время, за которое коптер перейдет в следующую точку, в секундах. Если "
+"значение не указано, коптер стремится к точке с максимальной скоростью."
+msgstr ""
+"Time during which the drone will arrive to the next point in seconds. If "
+"value not set, the drone will move at max speed."
+
+# 5be837d9bbb24e0e9a4ad3227ae6a4f5
+#: ../../programming/lua/lua.rst:74
+msgid ""
+"Пример  ``ap.goToLocalPoint(1, 1, 1.2)`` или ``ap.goToLocalPoint(1, 1, 1.2, "
+"10)``"
+msgstr ""
+"Example ap.goToLocalPoint(1, 1, 1.2)`` or ``ap.goToLocalPoint(1, 1, 1.2, "
+"10)``"
+
+# 3c50dd80eddc4507bca7761b7e70d3db
+#: ../../programming/lua/lua.rst:78
+msgid "Установить рыскание."
+msgstr "Set yaw."
+
+# c873697ff6eb435588745d3d5b2fc7da
+#: ../../programming/lua/lua.rst:80
+msgid "угол в радианах."
+msgstr "angle in radian."
+
+# 1fab6247c4b845768f0d4cf199d63d05
+#: ../../programming/lua/lua.rst:83
+msgid "RGB светодиоды"
+msgstr "RGB leds"
+
+# 298b9bf6af1b4bf5a3c7521e8f9ea8f9
+#: ../../programming/lua/lua.rst:89
+msgid "Cоздать новый Ledbar с заданным количеством светодиодов."
+msgstr "Create new Ledbar with stated amount of leds."
+
+# 6d6026065f7847169d0b45c2bfa27ba1
+#: ../../programming/lua/lua.rst:91
+msgid "количество светодиодов."
+msgstr "Led amount."
+
+# 79f041b7a0ea4184aed51e1cf97ee454
+#: ../../programming/lua/lua.rst:95
+msgid "Установить цвет на конкретный светодиод."
+msgstr "Set each led colour."
+
+# a9ca300fa02d46bca7c338f62bc48a06
+#: ../../programming/lua/lua.rst:97
+msgid ""
+"номер светодиода, нумеруются с 0 по 3 на плате, далее последовательно по "
+"подключенным модулям;"
+msgstr ""
+"Led number. Numeration 0 - 3 for main board, then for extra modules in "
+"series;"
+
+# fec98e5b73d4484fa4b42afced2a6d6c
+#: ../../programming/lua/lua.rst:98
+msgid "интенсивность красной компоненты цвета в интервале от [0;1];"
+msgstr "red colour component intensity in [0;1] interval;"
+
+# 68c1da1bcfde4ba0b62395c4861b3c80
+#: ../../programming/lua/lua.rst:99
+msgid "интенсивность зеленой компоненты цвета в интервале от [0;1];"
+msgstr "green colour component intensity in [0;1] interval;"
+
+# a1d43f12f4bb4d2881a2d3eab4cfd47a
+#: ../../programming/lua/lua.rst:100
+msgid "интенсивность синей компоненты цвета в интервале от [0;1]."
+msgstr "blue colour component intensity in [0;1] interval;"
+
+# 6ea943364069491eb8471552f87dc524
+#: ../../programming/lua/lua.rst:102
+msgid "Смотри также :func:`fromHSV`"
+msgstr "Look for :func:`fromHSV`"
+
+# 813c9916cf52419a894957a9527e5bd5
+#: ../../programming/lua/lua.rst:106
+msgid ""
+"К коптеру дополнительно подключен модуль с магнитом, на котором 4 RGB "
+"светодиода."
+msgstr "Cargo module includes a magnet and 4 RGB leds"
+
+# d7894051cca54c21a82920849a3ef49e
+#: ../../programming/lua/lua.rst:121
+msgid ""
+"Конвертирует представление цвета из HSV в RGB. Можно использовать для "
+"задания цвета светодиода."
+msgstr "Converts colour code from HSV to RGB. Can be used to set led colour."
+
+# dbef86b498e2403b97bab563dbe502c5
+#: ../../programming/lua/lua.rst:123
+msgid "задает цветовой тон. Варьируется в пределах [0;360];"
+msgstr "set colour tone. Varies in [0;360] interval;"
+
+# 808ef0c208704cab86d3f042ff18bcc4
+#: ../../programming/lua/lua.rst:124
+msgid "задает насыщенность. Варьируется в пределах [0;100];"
+msgstr "set saturation. Varies in [0:100] interval;"
+
+# 18ae4866f1794ef28dce762e7188e3cc
+#: ../../programming/lua/lua.rst:125
+msgid "задает значение цвета. Варьируется в пределах [0;100];"
+msgstr "set colour; Varies in [0:100] interval;"
+
+# a419909fe92f4067a16337ee72b692e3
+# b3695b1cf80b483899e283ecf195cc50
+# 2913556c23ec4236a325a2cd903164d9
+# a720662342b44d799e660586ea578372
+# 3d64ac43a8fc4f41b79d5e744efc8bb6
+# b001d139f65e47f7998a30661f88012c
+# 94d93f9601a1469290b9f48944a5ffe2
+# 08bda8eb933142909384b0f0deb2978a
+# 4a2fec3b96634549800ca5a73f811d76
+# ce06c2fdc93a45aa9b89d1d2de556b37
+#: ../../programming/lua/lua.rst
+msgid "Результат"
+msgstr "Result"
+
+# 9a88bf66feef4303bcabc0efdb998f02
+#: ../../programming/lua/lua.rst:126
+msgid "Возвращает три компонеты цвета r, g, b."
+msgstr "Returns RGB colour components."
+
+# 1d3e25b680bf4125985c12c56d48281c
+#: ../../programming/lua/lua.rst:129
+msgid "GPIO"
+msgstr "GPIO"
+
+# e8104ad729844a76b52d03a5343e7c2a
+#: ../../programming/lua/lua.rst:135
+msgid "Cоздать GPIO на порте с настройками."
+msgstr "create GPIO in settings port."
+
+# 14ed13a8df124c11af0ee1ef27532240
+#: ../../programming/lua/lua.rst:137
+msgid "Gpio.A; Gpio.B; ... Gpio.E;"
+msgstr "Gpio.A; Gpio.B; ... Gpio.E;"
+
+# f2636e74edcf4403a0a4a75ae2e5703b
+#: ../../programming/lua/lua.rst:138
+msgid "номер пина на порте;"
+msgstr "pin number on port;"
+
+# 0196c56f8b07408f9f02d7be9082825c
+#: ../../programming/lua/lua.rst:139
+msgid "Gpio.INPUT, Gpio.Output, Gpio.ALTFU."
+msgstr "Gpio.INPUT, Gpio.Output, Gpio.ALTFU."
+
+# 43ed2a97bed54151ae7b68cba38f4711
+#: ../../programming/lua/lua.rst:143
+msgid "Получить значение."
+msgstr "Returns value."
+
+# 070906a9e498449f9898fa64657fee57
+#: ../../programming/lua/lua.rst:147
+msgid "Установить значение в 1."
+msgstr "Set value in 1."
+
+# d3832fd303924f7f8631ae15e2c7611e
+#: ../../programming/lua/lua.rst:151
+msgid "Установить значение в 0."
+msgstr "Set value in 0."
+
+# f62e2c91c09e444d9433bf6d257c46aa
+#: ../../programming/lua/lua.rst:155
+msgid "установить значение."
+msgstr "Set value."
+
+# b1ae80ca91ff45508cabb4991f3f1432
+#: ../../programming/lua/lua.rst:159
+msgid "Задать номер альтернативной функции."
+msgstr "Set alternative function number."
+
+# a76ce1b568d9479b903820f11973f4b9
+#: ../../programming/lua/lua.rst:174
+msgid "UART"
+msgstr "UART"
+
+# 979afcf3666146d9a08bce47ee4a5a5a
+#: ../../programming/lua/lua.rst:180
+msgid "Cоздать Uart на порте с настройками."
+msgstr "Create UART in settings port."
+
+# 1108b0a22c2e49d99437c979e0bf3ac5
+#: ../../programming/lua/lua.rst:182
+msgid "номер UART;"
+msgstr "UART number; "
+
+# 416fb012d9cf4c409d4d536573ef503b
+#: ../../programming/lua/lua.rst:183
+msgid "скорость;"
+msgstr "speed;"
+
+# c152c9f365234e38bac49cdda11960f5
+#: ../../programming/lua/lua.rst:184
+msgid ""
+"Uart.PARITY_NONE, Uart.PARITY_EVEN, Uart.PARITY_ODD, необязательный "
+"параметр, по умолчанию Uart.PARITY_NONE;"
+msgstr ""
+"Uart.PARITY_NONE, Uart.PARITY_EVEN, Uart.PARITY_ODD, not necessary "
+"parameter, by default Uart.PARITY_NONE;"
+
+# d1212d5e676547cc93d1c0830f901bc5
+#: ../../programming/lua/lua.rst:185
+msgid ""
+"Uart.ONE_STOP, Uart.TWO_STOP, необязательный параметр, по умолчанию "
+"Uart.ONE_STOP."
+msgstr ""
+"Uart.ONE_STOP, Uart.TWO_STOP, not necessary parameter, by default "
+"Uart.ONE_STOP."
+
+# 996f7e16ef614fe5b55a9e8aeede7245
+# cb465cd60e6f429bb370a303240705b0
+#: ../../programming/lua/lua.rst:189 ../../programming/lua/lua.rst:230
+msgid "Прочитать ``size`` байт."
+msgstr "Read \"size\" byte."
+
+# a65b56f1e776461495ca4dd7d46d73d4
+# b20ec85df63946659a7668c6a5abfba5
+#: ../../programming/lua/lua.rst:193 ../../programming/lua/lua.rst:234
+msgid "Записать данные (data) длиной (size)."
+msgstr "Write (data) (size)."
+
+# a755727fc3b0487c9a02fd2ad060305b
+#: ../../programming/lua/lua.rst:197
+msgid "Количество данных доступных для чтения."
+msgstr "Amount of data available to be read."
+
+# ffbe213797294eecae96cf184930e73b
+#: ../../programming/lua/lua.rst:201
+msgid "Установить скорость."
+msgstr "Set speed."
+
+# a8d58cda408d47a9af0cd5e08d8c3076
+#: ../../programming/lua/lua.rst:203
+msgid "скорость uart."
+msgstr "UART speed."
+
+# 81b4a0f6de194b47bf2efa5e61c45920
+#: ../../programming/lua/lua.rst:215
+msgid "SPI"
+msgstr "SPI"
+
+# b7230e05fbcb45a3a83cdd4aec8f6063
+#: ../../programming/lua/lua.rst:221
+msgid "Cоздать Spi на порте с настройками."
+msgstr "Create SPI in settings port."
+
+# c59f0ed51d344aa79713fd8e05ed8ded
+#: ../../programming/lua/lua.rst:223
+msgid "номер Spi"
+msgstr "SPI number."
+
+# 51ca0adcc88b4560b30928767108d2e2
+#: ../../programming/lua/lua.rst:224
+msgid "скорость"
+msgstr "speed"
+
+# e54d9f79d74b483c96337fb0e3c071e6
+#: ../../programming/lua/lua.rst:225
+msgid ""
+"Spi.MSB, Spi.LSB, Spi.MSB_16, Spi.LSB_16, необязательный параметр, по "
+"умолчанию Spi.MSB;"
+msgstr ""
+"Spi.MSB, Spi.LSB, Spi.MSB_16, Spi.LSB_16, not necessary parameter, by "
+"default Spi.MSB;"
+
+# a4defa4911a84422815d67448d69711e
+#: ../../programming/lua/lua.rst:226
+msgid ""
+"Spi.MODE0, Spi.MODE1, Spi.MODE2, Spi.MODE3, необязательный параметр, по "
+"умолчанию Spi.MODE0."
+msgstr ""
+"Spi.MODE0, Spi.MODE1, Spi.MODE2, Spi.MODE3, not necessary parameter, by "
+"default Spi.MODE0."
+
+# 64e2b93b5d7946c0ad36ed37363edaae
+#: ../../programming/lua/lua.rst:238
+msgid "Записать данные (data) длиной (size) и прочитать size."
+msgstr "Write (data) (size) and read size."
+
+# bec8c657881a4f4dbdb868afbe36ae83
+#: ../../programming/lua/lua.rst:248
+msgid "Таймеры"
+msgstr "Timers"
+
+# a32dce9ec449443f9df23f50c85645e9
+#: ../../programming/lua/lua.rst:254
+msgid "Cоздать новый Timer."
+msgstr "Create new timer."
+
+# 45c2b5f1e26d4813bfb6711f69bf5d45
+#: ../../programming/lua/lua.rst:256
+msgid "время интервала в секундах;"
+msgstr "Interval time in seconds."
+
+# 19d760bc653e4dc4995754574afb2065
+#: ../../programming/lua/lua.rst:257
+msgid "функция, которая будет вызываться с заданным интервалом."
+msgstr "Function called with set interval."
+
+# 1dfc0cbbab04439f8588983c0e062cdd
+#: ../../programming/lua/lua.rst:261
+msgid "Запуcкает таймер."
+msgstr "Start timer."
+
+# e60cc5e356164943b75bd26cbcd3d0a2
+#: ../../programming/lua/lua.rst:265
+msgid ""
+"Останавливает таймер. При этом полный останов уже запущенного таймера "
+"произойдет после выполнения функции, стоящей в очереди на выполнение."
+msgstr "Stop timer. Full stop after function execution."
+
+# 8d46517b7d9e44f1966427f962398e02
+# 9c2333a8947d454bb3a59a64558b03d6
+# 06a1e3497f364f96ab791a846b39c039
+#: ../../programming/lua/lua.rst:269 ../../programming/lua/lua.rst:276
+#: ../../programming/lua/lua.rst:283
+msgid ""
+"Cоздает и запускает новый Timer с функцией, которая будет вызвана один раз."
+msgstr "Creates and starts new timer with function to be called ONCE. "
+
+# 9a1bc56f53354085873969ef3b9a55e6
+#: ../../programming/lua/lua.rst:271
+msgid ""
+"локальное время (возвращаемое функцией :func:`time`), указывающее момент "
+"вызова функции;"
+msgstr "Local time (returns with :func:`time`), states function call moment."
+
+# a546c08e27a149a0b8e33aba0b862412
+# a6e5b82f227142428123e6a7e3aea900
+# f4843d5679844d3ba66b09b7d8498271
+#: ../../programming/lua/lua.rst:272 ../../programming/lua/lua.rst:279
+#: ../../programming/lua/lua.rst:286
+msgid "функция, которая будет вызвана."
+msgstr "Function to be called."
+
+# eb21fb436382454a99fc373d6497cbb4
+#: ../../programming/lua/lua.rst:278
+msgid "время, через сколько запустить функцию;"
+msgstr "Time before function start;"
+
+# 74d770e73e1b4f38a33c222a0c098f8d
+#: ../../programming/lua/lua.rst:285
+msgid ""
+"глобальное время (:func:`time` + :func:`deltaTime`), когда вызвать функцию;"
+msgstr ""
+"Global time (:func:`time` + :func:`deltaTime`), when to call function;"
+
+# 9c22a8455705402bbf8b78deb53d3fec
+#: ../../programming/lua/lua.rst:292
+msgid "Смотри :ref:`Example`"
+msgstr "Look for :ref:`Example`"
+
+# 84457c645a3445a1bdd6d270ad968b37
+#: ../../programming/lua/lua.rst:297
+msgid "События, отправляемые автопилоту"
+msgstr "Events sent to autopilot"
+
+# 3cc53027089b4534be6e7b7b8458ae2b
+#: ../../programming/lua/lua.rst:299
+msgid "События (events) представляются константами с префиксом \"Ev.\""
+msgstr "Events a presented using constants with \"Ev\" prefix"
+
+# a5dfb38d711e47899dbabdd1ca939bcd
+# 90710fa1c54e43d195f72ba87a17d99e
+#: ../../programming/lua/lua.rst:302 ../../programming/lua/lua.rst:409
+msgid "Название"
+msgstr "Name"
+
+# 5437575702c04279a27d4442c2535efa
+# f8f59e3180664bb6a0af0e8410bc1523
+# ffcedc3bfada4af9b9430408ae84acf2
+# 8d5b0f0a52ea4c34bfea0d477586f149
+# d03165f540ff4c8f9410dab4f5fed315
+#: ../../programming/lua/lua.rst:302 ../../programming/lua/lua.rst:409
+#: ../../programming/lua/lua.rst:490 ../../programming/lua/lua.rst:520
+#: ../../programming/lua/lua.rst:546
+msgid "Описание"
+msgstr "Description"
+
+# 1ce1a25b9e5146d495696cc8838096b7
+#: ../../programming/lua/lua.rst:304
+msgid "MCE_PREFLIGHT"
+msgstr "MCE_PREFLIGHT"
+
+# 476c6da8ad36409ba28f221dde517eed
+#: ../../programming/lua/lua.rst:304
+msgid "Запустить двигатели и провести подготовку"
+msgstr "Motors start and execute pre-flight check"
+
+# 804cd50058e3469490e7145003024407
+#: ../../programming/lua/lua.rst:306
+msgid "ENGINES_DISARM"
+msgstr "ENGINES_DISARM"
+
+# e8e7fe4b5a69487193fd5ce32285d048
+#: ../../programming/lua/lua.rst:306
+msgid "Отключить двигатели"
+msgstr "Stop motors"
+
+# 304a8d12f1c7409fb42322775c41c0dd
+#: ../../programming/lua/lua.rst:308
+msgid "MCE_LANDING"
+msgstr "MCE_LANDING"
+
+# 2bbdb9cfc0284b4e8b0c2fc8af9ac105
+#: ../../programming/lua/lua.rst:308
+msgid "Отправить на посадку"
+msgstr "Landing"
+
+# f56178da9fa24ee68d34ba4b72526261
+#: ../../programming/lua/lua.rst:310
+msgid "MCE_TAKEOFF"
+msgstr "MCE_TAKEOFF"
+
+# cdec7d460d764d998d65618e69905d3f
+#: ../../programming/lua/lua.rst:310
+msgid "Отправить на взлет"
+msgstr "Take-off"
+
+# 119c3258f67e4e6a9b70ea850cc9e0cd
+#: ../../programming/lua/lua.rst:312
+msgid "--устаревшие--"
+msgstr "--outdated--"
+
+# 06a9270330a94d0c94c761fc79efdd1f
+#: ../../programming/lua/lua.rst:314
+msgid "ENGINES_ARM"
+msgstr "ENGINES_ARM"
+
+# 5f0d906abb6c4ac48f9adbd0a5e65042
+#: ../../programming/lua/lua.rst:314
+msgid "Завести двигатели"
+msgstr "Start motors"
+
+# 6f1d57f1813f4f78914d8d48d2b20b07
+#: ../../programming/lua/lua.rst:318
+msgid "Получение данных от автопилота"
+msgstr "Get autopilot data "
+
+# d04dc68679584e6c8016c155afba72e6
+#: ../../programming/lua/lua.rst:320
+msgid "Для получение данных от автопилота используется класс Sensors"
+msgstr "To get autopilot data Sensors class is used"
+
+# 36f85075c1cc4c3caafdb76457f7bde9
+#: ../../programming/lua/lua.rst:326
+msgid "x, y, z"
+msgstr "x, y, z"
+
+# 430acf566902453ba3eae8b234ef1a45
+#: ../../programming/lua/lua.rst:330
+msgid "vx, vy, vz"
+msgstr "vx, vy, vz"
+
+# 5ee47551897047f2a491b2961dce5347
+#: ../../programming/lua/lua.rst:334
+msgid "yaw"
+msgstr "yaw"
+
+# f3093d77656e4fa6abc827d519e89ae0
+#: ../../programming/lua/lua.rst:338
+msgid "Данные положения."
+msgstr "Position data"
+
+# e4e731590dc64fa987d9abb86069960f
+#: ../../programming/lua/lua.rst:340
+msgid "roll, pitch, azimuth"
+msgstr "roll, pitch, azimuth"
+
+# f4e9d39e49634b1e8b37e4eac6d7a72b
+#: ../../programming/lua/lua.rst:344
+msgid "Данные высоты по барометру."
+msgstr "Altitude data from barometer."
+
+# bcd76b2b349d4cbf82292ae2dfe6c1cd
+#: ../../programming/lua/lua.rst:346
+msgid "высота в метрах"
+msgstr "altitude in meters"
+
+# 757177079501498e9581af46724021f4
+#: ../../programming/lua/lua.rst:350
+msgid "Данные c датчиков растояния."
+msgstr "Proximity sensors data."
+
+# a4df42f81d234ba89056b3ee799ec932
+#: ../../programming/lua/lua.rst:352
+msgid ""
+"Возвращает значения с датчика растояния. Возвращает несколько значений."
+msgstr "Returns proximity sensor distance. Several values."
+
+# 4af1485afd7a4c678213246f59637fa6
+#: ../../programming/lua/lua.rst:356
+msgid "Данные c акселерометра."
+msgstr "Accelerometer data."
+
+# dbc9e0e28df641afbd802ee91958ed05
+#: ../../programming/lua/lua.rst:358
+msgid "ax, ay, az"
+msgstr "ax, ay, az"
+
+# 187e7e5465b34eb9b399543dc7fa349f
+#: ../../programming/lua/lua.rst:362
+msgid "Данные c гироскопа."
+msgstr "Gyroscope data."
+
+# f1be5643b3ca4b4cab403932246d64b6
+#: ../../programming/lua/lua.rst:364
+msgid "gx, gy, gz"
+msgstr "gx, gy, gz"
+
+# 59b8739cada34cb297e89225f0980897
+#: ../../programming/lua/lua.rst:368
+msgid "Данные c пульта управления."
+msgstr "RC unit data."
+
+# 1bec099a32804166a41f556250130cb5
+#: ../../programming/lua/lua.rst:370
+msgid ""
+"channel1, channel2, channel3, channel4, channel5, channel6, channel7, "
+"channel8"
+msgstr ""
+"channel1, channel2, channel3, channel4, channel5, channel6, channel7, "
+"channel8"
+
+# 96cb2b53740c4b65af36153b5a1b9694
+#: ../../programming/lua/lua.rst:372
+msgid "**Примеры**"
+msgstr "**Examples**"
+
+# fe87d414ec5a42c88fda3404d3683c77
+#: ../../programming/lua/lua.rst:399
+msgid "Описание необходимых служебных функций скрипта"
+msgstr "Service functions of the script"
+
+# e4a7218d1e73407fafa2739c63273597
+#: ../../programming/lua/lua.rst:406
+msgid "Доступны следующие события, приходящие от автопилота:"
+msgstr "Autopilot events available:"
+
+# ddb8c3949847495ab1d1036088519d18
+#: ../../programming/lua/lua.rst:411
+msgid "CONTROL_FAIL"
+msgstr "CONTROL_FAIL"
+
+# 9609c58bdb5b4409b2b413778d358218
+#: ../../programming/lua/lua.rst:411
+msgid "Сработала защита"
+msgstr "Protection triggered"
+
+# 3df875ae4a7343058da31732f7124c5c
+#: ../../programming/lua/lua.rst:413
+msgid "ALTITUDE_REACHED"
+msgstr "ALTITUDE_REACHED"
+
+# dcab92b41ae24c7189627c091eecc26c
+#: ../../programming/lua/lua.rst:413
+msgid "Коптер достиг заданной высоты"
+msgstr "Drone reached stated altitude"
+
+# 343cc6f5f8784641b2bf4ac1f635e130
+#: ../../programming/lua/lua.rst:415
+msgid "POINT_REACHED"
+msgstr "POINT_REACHED"
+
+# 5ef47fc9df874573860a14fcfd7acb42
+#: ../../programming/lua/lua.rst:415
+msgid "Коптер достиг точки"
+msgstr "Drone reached stated point"
+
+# 9001e62fbc2a47a58624685e158f452b
+#: ../../programming/lua/lua.rst:417
+msgid "ENGINE_FAIL"
+msgstr "ENGINE_FAIL"
+
+# 61be67942efa43d0833c7f09a8686dbf
+#: ../../programming/lua/lua.rst:419
+msgid "ENGINES_STARTED"
+msgstr "ENGINES_STARTED"
+
+# 923608c1b76242aeb8380941b0f27c77
+#: ../../programming/lua/lua.rst:419
+msgid "Двигатели запущены"
+msgstr "Motors started"
+
+# ece7e674064345e0a2d404225aceac7c
+#: ../../programming/lua/lua.rst:421
+msgid "COPTER_LANDED"
+msgstr "COPTER_LANDED"
+
+# 381770bb105441eb891050a7212673b5
+#: ../../programming/lua/lua.rst:421
+msgid "Коптер совершил посадку"
+msgstr "Drone landed"
+
+# 7a79cfdf6bf04d07aadc7c2ae05ad25c
+#: ../../programming/lua/lua.rst:423
+msgid "LOW_VOLTAGE1"
+msgstr "LOW_VOLTAGE1"
+
+# 974e5a056f4b4a7892934cadf2a5f409
+#: ../../programming/lua/lua.rst:423
+msgid "Низкое напряжение аккумулятора, для возвращения домой"
+msgstr "Low battery voltage, return home"
+
+# 18bd904e86a64b80a45207d77ccfc17f
+#: ../../programming/lua/lua.rst:425
+msgid "LOW_VOLTAGE2"
+msgstr "LOW_VOLTAGE2"
+
+# 40e5d3d137fc4d248ecceadfdcc787c6
+#: ../../programming/lua/lua.rst:425
+msgid "Низкое напряжение аккумулятора, переходит в режим посадки"
+msgstr "Low battery voltage, landing mode"
+
+# 40f0d39091334745895393adab60518d
+#: ../../programming/lua/lua.rst:427
+msgid "POINT_DECELERATION"
+msgstr "POINT_DECELERATION"
+
+# ea1a67446658410a890967a9d89c3237
+#: ../../programming/lua/lua.rst:427
+msgid "Коптер начал тормозить при подлёте к точке"
+msgstr "Slowdown approaching the point"
+
+# 518c77fb8104479790232520004367b1
+#: ../../programming/lua/lua.rst:429
+msgid "SYNC_START"
+msgstr "SYNC_START"
+
+# b038874d3e364d12be3fe6c3be7a406c
+#: ../../programming/lua/lua.rst:431
+msgid "SHOCK"
+msgstr "SHOCK"
+
+# 0dd768ef057d4b87bfeb570891ff7677
+#: ../../programming/lua/lua.rst:437
+msgid "Пример скрипта"
+msgstr "Script example"
+
+# 5c6f336221c8402293a737caa1c070f4
+#: ../../programming/lua/lua.rst:485
+msgid "Описание пинов разъемов модулей"
+msgstr "Description for modules pin connectors"
+
+# b0e9dcb75ef3445aabe273c82e2dc589
+#: ../../programming/lua/lua.rst:487
+msgid ""
+"Пины МК АП на ``Pioneer_Base_v.1.0-v.1.1``, выведенные на внешние разъемы:"
+msgstr "``Pioneer_Base_v.1.0-v.1.1`` autopilot pins:"
+
+# b80b04acc759447a8c75604f1db0bfdf
+#: ../../programming/lua/lua.rst:490
+msgid "Разъем X1 (пин МК)"
+msgstr "X1 (MC pin)"
+
+# 9bd05e6b633c4d919da9949b1d8129cb
+# 4fb699f516844d29b6c7c9679cea9ef0
+# 9e3a2579598749699ffb60e73d026e57
+#: ../../programming/lua/lua.rst:490 ../../programming/lua/lua.rst:520
+#: ../../programming/lua/lua.rst:546
+msgid "Функция"
+msgstr "Function"
+
+# 32b8c66c699146e6b02601f97c69d3e0
+# 74c928d6697d42c1a142c61bab80909d
+#: ../../programming/lua/lua.rst:492 ../../programming/lua/lua.rst:522
+msgid "1"
+msgstr "1"
+
+# bd373ccca7a442e2917987bd01e0590b
+#: ../../programming/lua/lua.rst:492
+msgid "Питание 5 В (только с АКБ) | Максимум 2 А"
+msgstr "5V power (only with LiPo) 2A max."
+
+# eaf9a6bd6fae4011bfc79708c8d0f5a6
+# 616a59fa09a0470daa8147f7cfd114f7
+#: ../../programming/lua/lua.rst:494 ../../programming/lua/lua.rst:524
+msgid "2"
+msgstr "2"
+
+# b2a7012dce18428a8562f0a6a1faa2bd
+#: ../../programming/lua/lua.rst:494
+msgid "Питание 3.3 В              | Максимум 2 А"
+msgstr "3.3V | 2A max."
+
+# a95e313dc51d45ef99a7f7da9e430dcb
+#: ../../programming/lua/lua.rst:496
+msgid "3 (PA12)"
+msgstr "3 (PA12)"
+
+# 8d26db9743aa4ad7aa45a6d65431343b
+#: ../../programming/lua/lua.rst:496
+msgid "USART1_RTS"
+msgstr "USART1_RTS"
+
+# 32361935d0dc4d059313b4aee4c03f2c
+#: ../../programming/lua/lua.rst:498
+msgid "4 (PA11)"
+msgstr "4 (PA11)"
+
+# 2547308417e944ff909f17aa3ac3d92f
+#: ../../programming/lua/lua.rst:498
+msgid "USART1_CTS, TIM1_CH4"
+msgstr "USART1_CTS, TIM1_CH4"
+
+# 5665ad0856ce4cc9b09da9a0343ccce0
+# f15334605b7944ceb71466307e420467
+# 4490d263308740dd8bfbf9eb90f10014
+#: ../../programming/lua/lua.rst:498 ../../programming/lua/lua.rst:548
+#: ../../programming/lua/lua.rst:550
+msgid "Module_OpenMV"
+msgstr "Module_OpenMV"
+
+# adb2189d12fb4e35b7a34f13344f48ea
+#: ../../programming/lua/lua.rst:500
+msgid "5 (PA10)"
+msgstr "5 (PA10)"
+
+# af05c3a43de44b7c81797211707aeec2
+#: ../../programming/lua/lua.rst:500
+msgid "USART1_RX, TIM1_CH3"
+msgstr "USART1_RX, TIM1_CH3"
+
+# f4dbf2e3a7cd4cfdb0ae4aad26993f48
+# e5e12a91351d4bcf9f6d240bdb6a8391
+#: ../../programming/lua/lua.rst:500 ../../programming/lua/lua.rst:502
+msgid "Module_GPS, Module_USNav"
+msgstr "Module_GPS, Module_USNav"
+
+# 8f26b265724d43eba6905c135b294a1b
+#: ../../programming/lua/lua.rst:502
+msgid "6 (PA9)"
+msgstr "6 (PA9)"
+
+# 55f5fde30ac54c3e87bbc6b1f7a0cc81
+#: ../../programming/lua/lua.rst:502
+msgid "USART1_TX, TIM1_CH2"
+msgstr "USART1_TX, TIM1_CH2"
+
+# 04ad872e464443ad801e39ade170c63e
+#: ../../programming/lua/lua.rst:504
+msgid "7 (PA15)"
+msgstr "7 (PA15)"
+
+# 7eaca0d78ba34760826a1b0fea1257aa
+#: ../../programming/lua/lua.rst:504
+msgid "SPI3_NSS, TIM2_CH1"
+msgstr "SPI3_NSS, TIM2_CH1"
+
+# 8e7d00c1d30a43059457258332815b2b
+# 6e195d7c0b09452d9e292e51aad19b53
+# 5b9fcb0f76ef442aa1f115764e33d0bd
+# 5b54e7e10775485da7f4909cd446fdb2
+#: ../../programming/lua/lua.rst:504 ../../programming/lua/lua.rst:506
+#: ../../programming/lua/lua.rst:508 ../../programming/lua/lua.rst:510
+msgid "Module_GPS, Module_OpenMV"
+msgstr "Module_GPS, Module_OpenMV"
+
+# cdb24ca6fd8b4fd18d5f102e2d728b46
+#: ../../programming/lua/lua.rst:506
+msgid "8 (PC10)"
+msgstr "8 (PC10)"
+
+# 7d22eecadff440d68a570483eac4309d
+#: ../../programming/lua/lua.rst:506
+msgid "SPI3_SCK"
+msgstr "SPI3_SCK"
+
+# 4bfb4173e8a14084b564ba5ebf6e2536
+#: ../../programming/lua/lua.rst:508
+msgid "9 (PC11)"
+msgstr "9 (PC11)"
+
+# affd749801084530876732b7ab22be61
+#: ../../programming/lua/lua.rst:508
+msgid "SPI3_MISO"
+msgstr "SPI3_MISO"
+
+# 9a95a0076ed34c1699cfbdbf072580d7
+#: ../../programming/lua/lua.rst:510
+msgid "10 (PB5)"
+msgstr "10 (PB5)"
+
+# cfd19a44afd94bd29c353b667b30fafc
+#: ../../programming/lua/lua.rst:510
+msgid "SPI3_MOSI, TIM3_CH2"
+msgstr "SPI3_MOSI, TIM3_CH2"
+
+# 281d8904561d4b45b6a5928732c632e4
+#: ../../programming/lua/lua.rst:512
+msgid "11"
+msgstr "11"
+
+# 66395530ed55437f88664182ed61e340
+# 53cbabbae02f49929b9359aed4e86981
+# 5e340351a33f4a08b46364e2e69a795c
+# 67ed96324b7a47c698187a841d368451
+#: ../../programming/lua/lua.rst:512 ../../programming/lua/lua.rst:514
+#: ../../programming/lua/lua.rst:538 ../../programming/lua/lua.rst:540
+msgid "Земля"
+msgstr "GND"
+
+# e2447db4c80345b29dbeaa191c237745
+#: ../../programming/lua/lua.rst:514
+msgid "12"
+msgstr "12"
+
+# f9b2c28e5203401d88eb454732c32d16
+# 03b4c7b085dd4845bc50dd47f6830b41
+#: ../../programming/lua/lua.rst:520 ../../programming/lua/lua.rst:546
+msgid "Разъем X2 (пин МК)"
+msgstr "X2 (MC pin)"
+
+# 639d75662ea04735819112fe3e194af8
+#: ../../programming/lua/lua.rst:522
+msgid "Питание 5 В (только с АКБ)    | Максимум 2 А"
+msgstr "5V power (only with LiPo) 2A max."
+
+# e85424193ce34839991a0f0510d8292d
+#: ../../programming/lua/lua.rst:524
+msgid "Питание 3.3 В                 | Максимум 2 А"
+msgstr "3.3V | 2A max."
+
+# 55eec8f0661c40e69c9beffc89042e15
+#: ../../programming/lua/lua.rst:526
+msgid "3 (PC2)"
+msgstr "3 (PC2)"
+
+# 2358afa3617e4b06986d5e5da2497aff
+#: ../../programming/lua/lua.rst:526
+msgid "ADCx_IN12"
+msgstr "ADCx_IN12"
+
+# 99c7a0f3b0b64ab08097219f10f9b972
+#: ../../programming/lua/lua.rst:528
+msgid "4 (PC3)"
+msgstr "4 (PC3)"
+
+# b849dec2263440c494364535e493bac5
+#: ../../programming/lua/lua.rst:528
+msgid "ADCx_IN13"
+msgstr "ADCx_IN13"
+
+# bf1aa1a81d234c3eace912eca5853dde
+#: ../../programming/lua/lua.rst:530
+msgid "5 (PA1)"
+msgstr "5 (PA1)"
+
+# 3bdbf2b622d44426a2d06df7df768ecf
+#: ../../programming/lua/lua.rst:530
+msgid "ADCx_IN1, TIM2_CH2, TIM5_CH2"
+msgstr "ADCx_IN1, TIM2_CH2, TIM5_CH2"
+
+# 0718d351b67541dfb3ea974ece58197b
+# 5cb07ab26c7642eb8cd4e69d11e98545
+#: ../../programming/lua/lua.rst:530 ../../programming/lua/lua.rst:552
+msgid "Module_Cargo (упр. магнитом)"
+msgstr "Module_Cargo (magnet control)"
+
+# c7cfd77eb9a546b297a8438d157cf991
+#: ../../programming/lua/lua.rst:532
+msgid "6 (PB7)"
+msgstr "6 (PB7)"
+
+# 105ec5851ef24465a7245e128e0bc75d
+#: ../../programming/lua/lua.rst:532
+msgid "I2C1_SDA, TIM4_CH2"
+msgstr "I2C1_SDA, TIM4_CH2"
+
+# 836ef2224f6943208d633ce6e090accd
+# bf3bb7bf06854ed9b510141f19fad38c
+#: ../../programming/lua/lua.rst:532 ../../programming/lua/lua.rst:534
+msgid "Module_ToF, Module_OpenMV"
+msgstr "Module_ToF, Module_OpenMV"
+
+# e1d3830b1f054a8c9336e7536a884182
+#: ../../programming/lua/lua.rst:534
+msgid "7 (PB6)"
+msgstr "7 (PB6)"
+
+# 77e8e6f760234ba69c0824b199d5b8f0
+#: ../../programming/lua/lua.rst:534
+msgid "I2C1_SCL, TIM4_CH1"
+msgstr "I2C1_SCL, TIM4_CH1"
+
+# 505f12e39db348e0b3dcbf4a6b320025
+#: ../../programming/lua/lua.rst:536
+msgid "8 (PA0)"
+msgstr "8 (PA0)"
+
+# 7d299600e0864ea198f6223e97681c67
+# 4c8a4d4609ca4d66abfc982cd3d643d4
+#: ../../programming/lua/lua.rst:536 ../../programming/lua/lua.rst:554
+msgid "DATA WS2812B"
+msgstr "DATA WS2812B"
+
+# 68f15b6c5298443ba6895c841a5e4b56
+# e5ff4fcf7247445489f1104b4d70beec
+#: ../../programming/lua/lua.rst:536 ../../programming/lua/lua.rst:554
+msgid "Уровень 5 В. Module_LED"
+msgstr "5V level. Module_LED"
+
+# 848258bbaf374c95abe82fd70b5187a0
+#: ../../programming/lua/lua.rst:538
+msgid "9"
+msgstr "9"
+
+# 36f313a426d5436785d6e0cae8148ecd
+#: ../../programming/lua/lua.rst:540
+msgid "10"
+msgstr "10"
+
+# 8ff1c502b01644c29b8dd2e80451f5ac
+#: ../../programming/lua/lua.rst:543
+msgid "Для ``Pioneer_Base_v.1.2``:"
+msgstr "For ``Pioneer_Base_v.1.2``:"
+
+# 4c6e73c902ff4f72aa1c7c3e690bc7f0
+#: ../../programming/lua/lua.rst:548
+msgid "3 (PA0)"
+msgstr "3 (PA0)"
+
+# 5cc1dbfb602d41ce97ab6d230b7ec47e
+#: ../../programming/lua/lua.rst:548
+msgid "USART4_TX, ADCx_IN0, TIM2_CH1, TIM5_CH1"
+msgstr "USART4_TX, ADCx_IN0, TIM2_CH1, TIM5_CH1"
+
+# 3f8d62f3d9a14a92bce00ba3ce96529b
+#: ../../programming/lua/lua.rst:550
+msgid "4 (PA1)"
+msgstr "4 (PA1)"
+
+# b74caa9819ea41de84fea71dbe5e40c6
+#: ../../programming/lua/lua.rst:550
+msgid "USART4_RX, ADCx_IN1, TIM2_CH2, TIM5_CH2"
+msgstr "USART4_RX, ADCx_IN1, TIM2_CH2, TIM5_CH2"
+
+# 50e5746de50a4861885d0a90a6573bcc
+#: ../../programming/lua/lua.rst:552
+msgid "5 (PС3)"
+msgstr "5 (PС3)"
+
+# b4e92bb62f334685ba0a409978ce977c
+#: ../../programming/lua/lua.rst:552
+msgid "ADCx_IN13, SPI2_MOSI"
+msgstr "ADCx_IN13, SPI2_MOSI"
+
+# e254d7afcbf045e79566d781ff8977fd
+#: ../../programming/lua/lua.rst:554
+msgid "8 (PC12)"
+msgstr "8 (PC12)"

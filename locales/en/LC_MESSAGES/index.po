@@ -1,194 +1,223 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2018, Test author
-# This file is distributed under the same license as the Test project
+# Copyright (C) 2018, Geoscan ltd
+# This file is distributed under the same license as the pioneer-doc-en
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
-#
+# 
+# Translators:
+# kuznetckiy <r.kuzneckiy@geoscan.aero>, 2018
+# 
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Test project \n"
+"Project-Id-Version: pioneer-doc-en\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-11-23 09:59+0300\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"POT-Creation-Date: 2018-11-20 10:28+0300\n"
+"PO-Revision-Date: 2018-11-20 14:24+0000\n"
+"Last-Translator: kuznetckiy <r.kuzneckiy@geoscan.aero>, 2018\n"
+"Language-Team: English (https://www.transifex.com/geoscan/teams/93751/en/)\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.6.0\n"
+"Language: en\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
+# b8e81fd6d77b48d9a8b388dc7cdbb6cf
 #: ../../index.rst:7
 msgid "Документация Геоскан \"Пионер\""
-msgstr ""
+msgstr "Geoscan Pioneer documentation"
 
+# c5c37cd9f0884726bfd3248f189059b3
 #: ../../index.rst:10
 msgid "`Вернуться на сайт \"Пионер\"`_"
-msgstr ""
+msgstr "`Return to Pioneer webpage`_"
 
+# 9384f6e440144236a90d69799cc8a9a5
 #: ../../index.rst:14
 msgid ""
 "Геоскан \"Пионер\" - это многофункциональный учебный комплекс для школ, "
-"авиамодельных секций, кружков робототехники, а также для самостоятельного"
-" освоения."
+"авиамодельных секций, кружков робототехники, а также для самостоятельного "
+"освоения."
 msgstr ""
+"Geoscan Pioneer is a multifunctional educational  complex. It was developed "
+"for schools, robotothenic  labs and for individual use. "
 
+# ce7ffe34c5234861ba080bdd13128cc0
 #: ../../index.rst:20
 msgid "\"Пионер\" позволяет:"
-msgstr ""
+msgstr "with Pioneer you can:"
 
+# 9d5c06bfe7a54fd0b2fe90806ef27018
 #: ../../index.rst:22
 msgid "изучить основы робототехники и авионики"
-msgstr ""
+msgstr "study the robototechnics and avionics basics"
 
+# 33756f918b9f494f849ef8a2faee3cdb
 #: ../../index.rst:23
 msgid "ознакомиться с устройством и принципом работы квадрокоптера"
-msgstr ""
+msgstr "get to know the principles of quadcopter constuction"
 
+# c92e009a712b4e99ab56acf817bb999c
 #: ../../index.rst:24
 msgid "освоить приемы пилотирования"
-msgstr ""
+msgstr "master your flying skills"
 
+# cf8aaab709474ca3b96435b4a1860c25
 #: ../../index.rst:25
 msgid "адаптировать коптер для решения поставленных задач"
-msgstr ""
+msgstr "tailor the drone to suit your needs and tasks"
 
+# c567c35b621640e5bd9ede5361151d3b
 #: ../../index.rst:26
 msgid "научиться программировать квадрокоптер"
-msgstr ""
+msgstr "program the drone"
 
+# bd8a6fe6afd14ff29e52cdc6b19e1d7f
 #: ../../index.rst:29
 msgid ""
 "Функционал комплекса может быть расширен за счет подключения и "
 "программирования дополнительных модулей."
 msgstr ""
+"Pioneer's functional abilities can be extended   by adding and programming "
+"extension modules ."
 
+# c59dd1c40ad749afa79ec1517a77cdf4
 #: ../../index.rst:33
 msgid "Технические характеристики"
-msgstr ""
+msgstr "Technical specs"
 
+# 1afd7cd33b1b4379a686ff3bec629dac
 #: ../../index.rst:1
 msgid "Параметр"
-msgstr ""
+msgstr "Parameter"
 
+# 6cc5cf0ec62c4631a0d8120dfdbf786a
 #: ../../index.rst:1
 msgid "Значение"
-msgstr ""
+msgstr "Value"
 
+# 6b76d108be18438889e016386fb4d2a7
 #: ../../index.rst:1
 msgid "Тип"
-msgstr ""
+msgstr "Type"
 
+# 51d77038fb8849118d760e34785275cd
 #: ../../index.rst:1
 msgid "квадрокоптер"
-msgstr ""
+msgstr "quadcopter"
 
+# 5f3efff99f9345a2816447ed57be2f10
 #: ../../index.rst:1
 msgid "Продолжительность полета"
-msgstr ""
+msgstr "Flight time"
 
+# d31f6e6ff1eb41a5bbe78f8772df60db
 #: ../../index.rst:1
 msgid "до 17 минут"
-msgstr ""
+msgstr "up to 17 minutes"
 
+# b0d9f455adaf41248fbb1d4bc11c5758
 #: ../../index.rst:1
 msgid "Скорость полета"
-msgstr ""
+msgstr "airspeed"
 
+# d4b2a1ce407047509a32c056164a990d
 #: ../../index.rst:1
 msgid "до 65 км/ч"
-msgstr ""
+msgstr "up to 65 km/h"
 
+# 22b91ff283144879aef4c28f5aacd720
 #: ../../index.rst:1
 msgid "Масса квадрокоптера"
-msgstr ""
+msgstr "Weight"
 
+# 90315303886f4b0c9dcedb32b6622aba
 #: ../../index.rst:1
 msgid "230 г"
-msgstr ""
+msgstr "230 g"
 
+# a02b736fc182400d9962b2349de8680f
 #: ../../index.rst:1
 msgid "Максимальная взлетная масса"
-msgstr ""
+msgstr "Max takoff weight"
 
+# 9242d6f183404cd8a25881fb8114fd8d
 #: ../../index.rst:1
 msgid "420 г"
-msgstr ""
+msgstr "420 g"
 
+# ed7c88a04f234ec7bbd66e0dd58a807d
 #: ../../index.rst:1
 msgid "Размеры"
-msgstr ""
+msgstr "Dimensions "
 
+# ad3600507d0849a48d23025872fac2b1
 #: ../../index.rst:1
 msgid "290 x 290 x 120 мм"
-msgstr ""
+msgstr "290 x 290 x 120 mm"
 
+# a3da6d8b85c149eaa0b5a8ce6d045233
 #: ../../index.rst:1
 msgid "Двигатели"
-msgstr ""
+msgstr "Motors"
 
+# b783bb4d0116448cbc2c26164b25c147
 #: ../../index.rst:1
 msgid "бесколлекторные 1306 3100KV"
-msgstr ""
+msgstr "Brushless 1306 3100KV"
 
+# 6d6c2e4887724b4ea4554130afd4f498
 #: ../../index.rst:1
 msgid "Аккумуляторная батарея"
-msgstr ""
+msgstr "Battery"
 
+# e4eb358e542b43e3bd3eae92f04ceb0b
 #: ../../index.rst:1
 msgid "LiPo 2S 1300мАч 9,62 Втч"
-msgstr ""
+msgstr "LiPo 2S 1300 mAh 9.62 Wh"
 
+# f5d8eeb8f1734134a3ef10271c19e9fb
 #: ../../index.rst:1
 msgid "Максимальная дальность полета"
-msgstr ""
+msgstr "Max flight distance "
 
+# abe7f561e37a40a59a2fd6957aa738cf
 #: ../../index.rst:1
 msgid "500 м"
-msgstr ""
+msgstr "500 m"
 
+# bdf87f62c61d4db684b5fe590c4bfaa9
 #: ../../index.rst:1
 msgid "Допустимая скорость ветра"
-msgstr ""
+msgstr "max wind speed "
 
+# 5a68c4e1db044b83b6dae55baf43c078
 #: ../../index.rst:1
 msgid "до 5 м/с"
-msgstr ""
+msgstr "up to 5 m/s"
 
+# 0a805ee5f06e44e68f50d8d532cca0c7
 #: ../../index.rst:1
 msgid "Температура эксплуатации"
-msgstr ""
+msgstr "Operation temperature"
 
+# 62eed77f7c0548aaa19eb2d686b1421a
 #: ../../index.rst:1
 msgid "От 0 до +40 °С"
-msgstr ""
+msgstr "From 0 to +40 °C"
 
+# b773191c46ae4d4fb704a23b46f89f36
 #: ../../index.rst:50
 msgid "Содержание:"
-msgstr ""
+msgstr "Content:"
 
+# af672be0472243229aadd0aabdfc8d2e
 #: ../../index.rst:65
 msgid ""
 "Данное руководство содержит информацию в объеме, достаточном для полного "
 "освоения комплекса Геоскан \"Пионер\", его сборки, пилотирования и "
 "программирования."
 msgstr ""
-
-#~ msgid "Привет!"
-#~ msgstr "Hello!"
-
-#~ msgid "Это текст на русском языке"
-#~ msgstr "This is English text"
-
-#~ msgid "Indices and tables"
-#~ msgstr ""
-
-#~ msgid ":ref:`genindex`"
-#~ msgstr ""
-
-#~ msgid ":ref:`modindex`"
-#~ msgstr ""
-
-#~ msgid ":ref:`search`"
-#~ msgstr ""
-
+"This manual contains all necessary info to assemble, operate and program "
+"Geoscan Pioneer drone."

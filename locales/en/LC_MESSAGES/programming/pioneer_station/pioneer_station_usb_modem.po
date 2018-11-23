@@ -1,0 +1,77 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018, Geoscan ltd
+# This file is distributed under the same license as the pioneer-doc-en
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
+# 
+# Translators:
+# kuznetckiy <r.kuzneckiy@geoscan.aero>, 2018
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: pioneer-doc-en\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-11-20 10:28+0300\n"
+"PO-Revision-Date: 2018-11-22 14:11+0000\n"
+"Last-Translator: kuznetckiy <r.kuzneckiy@geoscan.aero>, 2018\n"
+"Language-Team: English (https://www.transifex.com/geoscan/teams/93851/en/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+"Language: en\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+# ca1db190b1b84f9e8cb43e5b745127a4
+#: ../../programming/pioneer_station/pioneer_station_usb_modem.rst:2
+msgid "Подключение по USB модему"
+msgstr "USB modem connection."
+
+# 4a9980a61d264e2399d5a6c6385b71b7
+#: ../../programming/pioneer_station/pioneer_station_usb_modem.rst:4
+msgid ""
+"Для загрузки программ на \"Пионер\", помимо USB, может использоваться "
+"беспроводное соединение. Для подключения необходим радиомодем, подключаемый "
+"в любой свободный USB порт компьютера."
+msgstr ""
+"You can use wireless connection to upload missions to Pioneer. A USB-powered"
+" wireless modem is required for this."
+
+# c92ccb1147134d4a920072060a5a79cf
+#: ../../programming/pioneer_station/pioneer_station_usb_modem.rst:9
+msgid ""
+"Подключите \"Пионер\" к компьютеру с открытой программой Pioneer Station "
+"кабелем USB и запомните номер канала, отобразившийся в поле телеметрии "
+"справа от авиагоризонта."
+msgstr ""
+"Remember the channel number of your drone. It is displayed next to the "
+"avionic horizon unit when Pioneer is connected via USB cable."
+
+# fda898bce6084e5e814c4f7a5c731cbf
+#: ../../programming/pioneer_station/pioneer_station_usb_modem.rst:10
+msgid ""
+"В меню \"Настройки\" выберите пункт \"Настроить модем\". В открывшемся окне "
+"сохраните номер канала, который запимнили при выполнении предыдущего шага."
+msgstr ""
+"Select \"modem setting\" in \"Settings\" tab. Save your channel number in "
+"opened window. "
+
+# 2a023ec9e193454ca2d1fda48248394e
+#: ../../programming/pioneer_station/pioneer_station_usb_modem.rst:11
+msgid ""
+"Выберите квадрокоптер который хотите подключить по данному каналу и нажмите "
+"ОК."
+msgstr "Select the desired drone to be connected and press OK."
+
+# d7e93f99632040eda037138bbd709fb9
+#: ../../programming/pioneer_station/pioneer_station_usb_modem.rst:12
+msgid ""
+"В дальнейшем для подключений \"Пионера\" к компьютеру после запуска Pioneer "
+"Station в меню \"подключение\" выбирайте вариант \"По радиомодему\". При "
+"этом на плату должно быть подано питание от оcновной батареи, либо от "
+"стороннего источника по кабелю USB."
+msgstr ""
+"To connect Pioneer wirelessly, select \"Radiomodem\" in the \"connection\" "
+"tab in the bottom right corner. The drone should be powered from LiPo or "
+"another USB 5V source. "

@@ -1,0 +1,106 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018, Geoscan ltd
+# This file is distributed under the same license as the pioneer-doc-en
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
+# 
+# Translators:
+# kuznetckiy <r.kuzneckiy@geoscan.aero>, 2018
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: pioneer-doc-en\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-11-20 10:28+0300\n"
+"PO-Revision-Date: 2018-11-22 14:12+0000\n"
+"Last-Translator: kuznetckiy <r.kuzneckiy@geoscan.aero>, 2018\n"
+"Language-Team: English (https://www.transifex.com/geoscan/teams/93851/en/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+"Language: en\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+# 59c4f96e7cf34803b98cb38ea1465ff8
+#: ../../settings/rc_connection.rst:2
+msgid "Связь пульта с приемником"
+msgstr "Receiver connection"
+
+# 1d070f5a524044e0b0efd8d2e7e5395e
+#: ../../settings/rc_connection.rst:4
+msgid ""
+"Для того, чтобы пульт и приемник могли работать в паре, необходимо провести "
+"специальную процедуру привязки. Чтобы связать пульт с определенным "
+"приемником, необходимо выполнить действия, описанные ниже."
+msgstr ""
+"To control the drone with RC unit, a binding operation is required. Follow "
+"this manual to perform it. "
+
+# 69824a5b1a6e45cba2289706cd7793ce
+#: ../../settings/rc_connection.rst:6
+msgid ""
+"Чтобы избежать ситуации одновременного управления несколькими "
+"квадрокоптерами с одного пульта, разрешается связывать только один пульт с "
+"одним приемником."
+msgstr ""
+"Controlling several drones using one RC unit might cause crashes. Do not "
+"bind more than one receiver to one controller."
+
+# fe5a78d23e674b539162f4435642a287
+#: ../../settings/rc_connection.rst:11
+msgid "Включите пульт дистанционного управления"
+msgstr "Turn the RC unit on"
+
+# 6824c4de3b4842358da165889917c584
+#: ../../settings/rc_connection.rst:12
+msgid "Войдите в меню настроек"
+msgstr "Use touchscreen to to navigate the settings menu. "
+
+# 4dbde35db32942c99ab28f023f1971ff
+#: ../../settings/rc_connection.rst:13
+msgid ""
+"Во вкладке SYSTEM выберите пункт Rx Bind. Появится надпись «Binding to RX…»"
+msgstr ""
+"Select Rx Bind in \"System\" tab. \"Binding to Rx..\" should appera on the "
+"screen."
+
+# 118105a9ba8e48d39ffc1cbcb51ffe54
+#: ../../settings/rc_connection.rst:14
+msgid ""
+"Найдите на приемнике кнопку с обозначением «BIND», нажмите и удерживайте ее."
+msgstr "Press and hold \"BIND\" button on the receiver."
+
+# 32091e42f72a460f8d695ab3231d3085
+#: ../../settings/rc_connection.rst:15
+msgid ""
+"Держа кнопку зажатой, подайте питание на квадрокоптер, подключив аккумулятор"
+msgstr "While holding the button, plug in the battery to turn quadcopter on."
+
+# 6b73150cd34247e5b1ad406df2757d75
+#: ../../settings/rc_connection.rst:16
+msgid ""
+"Выйдите из настройки Rx Bind. Квадрокоптер должен отреагировать на это "
+"действие звуковым сигналом."
+msgstr ""
+"Leave the Rx bind mode on the controller. The drone should beep once after "
+"this. A light on the receiver should not blink."
+
+# bf7be1fbe39f491bade668f76e12b257
+#: ../../settings/rc_connection.rst:20
+msgid ""
+"В случае если моторы не вращаются, и квадрокоптер никак не реагирует на "
+"сигналы, посылаемые с пульта, повторите процедуру привязки или обратитесь в "
+"техническую поддержку по адресу: support@geoscan.aero"
+msgstr ""
+"If the drone doesn't react on controller signals, try re-bind its receiver "
+"once again. If this doesn't solve the problem, contact Geoscan helpdesk: "
+"support@geoscan.aero"
+
+# a11846d824d643c5b4a22655da3d7e9b
+#: ../../settings/rc_connection.rst:22
+msgid ""
+"Процедура привязки работает только для приемника FlySky-A8S. При включении "
+"пульта квадрокоптер издаст звуковой сигнал."
+msgstr "Binding procedure works for FlySky-A8S receiver. "

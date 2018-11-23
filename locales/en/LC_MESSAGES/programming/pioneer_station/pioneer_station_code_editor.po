@@ -1,0 +1,131 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018, Geoscan ltd
+# This file is distributed under the same license as the pioneer-doc-en
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
+# 
+# Translators:
+# kuznetckiy <r.kuzneckiy@geoscan.aero>, 2018
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: pioneer-doc-en\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-11-20 10:28+0300\n"
+"PO-Revision-Date: 2018-11-22 14:11+0000\n"
+"Last-Translator: kuznetckiy <r.kuzneckiy@geoscan.aero>, 2018\n"
+"Language-Team: English (https://www.transifex.com/geoscan/teams/93851/en/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+"Language: en\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+# 38264475634c462d9af525e325d47556
+#: ../../programming/pioneer_station/pioneer_station_code_editor.rst:2
+msgid "Редактор кода"
+msgstr "Code editor"
+
+# 38f06fddaaad4424aad385a4d4bbfed2
+#: ../../programming/pioneer_station/pioneer_station_code_editor.rst:4
+msgid "Данный разде описывает работу в редакторе кода Pioneer station"
+msgstr "This section describes code editor operation in Pioneer Station"
+
+# bf6003a9ec824caaa952202d3e68baae
+#: ../../programming/pioneer_station/pioneer_station_code_editor.rst:6
+msgid ""
+"Основное окно **Pioneer station** представлено редактором кода. В данном "
+"окне Вы можете вести разработку программного кода полетного задания "
+"\"Пионера\" на языке Lua."
+msgstr ""
+"In Pioneer Station, main tab represents code editor. Here you can develop "
+"flight mission code for Pioneer."
+
+# 2d5a9af426b8414cb7b3cf64b519a037
+#: ../../programming/pioneer_station/pioneer_station_code_editor.rst:8
+msgid "Главное меню редактора кода:"
+msgstr "Code editor main menu:"
+
+# 034592875b684b54b58009836f52d390
+#: ../../programming/pioneer_station/pioneer_station_code_editor.rst:13
+msgid "Назначение кнопок меню редактора:"
+msgstr "Control buttons:"
+
+# 6473cd060bf14838beeef9b71258353f
+#: ../../programming/pioneer_station/pioneer_station_code_editor.rst:16
+msgid "Создать новый файл"
+msgstr "Create new file"
+
+# 78bf3d9cc59d49f3960e5e3ee6397bb3
+#: ../../programming/pioneer_station/pioneer_station_code_editor.rst:19
+msgid "Открыть файл из папки"
+msgstr "Open file"
+
+# 27bcd93b643d4de5b47f4906bfbdb427
+#: ../../programming/pioneer_station/pioneer_station_code_editor.rst:22
+msgid "Сохранить файл"
+msgstr "Save"
+
+# 56c63225d2544b3fa03dcac403ee5e98
+#: ../../programming/pioneer_station/pioneer_station_code_editor.rst:25
+msgid "Сохранить как"
+msgstr "Save as"
+
+# 2c087d70af504dc9ad5f837e181f931c
+#: ../../programming/pioneer_station/pioneer_station_code_editor.rst:28
+msgid "Выбор одной из готовых программ примеров"
+msgstr "Open example "
+
+# 13d55a5790654860be967a4e8312d18b
+#: ../../programming/pioneer_station/pioneer_station_code_editor.rst:31
+msgid "Вырезать блок кода"
+msgstr "Cut"
+
+# 0d333a9534f848528b23e261f80e0df5
+#: ../../programming/pioneer_station/pioneer_station_code_editor.rst:34
+msgid "Скопировать блок кода"
+msgstr "Copy"
+
+# 4e0ec2edaae34b09aac198c15efeeff2
+#: ../../programming/pioneer_station/pioneer_station_code_editor.rst:37
+msgid "Вставить блок кода"
+msgstr "Paste"
+
+# 5cd9cdb7944a42deaec272d89ea4d211
+#: ../../programming/pioneer_station/pioneer_station_code_editor.rst:40
+msgid "Поиск"
+msgstr "Search"
+
+# 95e1eab76eef4df3b25019e2d8a8da72
+#: ../../programming/pioneer_station/pioneer_station_code_editor.rst:43
+msgid "Замена"
+msgstr "Insert"
+
+# 527069a55f024743884bcff9838ad57f
+#: ../../programming/pioneer_station/pioneer_station_code_editor.rst:46
+msgid "Настройки редактора"
+msgstr "Code editor"
+
+# 4c36bc902fb941f3862a4c76121857ff
+#: ../../programming/pioneer_station/pioneer_station_code_editor.rst:49
+msgid "Справка"
+msgstr "Help"
+
+# aa87c5b39c9c48af8c41ac63c971c071
+#: ../../programming/pioneer_station/pioneer_station_code_editor.rst:52
+msgid "Увеличить масштаб"
+msgstr "Enlarge"
+
+# bdbb62823db640259d37906d5f098474
+#: ../../programming/pioneer_station/pioneer_station_code_editor.rst:55
+msgid "Уменьшить масштаб"
+msgstr "Reduce"
+
+# a0dcc0c5dbcb4be59a68d0b5254adb75
+#: ../../programming/pioneer_station/pioneer_station_code_editor.rst:57
+msgid ""
+"Загрузить программу на \"Пионер\" (активна только при подключении к "
+"квадракоптеру)"
+msgstr "Upload code to Pioneer (active when drone connected) "

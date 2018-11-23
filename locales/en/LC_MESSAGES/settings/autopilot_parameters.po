@@ -1,0 +1,88 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018, Geoscan ltd
+# This file is distributed under the same license as the pioneer-doc-en
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
+# 
+# Translators:
+# kuznetckiy <r.kuzneckiy@geoscan.aero>, 2018
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: pioneer-doc-en\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-11-20 10:28+0300\n"
+"PO-Revision-Date: 2018-11-22 14:12+0000\n"
+"Last-Translator: kuznetckiy <r.kuzneckiy@geoscan.aero>, 2018\n"
+"Language-Team: English (https://www.transifex.com/geoscan/teams/93851/en/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+"Language: en\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+# 610188137b5d40c492a9b85f47ae2688
+#: ../../settings/autopilot_parameters.rst:2
+msgid "Настройка параметров автопилота"
+msgstr "Autopilot parameters setting"
+
+# b3a56101804e4e358b69250b2fa30e20
+#: ../../settings/autopilot_parameters.rst:4
+msgid ""
+"Параметры полета квадрокоптера в автоматическом режиме можно тонко "
+"настроить, используя программу `Pioneer Station`_. Для этого подключите "
+"\"Пионер\" к компьютеру следуя `инструкции`_ и перейдите из вкладки "
+"\"редактор кода\" в \"настройки параметров автопилота\""
+msgstr ""
+"Autopilot parameters can be set precisely using `Pioneer Station`_. Follow "
+"the `manual`_ to connect Pioneer to your PC. Switch to \"autopilot "
+"parameters setting\" tab."
+
+# d457bac38b174c1ba416eeca9be68cfc
+#: ../../settings/autopilot_parameters.rst:10
+msgid ""
+"Для настройки \"Пионер\" должен быть подключен к компьютеру, его текущие "
+"параметры должны отображаться в правой части окна."
+msgstr ""
+"To perform a setting, Pioneer should be connected to PC and its current "
+"parameters should be displayed in right part of Pioneer station window."
+
+# 29d96d7097db434e9e9af9681019c473
+#: ../../settings/autopilot_parameters.rst:15
+msgid ""
+"Перейдите во вкладку \"параметры автопилота\". В первом столбце таблицы "
+"приведены названия параметров. Узнать, за что каждый из них отвечает, можно,"
+" посмотрев в крайний правый столбец. Во втором столбце отображаются текущие "
+"значения, присвоенные каждому из параметров. Если вы хотите поменять какое-"
+"либо из них, введите новое значение в столбец справа от текущего значения и "
+"нажмите Enter. Завершив редактирование, не забудьте сохранить изменения, "
+"нажав кнопку **сохранить изменения на автопилот**."
+msgstr ""
+"Switch to \"autopilot parameters setting\" tab. Left column represents "
+"parameters, their current values are displayed in the second column. To "
+"change any of them, click to the right of selected parameter and type the "
+"new value in, then press Enter. Don't forget to save the changes by clicking"
+" **save changes to autopilot**."
+
+# a5350566c8af476183b95a6562f95d84
+#: ../../settings/autopilot_parameters.rst:18
+msgid ""
+"В верхней части окна также пристутствуют кнопки **LPS**, **GPS** и **OPT**. "
+"Каждая из них загружает в квадрокоптер стандартный набор параметров для "
+"полета, соответственно, в локальной системе позиционирования, с "
+"использованием модуля GPS/ГЛОНАСС и модуля оптического позиционирования."
+msgstr ""
+"**LPS**, **GPS** and **OPT** buttons are situated in the top part of the "
+"window. Each is responsible for loading a standard set of parameters for "
+"indoor positioning system, GPS and optical flow mode respectively."
+
+# be4683b2bf9b4434824bf8b7c9cd9210
+#: ../../settings/autopilot_parameters.rst:21
+msgid ""
+"Если вы хотите вернуться к заводским настройкам, нажмите кнопку **сбросить "
+"по умолчанию** над таблицей и подождите пока \"Пионер\" перезапустится."
+msgstr ""
+"If you want to return to factory preset, click **return to default** button "
+"above the table and wait until Pioneer reboots."

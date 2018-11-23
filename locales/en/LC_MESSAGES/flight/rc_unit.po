@@ -1,0 +1,189 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018, Geoscan ltd
+# This file is distributed under the same license as the pioneer-doc-en
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
+# 
+# Translators:
+# kuznetckiy <r.kuzneckiy@geoscan.aero>, 2018
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: pioneer-doc-en\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-11-20 10:28+0300\n"
+"PO-Revision-Date: 2018-11-22 14:10+0000\n"
+"Last-Translator: kuznetckiy <r.kuzneckiy@geoscan.aero>, 2018\n"
+"Language-Team: English (https://www.transifex.com/geoscan/teams/93851/en/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+"Language: en\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+# 4b72f03b946c411aace1aaf61138bc87
+#: ../../flight/rc_unit.rst:2
+msgid "Пульт радиоуправления"
+msgstr "RC unit"
+
+# 48bd0c10a7224cc7948ba05f81b07173
+#: ../../flight/rc_unit.rst:4
+msgid ""
+"Данный раздел описывает процесс управления квадрокоптером \"Пионер\" с "
+"помощью аппаратуры FlySky i6S."
+msgstr ""
+"This section describes the basics of Pioneer controls using FlySky i6S "
+
+# fd583ee8c86e48dea448befcde782af8
+#: ../../flight/rc_unit.rst:9
+msgid ""
+"По умолчанию пульт готов к эксплуатации и не требует дополнительной "
+"настройки или привязки."
+msgstr ""
+"By default the controller is ready to use and doesn't require any additional"
+" setting"
+
+# e9965d2957854aa38871c9290953ee07
+#: ../../flight/rc_unit.rst:10
+msgid ""
+"Квадрокоптер совместим с пультами управления, которые поддерживают протокол "
+"PPM и работают с приемником FlySky."
+msgstr ""
+"The drone is compatible with PPM protocol based controllers and uses a "
+"FlySky receiver"
+
+# 6b35846df0b043418d91c106793b3965
+#: ../../flight/rc_unit.rst:11
+msgid "Используйте стики для управления полетом квадрокоптера."
+msgstr "Use both sticks to control the drone"
+
+# 9d92a8fcadc6407594f6192533877478
+#: ../../flight/rc_unit.rst:12
+msgid ""
+"Используйте переключатель режимов для выбора режима полета квадрокоптера."
+msgstr "Use the mode switch to change the flight mode"
+
+# 16f4d328bb3549d9ad91dabec40b1920
+#: ../../flight/rc_unit.rst:13
+msgid ""
+"Чтобы включить пульт, нажмите и удерживайте кнопки включения/выключения "
+"одновременно."
+msgstr "Push and hold both power buttons to turn the controller on/off"
+
+# a31f6c75b65c43f4abb37f8f5e95be78
+#: ../../flight/rc_unit.rst:18
+msgid "**Изменение режима работы пульта:**"
+msgstr "**Changing the controller mode**"
+
+# 53f37fbf82a34cfd91a6e99588d30772
+#: ../../flight/rc_unit.rst:20
+msgid ""
+"Используйте переключатель SWB. Переключатель в верхнем положении – Режим "
+"управления с пульта – выбор режима полета переключателем SWC."
+msgstr ""
+"Use SWB switch. The top position is for manual control mode. To set the "
+"flight mode use SWC switch"
+
+# 149ca0c669a64da68787c4a9333b0e24
+#: ../../flight/rc_unit.rst:21
+msgid ""
+"Переключатель в среднем положении – режим автоматического удержания "
+"положения с системой навигации или с GPS – Управление квадрокоптером "
+"происходит с пульта."
+msgstr ""
+"SWB switch in middle position turns loiter mode on. You can control the "
+"drone but it will hold its position and altitude automatically"
+
+# 532aeeef503f4d0c9866317398ffe68c
+#: ../../flight/rc_unit.rst:22
+msgid ""
+"Переключатель в нижнем положении – режим автоматического полета по "
+"программе."
+msgstr ""
+"SWB switch in lower position activates a pre-programmed \"mission\" flight "
+"mode"
+
+# e2048990268148c2bc88faf25e7131a6
+#: ../../flight/rc_unit.rst:23
+msgid ""
+"Во время полета по программе пилот может всегда взять управление на себя и "
+"переключиться в режим ручного управления."
+msgstr ""
+"When performing a mission flight, the operator can take controls by witching"
+" in loiter or manual control using SWB switch"
+
+# 197e40e2539b416a9894cdf7e642ddbc
+#: ../../flight/rc_unit.rst:25
+msgid "**Изменение режима полета:**"
+msgstr "**Flight mode set**"
+
+# 2f619805eca2472ab85da00e5bfe5593
+#: ../../flight/rc_unit.rst:27
+msgid ""
+"Используйте переключатель SWC на пульте. Переключатель в верхнем положении –"
+" Режим стабилизации – Стик газа отвечает за изменение уровня мощности, "
+"подаваемой на моторы."
+msgstr ""
+"Use SWC switch. In top position - althold mode on. In this mode throttle "
+"stick changes the power output of motors."
+
+# 67cb8b4d8def4d2a9b3b920295d3e58f
+#: ../../flight/rc_unit.rst:28
+msgid ""
+"Переключатель в среднем положении – Режим удержания высоты – квадрокоптер "
+"автоматически удерживает высоту, стик газа отвечает за изменение "
+"вертикальной скорости."
+msgstr ""
+"SWC switch in middle position activates stabilize mode. Drone will self-"
+"level on pithch and roll. The lower SWC switch activates headless mode."
+
+# a0bf5e489c9144159124b94ddf1b215e
+#: ../../flight/rc_unit.rst:29
+msgid ""
+"Если поставить стик газа по центру, квадрокоптер будет удерживать высоту. "
+"Если переместить стик вверх, квадрокоптер начнет подниматься, чем дальше от "
+"центра, тем быстрее."
+msgstr ""
+"If you leave the throttle stick in middle position, the drone will hold "
+"current altitude. If the stick is moved up, the quadcopter will gain "
+"altitude"
+
+# c18b4b81ca274319a2c08b572ae9f810
+#: ../../flight/rc_unit.rst:30
+msgid ""
+"Если переместить стик газа вниз, квадрокоптер начнет снижаться. "
+"Переключатель в нижнем положении – Режим удержания высоты и курса."
+msgstr ""
+"If throttle stick is moved down, the drone will loose altitude. SW& switch "
+"in lower position activates loiter mode"
+
+# 28c17d33ee2b49588f830f1c03d6a0cd
+#: ../../flight/rc_unit.rst:31
+msgid ""
+"Управление высотой происходит как в предыдущем режиме. Отличие в том, что "
+"квадрокоптер запоминает направление курса в момент включения моторов."
+msgstr ""
+"Altitude control is the same as before, but quadcopter will remember yaw "
+"direction when armed"
+
+# 9883bf7b6f55480fa29b2356b611c1cc
+#: ../../flight/rc_unit.rst:32
+msgid ""
+"Далее можно вращать квадрокоптер по углу рыскания, при этом направления "
+"вперед/назад и влево/вправо будут неизменны."
+msgstr ""
+"You can spin the drone with yaw stick but it will maintain the primary "
+"orientation"
+
+# 89c67507593a4c5d89903572d1b417a1
+#: ../../flight/rc_unit.rst:34
+msgid ""
+"Для определения высоты полетный контроллер использует барометр, который "
+"измеряет атмосферное давление. Если давление воздуха меняется, аппарат будет"
+" реагировать на изменение давления, а не на изменения фактической высоты."
+msgstr ""
+"Flight controller uses a barometric sensor to estimate the altitude. When "
+"the pressure is changed, the drone will react according to it, not actual "
+"altitude change"

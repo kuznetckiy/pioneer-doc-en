@@ -1,0 +1,114 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018, Geoscan ltd
+# This file is distributed under the same license as the pioneer-doc-en
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
+# 
+# Translators:
+# kuznetckiy <r.kuzneckiy@geoscan.aero>, 2018
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: pioneer-doc-en\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-11-20 10:28+0300\n"
+"PO-Revision-Date: 2018-11-22 14:12+0000\n"
+"Last-Translator: kuznetckiy <r.kuzneckiy@geoscan.aero>, 2018\n"
+"Language-Team: English (https://www.transifex.com/geoscan/teams/93851/en/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+"Language: en\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+# 852c4cafd15747fb93e347467ba593ce
+#: ../../settings/firmware_upgrade.rst:2
+msgid "Обновление прошивки"
+msgstr "Firmware update"
+
+# 006904afba114011a67194a8bb131ca9
+#: ../../settings/firmware_upgrade.rst:3
+msgid ""
+"Для корректной работы всех систем \"Пионера\" рекомендуется устанавливать "
+"последнюю актуальную версию прошивки. Для этого на вашем компьютере должна "
+"быть установлена программа Pioneer Station. Если у вас ее нет, нажмите "
+"`скачать установщик Pioneer Station`_, загрузка начнется автоматически. "
+"После этого необходимо запустить скачаный exe файл."
+msgstr ""
+"For Pioneer to perform correctly, it is recommended to upload the last "
+"version of firmware. You need to have Pioneer station installed on your PC. "
+"If you don't have it, click `download Pioneer Station`_ and run the acquired"
+" .exe file."
+
+# 3126e10f99994777aa020eab9503360b
+#: ../../settings/firmware_upgrade.rst:6
+msgid ""
+"Если программа не запускается, попробуйте `скачать 32bit версию`_, "
+"распаковать архив и запустить run.bat."
+msgstr ""
+"If program doesn't run, try to `download 32bit version`_, unpack the archive"
+" and open run.bat file."
+
+# 6f97656b91214f6baf0ebb461da613ae
+#: ../../settings/firmware_upgrade.rst:12
+msgid ""
+"Далее нужно перевести \"Пионер\" в режим обновления. Зажав и удерживая "
+"кнопку \"Старт\" подключите квадрокоптер к компьютеру через usb кабель. При "
+"этом должны зажечься светодиоды \"передача\", \"прием\", \"статус\", "
+"\"ошибка\"."
+msgstr ""
+"Turn on firmware update more on Pioneer. Press \"Start\" button on it and "
+"connect the USB cable while holding the button pressed. All LEDs on the "
+"board should switch on."
+
+# e631cc2e55894ef4bed962b1bf0b73d3
+#: ../../settings/firmware_upgrade.rst:14
+msgid ""
+"Запустите Pioneer Station, нажмите на значок квадрокоптера в левом верхнем "
+"углу окна программы. В выпадающем меню нажмите \"обновление прошивки\" и "
+"следуйте инструкциям помощника."
+msgstr ""
+"Run Pioneer Station and click the quadcopter icon in the top left corner of "
+"the window. Select \"firmware update\" and follow the appearing "
+"instructions."
+
+# 2134eb2c5d4e40d88367260d3888ec2b
+#: ../../settings/firmware_upgrade.rst:17
+msgid ""
+"Если при выборе устройства квадрокоптер не отображается в окне, попробуйте "
+"переподключить его и перезапустить программу. Если это не помогло, "
+"попробуйте `скачать и установить драйвер порта`_, после чего переподключите "
+"\"Пионер\" и перезапустите программу."
+msgstr ""
+"If quadcopter is not shown in the window, try rebooting your PC and re-"
+"connect Pioneer. If this didn't help, `download and install port driver`_, "
+"then reload Pioneer Station and re-connect the drone."
+
+# fe30da548c7e42c680ed07ec67b05c72
+#: ../../settings/firmware_upgrade.rst:22
+msgid ""
+"При выборе источника прошивки рекомендуется выбрать пункт \"встроенный\", "
+"так вы установите последнюю актуальную версию."
+msgstr ""
+"It is recommended to select \"embedded\" source of firmware. That guarantees"
+" you install the latest version."
+
+# f86fdf91a3d0478baa73cea458ba1cba
+#: ../../settings/firmware_upgrade.rst:24
+msgid ""
+"Дождитесь окончания прошивки, это может занять несколько минут. После "
+"завершения нажмите \"ОК\", квадрокоптер перейдет в обычный режим работы."
+msgstr ""
+"Wait for the firmware update to finish, this can take a few minutes. Click "
+"OK button afterwards to switch Pioneer in standard connection mode."
+
+# 3fd2edb22aab4e15b59e679b84f93e61
+#: ../../settings/firmware_upgrade.rst:26
+msgid ""
+"Если Вы столкнулись с проблемой обновления прошивки или работы \"Пионера\", "
+"напишите в техподдержку Геоскан support@geoscan.aero"
+msgstr ""
+"If any problem occurs during Pioneer update or usage, feel free to contact "
+"our helpdesk via support@geoscan.aero"

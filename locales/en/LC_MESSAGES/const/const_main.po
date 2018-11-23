@@ -1,0 +1,65 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018, Geoscan ltd
+# This file is distributed under the same license as the pioneer-doc-en
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
+# 
+# Translators:
+# kuznetckiy <r.kuzneckiy@geoscan.aero>, 2018
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: pioneer-doc-en\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-11-20 10:28+0300\n"
+"PO-Revision-Date: 2018-11-22 14:09+0000\n"
+"Last-Translator: kuznetckiy <r.kuzneckiy@geoscan.aero>, 2018\n"
+"Language-Team: English (https://www.transifex.com/geoscan/teams/93851/en/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+"Language: en\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+# 58d4f1cbb18144d29e9c7e64ada48a5c
+#: ../../const/const_main.rst:2
+msgid "Сборка \"Пионера\""
+msgstr "Pioneer assembly"
+
+# fa84d1ebd1b74324a5484038b7539e91
+#: ../../const/const_main.rst:8
+msgid ""
+"Базовый набор \"Пионера\" включает в себя все необходимые элементы и "
+"инструменты для сборки и запуска квадрокоптера."
+msgstr ""
+"The stock Pioneer kit contains all necessary parts and tools to assemble and"
+" launch it."
+
+# 952877d5dd1d487b93724b1e252eb829
+#: ../../const/const_main.rst:19
+msgid "Сборка \"Пионера\" осуществляется в два этапа:"
+msgstr "Pioneer assembly is executed in two stages:"
+
+# 7505ee28e6b44137a896611f30c46724
+#: ../../const/const_main.rst:21
+msgid "`Сборка рамы`_"
+msgstr "`Frame assembly`_"
+
+# 4313c04fc01c41b6ba0b4261d9053ab4
+#: ../../const/const_main.rst:25
+msgid "`Сборка защиты`_"
+msgstr "`Protection assembly`_"
+
+# be98fe1331e14779b33ce7cb407f51fa
+#: ../../const/const_main.rst:29
+msgid ""
+"Подключение дополнительных модулей описано в разделе `Дополнительные "
+"модули`_"
+msgstr "Extra modules connection is described in `Extra modules`_"
+
+# 1b31ea1bd30b4af787b154159654995e
+#: ../../const/const_main.rst:35
+msgid "Содержание:"
+msgstr "Content:"
