@@ -24,7 +24,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 # c2f5efd0d6ba4297b2fddf61b4bade13
-#: ../../indoor_nav.rst:2
+#: ../../indoor_nav.rst:1
 msgid "Система навигации в помещении Геоскан Локус"
 msgstr "Indoor navigation system Geoscan Locus"
 
