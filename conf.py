@@ -20,8 +20,8 @@
 # -- Project information -----------------------------------------------------
 
 project = 'Pioneer'
-copyright = '2018, Geoscan ltd'
-author = 'Geoscan ltd'
+copyright = '2018, Geoscan LTD'
+author = 'Geoscan LTD'
 
 # The short X.Y version
 version = ''
