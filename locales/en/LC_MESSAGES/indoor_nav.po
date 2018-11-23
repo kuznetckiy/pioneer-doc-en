@@ -12,10 +12,10 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pioneer-doc-en\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-11-20 10:28+0300\n"
-"PO-Revision-Date: 2018-11-23 07:37+0000\n"
+"POT-Creation-Date: 2018-11-19 12:39+0300\n"
+"PO-Revision-Date: 2018-11-19 12:58+0000\n"
 "Last-Translator: kuznetckiy <r.kuzneckiy@geoscan.aero>, 2018\n"
-"Language-Team: English (https://www.transifex.com/geoscan/teams/93851/en/)\n"
+"Language-Team: English (https://www.transifex.com/geoscan/teams/93751/en/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -23,12 +23,10 @@ msgstr ""
 "Language: en\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-# c2f5efd0d6ba4297b2fddf61b4bade13
 #: ../../indoor_nav.rst:1
 msgid "Система навигации в помещении Геоскан Локус"
 msgstr "Indoor navigation system Geoscan Locus"
 
-# 1a6fa5fd6f0e4a6f8aae447a16e814ad
 #: ../../indoor_nav.rst:3
 msgid ""
 "Система позволяет создать контролируемую полетную зону размером до 10х10х4 "
@@ -39,49 +37,40 @@ msgstr ""
 "10х10х4 meters. Safe and precise quadcopter control is provided without "
 "using global navigational systems (GPS/ГЛОНАСС) "
 
-# 8051ad1ee7b24a25aaf943b4616d9c27
 #: ../../indoor_nav.rst:8
 msgid "`Скачать инструкцию по настройке системы навигации`_"
 msgstr "`Download LPS setting manual`_"
 
-# ee151e16a2b045d197568feca6b1e489
 #: ../../indoor_nav.rst:10
 msgid "Система включает в себя:"
 msgstr "The system includes:"
 
-# bd19659aa7584a1186df11c27e835173
 #: ../../indoor_nav.rst:12
 msgid "блок управления;"
 msgstr "control module;"
 
-# 40fd47541b9440d09a7d12be71705d04
 #: ../../indoor_nav.rst:13
 msgid "4 ультразвуковых излучателя;"
 msgstr "4 ultrasonic transducers;"
 
-# fff141721ee141e3b106d1747f603490
 #: ../../indoor_nav.rst:14
 msgid "бортовой модуль;"
 msgstr "onboard module;"
 
-# 2bd5963dbeff4ea9b1cb673d3faebeb9
 #: ../../indoor_nav.rst:15
 msgid "соединительные провода;"
 msgstr "connection cables;"
 
-# 57b79bde9ef1497f9c206d0243e238be
 #: ../../indoor_nav.rst:16
 msgid ""
 "программу LPS для синхронизации с компьютером (`скачать последнюю версию`_ "
 ");"
 msgstr "LPS software to sync with PC (`download latest version`_);"
 
-# a74cd463dd52476a80eb6f468f6a442c
 #: ../../indoor_nav.rst:21
 msgid "Установка полетной зоны"
 msgstr "Flyzone setting"
 
-# c2197c15b12f45bc8e9622b6cde82ced
 #: ../../indoor_nav.rst:27
 msgid ""
 "Вначале необходимо установить и подключить датчики в будущей зоне полета. "
@@ -93,17 +82,14 @@ msgstr ""
 "Transducers should be placed in the top corners of it in a way that they "
 "point in its centre. These conditions should be considered:"
 
-# c5e3eba7590d4cbdaefc695a2a5387e2
 #: ../../indoor_nav.rst:29
 msgid "минимальная высота установки излучателей - 2 м"
 msgstr "minimum installation height - 2 m"
 
-# 78be0dd01c764bad8c3320628028881e
 #: ../../indoor_nav.rst:30
 msgid "минимальная дистанция между излучателями  - 3 м"
-msgstr "minimal distance -3 m"
+msgstr "minimal distance  -3 m"
 
-# 8e43de6b5913433a93759995190535ba
 #: ../../indoor_nav.rst:32
 msgid ""
 "Далее комплектыми проводами каждый датчик соединяется с блоком управления "
@@ -115,7 +101,6 @@ msgstr ""
 "socket of control module. The module itself should be placed outside of the "
 "zone and connected to USB port of a PC."
 
-# 38f7680281ef4416b5e63841ea604169
 #: ../../indoor_nav.rst:34
 msgid ""
 "Взаимодействие между блоком управления и бортовым модулем осуществляется по "
@@ -128,7 +113,6 @@ msgstr ""
 " the distance between the transducers and their installation height. A "
 "square is the most convenient and easy to set form of flight zone. "
 
-# d49c291ffd7246f0a0e9f442d44e5df7
 #: ../../indoor_nav.rst:40
 msgid ""
 "На рисунке показан интерфейс программы LPS, которая используется при "
@@ -138,7 +122,6 @@ msgstr ""
 "LPS user interface is shown on the picture. The program is used to calibrate"
 " the positioning system. Fill in the empty beacon coordinates:"
 
-# f6385cdf8192450a8a902dc58ef303ca
 #: ../../indoor_nav.rst:42
 msgid ""
 "Расстояние (в метрах) между излучателем 1 и 2 делится на 2. Полученное "
@@ -147,9 +130,8 @@ msgid ""
 msgstr ""
 "The distance (in meters) between 1 and 2 transducers is divided by 2. The "
 "received value should be written in X string with a \"minus\" for №2 and №3 "
-"beacons and without \"minus\" for №1 and №4."
+"beacons and without \"minus\"  for  №1 and №4."
 
-# a1ff2822c78d4dcb95f7619632eddfaf
 #: ../../indoor_nav.rst:44
 msgid ""
 "Расстояние между излучателем 2 и 3 также делится на 2 и значение вводится в "
@@ -157,15 +139,13 @@ msgid ""
 "маяков №1 и №2."
 msgstr ""
 "The distance between 2 and 3 transducers is also divided by 2 and is put in "
-"the Y string with \"minus\" for №3 and №4 beacons and without it for №1 and "
-"№2."
+"the Y string with \"minus\" for  №3 and №4 beacons and without it for  №1 "
+"and №2."
 
-# 4ab06fdd2bff48089ccd7de8a1dacc7a
 #: ../../indoor_nav.rst:46
 msgid "В поле Z вводится высота каждого датчика над уровнем пола."
 msgstr "String Z is for each beacon's height above floor level."
 
-# fe7abcf42df24c61a4492062042a653c
 #: ../../indoor_nav.rst:48
 msgid ""
 "После ввода координат полетная зона сформирована и отображается в правом "
@@ -176,14 +156,12 @@ msgstr ""
 "right window with a green line. By default, its corners are 1 m away from "
 "the actual beacons."
 
-# 2664403ae6084dd9beacfd4125d93b95
 #: ../../indoor_nav.rst:52
 msgid ""
 "Параметры полетной зоны также могут быть заданы напрямую на блоке управления"
 msgstr ""
 "You can also set the flyzone parameters directly on the control module. "
 
-# 51c0529973f74e54bb47164c6df74e73
 #: ../../indoor_nav.rst:54
 msgid ""
 "Включение блока производится однократным нажатием на кнопку рядом с "
@@ -195,7 +173,6 @@ msgstr ""
 "\"status\" and white \"power\" light should appear. If they didn't, check "
 "the battery charge."
 
-# 3d554c6075594ab2be6ceb466bd92ad4
 #: ../../indoor_nav.rst:56
 msgid ""
 "В верхней части встроенного экрана отображается время с момента включения и "
@@ -208,14 +185,12 @@ msgstr ""
 "drops lower than 3 V, a \"status\" light will start to blink. To charge it, "
 "just connect the module to PC or a 5V2A charger."
 
-# d1a98db40ad74267a17f4ba23bffb0a6
 #: ../../indoor_nav.rst:58
 msgid ""
 "Отображение координат на экране блока управления аналогично интерфейсу "
 "программы LPS"
 msgstr "The coordinates are established in a same way as on LPS screen."
 
-# 982fd3b1757b4af1878b0b511a9a8e44
 #: ../../indoor_nav.rst:63
 msgid ""
 "Выбрав нужный пункт меню поворотом селектора, нажмите на селектор для "
@@ -226,7 +201,6 @@ msgstr ""
 "the desired value by twisting it and push once again to confirm the changes "
 "and go back to the menu."
 
-# ae15abfe6ff94e23b42f056a6c07d14f
 #: ../../indoor_nav.rst:65
 msgid ""
 "Перейдя на второй экран меню, можно настроить отступы от границы полетного "
@@ -237,7 +211,6 @@ msgstr ""
 "toggle \"Auto\" mode for automatic setting. You can also turn the flyzone "
 "limits off."
 
-# fc5d73ba3c814906b6d62f4b4f8a545f
 #: ../../indoor_nav.rst:71
 msgid ""
 "Для работы системы позиционирования подключение к компьютеру необязательно. "

@@ -1,0 +1,1566 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018, Geoscan ltd
+# This file is distributed under the same license as the pioneer-doc-en
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
+# 
+# Translators:
+# kuznetckiy <r.kuzneckiy@geoscan.aero>, 2018
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: pioneer-doc-en\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-11-19 12:39+0300\n"
+"PO-Revision-Date: 2018-11-19 12:58+0000\n"
+"Last-Translator: kuznetckiy <r.kuzneckiy@geoscan.aero>, 2018\n"
+"Language-Team: English (https://www.transifex.com/geoscan/teams/93751/en/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+"Language: en\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../../programming/lua/lua.rst:1
+msgid "Lua документация по API"
+msgstr "API documentation for Lua"
+
+#: ../../programming/lua/lua.rst:10
+msgid "Описание API функций взаимодействия с автопилотом"
+msgstr "Autopilot interaction API functions "
+
+#: ../../programming/lua/lua.rst:14
+msgid "Возвращает время с момента включения коптера."
+msgstr "Returns time since the moment of autopilot turn on"
+
+#: ../../programming/lua/lua.rst:18
+msgid ""
+"Возвращает разницу в секундах между временем коптера, которое можно получить"
+" функцией :func:`time`, и глобальным временем системы навигации."
+msgstr "Returns difference between :func:`time` and gnss time in seconds."
+
+#: ../../programming/lua/lua.rst:23
+msgid "Возвращает время запуска для системы навигации."
+msgstr "Returns launch time for navigation system."
+
+#: ../../programming/lua/lua.rst:27
+msgid ""
+"Останавливает выполнение скрипта на заданное время, допустимы дробные "
+"значения аргумента. **Рекомендуется использовать** :class:`Timer` **, так "
+"как sleep блокирует дальнейшее выполнение скрипта.**"
+msgstr ""
+"Pauses script execution for stated amount of time, argument may be "
+"fractional. **Recommended use** :class:`Timer` **, as *sleep* blocks further"
+" script execution.**"
+
+#: ../../programming/lua/lua.rst
+msgid "Параметры"
+msgstr "Parameters"
+
+#: ../../programming/lua/lua.rst:30
+msgid "время сна в секундах."
+msgstr "Sleep time in seconds."
+
+#: ../../programming/lua/lua.rst:34
+msgid "Получение идентификационного номера борта - доступно через переменную."
+msgstr "Returns aircraft ID - access using variable. "
+
+#: ../../programming/lua/lua.rst:36 ../../programming/lua/lua.rst:48
+#: ../../programming/lua/lua.rst:104 ../../programming/lua/lua.rst:161
+#: ../../programming/lua/lua.rst:206 ../../programming/lua/lua.rst:240
+#: ../../programming/lua/lua.rst:290
+msgid "**Пример**"
+msgstr "**Example**"
+
+#: ../../programming/lua/lua.rst:44
+msgid "Добавить событие автопилоту (см. :ref:`outluaevent`)."
+msgstr "Add autopilot event (look for  :ref:`outluaevent`)."
+
+#: ../../programming/lua/lua.rst:46
+msgid "номер события или название (например, ``Ev.COPTER_LANDED``)."
+msgstr "Event number or name (for example, ``Ev.COPTER_LANDED``)."
+
+#: ../../programming/lua/lua.rst:57
+msgid "Для полёта с использованием GPS."
+msgstr "for GPS mode flight."
+
+#: ../../programming/lua/lua.rst:59
+msgid "задается широта в градусах, умноженных на :math:`10^{-7}`;"
+msgstr "Set latitude in degrees, multiplied by :math:`10^{-7}`;"
+
+#: ../../programming/lua/lua.rst:60
+msgid "задается долгота в градусах, умноженных на :math:`10^{-7}`;"
+msgstr "Set longitude in degrees,  multiplied by :math:`10^{-7}`;"
+
+#: ../../programming/lua/lua.rst:61
+msgid "задается высота в метрах."
+msgstr "states altitude in meters."
+
+#: ../../programming/lua/lua.rst:63
+msgid "Пример `ap.goToPoint(600859810, 304206500, 50)`"
+msgstr "Example `ap.goToPoint(600859810, 304206500, 50)`"
+
+#: ../../programming/lua/lua.rst:67
+msgid "Для полёта с использованием локальной системы координат."
+msgstr "For local coordinate system flight."
+
+#: ../../programming/lua/lua.rst:69
+msgid "задается координата точки по оси `x`, в метрах;"
+msgstr "set `x` coordinate of the point in meters;"
+
+#: ../../programming/lua/lua.rst:70
+msgid "задается координата точки по оси `y`, в метрах;"
+msgstr "set `y` coordinate of the point in meters;"
+
+#: ../../programming/lua/lua.rst:71
+msgid "задается координата точки по оси `z`, в метрах;"
+msgstr "set `z` coordinate of the point in meters;"
+
+#: ../../programming/lua/lua.rst:72
+msgid ""
+"время, за которое коптер перейдет в следующую точку, в секундах. Если "
+"значение не указано, коптер стремится к точке с максимальной скоростью."
+msgstr ""
+"Time during which the drone will arrive to the next point in seconds. If "
+"value not set, the drone will move at max speed."
+
+#: ../../programming/lua/lua.rst:74
+msgid ""
+"Пример  ``ap.goToLocalPoint(1, 1, 1.2)`` или ``ap.goToLocalPoint(1, 1, 1.2, "
+"10)``"
+msgstr ""
+"Example ap.goToLocalPoint(1, 1, 1.2)`` or ``ap.goToLocalPoint(1, 1, 1.2, "
+"10)``"
+
+#: ../../programming/lua/lua.rst:78
+msgid "Установить рыскание."
+msgstr "Set yaw."
+
+#: ../../programming/lua/lua.rst:80
+msgid "угол в радианах."
+msgstr "angle in radian."
+
+#: ../../programming/lua/lua.rst:83
+msgid "RGB светодиоды"
+msgstr "RGB leds"
+
+#: ../../programming/lua/lua.rst:89
+msgid "Cоздать новый Ledbar с заданным количеством светодиодов."
+msgstr "Create new Ledbar with stated amount of leds."
+
+#: ../../programming/lua/lua.rst:91
+msgid "количество светодиодов."
+msgstr "Led amount."
+
+#: ../../programming/lua/lua.rst:95
+msgid "Установить цвет на конкретный светодиод."
+msgstr "Set each led colour."
+
+#: ../../programming/lua/lua.rst:97
+msgid ""
+"номер светодиода, нумеруются с 0 по 3 на плате, далее последовательно по "
+"подключенным модулям;"
+msgstr ""
+"Led number. Numeration 0 - 3 for main board, then for extra modules in "
+"series;"
+
+#: ../../programming/lua/lua.rst:98
+msgid "интенсивность красной компоненты цвета в интервале от [0;1];"
+msgstr "red colour component intensity in [0;1] interval;"
+
+#: ../../programming/lua/lua.rst:99
+msgid "интенсивность зеленой компоненты цвета в интервале от [0;1];"
+msgstr "green colour component intensity in [0;1] interval;"
+
+#: ../../programming/lua/lua.rst:100
+msgid "интенсивность синей компоненты цвета в интервале от [0;1]."
+msgstr "blue colour component intensity in [0;1] interval;"
+
+#: ../../programming/lua/lua.rst:102
+msgid "Смотри также :func:`fromHSV`"
+msgstr "Look for :func:`fromHSV`"
+
+#: ../../programming/lua/lua.rst:106
+msgid ""
+"К коптеру дополнительно подключен модуль с магнитом, на котором 4 RGB "
+"светодиода."
+msgstr "Cargo module includes a magnet and 4 RGB leds"
+
+#: ../../programming/lua/lua.rst:121
+msgid ""
+"Конвертирует представление цвета из HSV в RGB. Можно использовать для "
+"задания цвета светодиода."
+msgstr "Converts colour code from HSV to RGB. Can be used to set led colour."
+
+#: ../../programming/lua/lua.rst:123
+msgid "задает цветовой тон. Варьируется в пределах [0;360];"
+msgstr "set colour tone. Varies in [0;360] interval;"
+
+#: ../../programming/lua/lua.rst:124
+msgid "задает насыщенность. Варьируется в пределах [0;100];"
+msgstr "set saturation. Varies in [0:100] interval;"
+
+#: ../../programming/lua/lua.rst:125
+msgid "задает значение цвета. Варьируется в пределах [0;100];"
+msgstr "set colour; Varies in [0:100] interval;"
+
+#: ../../programming/lua/lua.rst
+msgid "Результат"
+msgstr "Result"
+
+#: ../../programming/lua/lua.rst:126
+msgid "Возвращает три компонеты цвета r, g, b."
+msgstr "Returns RGB colour components."
+
+#: ../../programming/lua/lua.rst:129
+msgid "GPIO"
+msgstr "GPIO"
+
+#: ../../programming/lua/lua.rst:135
+msgid "Cоздать GPIO на порте с настройками."
+msgstr "create GPIO in settings port."
+
+#: ../../programming/lua/lua.rst:137
+msgid "Gpio.A; Gpio.B; ... Gpio.E;"
+msgstr "Gpio.A; Gpio.B; ... Gpio.E;"
+
+#: ../../programming/lua/lua.rst:138
+msgid "номер пина на порте;"
+msgstr "pin number on port;"
+
+#: ../../programming/lua/lua.rst:139
+msgid "Gpio.INPUT, Gpio.Output, Gpio.ALTFU."
+msgstr "Gpio.INPUT, Gpio.Output, Gpio.ALTFU."
+
+#: ../../programming/lua/lua.rst:143
+msgid "Получить значение."
+msgstr "Returns value."
+
+#: ../../programming/lua/lua.rst:147
+msgid "Установить значение в 1."
+msgstr "Set value in 1."
+
+#: ../../programming/lua/lua.rst:151
+msgid "Установить значение в 0."
+msgstr "Set value in 0."
+
+#: ../../programming/lua/lua.rst:155
+msgid "установить значение."
+msgstr "Set value."
+
+#: ../../programming/lua/lua.rst:159
+msgid "Задать номер альтернативной функции."
+msgstr "Set alternative function number."
+
+#: ../../programming/lua/lua.rst:174
+msgid "UART"
+msgstr "UART"
+
+#: ../../programming/lua/lua.rst:180
+msgid "Cоздать Uart на порте с настройками."
+msgstr "Create UART in settings port."
+
+#: ../../programming/lua/lua.rst:182
+msgid "номер UART;"
+msgstr "UART number; "
+
+#: ../../programming/lua/lua.rst:183
+msgid "скорость;"
+msgstr "speed;"
+
+#: ../../programming/lua/lua.rst:184
+msgid ""
+"Uart.PARITY_NONE, Uart.PARITY_EVEN, Uart.PARITY_ODD, необязательный "
+"параметр, по умолчанию Uart.PARITY_NONE;"
+msgstr ""
+"Uart.PARITY_NONE, Uart.PARITY_EVEN, Uart.PARITY_ODD, not necessary "
+"parameter, by default Uart.PARITY_NONE;"
+
+#: ../../programming/lua/lua.rst:185
+msgid ""
+"Uart.ONE_STOP, Uart.TWO_STOP, необязательный параметр, по умолчанию "
+"Uart.ONE_STOP."
+msgstr ""
+"Uart.ONE_STOP, Uart.TWO_STOP, not necessary parameter, by default "
+"Uart.ONE_STOP."
+
+#: ../../programming/lua/lua.rst:189 ../../programming/lua/lua.rst:230
+msgid "Прочитать ``size`` байт."
+msgstr "Read \"size\" byte."
+
+#: ../../programming/lua/lua.rst:193 ../../programming/lua/lua.rst:234
+msgid "Записать данные (data) длиной (size)."
+msgstr "Write (data) (size)."
+
+#: ../../programming/lua/lua.rst:197
+msgid "Количество данных доступных для чтения."
+msgstr "Amount of data available to be read."
+
+#: ../../programming/lua/lua.rst:201
+msgid "Установить скорость."
+msgstr "Set speed."
+
+#: ../../programming/lua/lua.rst:203
+msgid "скорость uart."
+msgstr "UART speed."
+
+#: ../../programming/lua/lua.rst:215
+msgid "SPI"
+msgstr "SPI"
+
+#: ../../programming/lua/lua.rst:221
+msgid "Cоздать Spi на порте с настройками."
+msgstr "Create SPI in settings port."
+
+#: ../../programming/lua/lua.rst:223
+msgid "номер Spi"
+msgstr "SPI number."
+
+#: ../../programming/lua/lua.rst:224
+msgid "скорость"
+msgstr "speed"
+
+#: ../../programming/lua/lua.rst:225
+msgid ""
+"Spi.MSB, Spi.LSB, Spi.MSB_16, Spi.LSB_16, необязательный параметр, по "
+"умолчанию Spi.MSB;"
+msgstr ""
+"Spi.MSB, Spi.LSB, Spi.MSB_16, Spi.LSB_16, not necessary parameter, by "
+"default Spi.MSB;"
+
+#: ../../programming/lua/lua.rst:226
+msgid ""
+"Spi.MODE0, Spi.MODE1, Spi.MODE2, Spi.MODE3, необязательный параметр, по "
+"умолчанию Spi.MODE0."
+msgstr ""
+"Spi.MODE0, Spi.MODE1, Spi.MODE2, Spi.MODE3, not necessary parameter, by "
+"default Spi.MODE0."
+
+#: ../../programming/lua/lua.rst:238
+msgid "Записать данные (data) длиной (size) и прочитать size."
+msgstr "Write (data) (size) and read size."
+
+#: ../../programming/lua/lua.rst:248
+msgid "Таймеры"
+msgstr "Timers"
+
+#: ../../programming/lua/lua.rst:254
+msgid "Cоздать новый Timer."
+msgstr "Create new timer."
+
+#: ../../programming/lua/lua.rst:256
+msgid "время интервала в секундах;"
+msgstr "Interval time in seconds."
+
+#: ../../programming/lua/lua.rst:257
+msgid "функция, которая будет вызываться с заданным интервалом."
+msgstr "Function called with set interval."
+
+#: ../../programming/lua/lua.rst:261
+msgid "Запуcкает таймер."
+msgstr "Start timer."
+
+#: ../../programming/lua/lua.rst:265
+msgid ""
+"Останавливает таймер. При этом полный останов уже запущенного таймера "
+"произойдет после выполнения функции, стоящей в очереди на выполнение."
+msgstr "Stop timer. Full stop after function execution."
+
+#: ../../programming/lua/lua.rst:269 ../../programming/lua/lua.rst:276
+#: ../../programming/lua/lua.rst:283
+msgid ""
+"Cоздает и запускает новый Timer с функцией, которая будет вызвана один раз."
+msgstr "Creates and starts new timer with function to be called ONCE. "
+
+#: ../../programming/lua/lua.rst:271
+msgid ""
+"локальное время (возвращаемое функцией :func:`time`), указывающее момент "
+"вызова функции;"
+msgstr "Local time (returns with :func:`time`), states function call moment."
+
+#: ../../programming/lua/lua.rst:272 ../../programming/lua/lua.rst:279
+#: ../../programming/lua/lua.rst:286
+msgid "функция, которая будет вызвана."
+msgstr "Function to be called."
+
+#: ../../programming/lua/lua.rst:278
+msgid "время, через сколько запустить функцию;"
+msgstr "Time before function start;"
+
+#: ../../programming/lua/lua.rst:285
+msgid ""
+"глобальное время (:func:`time` + :func:`deltaTime`), когда вызвать функцию;"
+msgstr ""
+"Global time (:func:`time` + :func:`deltaTime`), when to call function;"
+
+#: ../../programming/lua/lua.rst:292
+msgid "Смотри :ref:`Example`"
+msgstr "Look for :ref:`Example`"
+
+#: ../../programming/lua/lua.rst:297
+msgid "События, отправляемые автопилоту"
+msgstr "Events sent to autopilot"
+
+#: ../../programming/lua/lua.rst:299
+msgid "События (events) представляются константами с префиксом \"Ev.\""
+msgstr "Events a presented using constants with \"Ev\" prefix"
+
+#: ../../programming/lua/lua.rst:302 ../../programming/lua/lua.rst:409
+msgid "Название"
+msgstr "Name"
+
+#: ../../programming/lua/lua.rst:302 ../../programming/lua/lua.rst:409
+#: ../../programming/lua/lua.rst:490 ../../programming/lua/lua.rst:520
+#: ../../programming/lua/lua.rst:546
+msgid "Описание"
+msgstr "Description"
+
+#: ../../programming/lua/lua.rst:304
+msgid "MCE_PREFLIGHT"
+msgstr "MCE_PREFLIGHT"
+
+#: ../../programming/lua/lua.rst:304
+msgid "Запустить двигатели и провести подготовку"
+msgstr "Motors start and execute pre-flight check"
+
+#: ../../programming/lua/lua.rst:306
+msgid "ENGINES_DISARM"
+msgstr "ENGINES_DISARM"
+
+#: ../../programming/lua/lua.rst:306
+msgid "Отключить двигатели"
+msgstr "Stop motors"
+
+#: ../../programming/lua/lua.rst:308
+msgid "MCE_LANDING"
+msgstr "MCE_LANDING"
+
+#: ../../programming/lua/lua.rst:308
+msgid "Отправить на посадку"
+msgstr "Landing"
+
+#: ../../programming/lua/lua.rst:310
+msgid "MCE_TAKEOFF"
+msgstr "MCE_TAKEOFF"
+
+#: ../../programming/lua/lua.rst:310
+msgid "Отправить на взлет"
+msgstr "Take-off"
+
+#: ../../programming/lua/lua.rst:312
+msgid "--устаревшие--"
+msgstr "--outdated--"
+
+#: ../../programming/lua/lua.rst:314
+msgid "ENGINES_ARM"
+msgstr "ENGINES_ARM"
+
+#: ../../programming/lua/lua.rst:314
+msgid "Завести двигатели"
+msgstr "Start motors"
+
+#: ../../programming/lua/lua.rst:318
+msgid "Получение данных от автопилота"
+msgstr "Get autopilot data "
+
+#: ../../programming/lua/lua.rst:320
+msgid "Для получение данных от автопилота используется класс Sensors"
+msgstr "To get autopilot data Sensors class is used"
+
+#: ../../programming/lua/lua.rst:326
+msgid "x, y, z"
+msgstr "x, y, z"
+
+#: ../../programming/lua/lua.rst:330
+msgid "vx, vy, vz"
+msgstr "vx, vy, vz"
+
+#: ../../programming/lua/lua.rst:334
+msgid "yaw"
+msgstr "yaw"
+
+#: ../../programming/lua/lua.rst:338
+msgid "Данные положения."
+msgstr "Position data"
+
+#: ../../programming/lua/lua.rst:340
+msgid "roll, pitch, azimuth"
+msgstr "roll, pitch, azimuth"
+
+#: ../../programming/lua/lua.rst:344
+msgid "Данные высоты по барометру."
+msgstr "Altitude data from barometer."
+
+#: ../../programming/lua/lua.rst:346
+msgid "высота в метрах"
+msgstr "altitude in meters"
+
+#: ../../programming/lua/lua.rst:350
+msgid "Данные c датчиков растояния."
+msgstr "Proximity sensors data."
+
+#: ../../programming/lua/lua.rst:352
+msgid ""
+"Возвращает значения с датчика растояния. Возвращает несколько значений."
+msgstr "Returns proximity sensor distance. Several values."
+
+#: ../../programming/lua/lua.rst:356
+msgid "Данные c акселерометра."
+msgstr "Accelerometer data."
+
+#: ../../programming/lua/lua.rst:358
+msgid "ax, ay, az"
+msgstr "ax, ay, az"
+
+#: ../../programming/lua/lua.rst:362
+msgid "Данные c гироскопа."
+msgstr "Gyroscope data."
+
+#: ../../programming/lua/lua.rst:364
+msgid "gx, gy, gz"
+msgstr "gx, gy, gz"
+
+#: ../../programming/lua/lua.rst:368
+msgid "Данные c пульта управления."
+msgstr "RC unit data."
+
+#: ../../programming/lua/lua.rst:370
+msgid ""
+"channel1, channel2, channel3, channel4, channel5, channel6, channel7, "
+"channel8"
+msgstr ""
+"channel1, channel2, channel3, channel4, channel5, channel6, channel7, "
+"channel8"
+
+#: ../../programming/lua/lua.rst:372
+msgid "**Примеры**"
+msgstr "**Examples**"
+
+#: ../../programming/lua/lua.rst:399
+msgid "Описание необходимых служебных функций скрипта"
+msgstr "Service functions of the script"
+
+#: ../../programming/lua/lua.rst:406
+msgid "Доступны следующие события, приходящие от автопилота:"
+msgstr "Autopilot events available:"
+
+#: ../../programming/lua/lua.rst:411
+msgid "CONTROL_FAIL"
+msgstr "CONTROL_FAIL"
+
+#: ../../programming/lua/lua.rst:411
+msgid "Сработала защита"
+msgstr "Protection triggered"
+
+#: ../../programming/lua/lua.rst:413
+msgid "ALTITUDE_REACHED"
+msgstr "ALTITUDE_REACHED"
+
+#: ../../programming/lua/lua.rst:413
+msgid "Коптер достиг заданной высоты"
+msgstr "Drone  reached stated altitude"
+
+#: ../../programming/lua/lua.rst:415
+msgid "POINT_REACHED"
+msgstr "POINT_REACHED"
+
+#: ../../programming/lua/lua.rst:415
+msgid "Коптер достиг точки"
+msgstr "Drone reached stated point"
+
+#: ../../programming/lua/lua.rst:417
+msgid "ENGINE_FAIL"
+msgstr "ENGINE_FAIL"
+
+#: ../../programming/lua/lua.rst:419
+msgid "ENGINES_STARTED"
+msgstr "ENGINES_STARTED"
+
+#: ../../programming/lua/lua.rst:419
+msgid "Двигатели запущены"
+msgstr "Motors started"
+
+#: ../../programming/lua/lua.rst:421
+msgid "COPTER_LANDED"
+msgstr "COPTER_LANDED"
+
+#: ../../programming/lua/lua.rst:421
+msgid "Коптер совершил посадку"
+msgstr "Drone landed"
+
+#: ../../programming/lua/lua.rst:423
+msgid "LOW_VOLTAGE1"
+msgstr "LOW_VOLTAGE1"
+
+#: ../../programming/lua/lua.rst:423
+msgid "Низкое напряжение аккумулятора, для возвращения домой"
+msgstr "Low battery voltage, return home"
+
+#: ../../programming/lua/lua.rst:425
+msgid "LOW_VOLTAGE2"
+msgstr "LOW_VOLTAGE2"
+
+#: ../../programming/lua/lua.rst:425
+msgid "Низкое напряжение аккумулятора, переходит в режим посадки"
+msgstr "Low battery voltage, landing mode"
+
+#: ../../programming/lua/lua.rst:427
+msgid "POINT_DECELERATION"
+msgstr "POINT_DECELERATION"
+
+#: ../../programming/lua/lua.rst:427
+msgid "Коптер начал тормозить при подлёте к точке"
+msgstr "Slowdown approaching the piont"
+
+#: ../../programming/lua/lua.rst:429
+msgid "SYNC_START"
+msgstr "SYNC_START"
+
+#: ../../programming/lua/lua.rst:431
+msgid "SHOCK"
+msgstr "SHOCK"
+
+#: ../../programming/lua/lua.rst:437
+msgid "Пример скрипта"
+msgstr "Script example"
+
+#: ../../programming/lua/lua.rst:485
+msgid "Описание пинов разъемов модулей"
+msgstr "Description for modules pin connectors"
+
+#: ../../programming/lua/lua.rst:487
+msgid ""
+"Пины МК АП на ``Pioneer_Base_v.1.0-v.1.1``, выведенные на внешние разъемы:"
+msgstr "``Pioneer_Base_v.1.0-v.1.1`` autopilot pins:"
+
+#: ../../programming/lua/lua.rst:490
+msgid "Разъем X1 (пин МК)"
+msgstr "X1 (MC pin)"
+
+#: ../../programming/lua/lua.rst:490 ../../programming/lua/lua.rst:520
+#: ../../programming/lua/lua.rst:546
+msgid "Функция"
+msgstr "Function"
+
+#: ../../programming/lua/lua.rst:492 ../../programming/lua/lua.rst:522
+msgid "1"
+msgstr "1"
+
+#: ../../programming/lua/lua.rst:492
+msgid "Питание 5 В (только с АКБ) | Максимум 2 А"
+msgstr "5V power (only with LiPo) 2A max."
+
+#: ../../programming/lua/lua.rst:494 ../../programming/lua/lua.rst:524
+msgid "2"
+msgstr "2"
+
+#: ../../programming/lua/lua.rst:494
+msgid "Питание 3.3 В              | Максимум 2 А"
+msgstr "3.3V | 2A max."
+
+#: ../../programming/lua/lua.rst:496
+msgid "3 (PA12)"
+msgstr "3 (PA12)"
+
+#: ../../programming/lua/lua.rst:496
+msgid "USART1_RTS"
+msgstr "USART1_RTS"
+
+#: ../../programming/lua/lua.rst:498
+msgid "4 (PA11)"
+msgstr "4 (PA11)"
+
+#: ../../programming/lua/lua.rst:498
+msgid "USART1_CTS, TIM1_CH4"
+msgstr "USART1_CTS, TIM1_CH4"
+
+#: ../../programming/lua/lua.rst:498 ../../programming/lua/lua.rst:548
+#: ../../programming/lua/lua.rst:550
+msgid "Module_OpenMV"
+msgstr "Module_OpenMV"
+
+#: ../../programming/lua/lua.rst:500
+msgid "5 (PA10)"
+msgstr "5 (PA10)"
+
+#: ../../programming/lua/lua.rst:500
+msgid "USART1_RX, TIM1_CH3"
+msgstr "USART1_RX, TIM1_CH3"
+
+#: ../../programming/lua/lua.rst:500 ../../programming/lua/lua.rst:502
+msgid "Module_GPS, Module_USNav"
+msgstr "Module_GPS, Module_USNav"
+
+#: ../../programming/lua/lua.rst:502
+msgid "6 (PA9)"
+msgstr "6 (PA9)"
+
+#: ../../programming/lua/lua.rst:502
+msgid "USART1_TX, TIM1_CH2"
+msgstr "USART1_TX, TIM1_CH2"
+
+#: ../../programming/lua/lua.rst:504
+msgid "7 (PA15)"
+msgstr "7 (PA15)"
+
+#: ../../programming/lua/lua.rst:504
+msgid "SPI3_NSS, TIM2_CH1"
+msgstr "SPI3_NSS, TIM2_CH1"
+
+#: ../../programming/lua/lua.rst:504 ../../programming/lua/lua.rst:506
+#: ../../programming/lua/lua.rst:508 ../../programming/lua/lua.rst:510
+msgid "Module_GPS, Module_OpenMV"
+msgstr "Module_GPS, Module_OpenMV"
+
+#: ../../programming/lua/lua.rst:506
+msgid "8 (PC10)"
+msgstr "8 (PC10)"
+
+#: ../../programming/lua/lua.rst:506
+msgid "SPI3_SCK"
+msgstr "SPI3_SCK"
+
+#: ../../programming/lua/lua.rst:508
+msgid "9 (PC11)"
+msgstr "9 (PC11)"
+
+#: ../../programming/lua/lua.rst:508
+msgid "SPI3_MISO"
+msgstr "SPI3_MISO"
+
+#: ../../programming/lua/lua.rst:510
+msgid "10 (PB5)"
+msgstr "10 (PB5)"
+
+#: ../../programming/lua/lua.rst:510
+msgid "SPI3_MOSI, TIM3_CH2"
+msgstr "SPI3_MOSI, TIM3_CH2"
+
+#: ../../programming/lua/lua.rst:512
+msgid "11"
+msgstr "11"
+
+#: ../../programming/lua/lua.rst:512 ../../programming/lua/lua.rst:514
+#: ../../programming/lua/lua.rst:538 ../../programming/lua/lua.rst:540
+msgid "Земля"
+msgstr "GND"
+
+#: ../../programming/lua/lua.rst:514
+msgid "12"
+msgstr "12"
+
+#: ../../programming/lua/lua.rst:520 ../../programming/lua/lua.rst:546
+msgid "Разъем X2 (пин МК)"
+msgstr "X2 (MC pin)"
+
+#: ../../programming/lua/lua.rst:522
+msgid "Питание 5 В (только с АКБ)    | Максимум 2 А"
+msgstr "5V power (only with LiPo) 2A max."
+
+#: ../../programming/lua/lua.rst:524
+msgid "Питание 3.3 В                 | Максимум 2 А"
+msgstr "3.3V | 2A max."
+
+#: ../../programming/lua/lua.rst:526
+msgid "3 (PC2)"
+msgstr "3 (PC2)"
+
+#: ../../programming/lua/lua.rst:526
+msgid "ADCx_IN12"
+msgstr "ADCx_IN12"
+
+#: ../../programming/lua/lua.rst:528
+msgid "4 (PC3)"
+msgstr "4 (PC3)"
+
+#: ../../programming/lua/lua.rst:528
+msgid "ADCx_IN13"
+msgstr "ADCx_IN13"
+
+#: ../../programming/lua/lua.rst:530
+msgid "5 (PA1)"
+msgstr "5 (PA1)"
+
+#: ../../programming/lua/lua.rst:530
+msgid "ADCx_IN1, TIM2_CH2, TIM5_CH2"
+msgstr "ADCx_IN1, TIM2_CH2, TIM5_CH2"
+
+#: ../../programming/lua/lua.rst:530 ../../programming/lua/lua.rst:552
+msgid "Module_Cargo (упр. магнитом)"
+msgstr "Module_Cargo (magnet control)"
+
+#: ../../programming/lua/lua.rst:532
+msgid "6 (PB7)"
+msgstr "6 (PB7)"
+
+#: ../../programming/lua/lua.rst:532
+msgid "I2C1_SDA, TIM4_CH2"
+msgstr "I2C1_SDA, TIM4_CH2"
+
+#: ../../programming/lua/lua.rst:532 ../../programming/lua/lua.rst:534
+msgid "Module_ToF, Module_OpenMV"
+msgstr "Module_ToF, Module_OpenMV"
+
+#: ../../programming/lua/lua.rst:534
+msgid "7 (PB6)"
+msgstr "7 (PB6)"
+
+#: ../../programming/lua/lua.rst:534
+msgid "I2C1_SCL, TIM4_CH1"
+msgstr "I2C1_SCL, TIM4_CH1"
+
+#: ../../programming/lua/lua.rst:536
+msgid "8 (PA0)"
+msgstr "8 (PA0)"
+
+#: ../../programming/lua/lua.rst:536 ../../programming/lua/lua.rst:554
+msgid "DATA WS2812B"
+msgstr "DATA WS2812B"
+
+#: ../../programming/lua/lua.rst:536 ../../programming/lua/lua.rst:554
+msgid "Уровень 5 В. Module_LED"
+msgstr "5V level. Module_LED"
+
+#: ../../programming/lua/lua.rst:538
+msgid "9"
+msgstr "9"
+
+#: ../../programming/lua/lua.rst:540
+msgid "10"
+msgstr "10"
+
+#: ../../programming/lua/lua.rst:543
+msgid "Для ``Pioneer_Base_v.1.2``:"
+msgstr "For ``Pioneer_Base_v.1.2``:"
+
+#: ../../programming/lua/lua.rst:548
+msgid "3 (PA0)"
+msgstr "3 (PA0)"
+
+#: ../../programming/lua/lua.rst:548
+msgid "USART4_TX, ADCx_IN0, TIM2_CH1, TIM5_CH1"
+msgstr "USART4_TX, ADCx_IN0, TIM2_CH1, TIM5_CH1"
+
+#: ../../programming/lua/lua.rst:550
+msgid "4 (PA1)"
+msgstr "4 (PA1)"
+
+#: ../../programming/lua/lua.rst:550
+msgid "USART4_RX, ADCx_IN1, TIM2_CH2, TIM5_CH2"
+msgstr "USART4_RX, ADCx_IN1, TIM2_CH2, TIM5_CH2"
+
+#: ../../programming/lua/lua.rst:552
+msgid "5 (PС3)"
+msgstr "5 (PС3)"
+
+#: ../../programming/lua/lua.rst:552
+msgid "ADCx_IN13, SPI2_MOSI"
+msgstr "ADCx_IN13, SPI2_MOSI"
+
+#: ../../programming/lua/lua.rst:554
+msgid "8 (PC12)"
+msgstr "8 (PC12)"
+
+#: ../../programming/lua/lua_main.rst:1
+msgid "Программирование на Lua"
+msgstr "Lua programming"
+
+#: ../../programming/lua/lua_main.rst:8
+msgid ""
+"Стандартный набор \"Пионера\" позволяет выполнять программирование поведения"
+" светодиодов и программирование полетного задания. В зависимости от уровня "
+"пользователя предлагается два варианта программирования \"Пионера\":"
+msgstr ""
+"Standard Pioneer kit allows LEDs and flight mission programming. Two options"
+" are offered, depending on users competence: "
+
+#: ../../programming/lua/lua_main.rst:10
+msgid ""
+"Упрощенное визуально программирование полетного задания \"Пионера\" в ПО "
+"`TRIK Studio`_"
+msgstr "Visual programming using `TRIK Studio`_"
+
+#: ../../programming/lua/lua_main.rst:14
+msgid "Продвинутое программирование полетного задания \"Пионера\" на языке `Lua`_"
+msgstr "Advanced programming using `Lua`_ "
+
+#: ../../programming/lua/lua_main.rst:18
+msgid ""
+"Также основы языка Lua приведены в файле Learnlua.lua в папке pioneer "
+"station/examples. Откройте его с помощью Pioneer Station и ознакомьтесь с "
+"синтаксисом и базовыми командами."
+msgstr ""
+"Lua basics are stated in Learnlua.lua at pioneer stations/examples. Open it "
+"with Pioneer Station and get used to syntax and basic command.  "
+
+#: ../../programming/lua/lua_main.rst:21
+msgid ""
+"При подключении дополнительных модулей становится возможным программирование"
+" их поведения и совмещение в программе со стандартным функциями \"Пионера\""
+msgstr ""
+"External module can also be programmed and combined with standard Pioneer "
+"functions."
+
+#: ../../programming/lua/lua_main.rst:23
+msgid ""
+"В разделе Lua можно ознакомиться со списком команд, применяемых при "
+"программировании \"Пионера\""
+msgstr ""
+"In Lua section you can learn basic functions used to program  Pioneer."
+
+#: ../../programming/lua/lua_main.rst:26
+#: ../../programming/pioneer_station/pioneer_station_main.rst:37
+#: ../../programming/pioneer_station/pioneer_station_work.rst:26
+#: ../../programming/programming.rst:8 ../../programming/trik/trik_main.rst:17
+msgid "Содержание:"
+msgstr "Contents:"
+
+#: ../../programming/pioneer_station/pioneer_station_code_editor.rst:1
+msgid "Редактор кода"
+msgstr "Code editor"
+
+#: ../../programming/pioneer_station/pioneer_station_code_editor.rst:4
+msgid "Данный разде описывает работу в редакторе кода Pioneer station"
+msgstr "This section describes code editor operation in Pioneer Station"
+
+#: ../../programming/pioneer_station/pioneer_station_code_editor.rst:6
+msgid ""
+"Основное окно **Pioneer station** представлено редактором кода. В данном "
+"окне Вы можете вести разработку программного кода полетного задания "
+"\"Пионера\" на языке Lua."
+msgstr ""
+"In Pioneer Station, main tab represents code editor. Here you can develop "
+"flight mission code for Pioneer."
+
+#: ../../programming/pioneer_station/pioneer_station_code_editor.rst:8
+msgid "Главное меню редактора кода:"
+msgstr "Code editor main menu:"
+
+#: ../../programming/pioneer_station/pioneer_station_code_editor.rst:13
+msgid "Назначение кнопок меню редактора:"
+msgstr "Control buttons:"
+
+#: ../../programming/pioneer_station/pioneer_station_code_editor.rst:16
+msgid "Создать новый файл"
+msgstr "Create new file"
+
+#: ../../programming/pioneer_station/pioneer_station_code_editor.rst:19
+msgid "Открыть файл из папки"
+msgstr "Open file"
+
+#: ../../programming/pioneer_station/pioneer_station_code_editor.rst:22
+msgid "Сохранить файл"
+msgstr "Save"
+
+#: ../../programming/pioneer_station/pioneer_station_code_editor.rst:25
+msgid "Сохранить как"
+msgstr "Save as"
+
+#: ../../programming/pioneer_station/pioneer_station_code_editor.rst:28
+msgid "Выбор одной из готовых программ примеров"
+msgstr "Open example "
+
+#: ../../programming/pioneer_station/pioneer_station_code_editor.rst:31
+msgid "Вырезать блок кода"
+msgstr "Cut"
+
+#: ../../programming/pioneer_station/pioneer_station_code_editor.rst:34
+msgid "Скопировать блок кода"
+msgstr "Copy"
+
+#: ../../programming/pioneer_station/pioneer_station_code_editor.rst:37
+msgid "Вставить блок кода"
+msgstr "Paste"
+
+#: ../../programming/pioneer_station/pioneer_station_code_editor.rst:40
+msgid "Поиск"
+msgstr "Search"
+
+#: ../../programming/pioneer_station/pioneer_station_code_editor.rst:43
+msgid "Замена"
+msgstr "Insert"
+
+#: ../../programming/pioneer_station/pioneer_station_code_editor.rst:46
+msgid "Настройки редактора"
+msgstr "Code editor"
+
+#: ../../programming/pioneer_station/pioneer_station_code_editor.rst:49
+msgid "Справка"
+msgstr "Help"
+
+#: ../../programming/pioneer_station/pioneer_station_code_editor.rst:52
+msgid "Увеличить масштаб"
+msgstr "Enlarge"
+
+#: ../../programming/pioneer_station/pioneer_station_code_editor.rst:55
+msgid "Уменьшить масштаб"
+msgstr "Reduce"
+
+#: ../../programming/pioneer_station/pioneer_station_code_editor.rst:57
+msgid ""
+"Загрузить программу на \"Пионер\" (активна только при подключении к "
+"квадракоптеру)"
+msgstr "Upload code to Pioneer (active when drone connected) "
+
+#: ../../programming/pioneer_station/pioneer_station_main.rst:2
+msgid "Pioneer Station"
+msgstr "Pioneer Station"
+
+#: ../../programming/pioneer_station/pioneer_station_main.rst:9
+msgid ""
+"Программа **Pioneer station** - это удобный инструмент работы с "
+"квадрокоптером. Она позволяет:"
+msgstr ""
+"**Pioneer Station** is a tool to work with the drone. Using it, you can:"
+
+#: ../../programming/pioneer_station/pioneer_station_main.rst:11
+msgid "`Обновлять прошивку квадрокоптера`_"
+msgstr "`Update firmware`_"
+
+#: ../../programming/pioneer_station/pioneer_station_main.rst:12
+msgid "`Настроить параметры автопилота`_"
+msgstr "`Set autopilot parameters`_"
+
+#: ../../programming/pioneer_station/pioneer_station_main.rst:13
+msgid "Дигностировать системы и модули"
+msgstr "Diagnostic modules "
+
+#: ../../programming/pioneer_station/pioneer_station_main.rst:14
+msgid "`Разрабатывать и загружать полетные задания`_"
+msgstr "`Create and upload flight missions`_"
+
+#: ../../programming/pioneer_station/pioneer_station_main.rst:15
+msgid "Запускать скрипты для тестирования"
+msgstr "Test scrypts"
+
+#: ../../programming/pioneer_station/pioneer_station_main.rst:24
+msgid ""
+"Чтобы установить программу, нажмите `скачать Pioneer station`_ и запустите "
+"загруженный .exe файл"
+msgstr ""
+"To install the app, click `download Pioneer Station`_ and run .exe file."
+
+#: ../../programming/pioneer_station/pioneer_station_main.rst:30
+msgid ""
+"Если программа не запускается попробуйте `скачать 32bit версию`_, "
+"распаковать архив и запустить run.bat."
+msgstr ""
+"If program doesn't start, download `32bit version`_, unpack the archive and "
+"run.bat"
+
+#: ../../programming/pioneer_station/pioneer_station_upload.rst:1
+msgid "Загрузка программы в \"Пионер\""
+msgstr "Program upload to Pioneer"
+
+#: ../../programming/pioneer_station/pioneer_station_upload.rst:4
+msgid ""
+"Имея код программы, созданный в TRIK Studio или написанный в Pioneer "
+"Station, можно приступить к его загрузке на квадрокоптер. Подключите "
+"\"Пионер\" к компьютеру USB кабелем и откройте нужную программу в Pioner "
+"Station."
+msgstr ""
+"After you developed program using TRIK Studio or Pioneer Station, it is time"
+" to upload it to Pioneer. Connect the drone to your PC. "
+
+#: ../../programming/pioneer_station/pioneer_station_upload.rst:7
+msgid ""
+"В правом нижнем углу Pioneer Station выберите вариант подключения \"По "
+"кабелю USB\". В окне программы должы появиться текущие параметры "
+"\"Пионера\", углы наклона, напряжение питания и номер."
+msgstr ""
+"Select \"USB cable\" connection in the bottom right corner of Pioneer "
+"Station window. Pioneer's current parameters, lean angles and board number "
+"should appear on the screen."
+
+#: ../../programming/pioneer_station/pioneer_station_upload.rst:13
+msgid ""
+"Попробуйте наклонять квадокоптер в разные стороны и убедитесь, что "
+"авиагоризонт корректно отображает его положение В случае ошибки соединения "
+"проверьте соединение кабеля и версию прошивки в Pioneer station, при "
+"необходимости `обновите`_ её."
+msgstr ""
+"Try tilting the drone in different directions and make sure the angles are "
+"represented correctly. In case of error, check cable connection and firmware"
+" version on Pioneer, `update`_ it if necessary."
+
+#: ../../programming/pioneer_station/pioneer_station_upload.rst:15
+msgid ""
+"Если программа изначально была создана в TRIK studio, нажмите кнопку "
+"\"Загрузить программу на \"Пионер\"\". Текст программы должен появиться в "
+"окне Pioneer Station. Теперь нажмите кнопку \"Загрузить\"."
+msgstr ""
+"If program was created in TRIK studio, press \"upload porgamm to Pioneer\". "
+"The code should appear in Pioneer Station window. Then press \"Upload\" "
+"button."
+
+#: ../../programming/pioneer_station/pioneer_station_upload.rst:20
+msgid ""
+"На плате \"Пионера\" должен несколько раз мигнуть светодиод \"прием\", а в "
+"программе появиться уведомление об успешной загрузке."
+msgstr ""
+"Led should blink on Pioneer board, and a message appear in the bootom right "
+"corner, indicating successful upload. "
+
+#: ../../programming/pioneer_station/pioneer_station_upload.rst:22
+msgid ""
+"Запустить выполенение программы можно разными способами. Если програма не "
+"предполагает полета, не отключая кабель от квадрокоптера нажмите кнопку "
+"\"Старт прогр.\" в Pioneer Station, и через пять секунд сможете наблюдать "
+"результат ее работы. Питания от USB достаточно для работы светодиодов и "
+"некоторых `дополнительных модулей`_."
+msgstr ""
+"There are different ways to start mission execution. If flight is not "
+"required, don't disconnect USB cable and press \"Mission start\" in Pioneer "
+"Station. In five seconds you will observe mission execution. USB power is "
+"enough to turn LEDs and some `extension modules`_ on."
+
+#: ../../programming/pioneer_station/pioneer_station_upload.rst:26
+msgid ""
+"**При более сложных сценариях**, отключите квадрокоптер от компьютера, "
+"поместите его в комнату или площадку, достаточно просторную для выполнения "
+"задач, и подключите аккумулятор. После звукового сигнала и окончания мигания"
+" светодиодов нажмите кнопку \"Старт\" и отойдите от квадрокоптера. Через "
+"пять секунд начнется выполнение заданной программы."
+msgstr ""
+"**In other cases**, disconnect Pionner from your PC and place it somewhere "
+"spacious enough to perform the mission. Plug in the battery. Wait for LEDs "
+"to stop blinking and press \"Start\" button on its board. The mission will "
+"execute in 5 seconds."
+
+#: ../../programming/pioneer_station/pioneer_station_upload.rst:29
+msgid ""
+"Для безопасного полета, на случай нештатной ситуации держите в руках пульт, "
+"связанный с вашим \"Пионером\". Настройте на пульте режим автоматического "
+"полёта. Для этого переведите рычаг B в нижнее положение. Рычаги А, С, D – в "
+"верхнем положении. Для экстренного завершения выполнения программы "
+"переведите рычаг В в верхнее положение, управление квадрокоптером перейдет к"
+" вам."
+msgstr ""
+"To fly safely, it is recommended to have an RC unit ready and bind it to the"
+" drone. Activate mission flight by switching SwB in lower position.  All "
+"other switches should be in upper position. If necessary, switch SwB in "
+"upper position - and now you have controls of the drone. "
+
+#: ../../programming/pioneer_station/pioneer_station_usb_modem.rst:1
+msgid "Подключение по USB модему"
+msgstr "USB modem connection."
+
+#: ../../programming/pioneer_station/pioneer_station_usb_modem.rst:4
+msgid ""
+"Для загрузки программ на \"Пионер\", помимо USB, может использоваться "
+"беспроводное соединение. Для подключения необходим радиомодем, подключаемый "
+"в любой свободный USB порт компьютера."
+msgstr ""
+"You can use wireless connection to upload missions to Pioneer. A USB-powered"
+" wireless modem is required for this."
+
+#: ../../programming/pioneer_station/pioneer_station_usb_modem.rst:9
+msgid ""
+"Подключите \"Пионер\" к компьютеру с открытой программой Pioneer Station "
+"кабелем USB и запомните номер канала, отобразившийся в поле телеметрии "
+"справа от авиагоризонта."
+msgstr ""
+"Remember the channel number of your drone. It is displayed next to the "
+"avionic horizon unit when Pioneer is connected via USB cable."
+
+#: ../../programming/pioneer_station/pioneer_station_usb_modem.rst:10
+msgid ""
+"В меню \"Настройки\" выберите пункт \"Настроить модем\". В открывшемся окне "
+"сохраните номер канала, который запимнили при выполнении предыдущего шага."
+msgstr ""
+"Select \"modem setting\" in \"Settings\" tab. Save your channel number in "
+"opened window. "
+
+#: ../../programming/pioneer_station/pioneer_station_usb_modem.rst:11
+msgid ""
+"Выберите квадрокоптер который хотите подключить по данному каналу и нажмите "
+"ОК."
+msgstr "Select the desired drone to be connected and press OK."
+
+#: ../../programming/pioneer_station/pioneer_station_usb_modem.rst:12
+msgid ""
+"В дальнейшем для подключений \"Пионера\" к компьютеру после запуска Pioneer "
+"Station в меню \"подключение\" выбирайте вариант \"По радиомодему\". При "
+"этом на плату должно быть подано питание от оcновной батареи, либо от "
+"стороннего источника по кабелю USB."
+msgstr ""
+"To connect Pioneer wirelessly, select \"Radiomodem\" in the \"connection\" "
+"tab in the bottom right corner. The drone should be powered from LiPo or "
+"another USB 5V source. "
+
+#: ../../programming/pioneer_station/pioneer_station_work.rst:2
+msgid "Работа с Pioneer station"
+msgstr "Working with Pioneer Station."
+
+#: ../../programming/pioneer_station/pioneer_station_work.rst:5
+msgid "Интерфейс программы при запуске без подключенного \"Пионера\":"
+msgstr ""
+"This is how program's interface looks like when Pioneer is not connected: "
+
+#: ../../programming/pioneer_station/pioneer_station_work.rst:10
+msgid ""
+"В верхней части окна программы представлено **Главное меню** в котором "
+"производится обновление **Pioner station** и прошивки автопилота. Также в "
+"**Главном меню** производится настройка модема. В центральной части "
+"располагаются кнопки запуска/остановки программы и остановки моторов. В "
+"правой части располагается индикатор подключения. После подключения будет "
+"отображаться номер квадракоптера и заряд аккумулятора. В центральной части "
+"окна распологаеются окна: `Редактор кода`_ и `Настройка автопилота`_ , "
+"работа с ними подробно описана в соответствующих разделах."
+msgstr ""
+"**Main menu** is displayed in top part of the window. Here you can update "
+"firmware, Pioneer Station and set USB modem connection. The central part has"
+" mission start/stop and motors stop buttons. Connection indicator is on the "
+"right side. It displays connected drone info. `Code editor`_ and `autopilot "
+"setting`_ tabs are described in corresponding sections. "
+
+#: ../../programming/pioneer_station/pioneer_station_work.rst:19
+msgid ""
+"Если ваша программа предполагает полет, не запускайте ее из интерфейса "
+"**Pioneer station**. Запуск квадракоптера, подключенного по usb, опасен для "
+"вас и окружающих!"
+msgstr "Do not run the **flight** mission with USB cable attached. "
+
+#: ../../programming/programming.rst:1
+msgid "Программирование"
+msgstr "Programming"
+
+#: ../../programming/programming.rst:4
+msgid ""
+"Кроме полета на дистанционном управлении, \"Пионер\" может следовать "
+"заложенной перед взлетом программе и автономно выполнять прописанные задачи."
+" Для удобства программирования квадрокоптер поддерживает работу с такими "
+"инструментами как Pioneer Station и TRIK Studio, которые позволяют "
+"сформировать полетное задание и загрузить его в память \"Пионера\" при "
+"подключении к компьютеру. В этом разделе вы научитесь работать с "
+"квадрокоптером через интерфейс Pioneer Station, рассмотрите примеры полетных"
+" сценариев и узнаете как программировать подключаемые модули."
+msgstr ""
+"Besides flying in RC mode, Pioneer can execute pre-loaded flight mission "
+"autonomously. It supports Pioneer Station and TRIK studio to create and "
+"upload flight mission. In this section you will learn how to use Pioneer "
+"Station and see some mission examples."
+
+#: ../../programming/trik/trik_create.rst:1
+msgid "Создание программы в TRIK Studio"
+msgstr "Creating mission in TRIK studio"
+
+#: ../../programming/trik/trik_create.rst:3
+msgid ""
+"При первом запуске программы создайте новый проект (кнопка в левом верхнем "
+"углу). Чтобы начать создавать программу, достаточно перетащить нужные блоки "
+"действия из \"Палитры\" на диаграмму поведения робота, а затем соединить их "
+"между собой."
+msgstr ""
+"Open TRIK studio and create new project (button in the top left corner). To "
+"create mission, drag and drop action blocks from Pallet to robot performance"
+" diagram, and then connect them. "
+
+#: ../../programming/trik/trik_create.rst:5
+msgid "**Основы работы с TRIK Studio**"
+msgstr "**TRIK studio basics**"
+
+#: ../../programming/trik/trik_create.rst:7
+msgid ""
+"Каждая программа должна содержать блоки \"Начало\" и \"Конец\". В случае "
+"ветвления программы каждая ветвь должна либо вернуться в основное дерево, "
+"либо заканчиваться блоком \"конец\"."
+msgstr ""
+"Every mission should include \"start\" and \"end\" blocks. If the mission "
+"has multiple branches, each branch has to end with \"end\" block."
+
+#: ../../programming/trik/trik_create.rst:8
+msgid ""
+"Для соединения двух блоков наведите курсор мыши на первый, нажмите и "
+"удерживайте **правую** кнопку мыши, протяните линию до второго и отпустите. "
+"Появившаяся на диаграмме стрелка означает, что два блока логически связаны. "
+"Также можно выбрать нужный блок и захватить **левой** конопкой мыши "
+"появившийся справа от него маркер, протянув до следующего блока и отпустив."
+msgstr ""
+"To connect two blocks, use right mouse button. Press RMB on the first block,"
+" hold it, drag towards another block and release above it. Now these blocks "
+"are connected with a visible line.  "
+
+#: ../../programming/trik/trik_create.rst:9
+msgid "Настроить выбранный блок можно в окне \"Редактор свойств\"."
+msgstr "To tune selected block, use \"Properties editor\" window."
+
+#: ../../programming/trik/trik_create.rst:10
+msgid ""
+"Чтобы удалить ненужный блок, выберите его щелчком левой кнопки мыши и "
+"нажмите del."
+msgstr ""
+"To delete unnecessary block, select  it with left mouse click and press del."
+" key"
+
+#: ../../programming/trik/trik_create.rst:11
+msgid ""
+"Если нужно выбрать сразу несколько блоков, их можно обвести рамкой, зажав "
+"левую кнопку мыши и потянув курсор. Также можно выделять блоки по одному, "
+"зажав ctrl."
+msgstr ""
+"If you need to select multiple blocks,  circle them holding left mouse "
+"button, or hold ctrl key and select them one by one. "
+
+#: ../../programming/trik/trik_create.rst:12
+msgid ""
+"На диаграмме не должно оставаться красных стрелок и неподключенных блоков. "
+"Для удобства старайтесь выстраивать диаграму в направлении слева направо и "
+"сверху вниз."
+msgstr ""
+"The diagram should not have red arrows and disconnected blocks. For better "
+"visibility arrange all blocks from top left to bottom right corner.  "
+
+#: ../../programming/trik/trik_create.rst:13
+msgid ""
+"Для удобства и быстроты работы изучите список \"горячих клавиш\" в разделе "
+"\"Настройки\". Также полезно прочитать раздел **Помощь (F1)**"
+msgstr ""
+"Learn \"hot keys\" manual in \"settings\" tab. **Help (F1)** tab may be  "
+"useful too. "
+
+#: ../../programming/trik/trik_create.rst:15
+msgid "**Блоки, используемые для программирования \"Пионера\":**"
+msgstr "**Pioneer programming blocks**"
+
+#: ../../programming/trik/trik_create.rst:17
+msgid ""
+"**Условие** - позволяет создать два сценария действия \"Пионера\" в "
+"зависимости от заданного логического условия. У блока должны быть две "
+"исходящие связи, в одной из которых в редакторе свойств должно быть "
+"назначено значение параметра \"условие\" (истина или ложь)"
+msgstr ""
+"**Condition** - creates two action scenarios depending on logical condition."
+" The block should have two outgoing connections, one of which has to contain"
+" \"condition\" parameter (True or False)"
+
+#: ../../programming/trik/trik_create.rst:18
+msgid ""
+"**Конец условия** - обозначает слияние двух веток условного оператора. "
+"Никаких действий не выполняет, но полезен для обеспечения структурности "
+"программы."
+msgstr ""
+"**End if** - marks merging point for two conditional operator branches. "
+"Provides structural integrity for diagram. "
+
+#: ../../programming/trik/trik_create.rst:19
+msgid ""
+"**Инициализация переменной** - позволет объявить новую переменную. В "
+"редакторе свойств или прямо на диаграмме задается имя переменной и ее "
+"значение."
+msgstr ""
+"**Variable initialisation** - states new variable. Use property editor to "
+"name and change it. "
+
+#: ../../programming/trik/trik_create.rst:20
+msgid ""
+"**Случайное число** - присваивает выбранной переменной случайное значение из"
+" выбранного диапазона."
+msgstr ""
+"**Random initialisation** - randomises selected value. Random range may be "
+"set."
+
+#: ../../programming/trik/trik_create.rst:21
+msgid ""
+"**Комментари** - позволяет включить в программу текстовые пояснения, "
+"упрощающие понимание структуры участка или конкретного блока."
+msgstr ""
+"**Comments** - includes comments to provide better structure understanding."
+
+#: ../../programming/trik/trik_create.rst:22
+msgid ""
+"**Таймер** - задает время ожидания перед выполнением следующего блока "
+"программы в миллисекундах."
+msgstr ""
+"**Timer**- set time delay in milliseconds before next block will be "
+"executed. "
+
+#: ../../programming/trik/trik_create.rst:23
+msgid "**Взлет**, **Посадка**  - команды начала и завершения полета."
+msgstr ""
+"**Takeoff** , **Landing** - first and last block to perform flight mission."
+
+#: ../../programming/trik/trik_create.rst:24
+msgid ""
+"**Лететь в точку** - указывает координаты точки, в которую полетит "
+"квадрокоптер. Координаты вводятся без точек и запятых в строки широты и "
+"долготы. Строка \"высота\" отображает расстояние (в метрах) от поверхности в"
+" конечной точке полета."
+msgstr ""
+"**Go to point** - set destination point coordinates. Don't use dots or "
+"commas for latitude and longitude lines. \"Altitude\" shows distance to the "
+"ground (in meters) at the point."
+
+#: ../../programming/trik/trik_create.rst:25
+msgid ""
+"**Лететь в точку(ЛК)** - команда аналогична предыдущей, но точка назначения "
+"задается в локальных координатах. За точку отсчета (0,0,0) принимается место"
+" взлета. Значения координат задаются в метрах."
+msgstr ""
+"**Go to local point** - similar to previous, but destination point is set in"
+" local coordinates. Takoff point is considered for (0,0,0). Offset is set in"
+" meters. "
+
+#: ../../programming/trik/trik_create.rst:26
+msgid ""
+"**Светодиод** - управляет работой светодиодов на плате \"Пионера\". Меняя "
+"значения для каждого цвета, можно зажигать светодиоды по одному или в "
+"различных комбинациях. В паре с блоком \"Таймер\" можно задать длительность "
+"свечения."
+msgstr ""
+"**LED** - controls Pioneer main board leds. Change each colour value to tune"
+" it precisely. Pair with \"timer\" block to set glowing duration. "
+
+#: ../../programming/trik/trik_create.rst:27
+msgid ""
+"**Магнит** - управляет работой `модуля захвата груза`_. Чтобы включить "
+"магнит, поставьте галочку в чекбоксе значения свойств блока."
+msgstr ""
+"**Magnet** - controls `cargo module`_ operation. To turn magnet on, place a "
+"mark in a property checkbox. "
+
+#: ../../programming/trik/trik_create.rst:28
+msgid ""
+"**Команда** - позволяет выполнить написанную в свойствах команду. Для "
+"написания команды используется `язык Lua`_. Для выполнения команды поставьте"
+" галочку в чекбоксе."
+msgstr ""
+"**System** - executes given instruction. Use Lua to create instruction in "
+"the editor and place a mark in a checkbox to run it."
+
+#: ../../programming/trik/trik_create.rst:29
+msgid ""
+"**Рыскание** - управляет изменением направления полета \"Пионера\" вокруг "
+"вертикальной оси. Для поворота по часовой стрелке задайте значение угла в "
+"градусах со знаком \"минус\"."
+msgstr ""
+"**Yaw** - controls Pioneer's horizontal flight direction. To turn clockwise,"
+" set the angle with a \"minus\" sign. "
+
+#: ../../programming/trik/trik_create.rst:31
+msgid ""
+"Комбинируя блоки между собой и создавая связи меду ними, вы сможете создать "
+"любую полетную программу для \"Пионера\""
+msgstr ""
+"Combining these blocks and connections, you can create any kind of flight "
+"mission imaginable. "
+
+#: ../../programming/trik/trik_led_control.rst:1
+msgid "Пример программы"
+msgstr "Mission example"
+
+#: ../../programming/trik/trik_led_control.rst:4
+msgid ""
+"Для начала, а также в качестве примера, научимся программно управлять "
+"светодиодами на плате \"Пионера\". Для этого при запуске программы нажмите "
+"\"Открыть проект\" и выберите файл LED. В рабочей области появилась блок-"
+"схема программы, которая при запуске будет включать светодиоды на одну "
+"секунду каждым цветом. Вы можете внести изменения в любой блок программы или"
+" добавить новый на свое усмотрение, главное встроить его в структуру с "
+"помощью стрелок-соединений."
+msgstr ""
+"First of all, learn to control Pioneer's LEDs. In TRIK studio, press \"open "
+"project\" and select LED file. Mission diagram should appear in the "
+"workspace. Once activated, it will change led colour every second. Feel free"
+" to configure the mission to your liking. "
+
+#: ../../programming/trik/trik_led_control.rst:7
+msgid ""
+"Диаграмма работы собрана, нужно сгенерировать соответствующий код в Lua. Для"
+" этого нажмите кнопку над рабочей областью, или воспользуйтесь сочетанием "
+"клавиш ctrl+shift+G. Кнопка \"Загрузить программу на \"Пионер\"\" "
+"понадобится нам позже."
+msgstr ""
+"Now it is necessary to create correct Lua code. Press \"generate to Pioneer "
+"Lua\" button or use ctrl+shift+G key combination. "
+
+#: ../../programming/trik/trik_led_control.rst:12
+msgid ""
+"Если все соединено без ошибок, на экране откроется вкладка с текстом "
+"программы. При обнаружении ошибок в нижней части экрана появится окно с "
+"пояснением что нужно исправить для корректной работы программы."
+msgstr ""
+"If there's no errors in the program, a code tab will open. Otherwise, all "
+"errors will be shown in the lower part of the screen along with troubleshoot"
+" tips. "
+
+#: ../../programming/trik/trik_led_control.rst:14
+msgid "Код сгенерирован, осталось `загрузить его в \"Пионер\"`_."
+msgstr "When code is generated, press `upload to Pioneer`_"
+
+#: ../../programming/trik/trik_led_control.rst:19
+msgid ""
+"**Научившись работать со светодиодами, попробуйте** `более сложные "
+"варианты`_."
+msgstr "**When familiar with led controls, try** `more advanced options`_."
+
+#: ../../programming/trik/trik_main.rst:1
+msgid "Визуальное программирование TRIK"
+msgstr "Visual programming TRIK"
+
+#: ../../programming/trik/trik_main.rst:7
+msgid ""
+"Графическая среда TRIK Studio позволяет составлять программы для роботов, "
+"используя наглядные функциональные блоки. Такой подход значительно упрощает "
+"работу с \"Пионером\". Даже не имея опыта программирования, вы сможете "
+"написать задание, загрузить его на квадрокоптер и осуществить запуск."
+msgstr ""
+"TRIK studio is a graphical application intended to create robot missions "
+"using functional blocks. This approach simplifies your interaction with "
+"Pioneer. You don't need programming experience to create and upload a "
+"mission to the drone. "
+
+#: ../../programming/trik/trik_main.rst:9
+msgid ""
+"Чтобы установить программу, нажмите `скачать TRIK Studio`_ и запустите "
+"загруженный .exe файл"
+msgstr "To install the app, press `download TRIK studio`_ and run .exe file."
+
+#: ../../programming/trik/trik_main.rst:13
+msgid "Для синхронизации с \"Пионером\" вам понадобится `Pioneer Station`_."
+msgstr "You also need `Pioneer Station`_ to work with Pioneer."
+
+#: ../../programming/trik/trik_takeoff_mission.rst:2
+msgid "Взлет-Миссия-Посадка"
+msgstr "Takeoff-mission-landing"
+
+#: ../../programming/trik/trik_takeoff_mission.rst:4
+msgid ""
+"Для создания первой настоящей полетной программы можете взять за основу "
+"учебные примеры fly_square или fly_to_point, предлагаемые при запуске TRIK "
+"Studio."
+msgstr ""
+"To create real flight mission you can use examples fly_square or fly-to-"
+"point from TRIK library."
+
+#: ../../programming/trik/trik_takeoff_mission.rst:7
+msgid ""
+"Обратите внимание, что полет в точку осуществляется в локальной системе "
+"координат, которую обеспечивает работа `системы навигации в помещении`_. "
+"Систему нужно настроить и активировать **перед взлетом**."
+msgstr ""
+"Note that fly-to-point mission requires local positioning provided by "
+"`indoor navigation system`_. The system should be deployed and activated "
+"beforehand. "
+
+#: ../../programming/trik/trik_takeoff_mission.rst:9
+msgid ""
+"Для работы в географических координатах необходим `модуль GPS ГЛОНАСС`_"
+msgstr "To fly in global coordinates, a `GPS module`_ is required."
+
+#: ../../programming/trik/trik_takeoff_mission.rst:18
+msgid ""
+"Добавьте блоки \"Рыскание\" и \"Светодиод\", постарайтесь разнообразить "
+"условия вашей программы."
+msgstr "Add \"Yaw\" and \"Led\" blocks to diversify your flight. "
+
+#: ../../programming/trik/trik_takeoff_mission.rst:20
+msgid ""
+"Завершив создание диаграммы, не забудьте сгененрировать Lua код и проверить "
+"его на наличие ошибок. Загрузка программы в \"Пионер\" осуществляется `так "
+"же как в предыдущем примере`_"
+msgstr ""
+"Having created the diagram, don't forget to generate Lua code and check it "
+"for errors. Mission upload is performed similarly as `before`_. "

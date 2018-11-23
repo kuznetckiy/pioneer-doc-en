@@ -1,0 +1,710 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018, Geoscan ltd
+# This file is distributed under the same license as the pioneer-doc-en
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
+# 
+# Translators:
+# kuznetckiy <r.kuzneckiy@geoscan.aero>, 2018
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: pioneer-doc-en\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-11-19 12:39+0300\n"
+"PO-Revision-Date: 2018-11-19 12:58+0000\n"
+"Last-Translator: kuznetckiy <r.kuzneckiy@geoscan.aero>, 2018\n"
+"Language-Team: English (https://www.transifex.com/geoscan/teams/93751/en/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+"Language: en\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../../flight/flight.rst:1
+msgid "Полет"
+msgstr "Flight"
+
+#: ../../flight/flight.rst:4
+msgid ""
+"Этот раздел поможет вам освоить управление квадрокоптером и совершить первый"
+" успешный полет. Рекомендуется прочитать его, чтобы освоить управление и "
+"технику безопасности, прежде чем перейти к самостоятельным полетам."
+msgstr ""
+"This chapter will help you master the quadcopter controls and perform your "
+"first flight. It is stongly recommended to read it and learn the safety "
+"rules before takeoff."
+
+#: ../../flight/flight.rst:6
+msgid "Содержание:"
+msgstr "Content:"
+
+#: ../../flight/flight_preparation.rst:1
+msgid "Подготовка к полету - первый старт."
+msgstr "Flight preparation - first start "
+
+#: ../../flight/flight_preparation.rst:4
+msgid "Перед полетом прочтите раздел `Управление`_"
+msgstr "Read `Controls`_ before the flight"
+
+#: ../../flight/flight_preparation.rst:6
+msgid ""
+"***Правильный старт квадрокоптера требует определенной последовательности "
+"действий, которая выглядит следующим образом:**"
+msgstr ""
+"** A proper quadcopter start requires the following action sequence :**"
+
+#: ../../flight/flight_preparation.rst:8
+msgid ""
+"Полностью зарядите аккумуляторную батарею квадрокоптера и проверьте заряд "
+"батареек установленных в пульте."
+msgstr ""
+"Fully charge the LiPo battery and check the control unit battery charge "
+"level."
+
+#: ../../flight/flight_preparation.rst:9
+msgid "Проверьте квадрокоптер на предмет отсутствия механических повреждений."
+msgstr "Check if quadcopter has no mechanical  damage"
+
+#: ../../flight/flight_preparation.rst:10
+msgid "Установите стик газ/курс в положение минимум - до упора на себя."
+msgstr "Place throttle/yaw stick in the lower position"
+
+#: ../../flight/flight_preparation.rst:11
+msgid "Включите пульт управления."
+msgstr "Turn on the control unit"
+
+#: ../../flight/flight_preparation.rst:12
+msgid ""
+"До упора вставьте аккумулятор в отсек в нижней части квадрокоптера. "
+"Убедитесь, что аккумулятор установлен надежно и хорошо закреплен."
+msgstr ""
+"Place the LiPo battery in the battery bay underneath the quadcopter. Make "
+"sure it is secured tightly"
+
+#: ../../flight/flight_preparation.rst:13
+msgid "Подключите разъем аккумулятора к разъему на базовой плате."
+msgstr "Plug in the battery connector to the board"
+
+#: ../../flight/flight_preparation.rst:14
+msgid "Прозвучит звуковой сигнал и на квадрокоптере загорятся светодиоды."
+msgstr "A beep should be heard and the LEDs light up "
+
+#: ../../flight/flight_preparation.rst:15
+msgid "Дождитесь пока светодиод статуса начнет мигать синим."
+msgstr "Wait until the status LED starts blinking blue"
+
+#: ../../flight/flight_preparation.rst:16
+msgid ""
+"Запустите моторы. Для этого переместите и удерживайте левый стик в крайнем "
+"нижем правом положении."
+msgstr ""
+"Turn on the motors. To do this, place the left stick in the lower-right "
+"position"
+
+#: ../../flight/flight_preparation.rst:17
+msgid ""
+"Дождитесь пока все винты начнут вращаться и плавно взлетайте. Во время "
+"полета соблюдайте правила эксплуатации. Не допускайте падения квадрокоптера."
+msgstr ""
+"Wait until all props start spinning and take off smoothly. Stick to safety "
+"rules during flight, don't  let the drone crash"
+
+#: ../../flight/flight_preparation.rst:21
+msgid ""
+"После полета остановите моторы. Для этого переместите и удерживайте левый "
+"стик в крайнем нижнем левом положении."
+msgstr ""
+"Stop the motors after landing. To do this, place the left stick in the lower"
+" left position"
+
+#: ../../flight/operation_flight.rst:1
+msgid "Безопасность при полете"
+msgstr "Flight safety"
+
+#: ../../flight/operation_flight.rst:4
+msgid ""
+"\"Пионер\" предназначен для эксплуатации в помещении и на открытом воздухе "
+"при температуре окружающей среды от 0 до +40 °С и относительной влажности не"
+" более 80%. Квадрокоптер не предназначен для полетов в условиях выпадения "
+"дождя, снега и при порывистом ветре. Для безопасной эксплуатации \"Пионера\""
+" соблюдайте следующие правила:"
+msgstr ""
+"Pioneer is designed for both indoor and outdoor usage. The temperature should be from 0to +40 °C and humidity no more than 80%.\n"
+"Quadcopter is not intended to fly in the rainy, snowy or windy conditions. Follow these rules for safe operation:"
+
+#: ../../flight/operation_flight.rst:6
+msgid ""
+"Перед полетом убедитесь в отсутствии препятствий непосредственно над "
+"квадрокоптером (лампы, ветки)"
+msgstr ""
+"Make sure there's no obstacles (tree branches, lamps) above the drone before"
+" take-off"
+
+#: ../../flight/operation_flight.rst:7
+msgid ""
+"При полете особого внимания требуют провода и тросы, натянутые на высоте. По"
+" возможности избегайте полетов вблизи таких объектов."
+msgstr ""
+"Look out carefully for wires and cables as they can damage the drone in case"
+" of collision. If possible, do not perform flight near such objects"
+
+#: ../../flight/operation_flight.rst:8
+msgid ""
+"Избегайте полетов при сильном и порывистом ветре. Для обеспечения "
+"безопасного полета скорость ветра не должна превышать 5 м/с. Помните, что "
+"при наборе высоты ветер может менять скорость и направление."
+msgstr ""
+"Do not fly the drone in gusting wind. A safe wind speed is no more than 5 "
+"m/s. Remember that the wind speed and direction may differ   with altitude"
+
+#: ../../flight/operation_flight.rst:9
+msgid ""
+"Не запускайте выполнение программы с элементами полета при подключенном "
+"проводе USB. Если небходима калибровка ESC - демонтируйте пропеллеры."
+msgstr ""
+"Do not start programs with flight conditions with USB and LiPo connected to "
+"the drone. Remove the props in case ESC calibration is required"
+
+#: ../../flight/operation_flight.rst:10
+msgid ""
+"Перед каждым полетом проверяйте целостность пропеллеров. Полет с гнутым или "
+"разрушенным пропеллером может привести к повреждению квадрокоптера."
+msgstr ""
+"Check the props integrity before every flight. Using a bent of damaged prop "
+"may cause a drone failure "
+
+#: ../../flight/operation_flight.rst:13
+msgid ""
+"Повреждение винта в полете можно распознать по изменению звука и характера "
+"полета. По возможности не продолжайте полет с поврежденным винтом."
+msgstr ""
+"During flight, prop damage can be recognised by change in drone sound and "
+"performance. Do not continue the flight with damaged prop, if possible"
+
+#: ../../flight/operation_lipo.rst:1
+msgid "Аккумуляторная батарея"
+msgstr "LiPo battery"
+
+#: ../../flight/operation_lipo.rst:7
+msgid ""
+"В качестве источника энегрии \"Пионер\" использует LiPo аккумулятор емкостью"
+" 1300 мАч. Батареи такого типа легкие и мощные, но могут быть пожароопасны "
+"при неправильной эксплуатации. Прочитав этот раздел, вы научитесь работать с"
+" LiPo аккумуляторами."
+msgstr ""
+"As a power source, a 1300 mAh LiPo battery is used. This type of battery is "
+"lightweight and powerful, but may be fire hazardous if used incorrectly. In "
+"this section you will learn to use LiPo battery"
+
+#: ../../flight/operation_lipo.rst:9
+msgid "**Зарядка**"
+msgstr "**Charging**"
+
+#: ../../flight/operation_lipo.rst:11
+msgid ""
+"Для зарядки выберете негорючую поверхность вдали от легковоспламенимых "
+"предметов (шторы, ковры, мягкая мебель)"
+msgstr ""
+"Choose a incombustible surface to place a charging set. This should be away "
+"from any flammable objects (like carpets or curtains)"
+
+#: ../../flight/operation_lipo.rst:12
+msgid ""
+"Убедитесь что на аккумуляторе нет внешних признаков поврежденния, вмятин, "
+"разрывов оболочки."
+msgstr ""
+"Make sure the battery doesn't have any external damages, bumps or shell "
+"fractures"
+
+#: ../../flight/operation_lipo.rst:13
+msgid "Подключите зарядное устройство к сети 220 В."
+msgstr "Plug in the charging station to 220v grid"
+
+#: ../../flight/operation_lipo.rst:14
+msgid ""
+"Подключите балансировочный вывод к соответствующиему разъему зарядного "
+"устройства."
+msgstr "Plug the balance connector to the charging station"
+
+#: ../../flight/operation_lipo.rst:15
+msgid ""
+"Индикаторы заряда должны гореть красным цветом. Зеленый цвет индикатора "
+"сигнализирует о полном заряде соответствующей ячейки."
+msgstr ""
+"The charge indicators should colour red. The green light indicates the "
+"battery is charged"
+
+#: ../../flight/operation_lipo.rst:16
+msgid ""
+"Дождитесь полной зарядки аккумулятора и отключите его от зарядного "
+"устройства. Нельзя оставлять заряжающийся аккумулятор без присмотра!"
+msgstr ""
+"Wait for LiPo to complete charging and unplug it from charging station. Do "
+"not leave the charging battery unattended!"
+
+#: ../../flight/operation_lipo.rst:19
+msgid ""
+"При длительном хранении аккумулятора без использования рекомендуется "
+"разрядить его примерно наполовину и дозаряжать до того же состояния раз в "
+"3-4 месяца чтобы не допустить переразряда."
+msgstr ""
+"For long-term storage it is recommended to discharge it 50% and check every "
+"3-4 moths to prevent a deep discharge lower than 10%. Part-charge if "
+"necessary "
+
+#: ../../flight/operation_lipo.rst:23
+msgid ""
+"Не допускается зарядка и эксплуатация поврежденного аккумулятора. До момента"
+" утилизации его следует хранить отдельно от исправных, вдали от потенциально"
+" воспламенимых предметов и поверхностей."
+msgstr ""
+"Charging or using a damaged LiPo is prohibited. It must be stored separately"
+" away from flammable objects until the utilization moment"
+
+#: ../../flight/operation_lipo.rst:26
+msgid "**Эксплуатация**"
+msgstr "**Operation**"
+
+#: ../../flight/operation_lipo.rst:28
+msgid ""
+"При установке аккумулятора в раму необходимо следить, чтобы провода не "
+"попадали в плоскость вращения пропеллеров."
+msgstr ""
+"When placed in the frame, the LiPo wires should be kept away from the props "
+"plane"
+
+#: ../../flight/operation_lipo.rst:29
+msgid ""
+"Подключите аккумулятор к квадрокоптеру непосредственно перед взлетом и "
+"отключите сразу после окончания полета."
+msgstr ""
+"Plug in the battery before take-off and disconnect it right after the "
+"landing"
+
+#: ../../flight/operation_lipo.rst:30
+msgid "Не допускайте короткого замыкания между контактами аккумулятора."
+msgstr "Don't allow a short circuit between the LiPo contacts"
+
+#: ../../flight/operation_lipo.rst:31
+msgid ""
+"Перед взлетом и после посадки осмотрите аккумулятор на наличие повреждений, "
+"вмятин, проколов и разрывов оболочки. Недопустим нагрев батареи выше 50\\ "
+":sup:`о`\\ C и разбухание оболочки."
+msgstr ""
+"Check the battery for damages, punctures or bumps before and after flight. "
+"Its heat above 50 °C and swelling is unacceptable"
+
+#: ../../flight/operation_lipo.rst:35
+msgid ""
+"В случае явного повреждения аккумулятора в полете **не пытайтесь немедленно "
+"извлечь его из рамы!** Механический изгиб и дополнительный приток воздуха "
+"могут спровоцировать интенсивное воспламенение батареи и привести к "
+"серьезным ожогам. При появлении дыма или пламени из квадрокоптера немедленно"
+" совершите посадку на негорючую поверхность."
+msgstr ""
+"If the battery is severely damaged, **do not try to extract it immediately "
+"!** The bend and additional air inflow may cause intensive flame and lead to"
+" burn. If you notice a flare or smoke from the drone, land on a non-"
+"flammable surface immediately"
+
+#: ../../flight/operation_lipo.rst:37
+msgid ""
+"**Недопустимо тушить аккумулятор водой!** Для тушения можно использовать "
+"плотную ткань, песок, землю, углекислотный или порошковый огнетушитель. При "
+"невозможности тушения дождитесь прекращения реакции и утилизируйте батарею."
+msgstr ""
+"**Do not try to extinguish the burning LiPo with water!** Use dense cloth, "
+"sand, soil, carbon dioxide fire extinguisher. If none is accessible, wait "
+"for the battery to burn out and utilise it"
+
+#: ../../flight/operation_lipo.rst:39
+msgid ""
+"Продукты горения LiPo аккумулятора **крайне токсичны**, не вдыхайте "
+"образовавшийся дым."
+msgstr ""
+"LiPo combustion products are *extremely toxic**, do not breathe in the smoke"
+
+#: ../../flight/rc_control.rst:1
+msgid "Управление"
+msgstr "Controls"
+
+#: ../../flight/rc_control.rst:4
+msgid ""
+"**Для управления \"Пионером\" с пульта управления следуйте правилам "
+"приведенным ниже:**"
+msgstr "**To control the Pioneer via RC unit, follow these rules**"
+
+#: ../../flight/rc_control.rst:6
+msgid "**Управление высотой**"
+msgstr "**Altitude control**"
+
+#: ../../flight/rc_control.rst:14
+msgid ""
+"При перемещении стика газ/курс от себя квадрокоптер набирает высоту, при "
+"перемещении на себя – снижается."
+msgstr ""
+"When throttle/yaw stick is pushed forward, the drone will gain altitude, "
+"when pulled down - decline"
+
+#: ../../flight/rc_control.rst:17
+msgid "**Вращение вокруг своей оси**"
+msgstr "**Changing direction**"
+
+#: ../../flight/rc_control.rst:22
+msgid ""
+"При перемещении стика газ/курс влево/вправо квадрокоптер поворачивается "
+"вокруг своей оси."
+msgstr ""
+"If throttle/yaw stick is pushed right or left, the drone will turn in the "
+"given direction"
+
+#: ../../flight/rc_control.rst:25
+msgid "**Полет вперед/назад**"
+msgstr "**Forward/reverse flight**"
+
+#: ../../flight/rc_control.rst:30
+msgid ""
+"При перемещении стика крен/тангаж от себя, квадрокоптер наклоняется вперед и"
+" летит вперед. При перемещении стика крен/тангаж на себя, квадрокоптер "
+"наклоняется назад и летит назад."
+msgstr ""
+"Push the right stick up to tilt the drone and move forward. When stick is "
+"pulled down, the drone will tilt and move backwards"
+
+#: ../../flight/rc_control.rst:33
+msgid "**Полет боком влево/вправо**"
+msgstr "**Moving left\\right**"
+
+#: ../../flight/rc_control.rst:38
+msgid ""
+"При перемещении стика крен/тангаж влево/вправо, квадрокоптер летит боком "
+"влево/вправо."
+msgstr ""
+"When right stick is moved left or right, the drone tilts and moves in the "
+"same direction"
+
+#: ../../flight/rc_control.rst:41
+msgid ""
+"Управляйте квадрокоптером плавно, не дергайте стики пульта слишком резко или"
+" сразу в крайнее положение. Пульт управления держите двумя руками, пальцы "
+"обеих рук всегда держатся за стикию. Помните, что при выполнении маневра "
+"коптер может снижаться, будьте готовы компенсировать снижение плавным "
+"увеличением оборотов моторов."
+msgstr ""
+"Operating the radio control, move the sticks smoothly. Hold the control unit"
+" with both hands, thumbs on the sticks. Remember that while manoeuvring the "
+"drone may decline, and be ready to compensate this by giving a bit more "
+"throttle."
+
+#: ../../flight/rc_control.rst:43
+msgid ""
+"Для выполнения первого полета перейдите в раздел: `Подготовка к полету`_"
+msgstr "To perform your first flight go to `Flight preparation`_"
+
+#: ../../flight/rc_unit.rst:2
+msgid "Пульт радиоуправления"
+msgstr "RC unit"
+
+#: ../../flight/rc_unit.rst:4
+msgid ""
+"Данный раздел описывает процесс управления квадрокоптером \"Пионер\" с "
+"помощью аппаратуры FlySky i6S."
+msgstr ""
+"This section describes the basics of Pioneer controls using FlySky i6S "
+
+#: ../../flight/rc_unit.rst:9
+msgid ""
+"По умолчанию пульт готов к эксплуатации и не требует дополнительной "
+"настройки или привязки."
+msgstr ""
+"By default the controller is ready to use and doesn't require any additional"
+" setting"
+
+#: ../../flight/rc_unit.rst:10
+msgid ""
+"Квадрокоптер совместим с пультами управления, которые поддерживают протокол "
+"PPM и работают с приемником FlySky."
+msgstr ""
+"The drone is compatible with PPM protocol based controllers and uses a "
+"FlySky receiver"
+
+#: ../../flight/rc_unit.rst:11
+msgid "Используйте стики для управления полетом квадрокоптера."
+msgstr "Use both sticks to control the drone"
+
+#: ../../flight/rc_unit.rst:12
+msgid ""
+"Используйте переключатель режимов для выбора режима полета квадрокоптера."
+msgstr "Use the mode switch to change the flight mode"
+
+#: ../../flight/rc_unit.rst:13
+msgid ""
+"Чтобы включить пульт, нажмите и удерживайте кнопки включения/выключения "
+"одновременно."
+msgstr "Push and hold both power buttons to turn the controller on/off"
+
+#: ../../flight/rc_unit.rst:18
+msgid "**Изменение режима работы пульта:**"
+msgstr "**Changing the controller mode**"
+
+#: ../../flight/rc_unit.rst:20
+msgid ""
+"Используйте переключатель SWB. Переключатель в верхнем положении – Режим "
+"управления с пульта – выбор режима полета переключателем SWC."
+msgstr ""
+"Use SWB switch. The top position is for manual control mode. To set the "
+"flight mode use SWC switch"
+
+#: ../../flight/rc_unit.rst:21
+msgid ""
+"Переключатель в среднем положении – режим автоматического удержания "
+"положения с системой навигации или с GPS – Управление квадрокоптером "
+"происходит с пульта."
+msgstr ""
+"SWB switch in middle position turns loiter mode on. You can control the "
+"drone but it will hold its position and altitude automatically"
+
+#: ../../flight/rc_unit.rst:22
+msgid ""
+"Переключатель в нижнем положении – режим автоматического полета по "
+"программе."
+msgstr ""
+"SWB switch in lower position activates a pre-programmed \"mission\" flight "
+"mode"
+
+#: ../../flight/rc_unit.rst:23
+msgid ""
+"Во время полета по программе пилот может всегда взять управление на себя и "
+"переключиться в режим ручного управления."
+msgstr ""
+"When performing a mission flight, the operator can take controls by witching"
+" in loiter or manual control using SWB switch"
+
+#: ../../flight/rc_unit.rst:25
+msgid "**Изменение режима полета:**"
+msgstr "**Flight mode set**"
+
+#: ../../flight/rc_unit.rst:27
+msgid ""
+"Используйте переключатель SWC на пульте. Переключатель в верхнем положении –"
+" Режим стабилизации – Стик газа отвечает за изменение уровня мощности, "
+"подаваемой на моторы."
+msgstr ""
+"Use SWC switch. In top position - althold mode on. In this mode throttle "
+"stick changes the power output of motors."
+
+#: ../../flight/rc_unit.rst:28
+msgid ""
+"Переключатель в среднем положении – Режим удержания высоты – квадрокоптер "
+"автоматически удерживает высоту, стик газа отвечает за изменение "
+"вертикальной скорости."
+msgstr ""
+"SWC switch in middle position activates stabilize mode. Drone will self-"
+"level on pithch and roll. The lower SWC switch activates headless mode."
+
+#: ../../flight/rc_unit.rst:29
+msgid ""
+"Если поставить стик газа по центру, квадрокоптер будет удерживать высоту. "
+"Если переместить стик вверх, квадрокоптер начнет подниматься, чем дальше от "
+"центра, тем быстрее."
+msgstr ""
+"If you leave the throttle stick in middle position, the drone will hold "
+"current altitude. If the stick is moved up, the quadcopter will gain "
+"altitude"
+
+#: ../../flight/rc_unit.rst:30
+msgid ""
+"Если переместить стик газа вниз, квадрокоптер начнет снижаться. "
+"Переключатель в нижнем положении – Режим удержания высоты и курса."
+msgstr ""
+"If throttle stick is moved down, the drone will loose altitude. SW& switch "
+"in lower position activates  loiter mode"
+
+#: ../../flight/rc_unit.rst:31
+msgid ""
+"Управление высотой происходит как в предыдущем режиме. Отличие в том, что "
+"квадрокоптер запоминает направление курса в момент включения моторов."
+msgstr ""
+"Altitude control is the same as before, but quadcopter will remember yaw "
+"direction when armed"
+
+#: ../../flight/rc_unit.rst:32
+msgid ""
+"Далее можно вращать квадрокоптер по углу рыскания, при этом направления "
+"вперед/назад и влево/вправо будут неизменны."
+msgstr ""
+"You can spin the drone with yaw stick but it will maintain the primary "
+"orientation"
+
+#: ../../flight/rc_unit.rst:34
+msgid ""
+"Для определения высоты полетный контроллер использует барометр, который "
+"измеряет атмосферное давление. Если давление воздуха меняется, аппарат будет"
+" реагировать на изменение давления, а не на изменения фактической высоты."
+msgstr ""
+"Flight controller uses a barometric sensor to estimate the altitude. When "
+"the pressure is changed, the drone will react according to it, not actual "
+"altitude change"
+
+#: ../../flight/simulator.rst:2
+msgid "Cимулятор"
+msgstr "Simulator"
+
+#: ../../flight/simulator.rst:4
+msgid ""
+"Если у вас пока что нет опыта управления квадрокоптером, а также если вы "
+"хотите совершенствовать свои навыки, настоятельно рекомендуется начать с "
+"полетов в симуляторе. Это позволит освоить управление, не подвергая риску "
+"квадрокоптер, себя и окружающих."
+msgstr ""
+"If you don't have proper drone control skills or you want to improve it, it "
+"is highly recommended for you to use simulator. It allows you to master the "
+"controls without risking the drone."
+
+#: ../../flight/simulator.rst:6
+msgid ""
+"Комплектная аппаратура управления FlySky F6S позволяет обучаться полетам в "
+"большом количестве симуляторов просто подключив провод microUSB в "
+"соответсвующее гнездо в нижней части пульта."
+msgstr ""
+"The remote control unit FlySky F6S can be connected to computer via microUSB"
+" port in the lower part of the controller. "
+
+#: ../../flight/simulator.rst:8
+msgid ""
+"С назначением кнопок и стиков можно ознакомиться в разделе `Аппаратура`_."
+msgstr "To get familiar with buttons and sticks, read `RC Unit`_"
+
+#: ../../flight/simulator.rst:10
+msgid ""
+"Реакция \"Пионера\" на соответствующее движение стиков описана в разделе "
+"`Управление`_."
+msgstr "Pioneer reaction on sticks movement is described in `Controls`_"
+
+#: ../../flight/simulator.rst:17
+msgid ""
+"Из доступных на сегодняшний день симуляторов большинство является платными. "
+"Для получения начальных навыков пилотирования достаточно бесплатных аналогов"
+" или демо-версий."
+msgstr ""
+"Most flight simulators may be quite expensive, but to learn the basics a "
+"free or demo version is enough."
+
+#: ../../flight/simulator.rst:19
+msgid ""
+"Мы предлагаем попробовать FPVFreerider. Скачать бесплатную версию можно "
+"`здесь`_ , прокрутив страницу до Download demo и выбрав версию для Вашей ОС."
+msgstr ""
+"We suggest trying FPVFreerider for that purpose. A free demo can be "
+"downloaded `here`_. Just scroll the page down and choose the version for "
+"your OS."
+
+#: ../../flight/simulator.rst:23
+msgid ""
+"Установив программу, подключите пульт к компьютеру, включите его и запустите"
+" симулятор. Все тумблеры на пульте должны быть в крайнем верхнем положении."
+msgstr ""
+"When installation is complete, plug the RC unit to your PC and turn it on. "
+"Than start FPVFreerider. All switches and sticks should be in upper "
+"position. "
+
+#: ../../flight/simulator.rst:27
+msgid ""
+"Выберите управление через USB controller и перейдите в пункт **calibrate "
+"controller**. Далее следуйте указаниям на экране, поочередно приводя "
+"соответствующий стик в крайнее положение и нажимая ОК. По завершении "
+"калибровки проверьте правильность реакции программы на движения стиков, "
+"подправьте ошибки с помощью ползунков **trim**. Виртуальный пульт должен в "
+"точности повторять ваши движения, от этого зависит удобство управления."
+msgstr ""
+"Choose \"control uing USB\" and **calibrate controller**. Follow the "
+"guidance, moving sticks as shown on the screen and clicking OK. When "
+"finished, check if everything is done correctly, use sliders to trim for "
+"better accuracy. A virtual controller should perform exactly as the real one"
+" in your hands."
+
+#: ../../flight/simulator.rst:29
+msgid "Закончив калибровку, откройте доступную карту для полета."
+msgstr "Then open a available map for flight training session."
+
+#: ../../flight/simulator.rst:31
+msgid ""
+"Вначале обычно рекомендуется научиться управлять квадрокоптером с видом от "
+"третьего лица (Line of sight) и в режиме стабилизации. Для этого шелчком "
+"мыши по кнопкам в левом верхнем углу экрана выберите режим self-level, low "
+"rates и camera, как на скриншоте:"
+msgstr ""
+"It is usually recommended to start flying with third-person view (also "
+"called line of sight) in stabilise mode. Use the buttons to the top left "
+"corner of your screen to choose self-level, low rates and camera mode like "
+"on the screenshot below."
+
+#: ../../flight/simulator.rst:35
+msgid "**Перейдем к полетам**:"
+msgstr "**Flight**"
+
+#: ../../flight/simulator.rst:37
+msgid ""
+"Плавно толкните левый стик вперед. Когда квадрокоптер оторвется от "
+"поверхности, постарайтесь удержать его на небольшой высоте, а затем "
+"приземлиться, плавно возвращая стик в нижнее положение. Научитесь "
+"чувствовать момент взлета и касания."
+msgstr ""
+"Gently push the left stick forward. When the quadcopter lifts off the "
+"ground, try to hold it at the same altitude and land, using the throttle "
+"stick. Learn the moment when the drone starts to lift off."
+
+#: ../../flight/simulator.rst:39
+msgid ""
+"удерживая квадрокоптер на одной высоте, толкните и отпустите правый стик в "
+"любом направлении. Обратите внимание, что при наклоне квадрокоптер не только"
+" разгоняется, но и теряет высоту. Чтобы компенсировать снижение, добавьте "
+"оборотов левым стиком. Научитесь летать в разных направлениях без потери "
+"высоты и не упуская квадрокоптер из виду. Если хотите начать заново, нажмите"
+" кнопку Reset в левой части экрана."
+msgstr ""
+"Holding the drone at the same altitude, push the right stick in any "
+"direction. Note that the drone not only accelerates but also looses altitude"
+" when tilted. To compensate it, add a little bit of throttle with the left "
+"stick. Learn to fly in different directions without loosing altitude. You "
+"can click Reset button any time to start over."
+
+#: ../../flight/simulator.rst:41
+msgid ""
+"Наклон левого стика в стороны управляет поворотом квадрокоптера. При "
+"изменении направления управлять полетом становится сложнее, т.к. надо "
+"учитывать в какую сторону \"смотрит\" аппарат. Стандартное упражнение на "
+"такой случай - полет по квадрату. Попробуйте летать по воображаемому "
+"квадрату небольшой площади, разворачивая коптер на 90 градусов в каждом "
+"угле. Пролетев против часовой стрелки, смените направление. Постепенно вы "
+"научитесь контролировать направление полета."
+msgstr ""
+"Pushing the left stick to the side controls the drones yaw direction. "
+"Changing course makes it harder to control as you have to take the shift "
+"into account. Try flying in square trajectory, turning the drone 90° in each"
+" corner.  It will make it easier for you to learn if you do complex "
+"movements step by step."
+
+#: ../../flight/simulator.rst:43
+msgid ""
+"Управление квадрокоптером - это навык, требующий практики. Осваивая полет в "
+"симуляторе, вы сможете чувствовать свой прогресс. Научившись лететь в "
+"выбранном направлении, не допуская падений и не теряя квадрокоптер из виду, "
+"можете смело переходить к практике на \"Пионере\"."
+msgstr ""
+"Flying the drone is a skill that requires some practice. Mastering the "
+"flight in simulator you will feel your progress. When you can fly in "
+"selected direction without loosing or crashing the drone, you are prepared "
+"for actual flight using Pioneer."
+
+#: ../../flight/simulator.rst:46
+msgid ""
+"Также симулятор позволяет получить навыки управления в режиме вида от "
+"первого лица (FPV) с курсовой камеры. Для этого щелчком мыши переключите "
+"кнопку Camera в режим FPV."
+msgstr ""
+"The simulator gives the ability to learn first person view (FPV) flying as "
+"well. To toggle it, switch the camera button in FPV mode."

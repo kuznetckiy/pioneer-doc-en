@@ -23,7 +23,7 @@ msgstr ""
 "Language: en\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: ../../const/const_frame.rst:1
+#: ../../const/const_frame.rst:2
 msgid "Сборка рамы"
 msgstr "Frame assembly"
 
@@ -127,7 +127,7 @@ msgstr ""
 msgid "Собрав раму \"Пионера\", перейдите к `сборке защиты`_."
 msgstr "Once finished with the frame, proceed to the protection assembly"
 
-#: ../../const/const_main.rst:1
+#: ../../const/const_main.rst:2
 msgid "Сборка \"Пионера\""
 msgstr "Pioneer assembly"
 
@@ -161,7 +161,7 @@ msgstr "Extra modules connection is described in `Extra modules`_"
 msgid "Содержание:"
 msgstr "Content:"
 
-#: ../../const/const_protection.rst:1
+#: ../../const/const_protection.rst:2
 msgid "Сборка защиты"
 msgstr "Protection assembly"
 
@@ -231,7 +231,7 @@ msgstr ""
 msgid "Для дальнейших инструкций перейдите в раздел: `Первое включение`_."
 msgstr "For further instructions, proceed to `First turn-on`_"
 
-#: ../../const/const_switch_on.rst:1
+#: ../../const/const_switch_on.rst:2
 msgid "Первое включение"
 msgstr "First turn-on"
 

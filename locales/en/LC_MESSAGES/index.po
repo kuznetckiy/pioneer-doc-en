@@ -6,7 +6,6 @@
 # 
 # Translators:
 # kuznetckiy <r.kuzneckiy@geoscan.aero>, 2018
-# kuznetckiy <r.kuzneckiy@geoscan.aero>, 2018
 # 
 #, fuzzy
 msgid ""
@@ -14,9 +13,9 @@ msgstr ""
 "Project-Id-Version: pioneer-doc-en\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-11-20 10:28+0300\n"
-"PO-Revision-Date: 2018-11-23 07:37+0000\n"
+"PO-Revision-Date: 2018-11-20 14:24+0000\n"
 "Last-Translator: kuznetckiy <r.kuzneckiy@geoscan.aero>, 2018\n"
-"Language-Team: English (https://www.transifex.com/geoscan/teams/93851/en/)\n"
+"Language-Team: English (https://www.transifex.com/geoscan/teams/93751/en/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -41,8 +40,8 @@ msgid ""
 "авиамодельных секций, кружков робототехники, а также для самостоятельного "
 "освоения."
 msgstr ""
-"Geoscan Pioneer is a multifunctional educational complex. It was developed "
-"for schools, robotothenic labs and for individual use. "
+"Geoscan Pioneer is a multifunctional educational  complex. It was developed "
+"for schools, robotothenic  labs and for individual use. "
 
 # ce7ffe34c5234861ba080bdd13128cc0
 #: ../../index.rst:20
@@ -80,7 +79,7 @@ msgid ""
 "Функционал комплекса может быть расширен за счет подключения и "
 "программирования дополнительных модулей."
 msgstr ""
-"Pioneer's functional abilities can be extended by adding and programming "
+"Pioneer's functional abilities can be extended   by adding and programming "
 "extension modules ."
 
 # c59dd1c40ad749afa79ec1517a77cdf4

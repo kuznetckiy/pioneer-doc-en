@@ -1,0 +1,358 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018, Geoscan ltd
+# This file is distributed under the same license as the pioneer-doc-en
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
+# 
+# Translators:
+# kuznetckiy <r.kuzneckiy@geoscan.aero>, 2018
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: pioneer-doc-en\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-11-19 12:39+0300\n"
+"PO-Revision-Date: 2018-11-19 12:58+0000\n"
+"Last-Translator: kuznetckiy <r.kuzneckiy@geoscan.aero>, 2018\n"
+"Language-Team: English (https://www.transifex.com/geoscan/teams/93751/en/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+"Language: en\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../../settings/autopilot_parameters.rst:1
+msgid "Настройка параметров автопилота"
+msgstr "Autopilot parameters setting"
+
+#: ../../settings/autopilot_parameters.rst:4
+msgid ""
+"Параметры полета квадрокоптера в автоматическом режиме можно тонко "
+"настроить, используя программу `Pioneer Station`_. Для этого подключите "
+"\"Пионер\" к компьютеру следуя `инструкции`_ и перейдите из вкладки "
+"\"редактор кода\" в \"настройки параметров автопилота\""
+msgstr ""
+"Autopilot parameters can be set precisely using `Pioneer Station`_. Follow "
+"the `manual`_ to connect Pioneer to your PC. Switch to \"autopilot "
+"parameters setting\" tab."
+
+#: ../../settings/autopilot_parameters.rst:10
+msgid ""
+"Для настройки \"Пионер\" должен быть подключен к компьютеру, его текущие "
+"параметры должны отображаться в правой части окна."
+msgstr ""
+"To perform a setting, Pioneer should be connected to PC and its current "
+"parameters should be displayed in right part of Pioneer station window."
+
+#: ../../settings/autopilot_parameters.rst:15
+msgid ""
+"Перейдите во вкладку \"параметры автопилота\". В первом столбце таблицы "
+"приведены названия параметров. Узнать, за что каждый из них отвечает, можно,"
+" посмотрев в крайний правый столбец. Во втором столбце отображаются текущие "
+"значения, присвоенные каждому из параметров. Если вы хотите поменять какое-"
+"либо из них, введите новое значение в столбец справа от текущего значения и "
+"нажмите Enter. Завершив редактирование, не забудьте сохранить изменения, "
+"нажав кнопку **сохранить изменения на автопилот**."
+msgstr ""
+"Switch to \"autopilot parameters setting\" tab. Left column represents "
+"parameters, their current values are displayed in the second column. To "
+"change any of them, click to the right of selected parameter and type the "
+"new value in, then press  Enter. Don't forget to save the changes by "
+"clicking  **save changes to autopilot**."
+
+#: ../../settings/autopilot_parameters.rst:18
+msgid ""
+"В верхней части окна также пристутствуют кнопки **LPS**, **GPS** и **OPT**. "
+"Каждая из них загружает в квадрокоптер стандартный набор параметров для "
+"полета, соответственно, в локальной системе позиционирования, с "
+"использованием модуля GPS/ГЛОНАСС и модуля оптического позиционирования."
+msgstr ""
+"**LPS**, **GPS** and **OPT** buttons are situated in the top part of the "
+"window. Each is responsible for loading a standard set of parameters for "
+"indoor positioning system, GPS and optical flow mode respectively."
+
+#: ../../settings/autopilot_parameters.rst:21
+msgid ""
+"Если вы хотите вернуться к заводским настройкам, нажмите кнопку **сбросить "
+"по умолчанию** над таблицей и подождите пока \"Пионер\" перезапустится."
+msgstr ""
+"If you want to return to factory preset, click **return to default** button "
+"above the table and wait until Pioneer reboots."
+
+#: ../../settings/firmware_upgrade.rst:1
+msgid "Обновление прошивки"
+msgstr "Firmware update"
+
+#: ../../settings/firmware_upgrade.rst:3
+msgid ""
+"Для корректной работы всех систем \"Пионера\" рекомендуется устанавливать "
+"последнюю актуальную версию прошивки. Для этого на вашем компьютере должна "
+"быть установлена программа Pioneer Station. Если у вас ее нет, нажмите "
+"`скачать установщик Pioneer Station`_, загрузка начнется автоматически. "
+"После этого необходимо запустить скачаный exe файл."
+msgstr ""
+"For Pioneer to perform correctly, it is recommended to upload the last "
+"version of firmware. You need to have Pioneer station installed on your PC. "
+"If you don't have it, click `download Pioneer Station`_ and run the acquired"
+" .exe file."
+
+#: ../../settings/firmware_upgrade.rst:6
+msgid ""
+"Если программа не запускается, попробуйте `скачать 32bit версию`_, "
+"распаковать архив и запустить run.bat."
+msgstr ""
+"If program doesn't run, try to `download 32bit version`_, unpack the archive"
+" and open run.bat file."
+
+#: ../../settings/firmware_upgrade.rst:12
+msgid ""
+"Далее нужно перевести \"Пионер\" в режим обновления. Зажав и удерживая "
+"кнопку \"Старт\" подключите квадрокоптер к компьютеру через usb кабель. При "
+"этом должны зажечься светодиоды \"передача\", \"прием\", \"статус\", "
+"\"ошибка\"."
+msgstr ""
+"Turn on firmware update more on Pioneer. Press \"Start\" button on it and "
+"connect the USB cable while holding the button pressed. All LEDs on the "
+"board should switch on."
+
+#: ../../settings/firmware_upgrade.rst:14
+msgid ""
+"Запустите Pioneer Station, нажмите на значок квадрокоптера в левом верхнем "
+"углу окна программы. В выпадающем меню нажмите \"обновление прошивки\" и "
+"следуйте инструкциям помощника."
+msgstr ""
+"Run Pioneer Station and click the quadcopter icon in the top left corner of "
+"the window. Select \"firmware update\" and follow the appearing "
+"instructions."
+
+#: ../../settings/firmware_upgrade.rst:17
+msgid ""
+"Если при выборе устройства квадрокоптер не отображается в окне, попробуйте "
+"переподключить его и перезапустить программу. Если это не помогло, "
+"попробуйте `скачать и установить драйвер порта`_, после чего переподключите "
+"\"Пионер\" и перезапустите программу."
+msgstr ""
+"If quadcopter is not shown in the window, try rebooting your PC and re-"
+"connect Pioneer. If this didn't help, `download and install port driver`_, "
+"then reload Pioneer Station and re-connect the drone."
+
+#: ../../settings/firmware_upgrade.rst:22
+msgid ""
+"При выборе источника прошивки рекомендуется выбрать пункт \"встроенный\", "
+"так вы установите последнюю актуальную версию."
+msgstr ""
+"It is recommended to select \"embedded\" source of firmware. That guarantees"
+" you install the latest version."
+
+#: ../../settings/firmware_upgrade.rst:24
+msgid ""
+"Дождитесь окончания прошивки, это может занять несколько минут. После "
+"завершения нажмите \"ОК\", квадрокоптер перейдет в обычный режим работы."
+msgstr ""
+"Wait for the firmware update to finish, this can take a few minutes. Click "
+"OK button afterwards to switch Pioneer in standard connection mode."
+
+#: ../../settings/firmware_upgrade.rst:26
+msgid ""
+"Если Вы столкнулись с проблемой обновления прошивки или работы \"Пионера\", "
+"напишите в техподдержку Геоскан support@geoscan.aero"
+msgstr ""
+"If any problem occurs during Pioneer update or usage, feel free to contact "
+"our helpdesk via support@geoscan.aero"
+
+#: ../../settings/rc_connection.rst:1
+msgid "Связь пульта с приемником"
+msgstr "Receiver connection"
+
+#: ../../settings/rc_connection.rst:4
+msgid ""
+"Для того, чтобы пульт и приемник могли работать в паре, необходимо провести "
+"специальную процедуру привязки. Чтобы связать пульт с определенным "
+"приемником, необходимо выполнить действия, описанные ниже."
+msgstr ""
+"To control the drone with RC unit, a binding operation is required. Follow "
+"this manual to perform it. "
+
+#: ../../settings/rc_connection.rst:6
+msgid ""
+"Чтобы избежать ситуации одновременного управления несколькими "
+"квадрокоптерами с одного пульта, разрешается связывать только один пульт с "
+"одним приемником."
+msgstr ""
+"Controlling several drones using one RC unit might cause crashes. Do not "
+"bind more than one receiver to one controller."
+
+#: ../../settings/rc_connection.rst:11
+msgid "Включите пульт дистанционного управления"
+msgstr "Turn the RC unit on"
+
+#: ../../settings/rc_connection.rst:12
+msgid "Войдите в меню настроек"
+msgstr "Use touchscreen to to navigate the settings menu.  "
+
+#: ../../settings/rc_connection.rst:13
+msgid ""
+"Во вкладке SYSTEM выберите пункт Rx Bind. Появится надпись «Binding to RX…»"
+msgstr ""
+"Select Rx Bind in \"System\" tab. \"Binding to Rx..\" should appera on the "
+"screen."
+
+#: ../../settings/rc_connection.rst:14
+msgid ""
+"Найдите на приемнике кнопку с обозначением «BIND», нажмите и удерживайте ее."
+msgstr "Press and hold \"BIND\" button on the receiver."
+
+#: ../../settings/rc_connection.rst:15
+msgid ""
+"Держа кнопку зажатой, подайте питание на квадрокоптер, подключив аккумулятор"
+msgstr "While holding the button, plug in the battery to turn quadcopter on."
+
+#: ../../settings/rc_connection.rst:16
+msgid ""
+"Выйдите из настройки Rx Bind. Квадрокоптер должен отреагировать на это "
+"действие звуковым сигналом."
+msgstr ""
+"Leave the Rx bind mode on the controller. The drone should beep once after "
+"this. A light on the receiver should not blink."
+
+#: ../../settings/rc_connection.rst:20
+msgid ""
+"В случае если моторы не вращаются, и квадрокоптер никак не реагирует на "
+"сигналы, посылаемые с пульта, повторите процедуру привязки или обратитесь в "
+"техническую поддержку по адресу: support@geoscan.aero"
+msgstr ""
+"If the drone doesn't react on controller signals, try re-bind its receiver "
+"once again. If this doesn't solve the problem, contact Geoscan helpdesk: "
+"support@geoscan.aero"
+
+#: ../../settings/rc_connection.rst:22
+msgid ""
+"Процедура привязки работает только для приемника FlySky-A8S. При включении "
+"пульта квадрокоптер издаст звуковой сигнал."
+msgstr "Binding procedure works for FlySky-A8S receiver. "
+
+#: ../../settings/rc_setting.rst:1
+msgid "Настройка пульта"
+msgstr "RC unit setting"
+
+#: ../../settings/rc_setting.rst:4
+msgid "Для настройки пульта выполните последовательно следующие действия:"
+msgstr "To set up the controller, follow these steps:"
+
+#: ../../settings/rc_setting.rst:6
+msgid ""
+"Вставьте батарейки и включите пульт дистанционного управления. Для этого "
+"нажмите одновременно две кнопки включения питания и удерживайте их до "
+"включения экрана пульта."
+msgstr ""
+"Plug in the batteries in the battery compartment on the back of controller. "
+"To turn it on, press and hold two power buttons. "
+
+#: ../../settings/rc_setting.rst:7
+msgid "При включении на экране должна появиться следующая картинка"
+msgstr "The default screen image looks like this:"
+
+#: ../../settings/rc_setting.rst:12
+msgid ""
+"Если на экране отображается надпись «Warning!!! Place all switches in their "
+"up position», необходимо привести все переключатели в верхнее положение, а "
+"стик газ/курс в нижнее положение."
+msgstr ""
+"\"warning! Place all switches in their up position\" means you have to check"
+" all flipswitches and place left stick to its lower position. "
+
+#: ../../settings/rc_setting.rst:14
+msgid "Войдите в меню настроек, нажав на сенсорном экране значок настроек"
+msgstr "Use touchscreen to navigate the menu and press settings icon."
+
+#: ../../settings/rc_setting.rst:18
+msgid ""
+"В меню настроек имеется вкладка FUNCTION, в которой производится настройка "
+"пульта управления, а также вкладка SYSTEM, в которой производится настройка "
+"модели, управляемой пультом."
+msgstr ""
+"\"Function\" tab contains settings of the RC unit. \"System\" tab is used to"
+" change the model's properties. "
+
+#: ../../settings/rc_setting.rst:24
+msgid "Во вкладке FUNCTION необходимо установить следующие настройки:"
+msgstr "Adjust the following settings in \"system\" tab:"
+
+#: ../../settings/rc_setting.rst:22
+msgid "REVERSE → Ch2 и Ch4 –Rev"
+msgstr "REVERSE → Ch2 and Ch4 –Rev"
+
+#: ../../settings/rc_setting.rst:23
+msgid ""
+"AUX. CHANNELS → Channel 5 → → В открывшемся окне CH TYPE выбрать тип "
+"переключателя SWx → нажать на надпись SwA, и в открывшемся меню выбрать SwC."
+msgstr ""
+"AUX. CHANNELS → Channel 5 → →select SWx switch type→ press SwA and select "
+"SwC in the opened menu. "
+
+#: ../../settings/rc_setting.rst:24
+msgid ""
+"AUX. CHANNELS → Channel 6 → → В открывшемся окне CH TYPE выбрать тип "
+"переключателя SWx → нажать на надпись SwA, и в открывшемся меню выбрать SwD."
+msgstr ""
+"AUX. CHANNELS → Channel 6 → → select switch type SWx→ press SwA and select "
+"SwD."
+
+#: ../../settings/rc_setting.rst:25
+msgid ""
+"AUX. CHANNELS → Channel 7 → → В открывшемся окне CH TYPE выбрать тип "
+"переключателя SWx → нажать на надпись SwA, и в открывшемся меню выбрать SwB."
+msgstr ""
+"AUX. CHANNELS → Channel 7 → → select switch type SWx→ press SwA and select "
+"SwB."
+
+#: ../../settings/rc_setting.rst:28
+msgid "Во вкладке SYSTEM:"
+msgstr "Select the SYSTEM tab:"
+
+#: ../../settings/rc_setting.rst:27
+msgid "OUTPUT MODE → Output → PPM"
+msgstr "OUTPUT MODE → Output → PPM"
+
+#: ../../settings/rc_setting.rst:28
+msgid "STICKS MODE → M2 (Mode 2)"
+msgstr "STICKS MODE → M2 (Mode 2)"
+
+#: ../../settings/rc_setting.rst:30
+msgid ""
+"Для дальнейшей настройки перейдите в раздел `связь пульта с приемником`_"
+msgstr "For further setting proceed to 'RC unit connection`_"
+
+#: ../../settings/settings_main.rst:1
+msgid "Настройки"
+msgstr "Settings"
+
+#: ../../settings/settings_main.rst:7
+msgid ""
+"Прошивку \"Пионера\" при необходимости можно обновить. В этом разделе "
+"содержится подробная инструкция, которая вам поможет."
+msgstr ""
+"Pioneer's firmware can be updated. This section will help you with this."
+
+#: ../../settings/settings_main.rst:9
+msgid ""
+"В случае замены приемника управления или пульта, перейдите в раздел `связь "
+"пульта с приемником`_"
+msgstr ""
+"In case of receiver or RC unit change, proceed to \"RC unit connection`_"
+
+#: ../../settings/settings_main.rst:11
+msgid "Также вы можете заново `настроить пульт`_, если что-то сбилось."
+msgstr "You can `set the RC unit` again if anything is out of order."
+
+#: ../../settings/settings_main.rst:13
+msgid ""
+"Инструкция по точной настройке \"Пионера\" находится в разделе `параметры "
+"автопилота`_"
+msgstr "Precise setting manual is in `autopilot settings`_ section."
+
+#: ../../settings/settings_main.rst:23
+msgid "Содержание:"
+msgstr "Contents:"
