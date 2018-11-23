@@ -61,7 +61,7 @@ msgid ""
 "Полностью зарядите аккумуляторную батарею квадрокоптера и проверьте заряд "
 "батареек установленных в пульте."
 msgstr ""
-"Fully charge the LiPo battery and check the control unit battery charge "
+"Fully charge the LiPo battery and check the transmitter battery charge "
 "level."
 
 #: ../../flight/flight_preparation.rst:9
@@ -74,7 +74,7 @@ msgstr "Place throttle/yaw stick in the lower position"
 
 #: ../../flight/flight_preparation.rst:11
 msgid "Включите пульт управления."
-msgstr "Turn on the control unit"
+msgstr "Turn on the transmitter"
 
 #: ../../flight/flight_preparation.rst:12
 msgid ""
@@ -335,7 +335,7 @@ msgstr "Controls"
 msgid ""
 "**Для управления \"Пионером\" с пульта управления следуйте правилам "
 "приведенным ниже:**"
-msgstr "**To control the Pioneer via RC unit, follow these rules**"
+msgstr "**To control the Pioneer via RC transmitter, follow these rules**"
 
 #: ../../flight/rc_control.rst:6
 msgid "**Управление высотой**"
@@ -394,7 +394,7 @@ msgid ""
 "коптер может снижаться, будьте готовы компенсировать снижение плавным "
 "увеличением оборотов моторов."
 msgstr ""
-"Operating the radio control, move the sticks smoothly. Hold the control unit"
+"Operating the radio control, move the sticks smoothly. Hold the transmitter"
 " with both hands, thumbs on the sticks. Remember that while manoeuvring the "
 "drone may decline, and be ready to compensate this by giving a bit more "
 "throttle."
@@ -406,7 +406,7 @@ msgstr "To perform your first flight go to `Flight preparation`_"
 
 #: ../../flight/rc_unit.rst:2
 msgid "Пульт радиоуправления"
-msgstr "RC unit"
+msgstr "RC transmitter"
 
 #: ../../flight/rc_unit.rst:4
 msgid ""
@@ -570,7 +570,7 @@ msgid ""
 "большом количестве симуляторов просто подключив провод microUSB в "
 "соответсвующее гнездо в нижней части пульта."
 msgstr ""
-"The remote control unit FlySky F6S can be connected to computer via microUSB"
+" FlySky F6S can be connected to computer via microUSB"
 " port in the lower part of the controller. "
 
 #: ../../flight/simulator.rst:8
@@ -607,7 +607,7 @@ msgid ""
 "Установив программу, подключите пульт к компьютеру, включите его и запустите"
 " симулятор. Все тумблеры на пульте должны быть в крайнем верхнем положении."
 msgstr ""
-"When installation is complete, plug the RC unit to your PC and turn it on. "
+"When installation is complete, plug the transmitter to your PC and turn it on. "
 "Than start FPVFreerider. All switches and sticks should be in upper "
 "position. "
 

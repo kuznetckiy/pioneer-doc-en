@@ -172,7 +172,7 @@ msgid ""
 "специальную процедуру привязки. Чтобы связать пульт с определенным "
 "приемником, необходимо выполнить действия, описанные ниже."
 msgstr ""
-"To control the drone with RC unit, a binding operation is required. Follow "
+"To control the drone with RC transmitter, a binding operation is required. Follow "
 "this manual to perform it. "
 
 #: ../../settings/rc_connection.rst:6
@@ -181,12 +181,12 @@ msgid ""
 "квадрокоптерами с одного пульта, разрешается связывать только один пульт с "
 "одним приемником."
 msgstr ""
-"Controlling several drones using one RC unit might cause crashes. Do not "
+"Controlling several drones using one RC transmitter might cause crashes. Do not "
 "bind more than one receiver to one controller."
 
 #: ../../settings/rc_connection.rst:11
 msgid "Включите пульт дистанционного управления"
-msgstr "Turn the RC unit on"
+msgstr "Turn the RC transmitter on"
 
 #: ../../settings/rc_connection.rst:12
 msgid "Войдите в меню настроек"
@@ -235,7 +235,7 @@ msgstr "Binding procedure works for FlySky-A8S receiver. "
 
 #: ../../settings/rc_setting.rst:1
 msgid "Настройка пульта"
-msgstr "RC unit setting"
+msgstr "RC transmitter setting"
 
 #: ../../settings/rc_setting.rst:4
 msgid "Для настройки пульта выполните последовательно следующие действия:"
@@ -273,7 +273,7 @@ msgid ""
 "пульта управления, а также вкладка SYSTEM, в которой производится настройка "
 "модели, управляемой пультом."
 msgstr ""
-"\"Function\" tab contains settings of the RC unit. \"System\" tab is used to"
+"\"Function\" tab contains settings of the RC transmitter. \"System\" tab is used to"
 " change the model's properties. "
 
 #: ../../settings/rc_setting.rst:24
@@ -323,7 +323,7 @@ msgstr "STICKS MODE → M2 (Mode 2)"
 #: ../../settings/rc_setting.rst:30
 msgid ""
 "Для дальнейшей настройки перейдите в раздел `связь пульта с приемником`_"
-msgstr "For further setting proceed to 'RC unit connection`_"
+msgstr "For further setting proceed to 'RC transmitter connection`_"
 
 #: ../../settings/settings_main.rst:1
 msgid "Настройки"
@@ -341,11 +341,11 @@ msgid ""
 "В случае замены приемника управления или пульта, перейдите в раздел `связь "
 "пульта с приемником`_"
 msgstr ""
-"In case of receiver or RC unit change, proceed to \"RC unit connection`_"
+"In case of receiver or RC transmitter change, proceed to \"RC transmitter connection`_"
 
 #: ../../settings/settings_main.rst:11
 msgid "Также вы можете заново `настроить пульт`_, если что-то сбилось."
-msgstr "You can `set the RC unit` again if anything is out of order."
+msgstr "You can `set the RC transmitter` again if anything is out of order."
 
 #: ../../settings/settings_main.rst:13
 msgid ""

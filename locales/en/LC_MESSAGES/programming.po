@@ -524,7 +524,7 @@ msgstr "gx, gy, gz"
 
 #: ../../programming/lua/lua.rst:368
 msgid "Данные c пульта управления."
-msgstr "RC unit data."
+msgstr "RC transmitter data."
 
 #: ../../programming/lua/lua.rst:370
 msgid ""
@@ -1138,7 +1138,7 @@ msgid ""
 "переведите рычаг В в верхнее положение, управление квадрокоптером перейдет к"
 " вам."
 msgstr ""
-"To fly safely, it is recommended to have an RC unit ready and bind it to the"
+"To fly safely, it is recommended to have an RC transmitter ready and bind it to the"
 " drone. Activate mission flight by switching SwB in lower position.  All "
 "other switches should be in upper position. If necessary, switch SwB in "
 "upper position - and now you have controls of the drone. "
