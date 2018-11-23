@@ -1,0 +1,149 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="'en'">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Бортовой модуль навигации в помещении &#8212; Test project  documentation</title>
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="id1">
+<h1>Бортовой модуль навигации в помещении<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<img alt="_static/images/drone_indor_module.png" class="align-center" src="_static/images/drone_indor_module.png" />
+<p>Модуль входит в комплект системы навигации в помещении вместе с блоком управления и четырьмя ультразвуковыми излучателями.
+Монтаж осуществляется на основной плате &quot;Пионера&quot; сверху с помощью 4-х винтов М3. Кабель подключается в разъем Х2.</p>
+<p>Модуль оснащен двумя микрофонами, которые позволяют контроллеру оценивать время прихода и разность фаз сигналов с излучателей. Далее происходит синхронизация с блоком управления по радиоканалу и определяется точное положение квадрокоптера в пространстве, а также его скорость.</p>
+<p>Для работы модуля необходимо расположить включенный квадрокоптер в зоне действия ультразвуковых излучателей.</p>
+<p><strong>Дополнительно:</strong> <a class="reference external" href="../indoor_nav.html">Навигация в промещении</a></p>
+<p>Полет в системе навигации может осуществляться как в ручном режиме, так и по заранее загруженной программе. Пример такой программы приведен ниже. ВЫполняя её, &quot;Пионер&quot; взлетает, набирает высоту 1.2 м, летит в угол полетной зоны с координатами (0:0), затем в точку с координатами (1:1) и приземляется. Чтобы <a class="reference external" href="../programming/pioneer_station/pioneer_station_upload.html">загрузить программу на &quot;Пионер&quot;</a>, воспользуйтесь Pioneer Station.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">--</span> <span class="n">переменная</span> <span class="n">текущего</span> <span class="n">состояния</span>
+<span class="n">local</span> <span class="n">curr_state</span> <span class="o">=</span> <span class="s2">&quot;PREPARE_FLIGHT&quot;</span>
+
+
+<span class="o">--</span> <span class="n">таблица</span> <span class="n">функций</span><span class="p">,</span> <span class="n">вызываемых</span> <span class="n">в</span> <span class="n">зависимости</span> <span class="n">от</span> <span class="n">состояния</span>
+<span class="n">action</span> <span class="o">=</span> <span class="p">{</span>
+   <span class="p">[</span><span class="s2">&quot;PREPARE_FLIGHT&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">function</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+           <span class="n">Timer</span><span class="o">.</span><span class="n">callLater</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="n">function</span> <span class="p">()</span>
+           <span class="n">ap</span><span class="o">.</span><span class="n">push</span><span class="p">(</span><span class="n">Ev</span><span class="o">.</span><span class="n">MCE_TAKEOFF</span><span class="p">)</span> <span class="o">--</span> <span class="n">через</span> <span class="mi">2</span> <span class="n">секунды</span> <span class="n">отправляем</span> <span class="n">команду</span> <span class="n">автопилоту</span> <span class="n">на</span> <span class="n">взлет</span>
+           <span class="n">curr_state</span> <span class="o">=</span> <span class="s2">&quot;FLIGHT_TO_FIRST_POINT&quot;</span> <span class="o">--</span> <span class="n">переход</span> <span class="n">в</span> <span class="n">следующее</span> <span class="n">состояние</span>
+       <span class="n">end</span><span class="p">)</span>
+   <span class="n">end</span><span class="p">,</span>
+   <span class="p">[</span><span class="s2">&quot;FLIGHT_TO_FIRST_POINT&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">function</span> <span class="p">(</span><span class="n">x</span><span class="p">)</span>
+           <span class="n">Timer</span><span class="o">.</span><span class="n">callLater</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="n">function</span> <span class="p">()</span>
+           <span class="n">ap</span><span class="o">.</span><span class="n">goToLocalPoint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mf">1.2</span><span class="p">)</span> <span class="o">--</span> <span class="n">отправка</span> <span class="n">команды</span> <span class="n">автопилоту</span> <span class="n">на</span> <span class="n">полет</span> <span class="n">к</span> <span class="n">точке</span> <span class="n">с</span> <span class="n">координатами</span> <span class="p">(</span><span class="mi">0</span> <span class="n">м</span><span class="p">,</span> <span class="mi">0</span> <span class="n">м</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span><span class="mi">2</span> <span class="n">м</span><span class="p">)</span>
+           <span class="n">curr_state</span> <span class="o">=</span> <span class="s2">&quot;FLIGHT_TO_SECOND_POINT&quot;</span> <span class="o">--</span> <span class="n">переход</span> <span class="n">в</span> <span class="n">следующее</span> <span class="n">состояние</span>
+       <span class="n">end</span><span class="p">)</span>
+   <span class="n">end</span><span class="p">,</span>
+   <span class="p">[</span><span class="s2">&quot;FLIGHT_TO_SECOND_POINT&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">function</span> <span class="p">(</span><span class="n">x</span><span class="p">)</span>
+           <span class="n">Timer</span><span class="o">.</span><span class="n">callLater</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="n">function</span> <span class="p">()</span>
+           <span class="n">ap</span><span class="o">.</span><span class="n">goToLocalPoint</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mf">1.2</span><span class="p">)</span> <span class="o">--</span> <span class="n">отправка</span> <span class="n">команды</span> <span class="n">автопилоту</span> <span class="n">на</span> <span class="n">полет</span> <span class="n">к</span> <span class="n">точке</span> <span class="n">с</span> <span class="n">координатами</span> <span class="p">(</span><span class="mi">1</span> <span class="n">м</span><span class="p">,</span> <span class="mi">1</span> <span class="n">м</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span><span class="mi">2</span> <span class="n">м</span><span class="p">)</span>
+           <span class="n">curr_state</span> <span class="o">=</span> <span class="s2">&quot;PIONEER_LANDING&quot;</span> <span class="o">--</span> <span class="n">переход</span> <span class="n">в</span> <span class="n">следующее</span> <span class="n">состояние</span>
+       <span class="n">end</span><span class="p">)</span>
+   <span class="n">end</span><span class="p">,</span>
+   <span class="p">[</span><span class="s2">&quot;PIONEER_LANDING&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">function</span> <span class="p">(</span><span class="n">x</span><span class="p">)</span>
+           <span class="n">Timer</span><span class="o">.</span><span class="n">callLater</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="n">function</span> <span class="p">()</span>
+           <span class="n">ap</span><span class="o">.</span><span class="n">push</span><span class="p">(</span><span class="n">Ev</span><span class="o">.</span><span class="n">MCE_LANDING</span><span class="p">)</span> <span class="o">--</span> <span class="n">отправка</span> <span class="n">команды</span> <span class="n">автопилоту</span> <span class="n">на</span> <span class="n">посадку</span>
+       <span class="n">end</span><span class="p">)</span>
+   <span class="n">end</span>
+<span class="p">}</span>
+
+
+<span class="o">--</span> <span class="n">включаем</span> <span class="n">светодиод</span> <span class="p">(</span><span class="n">красный</span> <span class="n">цвет</span><span class="p">)</span>
+<span class="n">changeColor</span><span class="p">(</span><span class="n">colors</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+<span class="o">--</span> <span class="n">запускаем</span> <span class="n">одноразовый</span> <span class="n">таймер</span> <span class="n">на</span> <span class="mi">2</span> <span class="n">секунды</span><span class="p">,</span> <span class="n">а</span> <span class="n">когда</span> <span class="n">он</span> <span class="n">закончится</span><span class="p">,</span> <span class="n">выполняем</span> <span class="n">первую</span> <span class="n">функцию</span> <span class="n">из</span> <span class="n">таблицы</span> <span class="p">(</span><span class="n">подготовка</span> <span class="n">к</span> <span class="n">полету</span><span class="p">)</span>
+<span class="n">Timer</span><span class="o">.</span><span class="n">callLater</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="n">function</span> <span class="p">()</span> <span class="n">action</span><span class="p">[</span><span class="n">curr_state</span><span class="p">]()</span> <span class="n">end</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">Test project</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2018, Test author.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.8.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/module/indoor_nav.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

@@ -1,0 +1,107 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018, Geoscan ltd
+# This file is distributed under the same license as the pioneer-doc-en
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
+# 
+# Translators:
+# kuznetckiy <r.kuzneckiy@geoscan.aero>, 2018
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: pioneer-doc-en\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-11-20 10:28+0300\n"
+"PO-Revision-Date: 2018-11-22 14:10+0000\n"
+"Last-Translator: kuznetckiy <r.kuzneckiy@geoscan.aero>, 2018\n"
+"Language-Team: English (https://www.transifex.com/geoscan/teams/93851/en/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+"Language: en\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+# 0f3d64d59d9547f3b32410acac8a8c42
+#: ../../module/board.rst:2
+msgid "Плата подключения дополнительных модулей"
+msgstr "Extension modules board"
+
+# 047aa5df7d3c469eafc37396eb921d59
+#: ../../module/board.rst:4
+msgid ""
+"Плата подключения дополнительных модулей обеспечивает возможность расширения"
+" функционала \"Пионера\" за счет установки полезной нагрузки."
+msgstr ""
+"Extension modules board provides the ability to plug in different module to "
+"the base board."
+
+# 1b40d22f634d46df98ed8e6739c1a5f5
+#: ../../module/board.rst:9
+msgid ""
+"При установке следует ориентировать плату в соответствии с маркировкой в "
+"центре (стрелка). Плата крепится на нижнюю часть квадрокоптера вместо крышки"
+" отсека аккумулятора через стойки винтами М3."
+msgstr ""
+"Use the arrow markers to install the board properly (they should point in "
+"the same direction). The board itself is mounted on the lower part of the "
+"drone instead of battery bay cover. Use 4 stands and M3 screws."
+
+# d93386176220497fa965092892fe814e
+#: ../../module/board.rst:12
+msgid ""
+"Сверху на плате расположены два разъема для соединения с базовой платой "
+"квадрокоптера входящими в комплект шлейфами. На нижней поверхности  - два "
+"разъема для подключения модулей. Подключение модулей осуществляется "
+"\"насквозь\" через плату."
+msgstr ""
+"There are two connectors on top of the extension board. They are used to "
+"connect with the base board using two parallel cables. Two connectors on the"
+" bottom are used to plug in different modules. The connection is established"
+" \"through\" the board."
+
+# 4cbf4d28176d4df086a65d504c80343b
+#: ../../module/board.rst:14
+msgid ""
+"Также плата подключения дополнительных модулей оснащена лазерным "
+"дальномером, позволяющим точно определять высоту над уровнем пола в пределах"
+"  0 - 1.5 м. Дальномер активируется в режиме удержания высоты. При этом "
+"\"Пионер\" будет сохранять одинаковое расстояние от поверхности, даже если "
+"она неровная. Пролет над препятствием или впадиной повлечет за собой "
+"соответствующее изменение высоты полета квадрокоптера. Если закрыть датчик "
+"рукой или другим предметом, \"Пионер\" будет набирать высоту до тех пор, "
+"пока расстояние до препятствия не вернется к прежнему значению, или пока "
+"квадрокоптер не упрется в потолок."
+msgstr ""
+"The board is equipped with laser range sensor as well. It provides the "
+"ability to precisely estimate the altitude up to 1.5 m above the surface. "
+"The sensor is activated in alt.hold mode. Pioneer will remain the same "
+"altitude regarding the surface. If the distance between the drone and the "
+"surface changes, Pioneer will react, trying to compensate the change. "
+
+# e896493d811747f28d5d08a807b98889
+#: ../../module/board.rst:16
+msgid ""
+"Данные с дальномера можно считывать и использовать для управления "
+"квадрокоптером. В качестве примера приведена программа, меняющая цвет "
+"светодиодов на \"Пионере\" в зависимости от расстояния до земли. Используйте"
+" Pioner Station, чтобы  `загрузить программу`_ на \"Пионер\"."
+msgstr ""
+"You can acquire the sensors data to control the flight. As an example, here "
+"is a program which will change the colour of Pioneer LEDs depending on its "
+"distance to the ground. Use Pioneer Station to `upload the program`_ to "
+"Pioneer."
+
+# 584088f69536435ab36bb4fc0438aaf1
+#: ../../module/board.rst:19
+msgid ""
+"Дальномер неактивен в режиме полета по GPS. Если программа не работает, "
+"откройте вкладку \"`параметры автопилота`_ \" в Pioneer Station и выберите "
+"набор параметров \"LPS\" или \"OPT\". Также можно вручную поменять значение "
+"параметра BoardPioneer_modules_gnss на 0.0."
+msgstr ""
+"The range sensor is not active in GPS flight mode. If the program doesn't "
+"work, open the `autopilot parameters`_ tab in Pioneer Station window and "
+"select LPS or OPT parameters setting. You can also change the "
+"BoardPioneer_modules_gnss parameter to 0.0 manually."

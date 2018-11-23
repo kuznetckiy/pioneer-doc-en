@@ -1,0 +1,63 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018, Geoscan ltd
+# This file is distributed under the same license as the pioneer-doc-en
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
+# 
+# Translators:
+# kuznetckiy <r.kuzneckiy@geoscan.aero>, 2018
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: pioneer-doc-en\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-11-20 10:28+0300\n"
+"PO-Revision-Date: 2018-11-22 14:10+0000\n"
+"Last-Translator: kuznetckiy <r.kuzneckiy@geoscan.aero>, 2018\n"
+"Language-Team: English (https://www.transifex.com/geoscan/teams/93851/en/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+"Language: en\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+# 7abb23d7ed20416abce5ac6a768d7799
+#: ../../module/cargo.rst:2
+msgid "Модуль захвата груза"
+msgstr "Cargo module"
+
+# a518d8ab29f5428facd5ce7a5db2f09b
+#: ../../module/cargo.rst:7
+msgid ""
+"Модуль захвата груза предназначен для  захвата предметов, обладающих "
+"магнитным свойствами, оснащен управляемым электромагнитом на гибком подвесе "
+"и RGB светодиодами."
+msgstr ""
+"Cargo module is designed to hold magnetic objects. It is equipped with "
+"electromagnet on a flexible gimbal and 4 RGB LEDs."
+
+# d18214c6a84144c189d2410bcbd16f63
+#: ../../module/cargo.rst:9
+msgid ""
+"Модуль монтируется на плату подключения дополнительных модулей на 4 винта "
+"М3, при этом обеспечивается надежное соединение разъемов."
+msgstr "Cargo module is mounted on the extension board using 4 M3 screws. "
+
+# db36628410a14b6ebf204e0600330445
+#: ../../module/cargo.rst:11
+msgid ""
+"Модулем удобно управлять по 8 каналу с помощью двухпозиционного "
+"переключателя на пульте. Для настройки канала на нем необходимо во вкладке "
+"function найти пункт Aux. channels, выбрать channel 8 и установить "
+"переключатель SwA (крайний левый) как управляющий. Теперь необходимо "
+"`загрузить на \"Пионер\"`_ программу для модуля груза. В качестве примера "
+"используйте код, представленный ниже. После его загрузки вы сможете "
+"управлять работой магнита с помошью крайнего левого тумблера на пульте."
+msgstr ""
+"Use 8 channel of the RC unit to operate the module. A free SwA flipswitch "
+"can be used. To set the channel, turn on the RC unit, use touchscreen to "
+"select function-AUX Channels - 8 and choose SwA as a primary. Now you should"
+" `upload a programm`_ for Pioneer's cargo module. Use the given code, which "
+"allows to control the magnet with SwA switch. "

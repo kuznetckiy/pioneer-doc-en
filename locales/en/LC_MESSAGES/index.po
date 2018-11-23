@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Test project \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-11-23 09:38+0300\n"
+"POT-Creation-Date: 2018-11-23 09:59+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,26 +19,176 @@ msgstr ""
 "Generated-By: Babel 2.6.0\n"
 
 #: ../../index.rst:7
-msgid "Привет!"
-msgstr "Hello!"
+msgid "Документация Геоскан \"Пионер\""
+msgstr ""
 
-#: ../../index.rst:8
-msgid "Это текст на русском языке"
-msgstr "This is English text"
+#: ../../index.rst:10
+msgid "`Вернуться на сайт \"Пионер\"`_"
+msgstr ""
 
-#: ../../index.rst:21
-msgid "Indices and tables"
+#: ../../index.rst:14
+msgid ""
+"Геоскан \"Пионер\" - это многофункциональный учебный комплекс для школ, "
+"авиамодельных секций, кружков робототехники, а также для самостоятельного"
+" освоения."
+msgstr ""
+
+#: ../../index.rst:20
+msgid "\"Пионер\" позволяет:"
+msgstr ""
+
+#: ../../index.rst:22
+msgid "изучить основы робототехники и авионики"
 msgstr ""
 
 #: ../../index.rst:23
-msgid ":ref:`genindex`"
+msgid "ознакомиться с устройством и принципом работы квадрокоптера"
 msgstr ""
 
 #: ../../index.rst:24
-msgid ":ref:`modindex`"
+msgid "освоить приемы пилотирования"
 msgstr ""
 
 #: ../../index.rst:25
-msgid ":ref:`search`"
+msgid "адаптировать коптер для решения поставленных задач"
 msgstr ""
+
+#: ../../index.rst:26
+msgid "научиться программировать квадрокоптер"
+msgstr ""
+
+#: ../../index.rst:29
+msgid ""
+"Функционал комплекса может быть расширен за счет подключения и "
+"программирования дополнительных модулей."
+msgstr ""
+
+#: ../../index.rst:33
+msgid "Технические характеристики"
+msgstr ""
+
+#: ../../index.rst:1
+msgid "Параметр"
+msgstr ""
+
+#: ../../index.rst:1
+msgid "Значение"
+msgstr ""
+
+#: ../../index.rst:1
+msgid "Тип"
+msgstr ""
+
+#: ../../index.rst:1
+msgid "квадрокоптер"
+msgstr ""
+
+#: ../../index.rst:1
+msgid "Продолжительность полета"
+msgstr ""
+
+#: ../../index.rst:1
+msgid "до 17 минут"
+msgstr ""
+
+#: ../../index.rst:1
+msgid "Скорость полета"
+msgstr ""
+
+#: ../../index.rst:1
+msgid "до 65 км/ч"
+msgstr ""
+
+#: ../../index.rst:1
+msgid "Масса квадрокоптера"
+msgstr ""
+
+#: ../../index.rst:1
+msgid "230 г"
+msgstr ""
+
+#: ../../index.rst:1
+msgid "Максимальная взлетная масса"
+msgstr ""
+
+#: ../../index.rst:1
+msgid "420 г"
+msgstr ""
+
+#: ../../index.rst:1
+msgid "Размеры"
+msgstr ""
+
+#: ../../index.rst:1
+msgid "290 x 290 x 120 мм"
+msgstr ""
+
+#: ../../index.rst:1
+msgid "Двигатели"
+msgstr ""
+
+#: ../../index.rst:1
+msgid "бесколлекторные 1306 3100KV"
+msgstr ""
+
+#: ../../index.rst:1
+msgid "Аккумуляторная батарея"
+msgstr ""
+
+#: ../../index.rst:1
+msgid "LiPo 2S 1300мАч 9,62 Втч"
+msgstr ""
+
+#: ../../index.rst:1
+msgid "Максимальная дальность полета"
+msgstr ""
+
+#: ../../index.rst:1
+msgid "500 м"
+msgstr ""
+
+#: ../../index.rst:1
+msgid "Допустимая скорость ветра"
+msgstr ""
+
+#: ../../index.rst:1
+msgid "до 5 м/с"
+msgstr ""
+
+#: ../../index.rst:1
+msgid "Температура эксплуатации"
+msgstr ""
+
+#: ../../index.rst:1
+msgid "От 0 до +40 °С"
+msgstr ""
+
+#: ../../index.rst:50
+msgid "Содержание:"
+msgstr ""
+
+#: ../../index.rst:65
+msgid ""
+"Данное руководство содержит информацию в объеме, достаточном для полного "
+"освоения комплекса Геоскан \"Пионер\", его сборки, пилотирования и "
+"программирования."
+msgstr ""
+
+#~ msgid "Привет!"
+#~ msgstr "Hello!"
+
+#~ msgid "Это текст на русском языке"
+#~ msgstr "This is English text"
+
+#~ msgid "Indices and tables"
+#~ msgstr ""
+
+#~ msgid ":ref:`genindex`"
+#~ msgstr ""
+
+#~ msgid ":ref:`modindex`"
+#~ msgstr ""
+
+#~ msgid ":ref:`search`"
+#~ msgstr ""
 

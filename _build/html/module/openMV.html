@@ -1,0 +1,268 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="'en'">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Программируемая камера OpenMV &#8212; Test project  documentation</title>
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="openmv">
+<h1>Программируемая камера OpenMV<a class="headerlink" href="#openmv" title="Permalink to this headline">¶</a></h1>
+<img alt="_static/images/openmv_module.png" class="align-center" src="_static/images/openmv_module.png" />
+<p>Программируемая камера OpenMV позволяет обрабатывать видео поток на борту &quot;Пионера&quot; и осуществлять автономную навигацию по визуальным признакам.</p>
+<p>Для установки камеры на квадрокоптер необходимо сначала установить модуль OpenMV. Крепление модуля на 4 винта М3 с подключением двух  разъемов. Затем, на установленный модуль крепится сама камера на два 8-пиновых разъема. Для дополнительной надежности можно использовать две стойки с винтами для соединения плат камеры и модуля.</p>
+<p>Модуль OpenMV взаимодействует с базовой платой &quot;Пионера&quot; посредством интерфейса UART. При этом для квадрокоптера и камеры необходимо написать две отдельных программы с соответствующими командами, которые структурируют взаимодействие.
+Для настройки соединения на &quot;Пионере&quot; используйте следующий код</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">--</span> <span class="n">инициализируем</span> <span class="n">Uart</span> <span class="n">интерфейс</span>
+<span class="n">local</span> <span class="n">uartNum</span> <span class="o">=</span> <span class="mi">4</span> <span class="o">--</span> <span class="n">номер</span> <span class="n">Uart</span> <span class="n">интерфейса</span> <span class="p">(</span><span class="n">USART4</span><span class="p">)</span>
+<span class="n">local</span> <span class="n">baudRate</span> <span class="o">=</span> <span class="mi">9600</span> <span class="o">--</span> <span class="n">скорость</span> <span class="n">передачи</span> <span class="n">данных</span>
+<span class="n">local</span> <span class="n">stopBits</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="n">local</span> <span class="n">parity</span> <span class="o">=</span> <span class="n">Uart</span><span class="o">.</span><span class="n">PARITY_NONE</span>
+<span class="n">local</span> <span class="n">uart</span> <span class="o">=</span> <span class="n">Uart</span><span class="o">.</span><span class="n">new</span><span class="p">(</span><span class="n">uartNum</span><span class="p">,</span> <span class="n">baudRate</span><span class="p">,</span> <span class="n">parity</span><span class="p">,</span> <span class="n">stopBits</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Также необходимо указать протокол обмена на самой камере. Для этого <a class="reference external" href="http://github.com/openmv/openmv-ide/releases/download/v2.0.0/openmv-ide-windows-2.0.0.exe">скачайте и запустите OpenMV IDE</a>. Подключите камеру к компьютеру кабелем micro-USB и нажмите кнопку &quot;Соединить&quot; в левом нижнем углу OpenMV IDE. Теперь написанный в текстовом поле код можно загружать непосредственно в камеру, нажав кнопку &quot;запустить&quot; в левом нижнем углу.</p>
+<p>Код для инициализации интерфейса  UART на камере</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">uart</span> <span class="o">=</span> <span class="n">UART</span><span class="p">(</span><span class="mi">3</span><span class="p">)[</span><span class="n">font</span><span class="o">=</span><span class="n">monospace</span><span class="p">][</span><span class="o">/</span><span class="n">font</span><span class="p">]</span>
+<span class="n">uart</span><span class="o">.</span><span class="n">init</span><span class="p">(</span><span class="mi">9600</span><span class="p">,</span> <span class="n">bits</span><span class="o">=</span><span class="mi">8</span><span class="p">,</span> <span class="n">parity</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">stop</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">timeout_char</span><span class="o">=</span><span class="mi">1000</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Протокол обмена между камерой и &quot;Пионером&quot; создан.</p>
+<p>Далее приводится пример программ, меняющий яркость свечения светодиодов на &quot;Пионере&quot; в зависимости от яркости картинки, принимаемой камерой OpenMV.
+В коде обеих программ (для &quot;Пионера&quot; и OpenMV) уже содержатся блоки создания UART интерфейса.</p>
+<p>код для &quot;Пионера&quot;</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">--</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">learnxinyminutes</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">docs</span><span class="o">/</span><span class="n">ru</span><span class="o">-</span><span class="n">ru</span><span class="o">/</span><span class="n">lua</span><span class="o">-</span><span class="n">ru</span><span class="o">/</span> <span class="n">ссылка</span> <span class="n">для</span> <span class="n">быстрого</span> <span class="n">ознакомления</span> <span class="n">с</span> <span class="n">основами</span> <span class="n">языка</span> <span class="n">LUA</span>
+<span class="o">--</span> <span class="n">количество</span> <span class="n">светодиодов</span> <span class="n">на</span> <span class="n">основной</span> <span class="n">плате</span> <span class="n">пионера</span>
+<span class="n">local</span> <span class="n">ledNumber</span> <span class="o">=</span> <span class="mi">4</span>
+<span class="o">--</span> <span class="n">создание</span> <span class="n">порта</span> <span class="n">управления</span> <span class="n">светодиодами</span>
+<span class="n">local</span> <span class="n">leds</span> <span class="o">=</span> <span class="n">Ledbar</span><span class="o">.</span><span class="n">new</span><span class="p">(</span><span class="n">ledNumber</span><span class="p">)</span>
+
+<span class="o">--</span> <span class="n">функция</span><span class="p">,</span> <span class="n">изменяющая</span> <span class="n">цвет</span> <span class="mi">4</span><span class="o">-</span><span class="n">х</span> <span class="n">RGB</span> <span class="n">светодиодов</span> <span class="n">на</span> <span class="n">основной</span> <span class="n">плате</span> <span class="n">пионера</span>
+<span class="n">local</span> <span class="n">function</span> <span class="n">changeColor</span><span class="p">(</span><span class="n">red</span><span class="p">,</span> <span class="n">green</span><span class="p">,</span> <span class="n">blue</span><span class="p">)</span>
+   <span class="k">for</span> <span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">ledNumber</span> <span class="o">-</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span> <span class="n">do</span>
+       <span class="n">leds</span><span class="p">:</span><span class="nb">set</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">red</span><span class="p">,</span> <span class="n">green</span><span class="p">,</span> <span class="n">blue</span><span class="p">)</span>
+   <span class="n">end</span>
+<span class="n">end</span>
+
+<span class="o">--</span> <span class="n">функция</span><span class="p">,</span> <span class="n">которая</span> <span class="n">меняет</span> <span class="n">цвет</span> <span class="n">светодиодов</span> <span class="n">на</span> <span class="n">красный</span> <span class="n">и</span> <span class="n">выключает</span> <span class="n">таймер</span>
+<span class="n">local</span> <span class="n">function</span> <span class="n">emergency</span><span class="p">()</span>
+   <span class="n">takePhotoTimer</span><span class="p">:</span><span class="n">stop</span><span class="p">()</span>
+   <span class="o">--</span> <span class="n">так</span> <span class="n">как</span> <span class="n">после</span> <span class="n">остановки</span> <span class="n">таймера</span> <span class="n">его</span> <span class="n">функция</span> <span class="n">выполнится</span> <span class="n">еще</span> <span class="n">раз</span><span class="p">,</span> <span class="n">то</span> <span class="n">меняем</span> <span class="n">цвета</span> <span class="n">светодиодов</span> <span class="n">на</span> <span class="n">красный</span> <span class="n">через</span> <span class="n">секунду</span>
+   <span class="n">Timer</span><span class="o">.</span><span class="n">callLater</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">function</span> <span class="p">()</span> <span class="n">changeColor</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span> <span class="n">end</span><span class="p">)</span>
+<span class="n">end</span>
+
+<span class="o">--</span> <span class="n">определяем</span> <span class="n">функцию</span> <span class="n">анализа</span> <span class="n">возникающих</span> <span class="n">событий</span> <span class="n">в</span> <span class="n">системе</span>
+<span class="n">function</span> <span class="n">callback</span><span class="p">(</span><span class="n">event</span><span class="p">)</span>
+   <span class="o">--</span> <span class="n">проверка</span><span class="p">,</span> <span class="n">низкое</span> <span class="n">ли</span> <span class="n">напряжение</span> <span class="n">на</span> <span class="n">аккумуляторе</span>
+   <span class="k">if</span> <span class="p">(</span><span class="n">event</span> <span class="o">==</span> <span class="n">Ev</span><span class="o">.</span><span class="n">LOW_VOLTAGE2</span><span class="p">)</span> <span class="n">then</span>
+       <span class="n">emergency</span><span class="p">()</span>
+   <span class="n">end</span>
+<span class="n">end</span>
+
+<span class="n">changeColor</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span> <span class="o">--</span> <span class="n">red</span>
+
+<span class="o">--</span> <span class="n">инициализируем</span> <span class="n">Uart</span> <span class="n">интерфейс</span>
+<span class="n">local</span> <span class="n">uartNum</span> <span class="o">=</span> <span class="mi">4</span> <span class="o">--</span> <span class="n">номер</span> <span class="n">Uart</span> <span class="n">интерфейса</span> <span class="p">(</span><span class="n">USART4</span><span class="p">)</span>
+<span class="n">local</span> <span class="n">baudRate</span> <span class="o">=</span> <span class="mi">9600</span> <span class="o">--</span> <span class="n">скорость</span> <span class="n">передачи</span> <span class="n">данных</span>
+<span class="n">local</span> <span class="n">dataBits</span> <span class="o">=</span> <span class="mi">8</span>
+<span class="n">local</span> <span class="n">stopBits</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="n">local</span> <span class="n">parity</span> <span class="o">=</span> <span class="n">Uart</span><span class="o">.</span><span class="n">PARITY_NONE</span>
+<span class="n">local</span> <span class="n">uart</span> <span class="o">=</span> <span class="n">Uart</span><span class="o">.</span><span class="n">new</span><span class="p">(</span><span class="n">uartNum</span><span class="p">,</span> <span class="n">baudRate</span><span class="p">,</span> <span class="n">parity</span><span class="p">,</span> <span class="n">stopBits</span><span class="p">)</span> <span class="o">--</span> <span class="n">создание</span> <span class="n">протокола</span> <span class="n">обмена</span>
+
+<span class="n">changeColor</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span> <span class="o">--</span><span class="n">purple</span>
+
+<span class="o">--</span><span class="n">changeColor</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mf">0.4</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span> <span class="o">--</span><span class="n">yellow</span>
+
+<span class="n">local</span> <span class="n">N</span> <span class="o">=</span> <span class="mi">10</span>
+<span class="n">local</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">7</span>
+<span class="n">local</span> <span class="n">strUnpack</span> <span class="o">=</span> <span class="n">string</span><span class="o">.</span><span class="n">unpack</span>
+<span class="n">function</span> <span class="n">getData</span><span class="p">()</span> <span class="o">--</span> <span class="n">функция</span> <span class="n">приёма</span> <span class="n">байта</span> <span class="n">данных</span>
+   <span class="o">--</span><span class="n">uart</span><span class="p">:</span><span class="n">write</span><span class="p">(</span><span class="s1">&#39;abc&#39;</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+   <span class="o">--</span><span class="k">return</span> <span class="mi">50</span>
+   <span class="o">--</span><span class="k">return</span> <span class="n">uart</span><span class="p">:</span><span class="n">read</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span> <span class="ow">or</span> <span class="mi">0</span>
+   <span class="n">i</span> <span class="o">=</span> <span class="n">i</span> <span class="o">+</span> <span class="mi">1</span>
+   <span class="k">if</span> <span class="p">(</span><span class="n">i</span> <span class="o">==</span> <span class="n">N</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span> <span class="n">then</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span> <span class="n">end</span>
+   <span class="n">buf</span> <span class="o">=</span> <span class="n">uart</span><span class="p">:</span><span class="n">read</span><span class="p">(</span><span class="n">uart</span><span class="p">:</span><span class="n">bytesToRead</span><span class="p">())</span> <span class="ow">or</span> <span class="s1">&#39;0&#39;</span>
+   <span class="k">if</span> <span class="p">(</span><span class="c1">#buf == 0) then buf = &#39;\0&#39; end</span>
+   <span class="o">--</span><span class="n">buf</span> <span class="o">=</span> <span class="s1">&#39;0&#39;</span>
+   <span class="n">leds</span><span class="p">:</span><span class="nb">set</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">i</span><span class="o">/</span><span class="n">N</span><span class="p">,</span> <span class="mf">0.5</span> <span class="o">-</span> <span class="mf">0.5</span><span class="o">*</span><span class="n">i</span><span class="o">/</span><span class="mi">10</span><span class="p">)</span>
+   <span class="o">--</span><span class="n">local</span> <span class="nb">chr</span> <span class="o">=</span> <span class="n">buf</span><span class="p">[</span><span class="c1">#buf]</span>
+   <span class="k">if</span> <span class="p">(</span><span class="n">strUnpack</span> <span class="o">~=</span> <span class="n">nil</span><span class="p">)</span> <span class="n">then</span>
+       <span class="n">local</span> <span class="n">b</span> <span class="o">=</span> <span class="n">strUnpack</span><span class="p">(</span><span class="s2">&quot;B&quot;</span><span class="p">,</span> <span class="n">buf</span><span class="p">)</span>
+       <span class="k">return</span> <span class="n">b</span> <span class="o">--</span> <span class="n">примерно</span> <span class="n">должно</span> <span class="n">так</span> <span class="n">работать</span>
+   <span class="k">else</span>
+       <span class="k">return</span> <span class="mi">20</span>
+   <span class="n">end</span>
+   <span class="o">--</span><span class="n">string</span><span class="o">.</span><span class="n">byte</span><span class="p">(</span><span class="n">buf</span><span class="p">)</span>
+   <span class="o">--</span><span class="k">return</span> <span class="c1">#buf</span>
+   <span class="o">--</span><span class="k">return</span> <span class="n">string</span><span class="o">.</span><span class="n">byte</span><span class="p">(</span><span class="n">string</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="n">buf</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">))</span> <span class="ow">or</span> <span class="mi">0</span>
+   <span class="o">--</span><span class="k">return</span> <span class="n">string</span><span class="o">.</span><span class="n">byte</span><span class="p">(</span><span class="n">buf</span><span class="p">)</span> <span class="ow">or</span> <span class="mi">0</span>
+<span class="n">end</span>
+
+
+<span class="n">local</span> <span class="n">takerFunction</span> <span class="o">=</span> <span class="n">function</span> <span class="p">()</span> <span class="o">--</span> <span class="n">функция</span> <span class="n">для</span> <span class="n">периодического</span> <span class="n">чтения</span> <span class="n">данных</span> <span class="n">из</span> <span class="n">UART</span>
+ <span class="n">local</span> <span class="n">intensity</span> <span class="o">=</span> <span class="n">getData</span><span class="p">()</span> <span class="o">/</span> <span class="mf">100.0</span>
+ <span class="n">changeColor</span><span class="p">(</span><span class="n">intensity</span><span class="p">,</span> <span class="n">intensity</span><span class="p">,</span> <span class="n">intensity</span><span class="p">)</span>
+<span class="n">end</span>
+<span class="n">local</span> <span class="n">interval</span> <span class="o">=</span> <span class="mf">0.1</span>
+<span class="n">getMeasureTimer</span> <span class="o">=</span> <span class="n">Timer</span><span class="o">.</span><span class="n">new</span><span class="p">(</span><span class="n">interval</span><span class="p">,</span> <span class="n">takerFunction</span><span class="p">)</span> <span class="o">--</span> <span class="n">таймер</span> <span class="n">для</span> <span class="n">создания</span> <span class="n">фото</span>
+<span class="n">getMeasureTimer</span><span class="p">:</span><span class="n">start</span><span class="p">()</span>
+
+
+<span class="n">changeColor</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mf">0.2</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span> <span class="o">--</span> <span class="n">orange</span>
+</pre></div>
+</div>
+<p>Код для openmv</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># Hello World Example</span>
+<span class="c1">#</span>
+<span class="c1"># Welcome to the OpenMV IDE! Click on the green run arrow button below to run the script!</span>
+
+<span class="kn">from</span> <span class="nn">pyb</span> <span class="k">import</span> <span class="n">UART</span><span class="p">,</span> <span class="n">LED</span>
+
+<span class="kn">import</span> <span class="nn">sensor</span><span class="o">,</span> <span class="nn">lcd</span><span class="o">,</span> <span class="nn">image</span><span class="o">,</span> <span class="nn">time</span><span class="o">,</span> <span class="nn">utime</span>
+
+<span class="n">ledBlue</span> <span class="o">=</span> <span class="n">LED</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">ledGreen</span> <span class="o">=</span> <span class="n">LED</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+
+<span class="n">ledBlue</span><span class="o">.</span><span class="n">on</span><span class="p">()</span>
+<span class="n">sensor</span><span class="o">.</span><span class="n">reset</span><span class="p">()</span>                      <span class="c1"># Reset and initialize the sensor.</span>
+<span class="n">sensor</span><span class="o">.</span><span class="n">set_pixformat</span><span class="p">(</span><span class="n">sensor</span><span class="o">.</span><span class="n">RGB565</span><span class="p">)</span> <span class="c1"># Set pixel format to RGB565 (or GRAYSCALE)</span>
+<span class="n">sensor</span><span class="o">.</span><span class="n">set_framesize</span><span class="p">(</span><span class="n">sensor</span><span class="o">.</span><span class="n">LCD</span><span class="p">)</span>   <span class="c1"># Set frame size to QVGA (320x240)</span>
+<span class="n">sensor</span><span class="o">.</span><span class="n">skip_frames</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>     <span class="c1"># Wait for settings take effect.</span>
+<span class="n">clock</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">clock</span><span class="p">()</span>                <span class="c1"># Create a clock object to track the FPS.</span>
+<span class="n">lcd</span><span class="o">.</span><span class="n">init</span><span class="p">()</span>
+<span class="c1">#lcd.set_backlight(True)</span>
+<span class="n">ledBlue</span><span class="o">.</span><span class="n">off</span><span class="p">()</span>
+
+<span class="c1">#Init uart</span>
+
+<span class="n">uart</span> <span class="o">=</span> <span class="n">UART</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+<span class="n">uart</span><span class="o">.</span><span class="n">init</span><span class="p">(</span><span class="mi">9600</span><span class="p">,</span> <span class="n">bits</span><span class="o">=</span><span class="mi">8</span><span class="p">,</span> <span class="n">parity</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">stop</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">timeout_char</span><span class="o">=</span><span class="mi">1000</span><span class="p">)</span> <span class="c1"># init with given parameters</span>
+
+<span class="n">M_LED_COUNT</span> <span class="o">=</span> <span class="mi">10</span>
+<span class="n">led_counter</span> <span class="o">=</span> <span class="n">M_LED_COUNT</span>
+<span class="n">led_mode</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="k">while</span><span class="p">(</span><span class="kc">True</span><span class="p">):</span>
+   <span class="n">clock</span><span class="o">.</span><span class="n">tick</span><span class="p">()</span>                    <span class="c1"># Update the FPS clock.</span>
+   <span class="n">clk</span> <span class="o">=</span> <span class="n">utime</span><span class="o">.</span><span class="n">ticks_ms</span><span class="p">()</span>
+   <span class="n">img</span> <span class="o">=</span> <span class="n">sensor</span><span class="o">.</span><span class="n">snapshot</span><span class="p">()</span>         <span class="c1"># Take a picture and return the image.</span>
+   <span class="c1">#print(clock.fps())              # Note: OpenMV Cam runs about half as fast when connected</span>
+                                   <span class="c1"># to the IDE. The FPS should increase once disconnected.</span>
+
+   <span class="k">for</span> <span class="n">r</span> <span class="ow">in</span> <span class="n">img</span><span class="o">.</span><span class="n">find_rects</span><span class="p">(</span><span class="n">threshold</span> <span class="o">=</span> <span class="mi">40000</span><span class="p">):</span>
+       <span class="n">img</span><span class="o">.</span><span class="n">draw_rectangle</span><span class="p">(</span><span class="n">r</span><span class="o">.</span><span class="n">x</span><span class="p">(),</span> <span class="n">r</span><span class="o">.</span><span class="n">y</span><span class="p">(),</span> <span class="n">r</span><span class="o">.</span><span class="n">w</span><span class="p">(),</span> <span class="n">r</span><span class="o">.</span><span class="n">h</span><span class="p">(),</span> <span class="p">(</span><span class="mi">255</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">))</span>
+       <span class="k">for</span> <span class="n">p</span> <span class="ow">in</span> <span class="n">r</span><span class="o">.</span><span class="n">corners</span><span class="p">():</span>
+           <span class="n">img</span><span class="o">.</span><span class="n">draw_circle</span><span class="p">(</span><span class="n">p</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">p</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="mi">5</span><span class="p">,</span> <span class="n">color</span> <span class="o">=</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">255</span><span class="p">,</span> <span class="mi">0</span><span class="p">))</span>
+       <span class="nb">print</span><span class="p">(</span><span class="n">r</span><span class="p">)</span>
+
+   <span class="n">lcd</span><span class="o">.</span><span class="n">display</span><span class="p">(</span><span class="n">img</span><span class="p">)</span>
+
+   <span class="nb">print</span><span class="p">(</span><span class="n">img</span><span class="o">.</span><span class="n">get_histogram</span><span class="p">()</span><span class="o">.</span><span class="n">get_statistics</span><span class="p">()</span><span class="o">.</span><span class="n">l_mean</span><span class="p">())</span>
+   <span class="n">uart</span><span class="o">.</span><span class="n">writechar</span><span class="p">(</span><span class="n">img</span><span class="o">.</span><span class="n">get_histogram</span><span class="p">()</span><span class="o">.</span><span class="n">get_statistics</span><span class="p">()</span><span class="o">.</span><span class="n">l_mean</span><span class="p">())</span>
+   <span class="n">led_counter</span> <span class="o">=</span> <span class="n">led_counter</span> <span class="o">-</span> <span class="mi">1</span>
+   <span class="k">if</span> <span class="p">(</span><span class="n">led_counter</span> <span class="o">==</span> <span class="mi">0</span><span class="p">):</span>
+       <span class="k">if</span> <span class="p">(</span><span class="n">led_mode</span> <span class="o">==</span> <span class="mi">0</span><span class="p">):</span>
+           <span class="n">ledGreen</span><span class="o">.</span><span class="n">on</span><span class="p">()</span>
+       <span class="k">else</span><span class="p">:</span>
+           <span class="n">ledGreen</span><span class="o">.</span><span class="n">off</span><span class="p">()</span>
+       <span class="n">led_mode</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">-</span> <span class="n">led_mode</span>
+       <span class="n">led_counter</span> <span class="o">=</span> <span class="n">M_LED_COUNT</span>
+   <span class="k">while</span> <span class="p">(</span><span class="n">clk</span> <span class="o">+</span> <span class="mi">100</span> <span class="o">&gt;</span> <span class="n">utime</span><span class="o">.</span><span class="n">ticks_ms</span><span class="p">()):</span>
+       <span class="k">pass</span>
+</pre></div>
+</div>
+<p>Используя Pioneer Station и OpenMV IDE, <a class="reference external" href="../programming/pioneer_station/pioneer_station_upload.html">загрузите</a> соответсвующие программы на квадрокоптер и модуль камеры. Подключите аккумулятор к &quot;Пионеру&quot; и запустите выполнение программы. Протестируйте ее работу, направляя камеру на объекты с различной яркостью.</p>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">Test project</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2018, Test author.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.8.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/module/openMV.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
