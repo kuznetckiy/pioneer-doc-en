@@ -30,7 +30,7 @@ msgstr "Geoscan Pioneer documentation"
 
 # c5c37cd9f0884726bfd3248f189059b3
 #: ../../index.rst:9
-msgid "`Вернуться на сайт \"Пионер\"`_"
+msgid "`Вернуться на сайт Пионер`_"
 msgstr "`Return to Pioneer webpage`_"
 
 # 9384f6e440144236a90d69799cc8a9a5
