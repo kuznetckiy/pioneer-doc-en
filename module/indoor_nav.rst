@@ -24,11 +24,11 @@
 
 ::
 
- -- переменная текущего состояния
+ -- current status variable
  local curr_state = "PREPARE_FLIGHT"
 
   
- -- таблица функций, вызываемых в зависимости от состояния
+ -- table of functions called on different status
  action = {
     ["PREPARE_FLIGHT"] = function(x)
             Timer.callLater(2, function () 
@@ -56,9 +56,9 @@
  }
  
 
- -- включаем светодиод (красный цвет)
+ -- turn on red light
  changeColor(colors[1])
- -- запускаем одноразовый таймер на 2 секунды, а когда он закончится, выполняем первую функцию из таблицы (подготовка к полету)
+ -- start single-looped timer for 2 sec. When it's over, execute first function from the table (PREPARE_FLIGHT)
  Timer.callLater(2, function () action[curr_state]() end)
 
    

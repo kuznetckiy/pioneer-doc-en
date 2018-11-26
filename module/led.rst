@@ -18,36 +18,36 @@
 
 ::
 
- -- количество светодиодов на основной плате пионера(4) + на модуле LED (25)
+ -- Number of leds on base board (4) + leds on module (25)
  local ledNumber = 29
- -- создание порта управления светодиодами
+ -- create led control port
  local leds = Ledbar.new(ledNumber)
 
- -- функция, изменяющая цвет RGB светодиодов 
+ -- function to set leds colour
  local function changeColor(red, green, blue)
     for i=0, ledNumber - 1, 1 do
         leds:set(i, red, green, blue)
     end
  end
 
- -- функция, которая выключает светодиоды и таймер timerRandomLED
+ -- function to turn off leds and timerRandomLED
  local function emergency()
     timerRandomLED:stop()
-    -- так как после остановки таймера его функция выполнится еще раз, то выключаем светодиоды через секунду
+    -- As timer function executes once more after its stop, turn leds off in a second
     Timer.callLater(1, function () changeColor(0, 0, 0) end)
  end
 
  function callback(event)
-    -- проверка, низкое ли напряжение на аккумуляторе
+    -- checks battery voltage
     if (event == Ev.LOW_VOLTAGE2) then
         emergency()
     end
  end
 
- -- создание таймера, который каждую секунду меняет цвет всех светодиодов на случайный
+ -- create timer to change leds colour randomly every second
  timerRandomLED = Timer.new(1, function ()
     changeColor(math.random(), math.random(), math.random())
  end)
- -- запуск созданного таймера
+ -- timer start
  timerRandomLED:start()
 

@@ -14,9 +14,9 @@
 
 ::
 
-  -- инициализируем Uart интерфейс
-  local uartNum = 4 -- номер Uart интерфейса (USART4)
-  local baudRate = 9600 -- скорость передачи данных
+  -- initialize UART interface
+  local uartNum = 4 -- UART interface number (USART4)
+  local baudRate = 9600 -- data speed
   local stopBits = 1
   local parity = Uart.PARITY_NONE
   local uart = Uart.new(uartNum, baudRate, parity, stopBits)    
@@ -47,29 +47,29 @@
 
 ::
 
- -- https://learnxinyminutes.com/docs/ru-ru/lua-ru/ ссылка для быстрого ознакомления с основами языка LUA
- -- количество светодиодов на основной плате пионера
+ -- -- https://learnxinyminutes.com/docs/lua/  - Lua  basic functional manual 
+ -- number of leds on the baseboard
  local ledNumber = 4
- -- создание порта управления светодиодами
+ -- create led control port
  local leds = Ledbar.new(ledNumber)
 
- -- функция, изменяющая цвет 4-х RGB светодиодов на основной плате пионера
+ -- function to change base board led colour
  local function changeColor(red, green, blue)
     for i=0, ledNumber - 1, 1 do
         leds:set(i, red, green, blue)
     end
  end
 
- -- функция, которая меняет цвет светодиодов на красный и выключает таймер
+ -- function to change leds colour red and turn off the timer
  local function emergency()
     takePhotoTimer:stop()
-    -- так как после остановки таймера его функция выполнится еще раз, то меняем цвета светодиодов на красный через секунду
+    -- As timer function executes once more after its stop, turn leds red in a second
     Timer.callLater(1, function () changeColor(1, 0, 0) end)
  end
 
- -- определяем функцию анализа возникающих событий в системе
+ -- define function to analyse system events
  function callback(event)
-    -- проверка, низкое ли напряжение на аккумуляторе
+    -- check battery voltage
     if (event == Ev.LOW_VOLTAGE2) then
         emergency()
     end
@@ -77,13 +77,13 @@
 
  changeColor(1, 0, 0) -- red
 
- -- инициализируем Uart интерфейс
- local uartNum = 4 -- номер Uart интерфейса (USART4)
- local baudRate = 9600 -- скорость передачи данных
+ -- initialize UART interface
+ local uartNum = 4 -- UART interface number (USART4)
+ local baudRate = 9600 -- data speed
  local dataBits = 8
  local stopBits = 1
  local parity = Uart.PARITY_NONE
- local uart = Uart.new(uartNum, baudRate, parity, stopBits) -- создание протокола обмена
+ local uart = Uart.new(uartNum, baudRate, parity, stopBits) -- create comm protocol
 
  changeColor(1, 0, 1) --purple
 
@@ -92,7 +92,7 @@
  local N = 10
  local i = 7
  local strUnpack = string.unpack
- function getData() -- функция приёма байта данных
+ function getData() -- function to get data byte
     --uart:write('abc', 3)
     --return 50
     --return uart:read(1) or 0
@@ -105,7 +105,7 @@
     --local chr = buf[#buf]
     if (strUnpack ~= nil) then
         local b = strUnpack("B", buf)
-        return b -- примерно должно так работать
+        return b -- 
     else
         return 20
     end
@@ -116,12 +116,12 @@
  end
 
 
- local takerFunction = function () -- функция для периодического чтения данных из UART
+ local takerFunction = function () -- function to read UART data 
   local intensity = getData() / 100.0
   changeColor(intensity, intensity, intensity)
  end
  local interval = 0.1
- getMeasureTimer = Timer.new(interval, takerFunction) -- таймер для создания фото
+ getMeasureTimer = Timer.new(interval, takerFunction) -- photo timer
  getMeasureTimer:start()
 
 

@@ -24,17 +24,17 @@
 
 ::
 
-    -- https://learnxinyminutes.com/docs/ru-ru/lua-ru/ ссылка для быстрого ознакомления с основами языка LUA
-    -- упрощаем вызов функции получения расстояния с лазерного дальномера
+    -- https://learnxinyminutes.com/docs/lua/  - Lua  basic functional manual 
+    -- simpligy function call for laser range sensor distance data
     local range = Sensors.range
-    -- количество светодиодов на основной плате пионера
+    -- number of leds on the baseboard
     local ledNumber = 4
-    -- создание порта управления светодиодами
+    -- creating led control port
     local leds = Ledbar.new(ledNumber)
 
-    -- функция смены цвета светодиодов
+    -- led colour change function
     local function changeColor(red, green, blue)
-	    -- меняет поочередно цвета каждого из 4-х светодиодов
+	    -- changes colour of reach led 
         for i = 0, ledNumber - 1, 1 do
             leds:set(i, red, green, blue)
         end
@@ -43,21 +43,21 @@
     function callback(event)
     end
 
-    -- создаем таймер, который будет каждую десятую секунды считывать расстояние до пола
+    -- create a timer to get altitude from the sensor every 0.1 second
     timerRangeRead = Timer.new(0.1, function ()
-        -- считываем показания в метрах с лазерного дальномера (он идет 5-м в списке) подключенного датчика расстояния
+        -- get altitude on meters from laser sensor (comes №5 in line) 
         _, _, _, _, distance = range()
         r, g, b = 0, 0, 0
-        -- при превышении допустимого расстояния лазерного дальномера датчик выдает константу 8.19 м
+        -- if range is beyond maximum value , it will show constatnt altitude of 8.19 mп
         if (distance >= 8.19) then
-            -- в таком случае светодиоды загораются красным
+            -- in that case leds will colour red
             r = 1
         else
-            -- меняем яркость светодиодов в зависимости от расстояния (~1.5 - максимальное расстояние для лазерного дальномера на плате адаптере)
+            -- Change leds brightness according to distance ( ~1.5 m is a maxinum range fir laser sensor on the extension board.)
             g = math.abs(distance / 1.5)
         end
-        -- меняем цвет светодиодов на посчитанные значения
+        -- change led colour to stated above
         changeColor(r, g, b)
     end)
-    -- запускаем таймер
+    -- timer start
     timerRangeRead:start()

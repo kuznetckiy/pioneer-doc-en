@@ -15,21 +15,21 @@
 
 ::
 
-    -- https://learnxinyminutes.com/docs/ru-ru/lua-ru/ ссылка для быстрого ознакомления с основами языка LUA
+    -- https://learnxinyminutes.com/docs/lua/  - Lua  basic functional manual 
 
-    -- инициализируем управление модулем груза порт PC3 на плате версии 1.2
+    -- initialise PC3 port to control the cargo module (board version 1.2) 
 
     local magneto = Gpio.new(Gpio.C, 3, Gpio.OUTPUT)
 
-    -- инициализируем управление модулем груза порт PA1 на плате версии 1.1 (необходимо раскомментировать строчку ниже и закомментировать строчку выше)
+    -- initialise PC3 port to control the cargo module (board version 1.2) (uncomment the string below and comment the string above)
 
     -- local magneto = Gpio.new(Gpio.A, 1, Gpio.OUTPUT)
 
-    -- задаем количество светодиодов (4 на базовой плате и еще 4 на модуле груза)
+    -- set led number (4 on the main board and 4 on the cargo module)
 
     local led_number = 8
 
-    -- инициализируем светодиоды
+    -- initialise leds
 
     local leds = Ledbar.new(led_number)
 
@@ -57,23 +57,23 @@
 
 
 
-    cargoTimer = Timer.new(0.1, function () -- создаем таймер, который будет вызывать нашу функцию 10 раз в секунуду
+    cargoTimer = Timer.new(0.1, function () -- create timer to call the funcion every 0.1 second
 
-        _, _, _, _, _, _, _, ch8 = rc() -- считываем сигнал с 8 канала на пульте, значение от -1 до 1
+        _, _, _, _, _, _, _, ch8 = rc() -- get signal from channel 8 on the transmitter, range from -1 to +1
 
-        if(ch8 < 0) then  -- если сигнал с пульта -1 (SWA вверх), то включаем
+        if(ch8 < 0) then  -- if singnal is -1 (upper position), turn off
 
             magneto:reset()
 
-            changeColor(0, 1, 0) -- и сигнализируем об активации зеленым цветом
+            changeColor(0, 1, 0) -- and colour leds green to indicate
 
-        else if(ch8 > 0) then -- если сигнал с пульта 1 (SWA вниз), то выключаем
+        else if(ch8 > 0) then -- if signal is +1 (lower position), activate magnet
 
             magneto:set()
 
-            changeColor(1, 0, 0) -- когда магнит отключен, светодиоды горят красным
+            changeColor(1, 0, 0) -- colour led red to indicate 
 
-        else -- синий мигающий цвет светодиодов сигнализирует об отсутствии сигнала на восьмом канале
+        else -- blinking blue to indicate loss of control signal 
 
             if(blink < 5) then
 
@@ -95,7 +95,7 @@
 
     end)
 
-     -- запускаем таймер
+     -- timer start
 
     cargoTimer:start()
 
