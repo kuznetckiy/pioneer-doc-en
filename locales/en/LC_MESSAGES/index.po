@@ -46,7 +46,7 @@ msgstr ""
 # ce7ffe34c5234861ba080bdd13128cc0
 #: ../../index.rst:20
 msgid "\"Пионер\" позволяет:"
-msgstr "with Pioneer you can:"
+msgstr "Use Pioneer to:"
 
 # 9d5c06bfe7a54fd0b2fe90806ef27018
 #: ../../index.rst:22
