@@ -32,25 +32,25 @@
  action = {
     ["PREPARE_FLIGHT"] = function(x)
             Timer.callLater(2, function () 
-            ap.push(Ev.MCE_TAKEOFF) -- через 2 секунды отправляем команду автопилоту на взлет
-            curr_state = "FLIGHT_TO_FIRST_POINT" -- переход в следующее состояние
+            ap.push(Ev.MCE_TAKEOFF) -- send takeoff commend in 2 sec
+            curr_state = "FLIGHT_TO_FIRST_POINT" -- go to next piont
         end)
     end,
     ["FLIGHT_TO_FIRST_POINT"] = function (x) 
             Timer.callLater(2, function ()
-            ap.goToLocalPoint(0, 0, 1.2) -- отправка команды автопилоту на полет к точке с координатами (0 м, 0 м, 1,2 м)
-            curr_state = "FLIGHT_TO_SECOND_POINT" -- переход в следующее состояние
+            ap.goToLocalPoint(0, 0, 1.2) -- command to autopilot go to point with coordinates(0 м, 0 м, 1,2 м)
+            curr_state = "FLIGHT_TO_SECOND_POINT" 
         end) 
     end,
     ["FLIGHT_TO_SECOND_POINT"] = function (x) 
             Timer.callLater(2, function ()
-            ap.goToLocalPoint(1, 1, 1.2) -- отправка команды автопилоту на полет к точке с координатами (1 м, 1 м, 1,2 м)
-            curr_state = "PIONEER_LANDING" -- переход в следующее состояние
+            ap.goToLocalPoint(1, 1, 1.2) -- command to autopilot go to point with coordinates (1 м, 1 м, 1,2 м)
+            curr_state = "PIONEER_LANDING" -- execute landing
         end)
     end,
     ["PIONEER_LANDING"] = function (x) 
             Timer.callLater(2, function () 
-            ap.push(Ev.MCE_LANDING) -- отправка команды автопилоту на посадку
+            ap.push(Ev.MCE_LANDING) -- autopilot command to land
         end)
     end
  }
