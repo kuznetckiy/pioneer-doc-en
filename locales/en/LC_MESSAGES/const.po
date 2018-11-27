@@ -120,7 +120,7 @@ msgid ""
 " при соединении разъемов."
 msgstr ""
 "Using demphers, mount the board on the frame so that white arrows on top of "
-"them point in one direction. Plug in motors connectors applying no extra "
+"them point in same direction. Plug in motors connectors applying no extra "
 "force. "
 
 #: ../../const/const_frame.rst:97

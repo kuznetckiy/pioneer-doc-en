@@ -9,7 +9,7 @@
 
 ::
 
-    Используются: основание рамы, мотор правого вращения - 2 шт., мотор левого вращения - 2 шт., винт M2x4 - 8 шт.
+    Parts: frame base, clockwise motor - 2, counterclockwise motor - 2, M2x4 screw - 8.
 
 
 .. image:: /_static/images/const_frame_step_1.png
@@ -21,7 +21,7 @@
 
 ::
 
-    Используются: узел, собранный на шаге 1, стойки длинные 4 - шт., винты M3х10 - 4 шт.
+    Parts: unit assembled at step 1, studding nut (long) - 4, m3x10 screw - 4.
 
 
 .. image:: /_static/images/const_frame_step_2.png
@@ -34,7 +34,7 @@
 
 ::
 
-    Используются: узел, собранный на шаге 2, демпферы – 4 шт., винты M3х4 - 4 шт.
+    Parts: unit assembled at step 2, demphers - 4, M3x4 screws - 4.
 
 
 .. image:: /_static/images/const_frame_step_3.png
@@ -47,7 +47,7 @@
 
 ::
 
-    Используются: крышка отсека АКБ, стойки 8 мм - 4 шт., винты M3x5 - 4 шт.
+    Parts: battery compartment cover, 8 mm stubbing nut - 4б M3x5 asrews - 4.
 
 
 .. image:: /_static/images/const_frame_step_4.png
@@ -59,7 +59,7 @@
 
 ::
 
-    Используются: узел, собранный на шаге 3, шасси верх, шасси низ, торец отсека АКБ.
+    Parts: unit assembled at step 3, landing gear (upper and lower), battery compartment back plate.
 
 
 .. image:: /_static/images/const_frame_step_5.png
@@ -73,7 +73,7 @@
 
 ::
 
-    Используются: узел, собранный на шаге 4, узел, собранный на шаге 5, винты М3х10.
+    Patrs: unit assembled at step 4, unit assembled at step 5, M3x10 srews. 
 
 
 .. image:: /_static/images/const_frame_step_6.png
@@ -85,7 +85,7 @@
 
 ::
 
-    Используются: узел, собранный на шаге 6, стойки короткие металлические 4 шт., базовая плата.
+    Parts: unit assembled at step 6, studding nut(metal, short) - 4, main board.
 
 
 .. image:: /_static/images/const_frame_step_7.png

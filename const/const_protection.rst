@@ -5,7 +5,7 @@
 
 ::
 
-    Используются: узел, собранный на шаге 7, основания защиты - 4 шт., винты M2x6 - 8 шт. 
+    Parts: unit assembled at step 7, protection base - 4, M2x6 screw - 8. 
 
 
 .. image:: /_static/images/const_protection_step_8.png
@@ -18,7 +18,7 @@
 
 ::
 
-    Используются: узел, собранный на шаге 8, дуга защиты - 8 шт., перемычка защиты - 8 шт., винты M3x10 - 8 шт., стойки длинные- 8 шт.
+    Parts: unit assembled at step 8, protection arch - 8, protection bar - 8, M3x10 screw - 8, studding nut (long) - 8.
 
 
 .. image:: /_static/images/const_protection_step_9.png
@@ -30,7 +30,7 @@
 
 ::
 
-    Используются: узел, собранный на шаге 9, дуга защиты - 8 шт., перемычка защиты - 8 шт., винты M3x10 - 8 шт.
+    Parts: unit assembled at step 9, protection arch - 8, protection bar - 8, M3x10 screw - 10.
 
 
 .. image:: /_static/images/const_protection_step_10.png
@@ -43,7 +43,7 @@
 
 ::
 
-    Используются: узел, собранный на шаге 10, винт воздушный 5030 - 2 шт., винт воздушный 5030R - 2 шт.
+    Parts: unit assembled at step 10, 5030 prop -2, 5030R prop - 2.
 
 
 .. image:: /_static/images/const_protection_step_11.png
@@ -56,7 +56,7 @@
 
 ::
 
-    Используются: узел, собранный на шаге 12, приемник (находится в упаковке пульта управления).
+    Parts: unit assembled at step 11, receiver (packed with RC transmitter).
 
 
 
