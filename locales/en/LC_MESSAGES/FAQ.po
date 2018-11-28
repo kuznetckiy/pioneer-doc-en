@@ -45,7 +45,7 @@ msgid ""
 "быть расположены в соответствии с указаниями на раме. Надписи на винтах "
 "должны быть сверху."
 msgstr ""
-"**The quadcopter doesn't take off while props are spinnig **  -Check if "
+"**The quadcopter doesn't take off while props are spinnig** - Check if "
 "props are installed correctly. The \"R\" marks should be on the motors with "
 "black caps."
 

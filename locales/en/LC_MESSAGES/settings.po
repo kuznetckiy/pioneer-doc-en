@@ -323,7 +323,7 @@ msgstr "STICKS MODE → M2 (Mode 2)"
 #: ../../settings/rc_setting.rst:30
 msgid ""
 "Для дальнейшей настройки перейдите в раздел `связь пульта с приемником`_"
-msgstr "For further setting proceed to 'RC transmitter connection`_"
+msgstr "For further setting proceed to `RC transmitter connection`_"
 
 #: ../../settings/settings_main.rst:1
 msgid "Настройки"
@@ -341,7 +341,7 @@ msgid ""
 "В случае замены приемника управления или пульта, перейдите в раздел `связь "
 "пульта с приемником`_"
 msgstr ""
-"In case of receiver or RC transmitter change, proceed to \"RC transmitter connection`_"
+"In case of receiver or RC transmitter change, proceed to \`RC transmitter connection`_"
 
 #: ../../settings/settings_main.rst:11
 msgid "Также вы можете заново `настроить пульт`_, если что-то сбилось."
