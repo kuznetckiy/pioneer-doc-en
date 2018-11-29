@@ -345,7 +345,7 @@ msgstr ""
 
 #: ../../settings/settings_main.rst:11
 msgid "Также вы можете заново `настроить пульт`_, если что-то сбилось."
-msgstr "You can `set the RC transmitter` again if anything is out of order."
+msgstr "You can `set the RC transmitter`_ again if anything is out of order."
 
 #: ../../settings/settings_main.rst:13
 msgid ""
