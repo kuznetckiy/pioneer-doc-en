@@ -260,9 +260,9 @@ msgstr ""
 
 #: ../../module/gps.rst:23
 msgid ""
-"Управляя квадрокоптером с пульта, выберите режим удержания положения (тумблер SwC в нижнем положении), и "Пионер" будет использовать подключенный модуль GPS, что сделает полет более стабильным."
+"Управляя квадрокоптером с пульта, выберите режим удержания положения (тумблер SwC в среднем положении), и "Пионер" будет использовать подключенный модуль GPS, что сделает полет более стабильным."
 msgstr ""
-"When flying with radio transmitter control, use loiter mode (SwC switch in lower position) to use GPS module and make the flight sighnificantly more comfortable."
+"When flying with radio transmitter control, use loiter mode (SwC switch in middle position) to use GPS module and make the flight sighnificantly more comfortable."
 
 
 #: ../../module/indoor_nav.rst:1
