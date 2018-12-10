@@ -244,13 +244,13 @@ msgid ""
 msgstr ""
 "When `connected to Pioneer Station`_, make sure the GPS positioning mode is selected in "autopilot parameters", otherwise activate it manualy. You can observe compass working in aviahorizon window when connected to PC in satndard mode. The quantity of connected satellites is also shown there. The more satellites is "visible", the more positioning accuracy you gain. First-time activation in new location (coldstart) requires 1-3 minutes for module to synch. In case of success, red light on the module will turn green. Now, if disabled and then turned on in the same location after some time, the synchronization process will be much shorter"
 
-#: ../../module/gps.rst:17
+#: ../../module/gps.rst:16
 msgid ""
 ".. _подключении к Pioneer Station: ../programming/pioneer_station/pioneer_station_upload.html "
 msgstr ""
 ".. _connected to Pioneer Station: ../programming/pioneer_station/pioneer_station_upload.html "
 
-#: ../../module/gps.rst:20
+#: ../../module/gps.rst:18
 msgid ""
 "Если светодиод Статус продолжает гореть красным больше 5 минут, переместите квадрокоптер в точку с лучшим обзором неба."
 "Синий светодиод Ошибка сигнализирует о неправильно настроеннных параметрах "Пионера"(например, выбран режим позиционирования LPS), или о неисправности модуля. "
@@ -258,7 +258,7 @@ msgstr ""
 "If Status led keeps glowing red more than 5 minutes, move the drone to a point with GPS signal. "
 "Blue Error led means Pioneer parameters are incorrect (for example, LPS positioning mode is selected). "
 
-#: ../../module/gps.rst:23
+#: ../../module/gps.rst:20
 msgid ""
 "Управляя квадрокоптером с пульта, выберите режим удержания положения (тумблер SwC в среднем положении), и "Пионер" будет использовать подключенный модуль GPS, что сделает полет более стабильным."
 msgstr ""
