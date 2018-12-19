@@ -15,8 +15,8 @@
 * соединительные провода;
 * программу LPS для синхронизации с компьютером (`скачать последнюю версию`_ );
 
-.. _скачать последнюю версию: https://dl.geoscan.aero/pioneer/upload/LPS/Geoscan_LPS.exe
-.. _Скачать инструкцию по настройке системы навигации: https://dl.geoscan.aero/pioneer/upload/Docs/User_manual_Locus.pdf
+.. _скачать последнюю версию: https://dl.geoscan.aero/pioneer/upload/LPS/Geoscan_LPS_en.exe
+.. _Скачать инструкцию по настройке системы навигации: https://dl.geoscan.aero/pioneer/upload/Docs/User_manual_Locus_en.pdf
 
 Установка полетной зоны
 ----------------------------

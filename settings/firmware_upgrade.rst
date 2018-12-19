@@ -5,7 +5,7 @@
 .. note::
 	Если программа не запускается, попробуйте `скачать 32bit версию`_, распаковать архив и запустить run.bat.
 
-.. _скачать установщик Pioneer Station: https://dl.geoscan.aero/pioneer/upload/GCS/GEOSCAN_Pioneer_Station.exe
+.. _скачать установщик Pioneer Station: https://dl.geoscan.aero/pioneer/upload/GCS/GEOSCAN_Pioneer_Station_en.exe
 
 .. _скачать 32bit версию: https://dl.geoscan.aero/pioneer/upload/GCS/PioneerStationWin32.zip
 

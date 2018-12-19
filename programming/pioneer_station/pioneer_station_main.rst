@@ -23,7 +23,7 @@ Pioneer Station
 
 Чтобы установить программу, нажмите `скачать Pioneer station`_ и запустите загруженный .exe файл
 
-.. _скачать Pioneer station: https://dl.geoscan.aero/pioneer/upload/GCS/GEOSCAN_Pioneer_Station.exe
+.. _скачать Pioneer station: https://dl.geoscan.aero/pioneer/upload/GCS/GEOSCAN_Pioneer_Station_en.exe
 
 
 .. note::
