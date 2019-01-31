@@ -252,9 +252,9 @@ msgstr ""
 
 #: ../../module/gps.rst:18
 msgid ""
-"Если светодиод "Статус" продолжает мигать больше 5 минут, переместите квадрокоптер в точку с лучшим обзором неба и заново подключите аккумулятор. Синий светодиод "Ошибка" сигнализирует о неправильно настроеннных параметрах "Пионера"(например, выбран режим позиционирования LPS), или о неисправности модуля. "
+"Если светодиод "Статус" продолжает мигать больше 5 минут, переместите квадрокоптер в точку с лучшим обзором неба и заново подключите аккумулятор. Синий светодиод "Ошибка" сигнализирует о неправильно настроеннных параметрах "Пионера"(например, выбран режим позиционирования LPS), или о неисправности модуля."
 msgstr ""
-"If Status led keeps flashing for more than 5 minutes, move the drone to a point with GPS signal. Blue Error led means Pioneer parameters are incorrect (for example, LPS positioning mode is selected). "
+"If Status led keeps flashing for more than 5 minutes, move the drone to a point with GPS signal. Blue Error led means Pioneer parameters are incorrect (for example, LPS positioning mode is selected)."
 
 #: ../../module/gps.rst:20
 msgid ""
