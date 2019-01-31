@@ -92,3 +92,15 @@ msgid ""
 msgstr ""
 "**Quadcopter vibrates sewerely** - Check the frame assembly, base board "
 "connection. A propeller defect is also a possible issue."
+
+#: ../../FAQ.rst:19
+msgid ""
+"**Если при подключении к Pioneer Station список портов пуст** - проверьте USB кабель; скачайте и установите `драйвер виртуального порта`_ для вашей операционной системы."
+msgstr ""
+"**Empty ports list when connected to Pioneer Station** - check USB cable; download and install `virtual port driver`_ for your OS "
+
+#: ../../FAQ.rst:23
+msgid ""
+"**Пустое окно при открытии вкладки параметров из файла в Pioneer Station** - Закройте программу и запустите файл run_extra.bat из папки, в которой установлена Pioneer Station."
+msgstr ""
+"**Empty window in Pioneer Station when opening parameters from file ** - close the app, and activate run_extre.bat file in Pioneer Station directory "
