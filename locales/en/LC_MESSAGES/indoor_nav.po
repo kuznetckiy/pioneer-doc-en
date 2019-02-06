@@ -226,17 +226,25 @@ msgid "Обновление прошивки системы навигации"
 msgstr "Navigation system firmware update"
 
 #: ../../indoor_nav.rst:80
-msgid "Чтобы обновить прошивку, вам понадобится компьютер с установленной программой Pioneer Station. Запустите её, выберите в меню пункт "обновление прошивки" и следуйте указаниям помощника. "
-msgstr "To update the system firmware you will need Pioneer Station installed on your PC. Select Firmware update in the menu and follow the instructions on the screen."
+msgid ""
+"Чтобы обновить прошивку, вам понадобится компьютер с установленной программой Pioneer Station. Запустите её, выберите в меню пункт "обновление прошивки" и следуйте указаниям помощника. "
+msgstr ""
+"To update the system firmware you will need Pioneer Station installed on your PC. Select Firmware update in the menu and follow the instructions on the screen."
 
 #: ../../indoor_nav.rst:81
-msgid "Подключите блок управления системы навигации к компьютеру кабелем USB, удерживая нажатой кнопку "Меню" на плате. При выборе устройства, поставьте галочку напротив модуля BeaconUSNav."
-msgstr "Press and hold 'Menu' button on the control unit and connect it to your PC via USB cable. Select BeaconUSNav on the list and click 'next"
+msgid ""
+"Подключите блок управления системы навигации к компьютеру кабелем USB, удерживая нажатой кнопку "Меню" на плате. При выборе устройства, поставьте галочку напротив модуля BeaconUSNav."
+msgstr ""
+"Press and hold 'Menu' button on the control unit and connect it to your PC via USB cable. Select BeaconUSNav on the list and click 'next"
 
 #: ../../indoor_nav.rst:86
-msgid "Рекомендуется выбирать встроенную прошивку, так вы установите последнюю стабильную версию."
-msgstr "It is recommended to choose default firmware source."
+msgid ""
+"Рекомендуется выбирать встроенную прошивку, так вы установите последнюю стабильную версию."
+msgstr ""
+"It is recommended to choose default firmware source."
 
 #: ../../indoor_nav.rst:87
-msgid "Процесс может занять до 5 минут, не отключайте блок управления до окончания прошивки."
-msgstr "Flashing firmware may take up to 5 minutes, do not disconnect the control unit until it is finished."
+msgid ""
+"Процесс может занять до 5 минут, не отключайте блок управления до окончания прошивки."
+msgstr ""
+"Flashing firmware may take up to 5 minutes, do not disconnect the control unit until it is finished."

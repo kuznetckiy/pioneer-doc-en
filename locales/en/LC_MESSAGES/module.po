@@ -322,24 +322,34 @@ msgid "Прошивка модуля навигации"
 msgstr "Navigation module firmware update"
 
 #: ../../module/indoor_nav.rst:68
-msgid "Для обновления прошивки модуля на вашем компьютере должна быть установлена программа Pioneer Station. В окне программы выберите пункт меню "обновление прошивки" и следуйте указаниям помощника."
-msgstr "To update module's firmware, you will need Pioneer Station installed on your PC. Select Firmware update in the menu and follow the instructions on the screen."
+msgid ""
+"Для обновления прошивки модуля на вашем компьютере должна быть установлена программа Pioneer Station. В окне программы выберите пункт меню "обновление прошивки" и следуйте указаниям помощника."
+msgstr ""
+"To update module's firmware, you will need Pioneer Station installed on your PC. Select Firmware update in the menu and follow the instructions on the screen."
 
 #: ../../module/indoor_nav.rst:69
-msgid "При переходе к пункту "Выбор устройства" в списке будет отображаться не только базовая плата квадрокоптера PioneerBase, но и модуль навигации ModuleUSNav. Поставьте галочку напротив модуля и нажмите "Далее"."
-msgstr "At 'choose device' step, both Pioner base board and Navigation module will be displayed on the list. Select the module and click 'next'.
+msgid ""
+"При переходе к пункту "Выбор устройства" в списке будет отображаться не только базовая плата квадрокоптера PioneerBase, но и модуль навигации ModuleUSNav. Поставьте галочку напротив модуля и нажмите "Далее"."
+msgstr ""
+"At 'choose device' step, both Pioner base board and Navigation module will be displayed on the list. Select the module and click 'next'.
 
 #: ../../module/indoor_nav.rst:74
-msgid "При выборе источника прошивки рекомендуется "встроенный" - это последняя актуальная версия, входящая в сборку программы."
-msgstr "It is recommended to choose default firmware source"
+msgid ""
+"При выборе источника прошивки рекомендуется "встроенный" - это последняя актуальная версия, входящая в сборку программы."
+msgstr ""
+"It is recommended to choose default firmware source"
 
 #: ../../module/indoor_nav.rst:75
-msgid "Если версия модуля не определяется автоматически, прочтите маркировку на обратной стороне платы и выберите соответствующую прошивку из доступных в папке Pioneer Station."
-msgstr "If module version is not defuned automatically, read the marking on the backside of the plate and select the corresponding firmware file from Pioneer Station folder."
+msgid ""
+"Если версия модуля не определяется автоматически, прочтите маркировку на обратной стороне платы и выберите соответствующую прошивку из доступных в папке Pioneer Station."
+msgstr ""
+"If module version is not defuned automatically, read the marking on the backside of the plate and select the corresponding firmware file from Pioneer Station folder."
 
 #: ../../module/indoor_nav.rst:76
-msgid "Дождитесь окончания прошивки. После этого квадрокоптер перезагрузится в обычный режим."
-msgstr "Wait for the update to finish. Quadcopter will reboot in standard mode after that."
+msgid ""
+"Дождитесь окончания прошивки. После этого квадрокоптер перезагрузится в обычный режим."
+msgstr ""
+"Wait for the update to finish. Quadcopter will reboot in standard mode after that."
 
 
 #: ../../module/led.rst:1
