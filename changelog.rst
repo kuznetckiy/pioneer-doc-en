@@ -1,15 +1,15 @@
 Changelog
 =============
 
-.. 8/09/2019
-.. -----------
+8/09/2019
+-----------
 
-.. 1. Pioneer Station update (version 1.9.1)
+1. Pioneer Station update (version 1.9.1)
 
-.. - Fixed code editor and telemetry bug when resizing application's window
-.. - Fixed autopilot version indication in telemetry table
-.. - Fized update lps module notification
-.. - Added link to changelog menu-documentation
+- Fixed code editor and telemetry bug when resizing application's window
+- Fixed autopilot version indication in telemetry table
+- Fized update lps module notification
+- Added link to changelog menu-documentation
 
 
 1/02/2019
