@@ -4,7 +4,7 @@ Changelog
 11/02/2019
 -----------
 
-1. Pioneer Station update (`version 1.9.1`_)
+1. Pioneer Station update `version 1.9.1`_
 
 - Fixed code editor and telemetry bug when resizing application's window
 - Fixed autopilot version indication in telemetry table
@@ -16,7 +16,7 @@ Changelog
 1/02/2019
 -----------
 
-1. Pioneer Station update (`version 1.9.0`_)
+1. Pioneer Station update `version 1.9.0`_
 
 - Added accelerometer calibration
 - Added compass calibration
