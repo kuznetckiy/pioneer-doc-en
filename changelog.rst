@@ -1,21 +1,22 @@
 Changelog
 =============
 
-8/09/2019
+11/02/2019
 -----------
 
-1. Pioneer Station update (version 1.9.1)
+1. Pioneer Station update (`version 1.9.1`_)
 
 - Fixed code editor and telemetry bug when resizing application's window
 - Fixed autopilot version indication in telemetry table
 - Fized update lps module notification
 - Added link to changelog menu-documentation
 
+.. _Версия 1.9.1: https://dl.geoscan.aero/pioneer/upload/GCS/GEOSCAN_Pioneer_Station.exe 
 
 1/02/2019
 -----------
 
-1. Pioneer Station update (version 1.9.0)
+1. Pioneer Station update (`version 1.9.0`_)
 
 - Added accelerometer calibration
 - Added compass calibration
@@ -23,6 +24,8 @@ Changelog
 - Added English localisation, when installing this application you will now have an option to choose between Russian and English
 - Fixed an error when switching between LPS/GPS/OPT
 - Added a fix to blank window with difference between parameters in file and in autopilot
+
+.. _Версия 1.9.0: https://dl.geoscan.aero/pioneer/upload/GCS/archive/1.9.0/GEOSCAN_Pioneer_Station.exe
 
 2. Autopilot firmware update (version 1.4.4922)
 
