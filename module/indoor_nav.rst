@@ -67,9 +67,6 @@ Navigation module firmware update
 To update module's firmware, you will need Pioneer Station installed on your PC. Select Firmware update in the menu and follow the instructions on the screen.
 At 'choose device' step, both Pioner base board and Navigation module will be displayed on the list. Select the module and click 'next'
 
-.. image:: /_static/images/nav_upd.png
-    :align: center
-
 It is recommended to choose default firmware source. 
 If module version is not defuned automatically, read the marking on the backside of the plate and select the corresponding firmware file from Pioneer Station folder.
 Wait for the update to finish. Quadcopter will reboot in standard mode after that.
