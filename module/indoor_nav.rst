@@ -1,76 +1,75 @@
-Бортовой модуль навигации в помещении
+Onboard indoor navigation module
 =====================================
 
 
 .. image:: /_static/images/drone_indor_module.png
 	:align: center
 
-Модуль входит в комплект системы навигации в помещении вместе с блоком управления и четырьмя ультразвуковыми излучателями. 
-Он монтируется на основной плате "Пионера" сверху с помощью 4-х винтов М3.
+The module is included in indoor navigation system kit along with control module and 4 ultrasonic transducers. It is mounted on top of  the main board.
 
-Модуль оснащен двумя микрофонами, которые позволяют контроллеру оценивать время прихода и разность фаз сигналов с излучателей. Далее происходит синхронизация с блоком управления по радиоканалу и определяется точное положение квадрокоптера в пространстве, а также его скорость.
+The module is quipped with two microphones that allow the controller estimate phases and delays of ultrasonic signals. It is synced with the control module via radio channel and locates the drone's speed and position.
 
-Для работы модуля необходимо расположить включенный квадрокоптер в зоне действия ультразвуковых излучателей.
+Turn Pioneer on and place it in ultrasonic beacon's operation area to activate the module.
 
-**Дополнительно:** `Навигация в помещении`_
+**Additional:** `Indoor navigation`_
 
-.. _Навигация в помещении: ../indoor_nav.html
+.. _Indoor navigation: ../indoor_nav.html
 
-Полет в системе навигации может осуществляться как в ручном режиме, так и по заранее загруженной программе. Пример такой программы - ниже. Выполняя её, "Пионер" взлетает, набирает высоту 1.2 м, летит в угол полетной зоны с координатами (0:0), затем в точку с координатами (1:1) и приземляется. Чтобы `загрузить программу на "Пионер"`_, используйте Pioneer Station.
+Indoor flight can be performed both in manual or mission mode. Example of such mission program is established below. According to it, Pioneer will take-off, gains 1.2 m altitude, then flies to the corner of flyzone with (0:0) coordinates, and lands in the (1:1) point. Use Pioneer station to `upload the program`_
 
-.. _загрузить программу на "Пионер": ../programming/pioneer_station/pioneer_station_upload.html
+.. _upload the program: ../programming/pioneer_station/pioneer_station_upload.html
 
 
 
 ::
 
- -- переменная текущего состояния
+ -- current state variable
  local curr_state = "PREPARE_FLIGHT"
 
   
- -- таблица функций, вызываемых в зависимости от состояния
+ -- table of fubctions, depending on state
  action = {
     ["PREPARE_FLIGHT"] = function(x)
             Timer.callLater(2, function () 
-            ap.push(Ev.MCE_TAKEOFF) -- через 2 секунды отправляем команду автопилоту на взлет
-            curr_state = "FLIGHT_TO_FIRST_POINT" -- переход в следующее состояние
+            ap.push(Ev.MCE_TAKEOFF) -- send start comend to autopilot in 2 seconds
+            curr_state = "FLIGHT_TO_FIRST_POINT" -- next state
         end)
     end,
     ["FLIGHT_TO_FIRST_POINT"] = function (x) 
             Timer.callLater(2, function ()
-            ap.goToLocalPoint(0, 0, 1.2) -- отправка команды автопилоту на полет к точке с координатами (0 м, 0 м, 1,2 м)
-            curr_state = "FLIGHT_TO_SECOND_POINT" -- переход в следующее состояние
+            ap.goToLocalPoint(0, 0, 1.2) -- send command to autopilot to fly to piont (0 m, 0 m, 1,2 m)
+            curr_state = "FLIGHT_TO_SECOND_POINT" -- next state
         end) 
     end,
     ["FLIGHT_TO_SECOND_POINT"] = function (x) 
             Timer.callLater(2, function ()
-            ap.goToLocalPoint(1, 1, 1.2) -- отправка команды автопилоту на полет к точке с координатами (1 м, 1 м, 1,2 м)
-            curr_state = "PIONEER_LANDING" -- переход в следующее состояние
+            ap.goToLocalPoint(1, 1, 1.2) -- send command to autopilot to fly to piont (1 m, 1 m, 1,2 m)
+            curr_state = "PIONEER_LANDING" -- next state
         end)
     end,
     ["PIONEER_LANDING"] = function (x) 
             Timer.callLater(2, function () 
-            ap.push(Ev.MCE_LANDING) -- отправка команды автопилоту на посадку
+            ap.push(Ev.MCE_LANDING) -- send command to autopilot to land
         end)
     end
  }
  
 
- -- включаем светодиод (красный цвет)
+ -- turn on the red LED)
  changeColor(colors[1])
- -- запускаем одноразовый таймер на 2 секунды, а когда он закончится, выполняем первую функцию из таблицы (подготовка к полету)
+ -- Start single 2 seconds timer, then execute first function from the table (preflight)
  Timer.callLater(2, function () action[curr_state]() end)
 
    
-Прошивка модуля навигации
+Navigation module firmware update
 ---------------------------
 
-Для обновления прошивки модуля на вашем компьютере должна быть установлена программа Pioneer Station. В окне программы выберите пункт меню "обновление прошивки" и следуйте указаниям помощника.
-При переходе к пункту "Выбор устройства" в списке будет отображаться не только базовая плата квадрокоптера PioneerBase, но и модуль навигации ModuleUSNav. Поставьте галочку напротив модуля и нажмите "Далее".
+To update module's firmware, you will need Pioneer Station installed on your PC. Select Firmware update in the menu and follow the instructions on the screen.
+At 'choose device' step, both Pioner base board and Navigation module will be displayed on the list. Select the module and click 'next'
 
 .. image:: /_static/images/nav_upd.png
     :align: center
 
-При выборе источника прошивки рекомендуется "встроенный" - это последняя актуальная версия, входящая в сборку программы. 
-Если версия модуля не определяется автоматически, прочтите маркировку на обратной стороне платы и выберите соответствующую прошивку из доступных в папке Pioneer Station.
-Дождитесь окончания прошивки. После этого квадрокоптер перезагрузится в обычный режим.
+It is recommended to choose default firmware source. 
+If module version is not defuned automatically, read the marking on the backside of the plate and select the corresponding firmware file from Pioneer Station folder.
+Wait for the update to finish. Quadcopter will reboot in standard mode after that.

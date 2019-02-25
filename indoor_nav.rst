@@ -1,6 +1,6 @@
 Geoscan Locus indoor navigation system
 =================================================
-The system allows to create a controlled flyzone with max. dimensions of 10х10х4 meters. Safe and precise quadcopter control is provided without using global navigational systems (GPS/ГЛОНАСС) 
+The system allows to create a controlled flyzone with max. dimensions of 10х10х4 meters. Safe and precise quadcopter control is provided without using global navigational systems (GPS/GLONASS) 
 
 .. image:: /_static/images/indor_navigation.png
 	:align: center
@@ -31,7 +31,7 @@ Mount and connect the sensors in future flyzone. Transducers should be placed in
 
 
 .. note::
-	Система будет работать точнее, если на полу в помещении будет мягкое покрытие (ковер, ковролин). 
+	System works better in rooms with soft floor cover
 
 Using established cables, each sensor is connected to the corresponding socket of control module. The module itself should be placed outside of the zone and connected to USB port of a PC 
 
