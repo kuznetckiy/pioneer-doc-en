@@ -73,6 +73,14 @@ The second menu screen allows you to set indents from the flyzone border or togg
 .. note::
     You don't need PC for positioning system to operate. Just turn the control module on and place a Pioneer, equipped with onboard module, inside the flyzone
 
+Indoor flight
+---------------
+To perform pre-programmed flight, connect battery, switch SwB to bottom position, and push start button on Pioneer base plate. The drone will begin script execution in 5 seconds. 
+For manual flight control, switch  SwB in middle position. Pioneer will still maintain its position with Locus navigation system, so the flight will be smooth and easy to control.
+
+
+
+
 Navigation system firmware update
 ---------------------------------------
 
