@@ -77,10 +77,11 @@ Navigation system firmware update
 ---------------------------------------
 
 To update the system firmware you will need Pioneer Station installed on your PC. Select Firmware update in the menu and follow the instructions on the screen.
-Press and hold 'Menu' button on the control unit and connect it to your PC via USB cable. Select BeaconUSNav on the list and click 'next
+Press and hold 'Menu' button on the control unit and connect it to your PC via USB cable. Select BeaconUSNav on the list and click 'next'
 
 .. image:: /_static/images/usnav_upd.png
 	:align: center
+	:alt: version 4.1 update
 
 It is recommended to choose default firmware source.
 Flashing firmware may take up to 5 minutes, do not disconnect the control unit until it is finished.
