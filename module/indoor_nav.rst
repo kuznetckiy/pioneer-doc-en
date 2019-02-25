@@ -27,7 +27,7 @@ Indoor flight can be performed both in manual or mission mode. Example of such m
  local curr_state = "PREPARE_FLIGHT"
 
   
- -- table of fubctions, depending on state
+ -- table of functions, depending on state
  action = {
     ["PREPARE_FLIGHT"] = function(x)
             Timer.callLater(2, function () 
