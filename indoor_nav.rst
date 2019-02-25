@@ -1,87 +1,86 @@
-Система навигации в помещении Геоскан Локус
+Geoscan Locus indoor navigation system
 =================================================
-Система позволяет создать контролируемую полетную зону с максимальным размером 10х10х4 метров. Она обеспечивает точное и безопасное управление квадрокоптером независимо от других систем навигации (GPS/ГЛОНАСС)
+The system allows to create a controlled flyzone with max. dimensions of 10х10х4 meters. Safe and precise quadcopter control is provided without using global navigational systems (GPS/ГЛОНАСС) 
 
 .. image:: /_static/images/indor_navigation.png
 	:align: center
 
-`Скачать pdf инструкцию по настройке системы навигации`_
+`Download LPS setting manual`_
 
-Комплект системы:
+The system includes:
 
-* блок управления;
-* 4 ультразвуковых излучателя;
-* бортовой модуль;
-* соединительные провода;
-* программа LPS для синхронизации с компьютером (`скачать последнюю версию`_ );
+* control module;
+* 4 ultrasonic transducers;
+* onboard module;
+* connection cables;
+* LPS software to sync with PC (`download latest version`_);
 
-.. _скачать последнюю версию: https://dl.geoscan.aero/pioneer/upload/LPS/Geoscan_LPS.exe
-.. _Скачать pdf инструкцию по настройке системы навигации: https://dl.geoscan.aero/pioneer/upload/Docs/User_manual_Locus.pdf
+.. _download latest version: https://dl.geoscan.aero/pioneer/upload/LPS/Geoscan_LPS.exe
+.. _Download LPS setting manual: https://dl.geoscan.aero/pioneer/upload/Docs/User_manual_Locus_en.pdf
 
-Установка полетной зоны
+Flyzone setting
 ----------------------------
 
 .. image:: /_static/images/nav_system.PNG
 	:align: center
 
-Установите ультразвуковые датчики в будущей зоне полета. Расположите их в вершинах полетной зоны так, чтобы они были направлены к ее центру. При этом:
+Mount and connect the sensors in future flyzone. Transducers should be placed in the top corners of it in a way that they point in its centre. These conditions should be considered:
 
-* минимальная высота установки излучателей - 2 м
-* минимальная дистанция между излучателями  - 3 м
+* minimum installation height - 2 m
+* minimal distance  -3 m
 
 
 .. note::
 	Система будет работать точнее, если на полу в помещении будет мягкое покрытие (ковер, ковролин). 
 
-Проводами соедините каждый датчик с блоком управления. Следите, чтобы не перепутать провода и разъемы, они подписаны. Блок управления лучше расположить за пределами полетной зоны. Его можно подключить к ноутбуку или компьютеру через порт USB. Блок управления и бортовой модуль общаются по радиоканалу. 
+Using established cables, each sensor is connected to the corresponding socket of control module. The module itself should be placed outside of the zone and connected to USB port of a PC 
 
-Рулеткой или дальномером измерьте расстояния между излучателями и высоту их установки. Удобнее всего задавать полетную зону в форме квадрата или прямоугольника. По результаам измерений формируется координатная сетка полетной зоны. 
-
+The control and onboard modules are communicating via radio channel. Measure the distance between the transducers and their installation height. A square is the most convenient and easy to set form of flight zone.
 
 .. image:: /_static/images/indoor_prog.png
 	:align: center
 
-На рисунке показан интерфейс программы LPS, которая используется для настройки и работы с системой позиционирования. При первом запуске программы заполните пустые поля координат для маяков. Как это сделать:
+LPS user interface is shown on the picture. The program is used to calibrate the positioning system. Fill in the empty beacon coordinates:
 
-* Расстояние (в метрах) между излучателем 1 и 2 поделите на 2. Полученное значение введите в поле X со знаком "минус" для маяков №2 и №3 и без знака "минус" для маяка №1 и 4. 
+* The distance (in meters) between 1 and 2 transducers is divided by 2. The "received value should be written in X string with a \"minus\" for №2 and №3 "beacons and without \"minus\"  for  №1 and №4.
 
-* Расстояние между излучателем 2 и 3 также поделите на 2 и введите значение в поле Y со знаком "минус" для маяков №3 и №4 и без знака "минус" для маяков №1 и №2.
+* The distance between 2 and 3 transducers is also divided by 2 and is put in "the Y string with \"minus\" for  №3 and №4 beacons and without it for  №1 "and №2."
 
-* В поле Z введите высоту каждого датчика над уровнем пола. 
+* String Z is for each beacon's height above floor level.
 
-После ввода координат полетная зона сформирована и отображается в правом окне программы зеленой линией. По умолчанию углы полетной зоны отстоят от датчиков на 1 м. 
+With all coordinates being set, the flyzone is ready and established in the right window with a green line. By default, its corners are 1 m away from the actual beacons. 
 
 
 .. note::
-	Параметры полетной зоны также можно задать напрямую на блоке управления 
+	You can also set the flyzone parameters directly on the control module.
 
-Нажмите кнопку на плате управления, чтобы включить систему. После этого должен загореться белый светодиод "питание" и зеленый "статус". Если этого не произошло, проверьте заряд аккумулятора. 
+Push the start button next to spin selector once to turn it on. A green "\"status\" and white \"power\" light should appear. If they didn't, check the battery charge.
 
-Вверху встроенного экрана отображается время с момента включения и текущий уровень напряжения аккумулятора. При падении напряжения ниже 3 В начнет мигать светодиод "статус", сообщая о необходимости подзаряда. В этом случае подключите плату через порт micro-usb к компьютеру или зарядному устройству (output 5В 2А).
+The top line of the screen shows a turn-on timer and battery voltage. If it drops lower than 3 V, a \"status\" light will start to blink. To charge it, just connect the module to PC or a 5V2A charger.
 
-На встроенном экране координаты отображаются так же, как в интерфейсе программы LPS.
+The coordinates are established in a same way as on LPS screen.
 
 .. image:: /_static/images/indoor_board_int1.PNG
 	:align: center
 
-Чтобы изменить любой из параметров системы, выберите его поворотом селектора, а затем надавите на него. После коррекции (также поворотом) нажмите на селектор второй раз, чтобы подтвердить изменения и вернуться в меню.
+To select a menu item, twist the selector and push it like a button. Change the desired value by twisting it and push once again to confirm the changes and go back to the menu.
 
-На втором экране меню можно вручную настроить отступы от границы полетного пространства или включить режим "Auto" - тогда все настроится автоматически. Там же можно отключать ограничения полетной зоны.
+The second menu screen allows you to set indents from the flyzone border or toggle \"Auto\" mode for automatic setting. You can also turn the flyzone limits off.
 
 .. image:: /_static/images/indoor_board_int2.PNG
 	:align: center
 
 .. note::
-    Для работы системы подключение к компьютеру необязательно. Достаточно включить блок управления и расположить "Пионер" с установенным бортовым модулем в пределах полетной зоны. 
+    You don't need PC for positioning system to operate. Just turn the control module on and place a Pioneer, equipped with onboard module, inside the flyzone
 
-Обновление прошивки системы навигации
+Navigation system firmware update
 ---------------------------------------
 
-Чтобы обновить прошивку, вам понадобится компьютер с установленной программой Pioneer Station. Запустите её, выберите в меню пункт "обновление прошивки" и следуйте указаниям помощника. 
-Подключите блок управления системы навигации к компьютеру кабелем USB, удерживая нажатой кнопку "Меню" на плате. При выборе устройства, поставьте галочку напротив модуля BeaconUSNav.
+To update the system firmware you will need Pioneer Station installed on your PC. Select Firmware update in the menu and follow the instructions on the screen.
+Press and hold 'Menu' button on the control unit and connect it to your PC via USB cable. Select BeaconUSNav on the list and click 'next
 
 .. image:: /_static/images/usnav_upd.png
 	:align: center
 
-Рекомендуется выбирать встроенную прошивку, так вы установите последнюю стабильную версию.
-Процесс может занять до 5 минут, не отключайте блок управления до окончания прошивки.
+It is recommended to choose default firmware source.
+Flashing firmware may take up to 5 minutes, do not disconnect the control unit until it is finished.
