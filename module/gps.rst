@@ -1,20 +1,117 @@
-Модуль навигации GPS Глонасс
-============================
+GPS/GLONASS module
+======================
+
+The module allows to track current quadcopter's speed and position using global navigation systems. For better accuracy the drone should perform an outdoor flight away from high buildings and metal constructions.
+
+GPS module is mounted on the main board using two connectors and M3 screws. The connector provide \"run-through\" connection to plug in extra modules on the lower board with parallel cables. 
+GPS module is also equipped with a compass to get orientation data. This can be corrupted near large metal objects and buildings.
+
+When `connected to Pioneer Station`_, make sure the GPS positioning mode is selected in "autopilot parameters", otherwise activate it manually. You can observe compass working in aviahorizon window when connected to PC in standard mode. The quantity of connected satellites is also shown there. The more satellites is "visible", the more positioning accuracy you gain. First-time activation in new location (cold-start) requires 1-3 minutes for module to synch. In case of success, green light on the module will stop flashing. Now, if disabled and then turned on in the same location after some time, the synchronization process will be much shorter.
+
+.. _connected to Pioneer Station: ../programming/pioneer_station/pioneer_station_upload.html
+
+If Status led keeps flashing for more than 5 minutes, move the drone to a point with GPS signal. Blue Error led means Pioneer parameters are incorrect (for example, LPS positioning mode is selected).
+
+When flying with radio transmitter control, use loiter mode (SwC switch in middle position) to use GPS module and make the flight significantly more comfortable.
+
+Example
+-------------
+
+Below is a example of GPS module program. Upload it to Pioneer, find a spacious site and connect the LiPo battery. Wait until module LED stops blinking, then switch SwB to lower position and push "Start" button on the quadcopter's base board. In 5 seconds Pioneer will take-off, fly 10 meters forward and return to launch point. 
+
+Pioneer gets its position from the switch-on moment. This point is considered to be (0, 0, 0) in ap.goToLocalPoint command. The axes directions are shown on the module board (X - forward, Y - left).
+
+GPS position and altitude error may reach 3 meters, keep this in mind while planning the flight. 
 
 
-.. image:: /_static/images/gps_module.png
-	:align: center
 
-Модуль позволяет квадрокоптеру отслеживать свое текущее положение и скорость. Для большей точности позиционирования антенне модуля необходим обзор неба, эксплуатация в помещении нежелательна.
+::
 
-Модуль GPS/Глонасс устанавливается непосредственно на главную плату квадрокоптера сверху и крепится к ней винтами М3. При подключении дополнительных модулей на нижнюю плату расширения их шлейфы стыкуются с разъемами на верхней части модуля GPS, таким образом подключаясь к основной плате "сквозь" модуль GPS. 
+	-- number of leds on base board (4)
+	local ledNumber = 4
+	-- create led control port
+	local leds = Ledbar.new(ledNumber)
+	-- speeding up function calls
+	local unpack = table.unpack
 
-Модуль также оснащен компасом для точной ориентации в пространстве. Показания компаса могут искажаться вблизи массивных металлических объектов и зданий. 
+	-- current state value
+	local curr_state = "PREPARE_FLIGHT"
 
-При `подключении к Pioneer Station`_  убедитесь, что в "параметрах автопилота" выбран режим позиционирования по GPS, в противном случае активируйте его нажатем на кнопку. В стандартном режиме подключения работу компаса можно наблюдать на панели авиагоризонта. Также в реальном времени отображается количество спутников, обеспечивающих работу модуля. Чем больше спутников "видит" модуль, тем выше точность позиционирования. При холодном старте (первом включении модуля в новой точке) процесс синхронизации занимает от одной до трех минут, при этом мигает зеленый светодиод "Статус". При успешной синхронизации "Статус" на модуле горит постоянно. Теперь, если выключить питание "Пионера" и через некоторое время снова включить в той же точке, синхронизация произойдет значительно быстрее.
+	-- function to change LEDs colour
+	local function changeColor(color)
+	    for i=0, ledNumber - 1, 1 do
+	        leds:set(i, unpack(color))
+	    end
+	end 
 
-.. _подключении к Pioneer Station: ../programming/pioneer_station/pioneer_station_upload.html 
+	-- RGB colour code array to transfer changeColor
+	local colors = {
+	        {1, 0, 0}, -- red
+	        {1, 1, 1}, -- white
+	        {0, 1, 0}, -- green
+	        {1, 1, 0}, -- yellow
+	        {1, 0, 1}, -- purple
+	        {0, 0, 1}, -- blue
+	        {0, 0, 0}  -- black/LEDs turn off
+	}
 
-Если светодиод "Статус" продолжает мигать больше 5 минут, переместите квадрокоптер в точку с лучшим обзором неба и заново подключите аккумулятор. Синий светодиод "Ошибка" сигнализирует о неправильно настроеннных параметрах "Пионера"(например, выбран режим позиционирования LPS), или о неисправности модуля. 
+	-- array of functions, called depending on current condition
+	action = {
+	    ["PREPARE_FLIGHT"] = function(x)
+	        changeColor(colors[2]) -- change LED colour to white
+	        Timer.callLater(2, function () ap.push(Ev.MCE_PREFLIGHT) end) -- starting motors in 2 seconds
+	        Timer.callLater(4, function () changeColor(colors[3]) end)-- change colour to green in 2 more seconds (4 seconds in total since timers start one after another right away)
+	        Timer.callLater(6, function () 
+	            ap.push(Ev.MCE_TAKEOFF) -- takoff in 2 more seconds (6 in total after all 3 timers are being set)
+	            curr_state = "FLIGHT_TO_FIRST_POINT" -- next condition
+	        end)
+	    end,
+	    ["FLIGHT_TO_FIRST_POINT"] = function (x) 
+	        changeColor(colors[4]) -- change colour to yellow
+	        Timer.callLater(2, function ()
+	            ap.goToLocalPoint(10, 0, 3) -- go to point with coordinates (10 m, 0 m, 3 m)
+	            curr_state = "FLIGHT_TO_SECOND_POINT" -- next condition
+	        end) 
+	    end,
+	    ["FLIGHT_TO_SECOND_POINT"] = function (x) 
+	        changeColor(colors[5]) -- change colour to purple
+	        Timer.callLater(2, function ()
+	            ap.goToLocalPoint(0, 0, 1) -- go to next start with coordinates (0 m, 0 m, 1 m)
+	            curr_state = "PIONEER_LANDING" -- next condition
+	        end)
+	    end,
+	    ["PIONEER_LANDING"] = function (x) 
+	        changeColor(colors[6]) -- change colour to blue
+	        Timer.callLater(2, function () 
+	            ap.push(Ev.MCE_LANDING) -- perform landing
+	        end)
+	    end
+	}
 
-Управляя квадрокоптером с пульта, выберите режим удержания положения (тумблер SwC в среднем положении), и "Пионер" будет использовать подключенный модуль GPS, что сделает полет более стабильным. 
+	-- condition processing function (created by autopilot automatically)
+	function callback(event)
+	    -- if set altitude reached, execute function from the array according to current condition
+	    if (event == Ev.ALTITUDE_REACHED) then
+	        action[curr_state]()
+	    end
+	    -- turn LEDs red in case of collision
+	    if (event == Ev.SHOCK) then
+	        changeColor(colors[1])
+
+	    end
+	    -- if set waypoint reached, execute function from the array according to current condition
+	    if (event == Ev.POINT_REACHED) then
+	        action[curr_state]()
+	    end
+
+	    -- turn off LEDs after landing
+	    if (event == Ev.COPTER_LANDED) then
+	        changeColor(colors[7])
+	    end
+
+	end
+
+	-- turn red LED on
+	changeColor(colors[1])
+	-- start 2-second timer and execute first array function (flight preparation)
+	Timer.callLater(2, function () action[curr_state]() end)

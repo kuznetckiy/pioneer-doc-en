@@ -11,7 +11,7 @@ Changelog
 - Fized update lps module notification
 - Added link to changelog menu-documentation
 
-.. _Версия 1.9.1: https://dl.geoscan.aero/pioneer/upload/GCS/GEOSCAN_Pioneer_Station.exe 
+.. _version 1.9.1: https://dl.geoscan.aero/pioneer/upload/GCS/GEOSCAN_Pioneer_Station.exe 
 
 1/02/2019
 -----------
@@ -25,7 +25,7 @@ Changelog
 - Fixed an error when switching between LPS/GPS/OPT
 - Added a fix to blank window with difference between parameters in file and in autopilot
 
-.. _Версия 1.9.0: https://dl.geoscan.aero/pioneer/upload/GCS/archive/1.9.0/GEOSCAN_Pioneer_Station.exe
+.. _version 1.9.0: https://dl.geoscan.aero/pioneer/upload/GCS/archive/1.9.0/GEOSCAN_Pioneer_Station.exe
 
 2. Autopilot firmware update (version 1.4.4922)
 

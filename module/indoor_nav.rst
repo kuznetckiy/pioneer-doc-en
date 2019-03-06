@@ -62,7 +62,7 @@ Indoor flight can be performed both in manual or mission mode. Example of such m
 
    
 Navigation module firmware update
----------------------------
+-------------------------------------
 
 To update module's firmware, you will need Pioneer Station installed on your PC. Select Firmware update in the menu and follow the instructions on the screen.
 At 'choose device' step, both Pioner base board and Navigation module will be displayed on the list. Select the module and click 'next'
