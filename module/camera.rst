@@ -14,12 +14,12 @@ It is convenient to control Runcam Split with smartphone app via Wi-Fi. Download
 
 +--------------------+------------------------+
 |   `IOS version`_   |   `Android version`_   |
-+====================+========================+
++--------------------+------------------------+
 
 
-.. _IOS version: https://itunes.apple.com/ru/app/runcam-app/id1015312292?mt=8
+.. _IOS version: https://itunes.apple.com/en/app/runcam-app/id1015312292?mt=8
 
-.. _Android version: https://play.google.com/store/apps/details?id=com.runcam.runcam2&hl=ru
+.. _Android version: https://play.google.com/store/apps/details?id=com.runcam.runcam2&hl=en
 
 2 buttons are used for camera controls. Both are situated on module board. "Power" is on the back part in the center, "mode" is near it but closer to the edge. Try pushing it with a small screwdriver. To activate Wi-Fi, push "mode" once. You should hear single beep. Now the camera is working as a Wi-Fi hotspot. Enable Wi-Fi on the smartphone and connect to "RCSplit" network. Password is 1234567890. 
 
