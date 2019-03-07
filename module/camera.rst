@@ -12,9 +12,9 @@ Plug the camera connector to X1 on the Pioneer base board. Connect the battery t
 
 It is convenient to control Runcam Split with smartphone app via Wi-Fi. Download and install it from PlayMarket of AppStore:
 
-+----------------+--------------------+
-| `IOS version`_ | `Android version`_ |
-+================+====================+
++--------------------+------------------------+
+|   `IOS version`_   |   `Android version`_   |
++====================+========================+
 
 
 .. _IOS version: https://itunes.apple.com/ru/app/runcam-app/id1015312292?mt=8
