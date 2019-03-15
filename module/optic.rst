@@ -9,6 +9,12 @@ The module is mounted below on the extension board. Connect it to the base board
 
 The module is also equipped with optical distance sensor. It can measure altitude above the floor or other objects from 0 to 1.5 m range. When Pioneer exceeds this value, the barometer is used for altitude control.
 
+ap.goToLocalPoint(x, y z) is used for programmed flight. Pioneer sets the start point (0, 0, 0) when the motors are armed. Y - axes is directed forwards, X - axes is directed to the right. Z parameter represents the altitude. The (x, y, z) values set the coordinates where Pioneer will fly, based on start point. 
+
+.. note:: Positioning error increases with flight distance.
+
+
+
 Optical flow module firmware update
 -------------------------------------
 
@@ -69,7 +75,7 @@ This is an example program for optical flow module. Use Pioneer Station to `uplo
 	    ["FLIGHT_TO_FIRST_POINT"] = function (x) 
 	        changeColor(colors[4]) -- change colour to yellow
 	        Timer.callLater(2, function ()
-	            ap.goToLocalPoint(1, 0, 1) -- go to point with coordinates (1 m, 0 m, 1 m)
+	            ap.goToLocalPoint(0, 1, 1) -- go to point with coordinates (0 m, 1 m, 1 m)
 	            curr_state = "FLIGHT_TO_SECOND_POINT" -- next condition
 	        end) 
 	    end,

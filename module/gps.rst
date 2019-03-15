@@ -14,12 +14,21 @@ If Status led keeps flashing for more than 5 minutes, move the drone to a point 
 
 When flying with radio transmitter control, use loiter mode (SwC switch in middle position) to use GPS module and make the flight significantly more comfortable.
 
+**ap.goToLocalPoint(x, y, z)** function is used for programmed flight. X - axis is directed to the East, Y - axis to the North. Z represents the altitude. 
+
+Pioneer gets its position from the switch-on moment. This point is considered to be (0, 0, 0) in ap.goToLocalPoint command. 
+
+Also, you can use **ap.goToPoint(x, y, z)** function. Here, x and y show geographical coordinates (latitude, longitude) of a point where Pioneer will fly. Z is still for altitude at this point.
+
+.. note:: If stated point is more than 500 meters away from the start, quadcopter will not fly to it. 
+
+
+
+
 Example
 -------------
 
-Below is a example of GPS module program. Upload it to Pioneer, find a spacious site and connect the LiPo battery. Wait until module LED stops blinking, then switch SwB to lower position and push "Start" button on the quadcopter's base board. In 5 seconds Pioneer will take-off, fly 10 meters forward and return to launch point. 
-
-Pioneer gets its position from the switch-on moment. This point is considered to be (0, 0, 0) in ap.goToLocalPoint command. The axes directions are shown on the module board (X - forward, Y - left).
+Below is a example of GPS module program. Upload it to Pioneer, find a spacious site and connect the LiPo battery. Wait until module LED stops blinking, then switch SwB to lower position and push "Start" button on the quadcopter's base board. In 5 seconds Pioneer will take-off, fly 10 meters north and return to launch point. 
 
 GPS position and altitude error may reach 3 meters, keep this in mind while planning the flight. 
 
@@ -69,7 +78,7 @@ GPS position and altitude error may reach 3 meters, keep this in mind while plan
 	    ["FLIGHT_TO_FIRST_POINT"] = function (x) 
 	        changeColor(colors[4]) -- change colour to yellow
 	        Timer.callLater(2, function ()
-	            ap.goToLocalPoint(10, 0, 3) -- go to point with coordinates (10 m, 0 m, 3 m)
+	            ap.goToLocalPoint(0, 10, 3) -- go to point with coordinates (0 m, 10 m, 3 m)
 	            curr_state = "FLIGHT_TO_SECOND_POINT" -- next condition
 	        end) 
 	    end,
