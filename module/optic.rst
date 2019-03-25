@@ -13,6 +13,9 @@ ap.goToLocalPoint(x, y z) is used for programmed flight. Pioneer sets the start 
 
 .. note:: Positioning error increases with flight distance.
 
+Module can recognize the surface below it. The more details like ornament or tile junctures is visible, the more precise the flight will be. 
+
+Select navigation system mode (Swb switch in middle position) to use optical flow module during manual-control flight. This will make it much more stabilized.
 
 
 Optical flow module firmware update
@@ -26,7 +29,7 @@ Wait for update to end, the quadcopter will be reloaded to standard mode.
 Example
 -------
 
-This is an example program for optical flow module. Use Pioneer Station to `upload it to Pioneer`_. After that, turn the drone on and push start button on it. In 5 seconds it will lift off, fly 1 meter forward and return to launch point.
+This is an example program for optical flow module. Use Pioneer Station to `upload it to Pioneer`_. After that, turn the drone on, switch SwB in lower position and push start button on it. In 5 seconds it will lift off, fly 1 meter forward and return to launch point.
 
 .. _upload it to Pioneer: ../programming/pioneer_station/pioneer_station_upload.html
 
