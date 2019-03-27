@@ -38,10 +38,10 @@
     cargoTimer = Timer.new(0.1, function () -- create timer to call the funcion every 0.1 second
         _, _, _, _, _, _, _, ch8 = rc() -- get signal from channel 8 on the transmitter, range from -1 to +1
         if(ch8 < 0) then  -- if singnal is -1 (upper position), turn off
-            magneto:reset()
+            magneto:set()
             changeColor(0, 1, 0) -- and colour leds green to indicate
         else if(ch8 > 0) then -- if signal is +1 (lower position), activate magnet
-            magneto:set()
+            magneto:reset()
             changeColor(1, 0, 0) -- colour led red to indicate 
         else -- blinking blue to indicate loss of control signal 
             if(blink < 5) then
