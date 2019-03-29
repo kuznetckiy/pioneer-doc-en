@@ -56,7 +56,7 @@ msgid ""
 "закрепите их винтами М3х10, как показано на рисунке."
 msgstr ""
 "Install the  stands on the botoom side of the frame and secure them with "
-"M3x10 screws like shown in the picture."
+"M3x10 screws like shown on the picture."
 
 #: ../../const/const_frame.rst:33
 msgid "**Шаг 3**"
@@ -187,7 +187,7 @@ msgid ""
 " защиты и стойки, как показано на рисунке."
 msgstr ""
 "Secure the protection arcs, bulkhead and stands using M3x10 screws like "
-"shown in the picture."
+"shown on the picture."
 
 #: ../../const/const_protection.rst:29
 msgid "**Шаг 10**"
@@ -240,7 +240,7 @@ msgid ""
 "Для включения \"Пионера\" вставьте аккумулятор в отсек АКБ и подключите "
 "разъем аккумулятора к разъему на базовой плате."
 msgstr ""
-"To turn Pioneer on, place the LiPo battery on the bay and plug in its "
+"To turn Pioneer on, place the LiPo battery in the bay and plug in its "
 "connector to the board."
 
 #: ../../const/const_switch_on.rst:9
@@ -249,7 +249,7 @@ msgid ""
 "светодиодами, отображая уровень заряда аккумулятора. Красный цвет – "
 "аккумулятор разряжен, зеленый – заряжен"
 msgstr ""
-"When connected, the quadcopter makes a beeping sound  and blinks with ist "
+"When connected, the quadcopter makes a beeping sound  and blinks with its "
 "leds to show the remaining charge level.  Red lights - LiPo discharged, "
 "green - fully charged."
 
@@ -280,7 +280,7 @@ msgstr ""
 
 #: ../../const/const_switch_on.rst:27
 msgid "\"Пионер\" оснащен системой отключения моторов при нештатных ситуациях:"
-msgstr "Pioneer is able to swith off its motors in case of:"
+msgstr "Pioneer is able to switch off its motors in case of:"
 
 #: ../../const/const_switch_on.rst:27
 msgid "при наклоне квадрокоптера более чем на 90°;"
