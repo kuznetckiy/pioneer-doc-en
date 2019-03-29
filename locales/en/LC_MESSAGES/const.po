@@ -67,7 +67,7 @@ msgid ""
 "Установите демпферы на основание рамы со стороны моторов и закрепите их "
 "винтами М3х4, как показано на рисунке."
 msgstr ""
-"Mount 4 damphers on the board and secure them with M3x4 screws as shown on "
+"Mount 4 dampers on the board and secure them with M3x4 screws as shown on "
 "the picture."
 
 #: ../../const/const_frame.rst:46
@@ -119,7 +119,7 @@ msgid ""
 "соблюдения полярности, будьте внимательны и не прикладывайте излишних усилий"
 " при соединении разъемов."
 msgstr ""
-"Using demphers, mount the board on the frame so that white arrows on top of "
+"Using dampers, mount the board on the frame so that white arrows on top of "
 "them point in same direction. Plug in motors connectors applying no extra "
 "force. "
 
