@@ -56,7 +56,7 @@ msgid ""
 "закрепите их винтами М3х10, как показано на рисунке."
 msgstr ""
 "Install the  stands on the botoom side of the frame and secure them with "
-"M3x10 screws like shown on the picture."
+"M3x10 screws like shown in the picture."
 
 #: ../../const/const_frame.rst:33
 msgid "**Шаг 3**"
@@ -187,7 +187,7 @@ msgid ""
 " защиты и стойки, как показано на рисунке."
 msgstr ""
 "Secure the protection arcs, bulkhead and stands using M3x10 screws like "
-"shown on the picture."
+"shown in the picture."
 
 #: ../../const/const_protection.rst:29
 msgid "**Шаг 10**"
