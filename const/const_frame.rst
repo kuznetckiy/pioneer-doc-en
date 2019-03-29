@@ -34,7 +34,7 @@
 
 ::
 
-    Parts: unit assembled at step 2, demphers - 4, M3x4 screws - 4.
+    Parts: unit assembled at step 2, dampers - 4, M3x4 screws - 4.
 
 
 .. image:: /_static/images/const_frame_step_3.png
