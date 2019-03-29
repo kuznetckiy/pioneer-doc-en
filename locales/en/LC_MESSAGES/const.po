@@ -187,7 +187,7 @@ msgid ""
 " защиты и стойки, как показано на рисунке."
 msgstr ""
 "Secure the protection arcs, bulkhead and stands using M3x10 screws like "
-"shown on the picture."
+"shown in the picture."
 
 #: ../../const/const_protection.rst:29
 msgid "**Шаг 10**"
