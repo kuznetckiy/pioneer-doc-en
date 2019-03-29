@@ -155,7 +155,7 @@ msgstr "`Protection assembly`_"
 msgid ""
 "Подключение дополнительных модулей описано в разделе `Дополнительные "
 "модули`_"
-msgstr "Modules connection is described in `Extencion modules`_"
+msgstr "Modules connection is described in `Extension modules`_"
 
 #: ../../const/const_main.rst:35
 msgid "Содержание:"
