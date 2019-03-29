@@ -73,7 +73,7 @@
 
 ::
 
-    Patrs: unit assembled at step 4, unit assembled at step 5, M3x10 srews. 
+    Parts: unit assembled at step 4, unit assembled at step 5, M3x10 srews. 
 
 
 .. image:: /_static/images/const_frame_step_6.png
