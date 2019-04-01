@@ -56,7 +56,7 @@ msgid ""
 "нажмите Enter. Завершив редактирование, не забудьте сохранить изменения, "
 "нажав кнопку **сохранить изменения на автопилот**."
 msgstr ""
-"Switch to \"autopilot parameters setting\" tab. Left column represents "
+"Switch to \"autopilot parameters\" tab. Left column represents "
 "parameters, their current values are displayed in the second column. To "
 "change any of them, click to the right of selected parameter and type the "
 "new value in, then press  Enter. Don't forget to save the changes by "
@@ -113,7 +113,7 @@ msgid ""
 "этом должны зажечься светодиоды \"передача\", \"прием\", \"статус\", "
 "\"ошибка\"."
 msgstr ""
-"Turn on firmware update more on Pioneer. Press \"Start\" button on it and "
+"Turn on firmware update mode on Pioneer. Press \"Start\" button on it and "
 "connect the USB cable while holding the button pressed. All LEDs on the "
 "board should switch on."
 
@@ -143,7 +143,7 @@ msgid ""
 "При выборе источника прошивки рекомендуется выбрать пункт \"встроенный\", "
 "так вы установите последнюю актуальную версию."
 msgstr ""
-"It is recommended to select \"embedded\" source of firmware. That guarantees"
+"It is recommended to select \"inbuilt\" source of firmware. That guarantees"
 " you install the latest version."
 
 #: ../../settings/firmware_upgrade.rst:24
@@ -190,13 +190,13 @@ msgstr "Turn the RC transmitter on"
 
 #: ../../settings/rc_connection.rst:12
 msgid "Войдите в меню настроек"
-msgstr "Use touchscreen to to navigate the settings menu.  "
+msgstr "Use touchscreen to navigate the settings menu.  "
 
 #: ../../settings/rc_connection.rst:13
 msgid ""
 "Во вкладке SYSTEM выберите пункт Rx Bind. Появится надпись «Binding to RX…»"
 msgstr ""
-"Select Rx Bind in \"System\" tab. \"Binding to Rx..\" should appera on the "
+"Select Rx Bind in \"System\" tab. \"Binding to Rx..\" should appear on the "
 "screen."
 
 #: ../../settings/rc_connection.rst:14
@@ -223,7 +223,7 @@ msgid ""
 "сигналы, посылаемые с пульта, повторите процедуру привязки или обратитесь в "
 "техническую поддержку по адресу: support@geoscan.aero"
 msgstr ""
-"If the drone doesn't react on controller signals, try re-bind its receiver "
+"If the drone doesn't react on controller signals, try to re-bind its receiver "
 "once again. If this doesn't solve the problem, contact Geoscan helpdesk: "
 "support@geoscan.aero"
 
