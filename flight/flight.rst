@@ -1,11 +1,11 @@
-Полет
+Flight
 ==========
 
-Этот раздел поможет вам освоить управление квадрокоптером и совершить первый успешный полет. Рекомендуется прочитать его, чтобы освоить управление и технику безопасности, прежде чем перейти к самостоятельным полетам.
+This chapter will help you master the quadcopter controls and perform your first flight. It is strongly recommended to read it and learn the safety rules before takeoff.
 
 .. toctree::
    :maxdepth: 2
-   :caption: Содержание:
+   :caption: Contents:
 
 
 

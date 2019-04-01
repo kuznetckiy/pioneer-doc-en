@@ -1,9 +1,9 @@
-Управление
+Controls
 ==========
 
-**Для управления "Пионером" с пульта управления следуйте правилам приведенным ниже:**
+**To control the Pioneer via RC transmitter, follow these rules:**
 
-**Управление высотой**
+**Altitude control**
 
 .. image:: /_static/images/rc_control_1.png
 	:align: center
@@ -11,36 +11,36 @@
 .. image:: /_static/images/rc_control_2.png
 	:align: center
 
-.. important:: При перемещении стика газ/курс от себя квадрокоптер набирает высоту, при перемещении на себя – снижается.
+When throttle/yaw stick is pushed forward, the drone will gain altitude and decline when stick pulled down.
 
 
-**Вращение вокруг своей оси**
+**Direction change**
 
 .. image:: /_static/images/rc_control_3.png
 	:align: center
 
-.. important:: При перемещении стика газ/курс влево/вправо квадрокоптер поворачивается вокруг своей оси.
+If throttle/yaw stick is pushed right or left, the drone will turn in the given direction.
 
 
-**Полет вперед/назад**
+**Forward/reverse flight**
 
 .. image:: /_static/images/rc_control_4.png
 	:align: center
 
-.. important::  При перемещении стика крен/тангаж от себя, квадрокоптер наклоняется вперед и летит вперед. При перемещении стика крен/тангаж на себя, квадрокоптер наклоняется назад и летит назад.
+Push the right stick up to tilt the drone and move forward. When stick is pulled down, the drone will tilt and move backwards.
 
 
-**Полет боком влево/вправо**
+**Moving left/right**
 
 .. image:: /_static/images/rc_control_5.png
 	:align: center
 
-.. important:: При перемещении стика крен/тангаж влево/вправо, квадрокоптер летит боком влево/вправо.
+When right stick is moved left or right, the drone tilts and moves in the same direction.
 
 
-.. attention::  Управляйте квадрокоптером плавно, не дергайте стики пульта слишком резко или сразу в крайнее положение. Пульт управления держите двумя руками, пальцы обеих рук всегда держатся за стикию. Помните, что при выполнении маневра коптер может снижаться, будьте готовы компенсировать снижение плавным увеличением оборотов моторов.
+.. attention:: Operating the radio control, move the sticks smoothly. Hold the transmitter with both hands, thumbs on the sticks. Remember that while manoeuvring the drone may decline, and be ready to compensate this by giving a bit more throttle.
 
-Для выполнения первого полета перейдите в раздел: `Подготовка к полету`_ 
+To perform your first flight go to `Flight preparation`_
 
-.. _Подготовка к полету: flight_preparation.html
+.. _Flight preparation: flight_preparation.html
 

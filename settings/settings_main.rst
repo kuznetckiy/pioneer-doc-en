@@ -1,28 +1,28 @@
-Настройки
+Settings
 ==============
 
 .. image:: /_static/images/tuning.png
 	:align: center
 
-Прошивку "Пионера" при необходимости можно обновить. В этом разделе содержится подробная инструкция, которая вам поможет.
 
-В случае замены приемника управления или пульта, перейдите в раздел `связь пульта с приемником`_
+Pioneers firmware can be upgraded. This section has necessary info on update process.
 
-Также вы можете заново `настроить пульт`_, если что-то сбилось.
+If your RC transmitter or receiver were changed, proceed to `RC connection `_
 
-Инструкция по точной настройке "Пионера" находится в разделе `параметры автопилота`_
+You can `set up the transnitter`_ in case of malfunction.
 
+`Autopilot parameters`_ instruction will help you set parameters correctly. 
 
-.. _связь пульта с приемником: rc_connection.html
+.. _RC connection: rc_connection.html
 
-.. _настроить пульт: rc_setting.html
+.. _set up the transnitter: rc_setting.html
 
-.. _параметры автопилота: autopilot_parameters.html
+.. _Autopilot parameters: autopilot_parameters.html
 
 
 .. toctree::
    :maxdepth: 1
-   :caption: Содержание:
+   :caption: Contents:
 
    firmware_upgrade
    rc_setting

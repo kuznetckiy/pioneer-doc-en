@@ -1,35 +1,39 @@
-Пульт радиоуправления 
+RC transmitter 
 =======================
 
-Данный раздел описывает процесс управления квадрокоптером "Пионер" с помощью аппаратуры FlySky i6S.
+This section describes the basics of Pioneer controls using FlySky i6S.
 
 .. image:: /_static/images/remote_control.png
 	:align: center
 
-| По умолчанию пульт готов к эксплуатации и не требует дополнительной настройки или привязки. 
-| Квадрокоптер совместим с пультами управления, которые поддерживают протокол PPM и работают с приемником FlySky. 
-| Используйте стики для управления полетом квадрокоптера.
-| Используйте переключатель режимов для выбора режима полета квадрокоптера. 
-| Чтобы включить пульт, нажмите и удерживайте кнопки включения/выключения одновременно.
+By default the controller is ready to use and doesn't require any additional setting
+The drone is compatible with PPM protocol based controllers and uses a FlySky receiver
+Use both sticks to control the drone
+Use the mode switch to change the flight mode
+Push and hold both power buttons to turn the controller on/off.
 
 .. image:: /_static/images/remote_control_2.png
 	:align: center
 
-**Изменение режима работы пульта:**
+**Changing the controller mode**
 
-| Используйте переключатель SWB. Переключатель в верхнем положении – Режим управления с пульта – выбор режима полета переключателем SWC. 
-| Переключатель в среднем положении – режим автоматического удержания положения с системой навигации или с GPS – Управление квадрокоптером происходит с пульта. 
-| Переключатель в нижнем положении – режим автоматического полета по программе. 
-| Во время полета по программе пилот может всегда взять управление на себя и переключиться в режим ручного управления.
 
-**Изменение режима полета:**
+* Use SwB switch. The top position is for manual control mode. To set the flight mode, use SwC switch.
+* SwB switch in middle position turns navigational system mode on. Quadcopter will use GPS or local positioning system.
+* SWB switch in lower position activates a pre-programmed “mission” flight mode
+* When performing a mission flight, the operator can take controls by witching in nav system or manual control using SwB switch.
 
-| Используйте переключатель SWC на пульте. Переключатель в верхнем положении – Режим стабилизации – Стик газа отвечает за изменение уровня мощности, подаваемой на моторы. 
-| Переключатель в среднем положении – Режим удержания высоты – квадрокоптер автоматически удерживает высоту, стик газа отвечает за изменение вертикальной скорости.
-| Если поставить стик газа по центру, квадрокоптер будет удерживать высоту. Если переместить стик вверх, квадрокоптер начнет подниматься, чем дальше от центра, тем быстрее. 
-| Если переместить стик газа вниз, квадрокоптер начнет снижаться. Переключатель в нижнем положении – Режим удержания высоты и курса. 
-| Управление высотой происходит как в предыдущем режиме. Отличие в том, что квадрокоптер запоминает направление курса в момент включения моторов. 
-| Далее можно вращать квадрокоптер по углу рыскания, при этом направления вперед/назад и влево/вправо будут неизменны.
 
-.. attention:: Для определения высоты полетный контроллер использует барометр, который измеряет атмосферное давление. Если давление воздуха меняется, аппарат будет реагировать на изменение давления, а не на изменения фактической высоты.
+**Flight mode set**
+
+
+* Use SwC switch. In top position - stabilize mode on. In this mode throttle stick changes the power output of motors.
+* SWC switch in middle position activates althold  mode. Throttle stick controls vertical velocity. 
+* The lower SwC switch activates headless mode. If you leave the throttle stick in middle position, the drone will hold current altitude. If the stick is moved up, the quadcopter will gain altitude
+* If throttle stick is moved down, the drone will loose altitude. SW& switch in lower position activates loiter mode
+* Altitude control is the same as before, but quadcopter will remember yaw direction when armed
+* You can spin the drone with yaw stick but it will maintain the primary orientation
+
+
+.. attention:: Flight controller uses a barometric sensor to estimate the altitude. When the pressure is changed, the drone will react according to it, not actual altitude change.
 

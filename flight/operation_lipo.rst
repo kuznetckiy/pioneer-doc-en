@@ -1,39 +1,39 @@
-Аккумуляторная батарея
+LiPo battery
 ========================
 
 .. image:: /_static/images/akb.png
 	:align: center
 
-В качестве источника энегрии "Пионер" использует LiPo аккумулятор емкостью 1300 мАч. Батареи такого типа легкие и мощные, но могут быть пожароопасны при неправильной эксплуатации. Прочитав этот раздел, вы научитесь работать с LiPo аккумуляторами.
+As a power source, a 1300 mAh LiPo battery is used. This type of battery is lightweight and powerful, but may be fire hazardous if used incorrectly. In this section you will learn to use LiPo battery
 
-**Зарядка**
+**Charging**
 
-#. Для зарядки выберете негорючую поверхность вдали от легковоспламенимых предметов (шторы, ковры, мягкая мебель)
-#. Убедитесь что на аккумуляторе нет внешних признаков поврежденния, вмятин, разрывов оболочки.
-#. Подключите зарядное устройство к сети 220 В.
-#. Подключите балансировочный вывод к соответствующиему разъему зарядного устройства.
-#. Индикаторы заряда должны гореть красным цветом. Зеленый цвет индикатора сигнализирует о полном заряде соответствующей ячейки. 
-#. Дождитесь полной зарядки аккумулятора и отключите его от зарядного устройства. Нельзя оставлять заряжающийся аккумулятор без присмотра!
+#. Choose a incombustible surface to place a charging set. This should be away from any flammable objects (like carpets or curtains)
+#. Make sure the battery doesn't have any external damages, bumps or shell fractures.
+#. Plug in the charging station to 220v grid
+#. Plug the balance connector to the charging station
+#. The charge indicators should colour red. The green light indicates the battery is charged 
+#. Wait for LiPo to complete charging and unplug it from charging station. Do not leave the charging battery unattended!
 
 .. note::
-  При длительном хранении аккумулятора без использования рекомендуется разрядить его примерно наполовину и дозаряжать до того же состояния раз в 3-4 месяца чтобы не допустить переразряда. 
+  For long-term storage it is recommended to discharge it 50% and check every 3-4 moths to prevent a deep discharge lower than 10%. Part-charge if necessary
 
 
 .. attention::
-	Не допускается зарядка и эксплуатация поврежденного аккумулятора. До момента утилизации его следует хранить отдельно от исправных, вдали от потенциально воспламенимых предметов и поверхностей.
+	Charging or using a damaged LiPo is prohibited. It must be stored separately away from flammable objects until the utilization moment
   
 
-**Эксплуатация**
+**Operation**
 
-* При установке аккумулятора в раму необходимо следить, чтобы провода не попадали в плоскость вращения пропеллеров.
-* Подключите аккумулятор к квадрокоптеру непосредственно перед взлетом и отключите сразу после окончания полета.
-* Не допускайте короткого замыкания между контактами аккумулятора. 
-* Перед взлетом и после посадки осмотрите аккумулятор на наличие повреждений, вмятин, проколов и разрывов оболочки. Недопустим нагрев батареи выше 50\ :sup:`о`\ C и разбухание оболочки.
+* When placed in the frame, the LiPo wires should be kept away from the props plane
+* Plug in the battery before take-off and disconnect it right after the landing
+* Don't allow a short circuit between the LiPo contacts. 
+* Check the battery for damages, punctures or bumps before and after flight. Heating it above 50\ :sup:`о`\ C and swelling is unacceptable. 
 
 
 .. danger::
-	В случае явного повреждения аккумулятора в полете **не пытайтесь немедленно извлечь его из рамы!** Механический изгиб и дополнительный приток воздуха могут спровоцировать интенсивное воспламенение батареи и привести к серьезным ожогам. При появлении дыма или пламени из квадрокоптера немедленно совершите посадку на негорючую поверхность.	
+	If the battery is severely damaged, do not try to extract it immediately ! The bend and additional air inflow may cause intensive flame and lead to burn. If you notice a flare or smoke from the drone, land on a non-flammable surface immediately.	
 
-	**Недопустимо тушить аккумулятор водой!** Для тушения можно использовать плотную ткань, песок, землю, углекислотный или порошковый огнетушитель. При невозможности тушения дождитесь прекращения реакции и утилизируйте батарею.
+	**Do not try to extinguish the burning LiPo with water!** ДUse dense cloth, sand, soil, carbon dioxide fire extinguisher. If none is accessible, wait for the battery to burn out and utilise it.
 
-	Продукты горения LiPo аккумулятора **крайне токсичны**, не вдыхайте образовавшийся дым.  
+	LiPo combustion products are extremely **toxic**, do not breathe in the smoke.

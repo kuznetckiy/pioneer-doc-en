@@ -1,47 +1,47 @@
 Cимулятор
 =====================
 
-Если у вас пока что нет опыта управления квадрокоптером, а также если вы хотите совершенствовать свои навыки, настоятельно рекомендуется начать с полетов в симуляторе. Это позволит освоить управление, не подвергая риску квадрокоптер, себя и окружающих. 
+If you don’t have proper drone control skills or you want to improve it, it is highly recommended for you to use simulator. It allows you to master the controls without risking the drone.
 
-Комплектная аппаратура управления FlySky F6S позволяет обучаться полетам в большом количестве симуляторов просто подключив провод microUSB в соответсвующее гнездо в нижней части пульта. 
+FlySky F6S RC unit can be connected to PC via USB cable to start your training in any simulator.
 
-С назначением кнопок и стиков можно ознакомиться в разделе `Аппаратура`_.
+To get familiar with buttons and sticks, read `RC Unit`_
 
-Реакция "Пионера" на соответствующее движение стиков описана в разделе `Управление`_.
+Pioneer reaction on sticks movement is described in `Controls`_
 
-.. _Аппаратура: rc_unit.html
+.. _RC Unit: rc_unit.html
 
-.. _Управление: rc_unit.html
+.. _Controls: rc_control.html
 
 
-Из доступных на сегодняшний день симуляторов большинство является платными. Для получения начальных навыков пилотирования достаточно бесплатных аналогов или демо-версий. 
+Most flight simulators may be quite expensive, but to learn the basics a free or demo version is enough. 
 
-Мы предлагаем попробовать FPVFreerider. Скачать бесплатную версию можно `здесь`_ , прокрутив страницу до Download demo и выбрав версию для Вашей ОС.
+We suggest trying FPVFreerider for that purpose. A free demo can be downloaded `here`_. Just scroll the page down and choose the version for your OS.
 
-.. _здесь: https://fpv-freerider.itch.io/fpv-freerider
+.. _here: https://fpv-freerider.itch.io/fpv-freerider
 
-Установив программу, подключите пульт к компьютеру, включите его и запустите симулятор. Все тумблеры на пульте должны быть в крайнем верхнем положении.
+When installation is complete, plug the transmitter to your PC and turn it on. Than start FPVFreerider. All switches and sticks should be in upper position.
 
 .. image:: /_static/images/fpv_freerider_main.png
 
-Выберите управление через USB controller и перейдите в пункт **calibrate controller**. Далее следуйте указаниям на экране, поочередно приводя соответствующий стик в крайнее положение и нажимая ОК. По завершении калибровки проверьте правильность реакции программы на движения стиков, подправьте ошибки с помощью ползунков **trim**. Виртуальный пульт должен в точности повторять ваши движения, от этого зависит удобство управления.
+Choose “control uing USB” and calibrate controller. Follow the guidance, moving sticks as shown on the screen and clicking OK. When finished, check if everything is done correctly, use sliders to trim for better accuracy. A virtual controller should perform exactly as the real one in your hands.
 
-Закончив калибровку, откройте доступную карту для полета. 
+Then open a available map for flight training session.
 
-Вначале обычно рекомендуется научиться управлять квадрокоптером с видом от третьего лица (Line of sight) и в режиме стабилизации. Для этого шелчком мыши по кнопкам в левом верхнем углу экрана выберите режим self-level, low rates и camera, как на скриншоте:
+It is usually recommended to start flying with third-person view (also called line of sight) in stabilise mode. Use the buttons to the top left corner of your screen to choose self-level, low rates and camera mode like on the screenshot below.
 
 .. image:: /_static/images/fpv_freerider.png
 
-**Перейдем к полетам**:
+**Flight**:
 
-* Плавно толкните левый стик вперед. Когда квадрокоптер оторвется от поверхности, постарайтесь удержать его на небольшой высоте, а затем приземлиться, плавно возвращая стик в нижнее положение. Научитесь чувствовать момент взлета и касания. 
+* Gently push the left stick forward. When the quadcopter lifts off the ground, try to hold it at the same altitude and land, using the throttle stick. Learn the moment when the drone starts to lift off.
 
-* удерживая квадрокоптер на одной высоте, толкните и отпустите правый стик в любом направлении. Обратите внимание, что при наклоне квадрокоптер не только разгоняется, но и теряет высоту. Чтобы компенсировать снижение, добавьте оборотов левым стиком. Научитесь летать в разных направлениях без потери высоты и не упуская квадрокоптер из виду. Если хотите начать заново, нажмите кнопку Reset в левой части экрана.
+* Holding the drone at the same altitude, push the right stick in any direction. Note that the drone not only accelerates but also looses altitude when tilted. To compensate it, add a little bit of throttle with the left stick. Learn to fly in different directions without loosing altitude. You can click Reset button any time to start over.
 
-* Наклон левого стика в стороны управляет поворотом квадрокоптера. При изменении направления управлять полетом становится сложнее, т.к. надо учитывать в какую сторону "смотрит" аппарат. Стандартное упражнение на такой случай - полет по квадрату. Попробуйте летать по воображаемому квадрату небольшой площади, разворачивая коптер на 90 градусов в каждом угле. Пролетев против часовой стрелки, смените направление. Постепенно вы научитесь контролировать направление полета. 
+* Pushing the left stick to the side controls the drones yaw direction. Changing course makes it harder to control as you have to take the shift into account. Try flying in square trajectory, turning the drone 90° in each corner. It will make it easier for you to learn if you do complex movements step by step.
 
-Управление квадрокоптером - это навык, требующий практики. Осваивая полет в симуляторе, вы сможете чувствовать свой прогресс. Научившись лететь в выбранном направлении, не допуская падений и не теряя квадрокоптер из виду, можете смело переходить к практике на "Пионере".
+Flying the drone is a skill that requires some practice. Mastering the flight in simulator you will feel your progress. When you can fly in selected direction without loosing or crashing the drone, you are prepared for actual flight using Pioneer.
 
 .. note::
-	Также симулятор позволяет получить навыки управления в режиме вида от первого лица (FPV) с курсовой камеры. Для этого щелчком мыши переключите кнопку Camera в режим FPV.  
+	The simulator gives the ability to learn first person view (FPV) flying as well. To toggle it, switch the camera button in FPV mode.
 

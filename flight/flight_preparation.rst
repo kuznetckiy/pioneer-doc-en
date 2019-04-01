@@ -1,24 +1,24 @@
-Подготовка к полету - первый старт.
+Flight preparation - first start
 ===================================
 
-Перед полетом прочтите раздел `Управление`_
+Read `Controls`_ before the flight
 
-***Правильный старт квадрокоптера требует определенной последовательности действий, которая выглядит следующим образом:**
+**A proper quadcopter start requires the following action sequence:**
 
-1. Полностью зарядите аккумуляторную батарею квадрокоптера и проверьте заряд батареек установленных в пульте.
-2. Проверьте квадрокоптер на предмет отсутствия механических повреждений.
-3. Установите стик газ/курс в положение минимум - до упора на себя.
-4. Включите пульт управления.
-5. До упора вставьте аккумулятор в отсек в нижней части квадрокоптера. Убедитесь, что аккумулятор установлен надежно и хорошо закреплен.
-6. Подключите разъем аккумулятора к разъему на базовой плате.
-7. Прозвучит звуковой сигнал и на квадрокоптере загорятся светодиоды.
-8. Дождитесь пока светодиод статуса начнет мигать синим.
-9. Запустите моторы. Для этого переместите и удерживайте левый стик в крайнем нижем правом положении.
-10. Дождитесь пока все винты начнут вращаться и плавно взлетайте. Во время полета соблюдайте правила эксплуатации. Не допускайте падения квадрокоптера. 
+1. Fully charge the LiPo battery and check the transmitter battery charge level.
+2. Check if quadcopter has no mechanical damage.
+3. Place throttle/yaw stick in the lower position.
+4. Turn on the transmitter.
+5. Place the LiPo battery in the battery bay underneath the quadcopter. Make sure it is secured tightly.
+6. Plug in the battery connector to the board.
+7. A beep should be heard and the LEDs light up.
+8. Wait until the status LED starts blinking blue.
+9. Turn on the motors. To do this, place the left stick in the lower-right position.
+10. Wait until all props start spinning and take off smoothly. Stick to safety rules during flight, don't let the drone crash. 
 
-.. _Управление: rc_control.html 
+.. _Controls: rc_control.html 
 
-11. После полета остановите моторы. Для этого переместите и удерживайте левый стик в крайнем нижнем левом положении.
+11. Stop the motors after landing. To do this, place the left stick in the lower left position.
     
 .. image:: /_static/images/flight_preparation.png
 	:align: center
