@@ -1,6 +1,32 @@
 Changelog
 =============
 
+20/06/2019
+------------
+
+1. Pioneer Station update (`version 1.10.0`_)
+
+- Added new protocol (1.5) support for new autopilot integration
+- Now you can download logs in 2 ways:
+
+    - Using Payload (slow). You need bootloadre capable of log downloading.
+    - Using Plazlink protocol (new faster method). You need firmware with 1.5 protocol support.
+- New Lua script examples for Pioneer, with extended comments and optimised structure
+- New LED module scrips examples
+- Now you can inspect autopilot logs ( "work with logs" section in MENU)
+  
+.. _Версия 1.10.0: https://dl.geoscan.aero/pioneer/upload/GCS/GEOSCAN_Pioneer_Station.exe 
+
+2. Autopilot firmware update (1.5.6173 version)
+
+- Protocol update to 1.5
+- Log download function
+- Updated takeoff algorithm
+- Fixed bug when 2 events were generated during takeoff. Now it's just **Ev.TAKEOFF_COMPLETE**. ALTITUDE_REACHED event is no longer used.
+- Added engines start check during programmed flight
+
+
+
 11/02/2019
 -----------
 
@@ -11,7 +37,8 @@ Changelog
 - Fized update lps module notification
 - Added link to changelog menu-documentation
 
-.. _version 1.9.1: https://dl.geoscan.aero/pioneer/upload/GCS/GEOSCAN_Pioneer_Station.exe 
+.. _version 1.9.1: hhttps://dl.geoscan.aero/pioneer/upload/GCS/archive/1.9.1/GEOSCAN_Pioneer_Station.exe
+
 
 1/02/2019
 -----------
