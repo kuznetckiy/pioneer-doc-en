@@ -15,7 +15,7 @@ Changelog
 - New LED module scrips examples
 - Now you can inspect autopilot logs ( "work with logs" section in MENU)
   
-.. _Версия 1.10.0: https://dl.geoscan.aero/pioneer/upload/GCS/GEOSCAN_Pioneer_Station.exe 
+.. _version 1.10.0: https://dl.geoscan.aero/pioneer/upload/GCS/GEOSCAN_Pioneer_Station.exe 
 
 2. Autopilot firmware update (1.5.6173 version)
 
