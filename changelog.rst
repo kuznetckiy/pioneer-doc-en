@@ -4,7 +4,7 @@ Changelog
 20/06/2019
 ------------
 
-1. Pioneer Station update (`version 1.10.0`_)
+1. Pioneer Station update `version 1.10.0`_
 
 - Added new protocol (1.5) support for new autopilot integration
 - Now you can download logs in 2 ways:
