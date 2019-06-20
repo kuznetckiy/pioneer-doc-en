@@ -9,7 +9,7 @@ Changelog
 - Added new protocol (1.5) support for new autopilot integration
 - Now you can download logs in 2 ways:
 
-    - Using Payload (slow). You need bootloadre capable of log downloading.
+    - Using Payload (slow). You need bootloader capable of log downloading.
     - Using Plazlink protocol (new faster method). You need firmware with 1.5 protocol support.
 - New Lua script examples for Pioneer, with extended comments and optimised structure
 - New LED module scrips examples
