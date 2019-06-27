@@ -1,26 +1,25 @@
 Плата подключения дополнительных модулей
 ========================================
 
-Плата подключения дополнительных модулей обеспечивает возможность расширения функционала "Пионера" за счет установки полезной нагрузки.
+ПExtension modules board provides the ability to plug in different module to the base board.
 
 .. image:: /_static/images/modules_board.png
 	:align: center
 
-При установке следует ориентировать плату в соответствии с маркировкой в центре (стрелка).
-Плата крепится на нижнюю часть квадрокоптера вместо крышки отсека аккумулятора через стойки винтами М3.
+Use the arrow markers to install the board properly (they should point in the same direction). The board itself is mounted on the lower part of the drone instead of battery bay cover. Use 4 stands and M3 screws.
 
-Сверху на плате расположены два разъема для соединения с базовой платой квадрокоптера входящими в комплект шлейфами. На нижней поверхности  - два разъема для подключения модулей. Подключение модулей осуществляется "насквозь" через плату.
- 
-Также плата подключения дополнительных модулей оснащена лазерным дальномером, позволяющим точно определять высоту над уровнем пола в пределах  0 - 1.5 м. Дальномер активируется в режиме удержания высоты. При этом "Пионер" будет сохранять одинаковое расстояние от поверхности, даже если она неровная. Пролет над препятствием или впадиной повлечет за собой соответствующее изменение высоты полета квадрокоптера. Если закрыть датчик рукой или другим предметом, "Пионер" будет набирать высоту до тех пор, пока расстояние до препятствия не вернется к прежнему значению, или пока квадрокоптер не упрется в потолок. 
+There are two connectors on top of the extension board. They are used to connect with the base board using two parallel cables. Two connectors on the bottom are used to plug in different modules. The connection is established “through” the board.
 
-Данные с дальномера можно считывать и использовать для управления квадрокоптером. В качестве примера приведена программа, меняющая цвет светодиодов на "Пионере" в зависимости от расстояния до земли. Используйте Pioner Station, чтобы  `загрузить программу`_ на "Пионер".
+The board is equipped with laser range sensor as well. It provides the ability to precisely estimate the altitude up to 1.5 m above the surface. The sensor is activated in alt.hold mode. Pioneer will remain the same altitude regarding the surface. If the distance between the drone and the surface changes, Pioneer will react, trying to compensate the change. 
+
+You can acquire the sensors data to control the flight. As an example, here is a program which will change the colour of Pioneer LEDs depending on its distance to the ground. Use Pioneer Station to `upload the program`_ to Pioneer.
 
 .. note::
-	Дальномер неактивен в режиме полета по GPS. Если программа не работает, откройте вкладку "`параметры автопилота`_ " в Pioneer Station и выберите набор параметров "LPS" или "OPT". Также можно вручную поменять значение параметра BoardPioneer_modules_gnss на 0.0. 
+	The range sensor is not active in GPS flight mode. If the program doesn’t work, open the "`autopilot parameters`_" tab in Pioneer Station window and select LPS or OPT parameters setting. You can also change the BoardPioneer_modules_gnss parameter to 0.0 manually. 
 
 
-.. _загрузить программу: ../programming/pioneer_station/pioneer_station_upload.html 
-.. _параметры автопилота: ../settings/autopilot_parameters.html
+.. _upload the program: ../programming/pioneer_station/pioneer_station_upload.html 
+.. _autopilot parameters: ../settings/autopilot_parameters.html
 
 ::
 

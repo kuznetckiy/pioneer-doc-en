@@ -4,13 +4,18 @@
 .. image:: /_static/images/openmv_module.png
 	:align: center
 
-Программируемая камера OpenMV позволяет обрабатывать видео поток на борту "Пионера" и осуществлять автономную навигацию по визуальным признакам.
+OpenMV camera provides the ability for Pioneer to acquire video feed and process it onboard.
 
-Для установки камеры на квадрокоптер необходимо сначала установить модуль OpenMV. Крепление модуля на 4 винта М3 с подключением двух  разъемов. Затем, на установленный модуль крепится сама камера на два 8-пиновых разъема. Для дополнительной надежности можно использовать две стойки с винтами для соединения плат камеры и модуля.
+The camera is installed on the extension board using a dedicated module with X1 and X2 connectors. You may use two stands with screws to secure the camera.
+
+
+For more details see `OpenMV documentation page`_
+
+.. _OpenMV documentation page: http://docs.openmv.io/
+
 
  
-Модуль OpenMV взаимодействует с базовой платой "Пионера" посредством интерфейса UART. При этом для квадрокоптера и камеры необходимо написать две отдельных программы с соответствующими командами, которые структурируют взаимодействие.
-Для настройки соединения на "Пионере" используйте следующий код
+OpenMV module communicates with the main Pioneer board using UART interface. You need two separate programs for Pioneer and camera to structure this protocol. Use the following code for Pioneer:
 
 ::
 
@@ -23,11 +28,11 @@
 
 
 
-Также необходимо указать протокол обмена на самой камере. Для этого `скачайте и запустите OpenMV IDE`_. Подключите камеру к компьютеру кабелем micro-USB и нажмите кнопку "Соединить" в левом нижнем углу OpenMV IDE. Теперь написанный в текстовом поле код можно загружать непосредственно в камеру, нажав кнопку "запустить" в левом нижнем углу.
+You should also activate the connection protocol on the camera. Для этого `Download and run the OpenMV IDE`_. Connect the camera to your PC with microUSB cable and click “Connect” button in the lower left corner of IDE window. From now the code from textbox may be uploaded to the camera by clicking “run” button.
 
-Код для инициализации интерфейса  UART на камере
+Initialization code for UART interface on the camera:
 
-.. _скачайте и запустите OpenMV IDE: http://github.com/openmv/openmv-ide/releases/download/v2.0.0/openmv-ide-windows-2.0.0.exe
+.. _Download and run the OpenMV IDE: http://github.com/openmv/openmv-ide/releases/download/v2.0.0/openmv-ide-windows-2.0.0.exe
 
 ::
 
@@ -36,14 +41,13 @@
 
 
 
-Протокол обмена между камерой и "Пионером" создан.
+Comm protocol between Pioneer and the camera is created now.
 
 
 
-Далее приводится пример программ, меняющий яркость свечения светодиодов на "Пионере" в зависимости от яркости картинки, принимаемой камерой OpenMV. 
-В коде обеих программ (для "Пионера" и OpenMV) уже содержатся блоки создания UART интерфейса.
+An example code is established below. The program will change LED brightness depending on the brightness of OpenMV camera image. Both pieces of code (for Pioneer and the camera) contain UART protocol setting.
 
-код для "Пионера"
+Code for Pioneer
 
 ::
 
@@ -128,7 +132,7 @@
  changeColor(1, 0.2, 0) -- orange
 
 
-Код для openmv
+Code for OpenMV
 
 ::
 
@@ -193,9 +197,9 @@
 
 
 
-Используя Pioneer Station и OpenMV IDE, `загрузите`_ соответсвующие программы на квадрокоптер и модуль камеры. Подключите аккумулятор к "Пионеру" и запустите выполнение программы. Протестируйте ее работу, направляя камеру на объекты с различной яркостью.
+Use Pioneer station and OpenMV IDE to `upload`_ each program. Turn Pioneer ob and run the mission. Test how it works by pointing the camera towards objects with different brightness, or simply cover its lens by hand.
 
-.. _загрузите: ../programming/pioneer_station/pioneer_station_upload.html
+.. _upload: ../programming/pioneer_station/pioneer_station_upload.html
 
 
 

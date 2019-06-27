@@ -4,9 +4,9 @@
 .. image:: /_static/images/gopro_gimbal.png
 	:align: center
 	
-Подвес крепится к нижней части рамы квадрокоптера винтами М3х5 и позволяет надежно зафиксировать GoPro для видеозаписи во время полета. Вертикальный угол наклона камеры регулируется с помощью затяжного винта.
+The mount is attached to the lower part of the frame with M3x5 screws, providing a solid Gopro camera joint to capture onboard video during flight. Its vertical angle may be adjusted.
 
-При установленном модуле и камере следует соблюдать особую осторожность на этапах взлета и посадки т.к. подвес выступает за габариты защитного каркаса квадрокоптера и влияет на его баланс.
+Be careful while take-off and landing stages, as the mount with A Gopro affects the quadcopter’s balance and dimensions.
 
 
 

@@ -4,14 +4,13 @@
 .. image:: /_static/images/cargo_module.png
 	:align: center
 
-Модуль захвата груза предназначен для  захвата предметов, обладающих магнитным свойствами, оснащен управляемым электромагнитом на гибком подвесе и RGB светодиодами.
+Cargo module is designed to hold magnetic objects. It is equipped with electromagnet on a flexible gimbal and 4 RGB LEDs.
 
-Модуль монтируется на плату подключения дополнительных модулей на 4 винта М3, при этом обеспечивается надежное соединение разъемов.
+Cargo module is mounted on the extension board using 4 M3 screws.
 
-Модулем удобно управлять по 8 каналу с помощью двухпозиционного переключателя на пульте. Для настройки канала на нем необходимо во вкладке function найти пункт Aux. channels, выбрать channel 8 и установить переключатель SwA (крайний левый) как управляющий. 
-Теперь необходимо `загрузить на "Пионер"`_ программу для модуля груза. В качестве примера используйте код, представленный ниже. После его загрузки вы сможете управлять работой магнита с помошью крайнего левого тумблера на пульте.
+Use 8 channel of the RC unit to operate the module. A free SwA flipswitch can be used. To set the channel, turn on the RC unit, use touchscreen to select function-AUX Channels - 8 and choose SwA as a primary. Now you should `upload the programm`_ for Pioneer’s cargo module. Use the given code, which allows to control the magnet with SwA switch.
 
-.. _загрузить на "Пионер": ../programming/pioneer_station/pioneer_station_upload.html 
+.. _upload the programm": ../programming/pioneer_station/pioneer_station_upload.html 
 
 ::
 

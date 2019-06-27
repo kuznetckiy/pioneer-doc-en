@@ -4,25 +4,25 @@
 .. image:: /_static/images/connecting_modules.png
    :align: center
 
-Функционал "Пионера" может быть расширен с помощью подключения и программирования дополнительных модулей. 
+Pioneer’s functions can be extended with different programmable modules.
 
 .. image:: /_static/images/p_base.png
    :align: center
 
-Для подключения используются разъёмы Х1 и Х2 на верхней части платы. Большинсво модулей монтируются на плате подключения дополнительных модулей и соединяются с базовой платой при помощи входящих в комплект шлейфов.  Модули GPS и навигации в помещении крепятся напрямую на базовую плату "Пионера". 
+X1 and X2 connectors are situated in the upper part of the main board. Most modules a mounted on the extension board and connect to the main board with parallel cables. GPS and indoor navigation modules are installed directly on the main board.
 
 .. note:: 
- Разъёмы отличаются по количеству контактов и габаритам. Не подключайте  шлейф в несоответствующий разъём. Соблюдайте правильность подключения, используя маркировочный выступ на "вилке" шлейфа и не прикладывайте излишнюю силу.
+ Two connectors differ with contact amount and physical size, so they are NOT interchangeable. Use marking lip on the cable connector and do not push it hard.
 
-В следующих подразделах приведено подробное описание подключения и программирования модулей. 
+The following sections establish connect and programming instructions.
 
-.. note:: Настройка работы модулей выполняется с помощью  `Pioneer Station`_ или `TRIK studio`_ перед полетом.
+.. note:: Modules are programmed before the flight using `Pioneer Station`_ or `TRIK studio`_
 
 .. _Pioneer Station: ../programming/pioneer_station/pioneer_station_main.html
 .. _TRIK studio: ../programming/trik/trik_main.html
 
 
-**Примите во внимание, что подключенные модули потребляют дополнительную энергию и снижают время работы аккумулятора. Расчитывайте полетное время, исходя из режима работы и числа установленных модулей.**
+**Note that connected modules consume additional energy, which shortens the flight time**
 
 
 

@@ -1,13 +1,12 @@
 FPV комплект
 ================
-FPV (First Person View - вид от первого лица).
+FPV (First Person View)
 
-Комплект позволяет оператору получать изображение с курсовой камеры с минимальной задержкой по времени. 
-В комплект входит:
+The kit allows the operator to aquire the camera image with minimal latency to control Pioneer’s flight. The kit includes:
 
-* камера Runcam Split 
-* передатчик видеосигнала с антенной
-* FPV шлем с приемником 
+    Runcam Split camera
+    Video transmitter with antenna
+    FPV goggles with a receiver
 
-Курсовая камера также способна записывать FullHD видео на microSD карту объемом до 64Гб.  
+Runcam Split is also capable of shooting FullHD video and save it on a microSD memory card with up to 64 Gb storage capacity.
 

@@ -6,13 +6,13 @@
 	:align: center
 
 
-Модуль LED представляет собой плату с 25-ю программируемыми светодиодами, которая крепится к плате расширения снизу. Подключение через разъем X2 комплектным шлейфом.
+LED module includes a board with 25 programmable leds, which is attached to the extension board. The connection is provided using X2 connector with parallel cable.
 
-Блок светодиодов может использоваться для подсветки или индикации событий в зависимости от заданной программы. 
+Depending on uploaded program, a LED module is used for backlighting or colour indication.
 
-В качестве примера приведена программа, случайно меняющая цвет блока светодиодов каждую секунду. Чтобы `загрузить программу на "Пионер"`_, воспользуйтесь Pioneer Station. 
+As an example a random colour program is given below. Use Pioneer Station to `upload the program`_
 
-.. _загрузить программу на "Пионер": ../programming/pioneer_station/pioneer_station_upload.html
+.. _upload the program: ../programming/pioneer_station/pioneer_station_upload.html
 
 
 
