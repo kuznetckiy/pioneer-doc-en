@@ -1,4 +1,4 @@
-Lua документация по API
+Lua API documentation
 ===========================
 
 .. contents::
@@ -6,34 +6,34 @@ Lua документация по API
 
 .. highlight:: lua
 
-Описание API функций взаимодействия с автопилотом
+Autopilot interaction API functions
 ==================================================
 
 .. function:: time()
 
-   Возвращает время с момента включения коптера.
+   Returns time since the moment of autopilot turn on
 
 .. function:: deltaTime()
 
-    Возвращает разницу в секундах между временем коптера, которое можно получить функцией :func:`time`, и глобальным временем системы навигации.
+    Returns difference between :func:`time`, and GNSS time in seconds.
 
 
 .. function:: launchTime()
 
-    Возвращает время запуска для системы навигации.
+    Returns launch time for navigation system.
 
 .. function:: sleep(seconds)
 
-    Останавливает выполнение скрипта на заданное время, допустимы дробные значения аргумента.
-    **Рекомендуется использовать** :class:`Timer` **, так как sleep блокирует дальнейшее выполнение скрипта.**
+    Pauses script execution for stated amount of time, argument may be fractional.
+    **It is recommended  to use  :class:`Timer`, as "sleep" blocks further script execution.**
 
-    :param seconds: время сна в секундах.
+    :param seconds: Sleep time in seconds.
 
 .. data:: boardNumber
 
-    Получение идентификационного номера борта - доступно через переменную.
+    Returns aircraft ID - access using variable.
 
-**Пример**
+**Example**
 
 .. code:: lua
 
@@ -41,11 +41,11 @@ Lua документация по API
 
 .. function:: ap.push(Event)
 
-   Добавить событие автопилоту (см. :ref:`outluaevent`).
+   Add autopilot event (see :ref:`outluaevent`).
 
-   :param Event: номер события или название (например, ``Ev.COPTER_LANDED``).
+   :param Event: Event number or name (for example, ``Ev.COPTER_LANDED``).
 
-**Пример** 
+**Example** 
 
 .. code-block:: lua
 
@@ -54,56 +54,56 @@ Lua документация по API
 
 .. function:: ap.goToPoint(latitude, longitude, altitude)
 
-     Для полёта с использованием GPS.
+     for GPS mode flight.
 
-    :param latitude: задается широта в градусах, умноженных на :math:`10^{-7}`;
-    :param longitude: задается долгота в градусах, умноженных на :math:`10^{-7}`;
-    :param altitude: задается высота в метрах.
+    :param latitude: Set latitude in degrees, multiplied by :math:`10^{-7}`;
+    :param longitude: Set longitude in degrees, multiplied by :math:`10^{-7}`;
+    :param altitude:  Set altitude in meters.
 
-    Пример `ap.goToPoint(600859810, 304206500, 50)`
+    Example `ap.goToPoint(600859810, 304206500, 50)`
 
 .. function:: ap.goToLocalPoint(x, y, z , time)
 
-    Для полёта с использованием локальной системы координат.
+    For local positioning system:
 
-    :param x: задается координата точки по оси `x`, в метрах;
-    :param y: задается координата точки по оси `y`, в метрах;
-    :param z: задается координата точки по оси `z`, в метрах;
-    :param time: время, за которое коптер перейдет в следующую точку, в секундах. Если значение не указано, коптер стремится к точке с максимальной скоростью.
+    :param x: set point's `x` coordinate, meters;
+    :param y: set point's `y`coordinate, meters;
+    :param z: set point's `z`coordinate, meters;
+    :param time: time reqired for copter to reach the next piont, in seconds. If value is not stated, drone will fly with max speed.
 
-    Пример  ``ap.goToLocalPoint(1, 1, 1.2)`` или ``ap.goToLocalPoint(1, 1, 1.2, 10)``
+    Example  ``ap.goToLocalPoint(1, 1, 1.2)`` или ``ap.goToLocalPoint(1, 1, 1.2, 10)``
 
 .. function:: ap.updateYaw(angle)
 
-    Установить рыскание.
+    Set yaw.
 
-    :param angle: угол в радианах.
+    :param angle: angle in radian..
 
-RGB светодиоды
+RGB LEDs
 --------------
 
 .. class:: Ledbar
 
     .. method:: new(Count)
 
-        Cоздать новый Ledbar с заданным количеством светодиодов.
+        Create new Ledbar with stated amount of leds.
 
-        :param Count: количество светодиодов.
+        :param Count: Led amount.
 
     .. method:: set(self, num, r, g, b)
 
-        Установить цвет на конкретный светодиод.
+        Set each led colour.
 
-        :param num: номер светодиода, нумеруются с 0 по 3 на плате, далее последовательно по подключенным модулям;
-        :param r: интенсивность красной компоненты цвета в интервале от [0;1];
-        :param g: интенсивность зеленой компоненты цвета в интервале от [0;1];
-        :param b: интенсивность синей компоненты цвета в интервале от [0;1].
+        :param num: Led number. Numeration 0 - 3 for main board, then for extra modules in series;
+        :param r: red colour component intensity in [0;1] interval;
+        :param g: green colour component intensity in [0;1] interval;
+        :param b: blue colour component intensity in [0;1] interval;.
 
-Смотри также :func:`fromHSV`
+See also :func:`fromHSV`
 
-**Пример** 
+**Example** 
 
-К коптеру дополнительно подключен модуль с магнитом, на котором 4 RGB светодиода.
+Cargo module includes a magnet and 4 RGB leds.
 
 .. code-block:: lua
 
@@ -118,97 +118,97 @@ RGB светодиоды
 
 .. function:: fromHSV(hue, saturation, value)
 
-    Конвертирует представление цвета из HSV в RGB. Можно использовать для задания цвета светодиода.
+    Converts colour code from HSV to RGB. Can be used to set led colour.
 
-    :param hue: задает цветовой тон. Варьируется в пределах [0;360];
-    :param saturation: задает насыщенность. Варьируется в пределах [0;100];
-    :param value: задает значение цвета. Варьируется в пределах [0;100];
-    :return: Возвращает три компонеты цвета r, g, b.
+    :param hue: set colour tone. Varies in [0;360] interval;
+    :param saturation: set saturation. Varies in [0:100] interval;;
+    :param value: set colour; Varies in [0:100] interval;
+    :return: Returns RGB colour components.
 
-GPIO
+GPIO (general-purpose input/output interface)
 ----
 
 .. class:: Gpio
 
     .. method:: new(Port, Pin, Mode)
 
-        Cоздать GPIO на порте с настройками.
+        create GPIO in settings port..
 
         :param Port: Gpio.A; Gpio.B; ... Gpio.E;
-        :param Pin: номер пина на порте;
+        :param Pin: pin number in port;
         :param Mode: Gpio.INPUT, Gpio.Output, Gpio.ALTFU.
 
     .. method:: read(self)
 
-        Получить значение.
+        Returns value.
 
     .. method:: set(self)
 
-        Установить значение в 1.
+        Set value in 1.
 
     .. method:: reset(self)
 
-        Установить значение в 0.
+        Set value in 0..
 
     .. method:: write(self, value)
 
-        :param value: установить значение.
+        :param value: set value.
 
     .. method:: setFunction(self, num)
 
-        Задать номер альтернативной функции.
+        Set alternative function number.
 
-**Пример** 
+**Example** 
 
 .. code-block:: lua
 
     local pin_name = Gpio.new(Gpio.A, 1, Gpio.OUTPUT)
-    pin_name:read() -- получить значение
-    pin_name:set() -- установить значение 1
-    pin_name:reset() -- установить значение 0 
-    pin_name:write(true) -- установить значение true
-    pin_name:setFunction(1) -- задать номер альтернативной функции
+    pin_name:read() -- get value
+    pin_name:set() -- set value 1
+    pin_name:reset() -- set value 0 
+    pin_name:write(true) -- set value true
+    pin_name:setFunction(1) -- set alternative function number
 
 
-UART
+UART interface
 ----
 
 .. class:: Uart
 
     .. method:: new(num, rate, parity, stopBits)
 
-        Cоздать Uart на порте с настройками.
+        Create UART in settings port..
 
-        :param num: номер UART;
-        :param rate: скорость;
-        :param parity: Uart.PARITY_NONE, Uart.PARITY_EVEN, Uart.PARITY_ODD, необязательный параметр, по умолчанию Uart.PARITY_NONE;
-        :param stopBits: Uart.ONE_STOP, Uart.TWO_STOP, необязательный параметр, по умолчанию Uart.ONE_STOP.
+        :param num: UART number;;
+        :param rate: speed;
+        :param parity: Uart.PARITY_NONE, Uart.PARITY_EVEN, Uart.PARITY_ODD, not a necessary parameter, by default Uart.PARITY_NONE;
+        :param stopBits: Uart.ONE_STOP, Uart.TWO_STOP, not a necessary parameter, by default Uart.ONE_STOP.
 
     .. method:: read(self, size)
 
-        Прочитать ``size`` байт.
+        Read ``size`` byte.
 
     .. method:: write(self, data, size)
 
-        Записать данные (data) длиной (size).
+        Write (data) length of (size).
 
     .. method:: bytesToRead(self)
 
-        Количество данных доступных для чтения.
+        Amount of data available to be read..
 
     .. method:: setBaudRate(self, rate)
 
-        Установить скорость.
+        Set speed.
 
-        :param rate: скорость uart.
+        :param rate: UART speed.
 
 
-**Пример**
+**Example**
 
 .. code:: lua
 
     local uart = Uart.new(1, 115200)
-    uart:read(10) -- прочитать 10 байт
+    uart:read(10) -- read 10 bytes
 
 
 SPI
@@ -218,106 +218,108 @@ SPI
 
     .. method:: new(num, rate, seq, mode)
 
-        Cоздать Spi на порте с настройками.
+        Create SPI in settings port.
 
-        :param num: номер Spi
-        :param rate: скорость
-        :param seq: Spi.MSB, Spi.LSB, Spi.MSB_16, Spi.LSB_16, необязательный параметр, по умолчанию Spi.MSB;
-        :param mode: Spi.MODE0, Spi.MODE1, Spi.MODE2, Spi.MODE3, необязательный параметр, по умолчанию Spi.MODE0.
+        :param num: SPI number
+        :param rate: speed
+        :param seq: Spi.MSB, Spi.LSB, Spi.MSB_16, Spi.LSB_16, not a necessary parameter, by default Spi.MSB;
+        :param mode: Spi.MODE0, Spi.MODE1, Spi.MODE2, Spi.MODE3, not a necessary parameter, by default Spi.MODE0.
 
     .. method:: read(self, size)
 
-        Прочитать ``size`` байт.
+        read ``size`` byte.
 
     .. method:: write(self, data, size)
 
-        Записать данные (data) длиной (size).
+        Write (data) length of (size).
 
     .. method:: exchange(self, data, size)
 
-        Записать данные (data) длиной (size) и прочитать size.
+        Write (data) length of (size) and read size.
 
-**Пример**
+**Example**
 
 .. code:: lua
 
     local spi = Spi.new(2, 1000000)
-    spi:exchange("hello", 5) -- записать данные (data) длиной (size) и прочитать size
+    spi:exchange("hello", 5) -- Write (data) length of (size) and read size
 
-Таймеры
+Timers
 -------
 
 .. class:: Timer
 
     .. method:: new(sec, func)
 
-        Cоздать новый Timer. 
+        Create new Timer. 
 
-        :param sec: время интервала в секундах;
-        :param func: функция, которая будет вызываться с заданным интервалом.
+        :param sec: Interval time in seconds.
+        :param func: Function called with set interval.
 
     .. method:: start(self)
 
-        Запуcкает таймер.
+        Start timer.
 
     .. method:: stop(self)
 
-        Останавливает таймер. При этом остановка уже запущенного таймера произойдет после выполнения функции, стоящей в очереди на выполнение.
+        Stop timer. Full stop after last function execution.
 
     .. method:: callAt(local_time, func)
 
-        Cоздает и запускает новый Timer с функцией, которая будет вызвана один раз.
+        Creates and starts new timer with function to be called ONCE.
 
-        :param local_time: локальное время (возвращаемое функцией :func:`time`), указывающее момент вызова функции;
-        :param func: функция, которая будет вызвана.
+        :param local_time: Local time (returns with :func:`time`), states function call moment.;
+        :param func: Function to be called.
 
     .. method:: callLater(delay, func)
 
-        Cоздает и запускает новый Timer с функцией, которая будет вызвана один раз.
+        Creates and starts new timer with function to be called ONCE.
 
-        :param delay: время, через сколько запустить функцию;
-        :param func: функция, которая будет вызвана.
+        :param delay: Time before function start;
+        :param func: Function to be called.
 
     .. method:: callAtGlobal(global_time, func)
 
-        Cоздает и запускает новый Timer с функцией, которая будет вызвана один раз.
+        Creates and starts new timer with function to be called ONCE.
 
-        :param global_time: глобальное время (:func:`time` + :func:`deltaTime`), когда вызвать функцию;
-        :param func: функция, которая будет вызвана.
+        :param global_time: Global time (:func:`time` + :func:`deltaTime`),  when to call function;
+        :param func:  Function to be called.
         
 
+.. note:: When using :func:`callAt()`, :func:`callLater()`, :func:`callAtGlobal()` functions, note that there can not be more than 16 waiting timers simultaneously. If this amount is exceeded, new tier will not be created.
 
-**Пример**
 
-Смотри :ref:`Example`
+**Example**
+
+See :ref:`Example`
 
 .. _OutLuaEvent:
 
-События, отправляемые автопилоту
+Autopilot events
 --------------------------------
 
-События (events) представляются константами с префиксом "Ev."
+Events a presented using constants with “Ev” prefix
 
 +----------------+-------------------------------------------+
-|    Название    |                  Описание                 |
+|    Name        |                  Description              |
 +================+===========================================+
-| MCE_PREFLIGHT  | Запустить двигатели и провести подготовку |
+| MCE_PREFLIGHT  | Motors start and execute pre-flight check |
 +----------------+-------------------------------------------+
-| ENGINES_DISARM | Отключить двигатели                       |
+| ENGINES_DISARM | Stop motors                               |
 +----------------+-------------------------------------------+
-| MCE_LANDING    | Отправить на посадку                      |
+| MCE_LANDING    | perform landing                           |
 +----------------+-------------------------------------------+
-| MCE_TAKEOFF    | Отправить на взлет                        |
+| MCE_TAKEOFF    | perform takeoff                           |
 +----------------+-------------------------------------------+
 | --устаревшие-- |                                           |
 +----------------+-------------------------------------------+
-| ENGINES_ARM    | Завести двигатели                         |
+| ENGINES_ARM    | Start motors                              |
 +----------------+-------------------------------------------+
 
-Получение данных от автопилота
+Get autopilot data
 ==============================
 
-Для получение данных от автопилота используется класс Sensors
+To get autopilot data **Sensors** class is used
 
 .. class:: Sensors
 
@@ -335,41 +337,41 @@ SPI
 
     .. method:: orientation()
 
-        Данные положения.
+        Position data.
 
         :return: roll, pitch, azimuth
 
     .. method:: altitude()
 
-        Данные высоты по барометру.
+        Altitude data fro barometer.
 
-        :return: высота в метрах
+        :return: altitude in meters
 
     .. method:: range()
 
-        Данные c датчиков растояния.
+        Data from proximity sensors/
 
-        :return: Возвращает значения с датчика растояния. Возвращает несколько значений.
+        :return: Returns proximity sensor distance. Several values.
 
     .. method:: accel()
 
-        Данные c акселерометра.
+        Accelerometer data.
 
         :return: ax, ay, az
 
     .. method:: gyro()
 
-        Данные c гироскопа.
+        Gyroscope data.
 
         :return: gx, gy, gz
 
     .. method:: rc()
 
-        Данные c пульта управления.
+        RC transmitter data.
 
         :return: channel1, channel2, channel3, channel4, channel5, channel6, channel7, channel8
 
-**Примеры**
+**Examples**
 
 .. code:: lua
 
@@ -395,46 +397,48 @@ SPI
     aileron, _, _, _, _, _, _, ch8, = rc()
 
 
-Описание необходимых служебных функций скрипта
+Service functions of the script
 ==============================================
 
 .. code:: lua
 
-    function callback(event) -- Вызывается, когда приходят события от автопилота.
+    function callback(event) -- is called when autopilot event is received
     end
 
-Доступны следующие события, приходящие от автопилота:
+Autopilot events available:
 
 +--------------------+-----------------------------------------------------------+
-|      Название      |                          Описание                         |
+|      Name          |                          Description                      |
 +====================+===========================================================+
-| CONTROL_FAIL       | Сработала защита                                          |
+| ENGINES_STARTED    | Engines started                                           |
 +--------------------+-----------------------------------------------------------+
-| TAKEOFF_COMPLETE   | Коптер достиг заданной высоты                             |
+| COPTER_LANDED      | Quadcopter performed landing                              |
 +--------------------+-----------------------------------------------------------+
-| POINT_REACHED      | Коптер достиг точки                                       |
+| TAKEOFF_COMPLETE   | Quadcopter has reached takeoff altitude                   |
 +--------------------+-----------------------------------------------------------+
-| ENGINE_FAIL        |                                                           |
+| POINT_REACHED      | Quadcopter has reached destination point                  |
 +--------------------+-----------------------------------------------------------+
-| ENGINES_STARTED    | Двигатели запущены                                        |
+| POINT_DECELERATION | Quadcopter starts decelerating near the point             |
 +--------------------+-----------------------------------------------------------+
-| COPTER_LANDED      | Коптер совершил посадку                                   |
+| LOW_VOLTAGE1       | low battery voltage, return home mode                     |
 +--------------------+-----------------------------------------------------------+
-| LOW_VOLTAGE1       | Низкое напряжение аккумулятора, для возвращения домой     |
+| LOW_VOLTAGE2       | low battery voltage, landing mode                         |
 +--------------------+-----------------------------------------------------------+
-| LOW_VOLTAGE2       | Низкое напряжение аккумулятора, переходит в режим посадки |
+| SYNC_START         | Syncronised start signal received from positioning system |
 +--------------------+-----------------------------------------------------------+
-| POINT_DECELERATION | Коптер начал тормозить при подлёте к точке                |
+| SHOCK              | Collision or hard vibration                               |
 +--------------------+-----------------------------------------------------------+
-| SYNC_START         |                                                           |
+| CONTROL_FAIL       | Pitch angle exceeded maximum value                        |
 +--------------------+-----------------------------------------------------------+
-| SHOCK              |                                                           |
+| ENGINE_FAIL        | Engine fail                                               |
 +--------------------+-----------------------------------------------------------+
+
+.. note:: Ev.ALTITUDE_REACHED ( quadcopter has reached destination point) event is no more used starting from autopilot version 1.5.6173.
 
 .. _Example:
 
-Пример скрипта
-==============
+Script example
+================
 
 .. code:: lua
 
@@ -483,17 +487,17 @@ SPI
     ap.push(Ev.MCE_PREFLIGHT)
     Timer.callLater(1, function() ap.push(Ev.MCE_TAKEOFF) end)
 
-Описание пинов разъемов модулей
-===============================
+Description for modules pin connectors
+========================================
 
-Пины МК АП на ``Pioneer_Base_v.1.0-v.1.1``, выведенные на внешние разъемы:
+``Pioneer_Base_v.1.0-v.1.1`` autopilot controller pins
 
 +--------------------+---------------------------+---------------------------+
-| Разъем X1 (пин МК) |          Функция          |          Описание         |
+| X1 (MC pin)        |          Function         |          Description      |
 +====================+===========================+===========================+
-| 1                  | Питание 5 В (только с АКБ) | Максимум 2 А             |
+| 1                  | 5V power (only with LiPo) 2A max.                     |
 +--------------------+---------------------------+---------------------------+
-| 2                  | Питание 3.3 В              | Максимум 2 А             |
+| 2                  | 3.3V power  2A max.                                   |
 +--------------------+---------------------------+---------------------------+
 | 3 (PA12)           | USART1_RTS                |                           |
 +--------------------+---------------------------+---------------------------+
@@ -519,11 +523,11 @@ SPI
 |
 
 +--------------------+------------------------------+------------------------------+
-| Разъем X2 (пин МК) |           Функция            |           Описание           |
+| X2 (MC pin)        |          Function            |            Description       |
 +====================+==============================+==============================+
-| 1                  | Питание 5 В (только с АКБ)    | Максимум 2 А                |
+| 1                  | 5V power (only with LiPo) 2A max.                           |
 +--------------------+------------------------------+------------------------------+
-| 2                  | Питание 3.3 В                 | Максимум 2 А                |
+| 2                  | 3.3V power  2A max.                                         |
 +--------------------+------------------------------+------------------------------+
 | 3 (PC2)            | ADCx_IN12                    |                              |
 +--------------------+------------------------------+------------------------------+
@@ -542,10 +546,10 @@ SPI
 | 10                 | Земля                        |                              |
 +--------------------+------------------------------+------------------------------+
 
-Для ``Pioneer_Base_v.1.2``:
+For ``Pioneer_Base_v.1.2``:
 
 +--------------------+-----------------------------------------+------------------------------+
-| Разъем X2 (пин МК) |                 Функция                 |           Описание           |
+| X2 (MC pin)        |                 Function                |           Description        |
 +====================+=========================================+==============================+
 | 3 (PA0)            | USART4_TX, ADCx_IN0, TIM2_CH1, TIM5_CH1 | Module_OpenMV                |
 +--------------------+-----------------------------------------+------------------------------+
@@ -553,5 +557,5 @@ SPI
 +--------------------+-----------------------------------------+------------------------------+
 | 5 (PС3)            | ADCx_IN13, SPI2_MOSI                    | Module_Cargo (упр. магнитом) |
 +--------------------+-----------------------------------------+------------------------------+
-| 8 (PC12)           | DATA WS2812B                            | Уровень 5 В. Module_LED      |
+| 8 (PC12)           | DATA WS2812B                            | 5 V level. Module_LED        |
 +--------------------+-----------------------------------------+------------------------------+
