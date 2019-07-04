@@ -15,7 +15,7 @@ The system includes:
 * connection cables;
 * LPS software to sync with PC (`download latest version`_);
 
-.. _download latest version: https://dl.geoscan.aero/pioneer/upload/LPS/Geoscan_LPS.exe
+.. _download latest version: https://dl.geoscan.aero/pioneer/upload/LPS/Geoscan_LPS_en.exe
 .. _Download LPS setting manual: https://dl.geoscan.aero/pioneer/upload/Docs/User_manual_Locus_en.pdf
 
 Flyzone setting
