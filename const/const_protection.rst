@@ -1,7 +1,7 @@
-Сборка защиты
-=============
+Protection assembly
+====================
 
-**Шаг 8**
+**Step 8**
 
 ::
 
@@ -11,10 +11,10 @@
 .. image:: /_static/images/const_protection_step_8.png
 	:align: center
 
-Установите основания защиты и закрепите их винтами М2х6, как показано на рисунке.
+Place protection mounts and secure them using M2x6 screws like shown on the picture
  
 
-**Шаг 9**
+**Step 9**
 
 ::
 
@@ -24,9 +24,9 @@
 .. image:: /_static/images/const_protection_step_9.png
 	:align: center
 
-С помощью винтов М3х10 закрепите на основаниях защиты дуги защиты, перемычки защиты и стойки, как показано на рисунке.
+Secure the protection arcs, bulkhead and stands using M3x10 screws like shown in the picture.
 
-**Шаг 10**
+**Step 10**
 
 ::
 
@@ -36,10 +36,10 @@
 .. image:: /_static/images/const_protection_step_10.png
 	:align: center
 
-С помощью винтов М3х10 закрепите на стойках защиты дуги защиты и перемычки защиты, как показано на рисунке.
+Connect the stands and protection arcs using M3x10 screws.
 
 
-**Шаг 11**
+**Step 11**
 
 ::
 
@@ -49,10 +49,9 @@
 .. image:: /_static/images/const_protection_step_11.png
 	:align: center
 
-Обратите внимание: черные гайки имеют левую резьбу! Надписи на винтах (5030 или 5030R) должны совпадать с надписями на раме.
-Открутите гайки с осей моторов, установите воздушные винты (надписи на винтах должны быть сверху) и закрепите их гайками. Серебристые гайки закручиваются по часовой стрелке (правая резьба), черные гайки – против часовой стрелки (левая резьба).
+Note: black caps have right thread! The markers on props and board should match. Take off the caps, mount the props and twist them back tight.
 
-**Шаг 12**
+**Step 12**
 
 ::
 
@@ -63,14 +62,14 @@
 .. image:: /_static/images/const_protection_step_12.png
 	:align: center
 
-Закрепите приемник на шасси с помощью эластичного фиксатора. Вставьте разъем кабеля в разъем PPM на базовой плате (Разъем PPM находится под разъемом micro-USB).
+Install the receiver on the landing gear using elastic ring. Connect the PPm cable to the board under mUSB port.
 
 
 
 
 
-Для дальнейших инструкций перейдите в раздел: `Первое включение`_.
+For further instructions, proceed to `First switch-on`_
 
-.. _Первое включение: const_switch_on.html
+.. _First switch-on: const_switch_on.html
 
 

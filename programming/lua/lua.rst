@@ -66,10 +66,10 @@ Autopilot interaction API functions
 
     For local positioning system:
 
-    :param x: set point's `x` coordinate, meters;
-    :param y: set point's `y`coordinate, meters;
-    :param z: set point's `z`coordinate, meters;
-    :param time: time reqired for copter to reach the next piont, in seconds. If value is not stated, drone will fly with max speed.
+    :param x: set point's `x` coordinate, meters.
+    :param y: set point's `y`coordinate, meters.
+    :param z: set point's `z`coordinate, meters.
+    :param time: time required for copter to reach the next point, in seconds. If value is not stated, drone will fly with max speed.
 
     Example  ``ap.goToLocalPoint(1, 1, 1.2)`` или ``ap.goToLocalPoint(1, 1, 1.2, 10)``
 
@@ -126,7 +126,7 @@ Cargo module includes a magnet and 4 RGB leds.
     :return: Returns RGB colour components.
 
 GPIO (general-purpose input/output interface)
-----
+-------------------------------------------------
 
 .. class:: Gpio
 
@@ -171,7 +171,7 @@ GPIO (general-purpose input/output interface)
 
 
 UART interface
-----
+-----------------
 
 .. class:: Uart
 
@@ -212,7 +212,7 @@ UART interface
 
 
 SPI
----
+-----
 
 .. class:: Spi
 

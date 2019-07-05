@@ -3,47 +3,47 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Документация Геоскан "Пионер"
+Geoscan Pioneer documentation
 ======================================================
 
-`Вернуться на сайт Пионер`_
+`Return to Pioneer webpage`_
 ---------------------------------
-.. _Вернуться на сайт Пионер: https://www.geoscan.aero/en/pioneer/
+.. _Return to Pioneer webpage: https://www.geoscan.aero/en/pioneer/
 
 
-| Геоскан "Пионер" - это многофункциональный учебный комплекс для школ, авиамодельных секций, кружков робототехники, а также для самостоятельного освоения.
+| Geoscan Pioneer is a multifunctional educational complex. It was developed for schools, robotics labs and for individual use.
 
 
 .. image:: _static/images/pioneer.png
    :align: center
 
-"Пионер" позволяет:
+Use Pioneer to:
 
-*	изучить основы робототехники и авионики
-*	ознакомиться с устройством и принципом работы квадрокоптера
-*	освоить приемы пилотирования
-*	адаптировать коптер для решения поставленных задач
-*	научиться программировать квадрокоптер
-
-
-.. important:: Функционал комплекса может быть расширен за счет подключения и программирования дополнительных модулей.
+*	study the robotics and avionics basics
+*	get to know the principles of quadcopter constuction
+*	master your flying skills
+*	tailor the drone to suit your needs and tasks
+*	program the drone
 
 
+.. important:: Pioneer’s functional abilities can be extended by adding and programming extension modules.
 
-.. csv-table:: Технические характеристики
-   :header: "Параметр", "Значение"
 
-   "Тип", "квадрокоптер"
-   "Продолжительность полета", "до 17 минут"
-   "Скорость полета", до 65 км/ч
-   "Масса квадрокоптера", "230 г"
-   "Максимальная взлетная масса", "230 г"
-   "Размеры", "290 x 290 x 120 мм"
-   "Двигатели","бесколлекторные 1306 3100KV"
-   "Аккумуляторная батарея","LiPo 2S 1300мАч 9,62 Втч"
-   "Максимальная дальность полета","500 м"
-   "Допустимая скорость ветра","до 5 м/с"
-   "Температура эксплуатации","От 0 до +40 °С"
+
+.. csv-table:: Technical specs
+   :header: "Parameter", "Value"
+
+   "Class", "quadcopter"
+   "Flight time", "up to 17 minutes"
+   "Airspeed", "up to 65 km/h"
+   "Weight", "230 g"
+   "Max takeoff weight", "230 g"
+   "Dimensions", "290 x 290 x 120 mm"
+   "Motors","Brushless 1306 3100KV"
+   "Battery","LiPo 2S 1300 mAh 9.62 Wh"
+   "Max flight distance","500 m"
+   "Max wind speed","up to 5 m/s"
+   "Operation temperature","From 0 to +40 °C"
 
 
 

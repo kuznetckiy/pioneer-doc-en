@@ -1,36 +1,40 @@
-Создание программы в TRIK Studio
+Creating mission in TRIK studio
 ================================
-При первом запуске программы создайте новый проект (кнопка в левом верхнем углу). Чтобы начать создавать программу, достаточно перетащить нужные блоки действия из "Палитры" на диаграмму поведения робота, а затем соединить их между собой.
+Open TRIK studio and create new project (button in the top left corner). To create mission, drag and drop action blocks from Pallet to robot performance diagram, and then connect them.
 
-**Основы работы с TRIK Studio**
+**TRIK studio basics**
 
-* Каждая программа должна содержать блоки "Начало" и "Конец". В случае ветвления программы каждая ветвь должна либо вернуться в основное дерево, либо заканчиваться блоком "конец".
-* Для соединения двух блоков наведите курсор мыши на первый, нажмите и удерживайте **правую** кнопку мыши, протяните линию до второго и отпустите. Появившаяся на диаграмме стрелка означает, что два блока логически связаны. Также можно выбрать нужный блок и захватить **левой** конопкой мыши появившийся справа от него маркер, протянув до следующего блока и отпустив.
-* Настроить выбранный блок можно в окне "Редактор свойств". 
-* Чтобы удалить ненужный блок, выберите его щелчком левой кнопки мыши и нажмите del.
-* Если нужно выбрать сразу несколько блоков, их можно обвести рамкой, зажав левую кнопку мыши и потянув курсор. Также можно выделять блоки по одному, зажав ctrl.
-* На диаграмме не должно оставаться красных стрелок и неподключенных блоков. Для удобства старайтесь выстраивать диаграму в направлении слева направо и сверху вниз. 
-* Для удобства и быстроты работы изучите список "горячих клавиш" в разделе "Настройки". Также полезно прочитать раздел **Помощь (F1)**
 
-**Блоки, используемые для программирования "Пионера":**
+* Every mission should include “start” and “end” blocks. If the mission has multiple branches, each branch has to end with “end” block.
+* To connect two blocks, use right mouse button. Press RMB on the first block, hold it, drag towards another block and release above it. Now these blocks are connected with a visible line.
+* To tune selected block, use “Properties editor” window.
+* To delete unnecessary block, select it with left mouse click and press del. key
+* If you need to select multiple blocks, circle them holding left mouse button, or hold ctrl key and select them one by one.
+* The diagram should not have red arrows and disconnected blocks. For better visibility arrange all blocks from top left to bottom right corner.
+* Learn “hot keys” manual in “settings” tab. **Help (F1)** tab may be useful too.
 
-* **Условие** - позволяет создать два сценария действия "Пионера" в зависимости от заданного логического условия. У блока должны быть две исходящие связи, в одной из которых в редакторе свойств должно быть назначено значение параметра "условие" (истина или ложь)
-* **Конец условия** - обозначает слияние двух веток условного оператора. Никаких действий не выполняет, но полезен для обеспечения структурности программы.
-* **Инициализация переменной** - позволет объявить новую переменную. В редакторе свойств или прямо на диаграмме задается имя переменной и ее значение.
-* **Случайное число** - присваивает выбранной переменной случайное значение из выбранного диапазона. 
-* **Комментари** - позволяет включить в программу текстовые пояснения, упрощающие понимание структуры участка или конкретного блока. 
-* **Таймер** - задает время ожидания перед выполнением следующего блока программы в миллисекундах.
-* **Взлет**, **Посадка**  - команды начала и завершения полета.
-* **Лететь в точку** - указывает координаты точки, в которую полетит квадрокоптер. Координаты вводятся без точек и запятых в строки широты и долготы. Строка "высота" отображает расстояние (в метрах) от поверхности в конечной точке полета.
-* **Лететь в точку(ЛК)** - команда аналогична предыдущей, но точка назначения задается в локальных координатах. За точку отсчета (0,0,0) принимается место взлета. Значения координат задаются в метрах. 
-* **Светодиод** - управляет работой светодиодов на плате "Пионера". Меняя значения для каждого цвета, можно зажигать светодиоды по одному или в различных комбинациях. В паре с блоком "Таймер" можно задать длительность свечения.
-* **Магнит** - управляет работой `модуля захвата груза`_. Чтобы включить магнит, поставьте галочку в чекбоксе значения свойств блока.
-* **Команда** - позволяет выполнить написанную в свойствах команду. Для написания команды используется `язык Lua`_. Для выполнения команды поставьте галочку в чекбоксе.
-* **Рыскание** - управляет изменением направления полета "Пионера" вокруг вертикальной оси. Для поворота по часовой стрелке задайте значение угла в градусах со знаком "минус".
 
-Комбинируя блоки между собой и создавая связи меду ними, вы сможете создать любую полетную программу для "Пионера"
+**Pioneer programming blocks**
 
-.. _модуля захвата груза: ../../const/module/cargo.html
-.. _язык Lua: ../lua/lua_main.html
+
+* **Condition** - creates two action scenarios depending on logical condition. The block should have two outgoing connections, one of which has to contain “condition” parameter (True or False)
+* **End if** - marks merging point for two conditional operator branches. Provides structural integrity for diagram.
+* **Variable initialisation** - states new variable. Use property editor to name and change it.
+* **Random initialisation** - randomises selected value. Random range may be set.
+* **Comments** - includes comments to provide better structure understanding.
+* **Timer**- set time delay in milliseconds before next block will be executed.
+* **Takeoff , Landing** - first and last block to perform flight mission.
+* **Go to point** - set destination point coordinates. Don’t use dots or commas for latitude and longitude lines. “Altitude” shows distance to the ground (in meters) at the point.
+* **Go to local point** - similar to previous, but destination point is set in local coordinates. Takoff point is considered for (0,0,0). Offset is set in meters.
+* **LED** - controls Pioneer main board leds. Change each colour value to tune it precisely. Pair with “timer” block to set glowing duration.
+* **Magnet** - controls `cargo module`_ operation. To turn magnet on, place a mark in a property checkbox.
+* **System** - executes given instruction. Use Lua to create instruction in the editor and place a mark in a checkbox to run it.
+* **Yaw** - controls Pioneer’s horizontal flight direction. To turn clockwise, set the angle with a “minus” sign.
+
+
+Combining these blocks and connections, you can create any kind of flight mission imaginable.
+
+.. _cargo module: ../../const/module/cargo.html
+
 
 

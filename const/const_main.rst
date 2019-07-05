@@ -1,11 +1,11 @@
-Сборка "Пионера"
+Pioneer assembly
 ===================
 
 
 .. image:: /_static/images/construction_1.png
 	:align: center
 
-.. important:: Базовый набор "Пионера" включает в себя все необходимые элементы и инструменты для сборки и запуска квадрокоптера. 
+.. important:: The stock Pioneer kit contains all necessary parts and tools to assemble and launch it.
 
 
 
@@ -16,19 +16,19 @@
 .. image:: /_static/images/construction_4.png
 	:align: center
 
-Сборка "Пионера" осуществляется в два этапа:
+Pioneer assembly is executed in two stages:
 
-`Сборка рамы`_
+`Frame assembly`_
 
-.. _Сборка рамы: const_frame.html
+.. _Frame assembly: const_frame.html
 
-`Сборка защиты`_ 
+`Protection assembly`_ 
 
-.. _Сборка защиты: const_protection.html
+.. _Protection assembly: const_protection.html
 
-Подключение дополнительных модулей описано в разделе `Дополнительные модули`_ 
+Modules connection is described in `Extension modules`_
 
-.. _Дополнительные модули: ../module/module_main.html
+.. _Extension modules: ../module/module_main.html
 
 
 

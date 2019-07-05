@@ -1,27 +1,26 @@
-Обновление прошивки
+Firmware update
 ======================
-Для корректной работы всех систем "Пионера" рекомендуется устанавливать последнюю актуальную версию прошивки. Для этого на вашем компьютере должна быть установлена программа Pioneer Station. Если у вас ее нет, нажмите `скачать установщик Pioneer Station`_, загрузка начнется автоматически. После этого необходимо запустить скачаный exe файл.
+For Pioneer to perform correctly, it is recommended to upload the last version of firmware. You need to have Pioneer station installed on your PC. If you don’t have it, click `download Pioneer Station`_ and run the acquired .exe file.
 
 .. note::
-	Если программа не запускается, попробуйте `скачать 32bit версию`_, распаковать архив и запустить run.bat.
+	If program doesn’t run, try to `download 32bit version`_, unpack the archive and open run.bat file.
 
-.. _скачать установщик Pioneer Station: https://dl.geoscan.aero/pioneer/upload/GCS/GEOSCAN_Pioneer_Station_en.exe
+.. _download Pioneer Station: https://dl.geoscan.aero/pioneer/upload/GCS/GEOSCAN_Pioneer_Station_en.exe
 
-.. _скачать 32bit версию: https://dl.geoscan.aero/pioneer/upload/GCS/PioneerStationWin32.zip
+.. _download 32bit version: https://dl.geoscan.aero/pioneer/upload/GCS/PioneerStationWin32.zip
 
-Далее нужно перевести "Пионер" в режим обновления. Зажав и удерживая кнопку "Старт" подключите квадрокоптер к компьютеру через usb кабель. При этом должны зажечься светодиоды "передача", "прием", "статус", "ошибка". 
+Turn on firmware update mode on Pioneer. Press “Start” button on it and connect the USB cable while holding the button pressed. All LEDs on the board should switch on.
 
-Запустите Pioneer Station, нажмите на значок квадрокоптера в левом верхнем углу окна программы. В выпадающем меню нажмите "обновление прошивки" и следуйте инструкциям помощника. 
+Run Pioneer Station and click the quadcopter icon in the top left corner of the window. Select “firmware update” and follow the appearing instructions.
 
 .. note:: 
-	Если при выборе устройства квадрокоптер не отображается в окне, попробуйте переподключить его и перезапустить программу. Если это не помогло, попробуйте `скачать и установить драйвер порта`_, после чего переподключите "Пионер" и перезапустите программу.
+	If quadcopter is not shown in the window, try rebooting your PC and re-connect Pioneer. If this didn’t help, `download and install port driver`_, then reload Pioneer Station and re-connect the drone.
 
 
-.. _скачать и установить драйвер порта: https://www.silabs.com/products/development-tools/software/usb-to-uart-bridge-vcp-drivers
+.. _download and install port driver: https://www.silabs.com/products/development-tools/software/usb-to-uart-bridge-vcp-drivers
 
-При выборе источника прошивки рекомендуется выбрать пункт "встроенный", так вы установите последнюю актуальную версию.
+It is recommended to select “inbuilt” source of firmware. That guarantees you install the latest version.
 
-Дождитесь окончания прошивки, это может занять несколько минут. После завершения нажмите "ОК", квадрокоптер перейдет в обычный режим работы.
+Wait for the firmware update to finish, this can take a few minutes. Click OK button afterwards to switch Pioneer in standard connection mode.
 
-Если Вы столкнулись с проблемой обновления прошивки или работы "Пионера", напишите в техподдержку Геоскан 
-support@geoscan.aero
+If any problem occurs during Pioneer update or usage, feel free to contact our helpdesk via support@geoscan.aero

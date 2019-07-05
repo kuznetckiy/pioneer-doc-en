@@ -1,11 +1,11 @@
-Сборка рамы
-===========
+Frame assembly
+================
 
-|info| В набор "Пионер" входят все необходимые для сборки элементы и инструменты.
+|info| Pioneer kit contains all necessary elements and tools
 
 .. |info| image:: /_static/images/info.png
 
-**Шаг 1**
+**Step 1**
 
 ::
 
@@ -15,9 +15,9 @@
 .. image:: /_static/images/const_frame_step_1.png
     :align: center
 
-Места установки моторов с серебристыми гайками отмечены на основании рамы белыми кругами. Следуя цветовой маркировке, установите моторы на основание рамы и закрепите каждый мотор двумя винтами, расположив их по диагонали.
+The motors with silver caps should be installed according to white marks on the frame. Place and secure each motor with 4 screws.
 
-**Шаг 2**
+**Step 2**
 
 ::
 
@@ -27,10 +27,9 @@
 .. image:: /_static/images/const_frame_step_2.png
     :align: center
 
-Установите стойки с противоположной от моторов стороны основания рамы и закрепите их винтами М3х10, как показано на рисунке.
+Install the stands on the botoom side of the frame and secure them with M3x10 screws like shown in the picture.
 
-
-**Шаг 3**
+**Step 3**
 
 ::
 
@@ -40,10 +39,9 @@
 .. image:: /_static/images/const_frame_step_3.png
     :align: center
 
-Установите демпферы на основание рамы со стороны моторов и закрепите их винтами М3х4, как показано на рисунке.
+Mount 4 dampers on the board and secure them with M3x4 screws as shown on the picture.
 
-
-**Шаг 4**
+**Step 4**
 
 ::
 
@@ -53,9 +51,9 @@
 .. image:: /_static/images/const_frame_step_4.png
     :align: center
 
-С помощью винтов М3х5 закрепите стойки на крышке отсека АКБ, как показано на рисунке. Эти стойки могут потребоваться в дальнейшем для крепления дополнительных модулей.
+Using M3x5 screws thighten the stands on the battery bay cover like shown on the picture. These stands will be required for mounting extra modules.
 
-**Шаг 5**
+**Step 5**
 
 ::
 
@@ -65,11 +63,11 @@
 .. image:: /_static/images/const_frame_step_5.png
     :align: center
 
-Вставьте шасси и торец отсека АКБ в соответствующие пазы, расположенные на основании рамы.
+Insert the LiPo bay backplate and landing gear in their slots at the bottom of the frame.
 
 
 
-**Шаг 6**
+**Step 6**
 
 ::
 
@@ -79,9 +77,9 @@
 .. image:: /_static/images/const_frame_step_6.png
     :align: center
 
-С помощью винтов М3х10 соедините узел, собранный на шаге 4, с узлом, собранным на шаге 5, как показано на рисунке.
+Using M3x10 screws, connect the assembled frame and lipo bay cover together (steps 4 and 5)
 
-**Шаг 7**
+**Step 7**
 
 ::
 
@@ -91,9 +89,8 @@
 .. image:: /_static/images/const_frame_step_7.png
     :align: center
 
-Установите плату на демпферы так, чтобы направления стрелок на плате и на основании рамы совпадали. Зафиксируйте плату с помощью стоек. Подключите разъемы моторов к соответствующим разъемам на плате. Разъемы имеют ключ для соблюдения полярности, будьте внимательны и не прикладывайте излишних усилий при соединении разъемов.
+Using dampers, mount the board on the frame so that white arrows on top of them point in same direction. Plug in motors connectors applying no extra force.
 
+Once finished with the frame, proceed to the `protection assembly`_
 
-Собрав раму "Пионера", перейдите к `сборке защиты`_.
-
-.. _сборке защиты: const_protection.html
+.. _protection assembly: const_protection.html

@@ -1,16 +1,16 @@
-Визуальное программирование TRIK
+Visual programming TRIK
 ==================================
 
 .. image:: /_static/images/visual_programming.png
 	:align: center
 
-Графическая среда TRIK Studio позволяет составлять программы для роботов, используя наглядные функциональные блоки. Такой подход значительно упрощает работу с "Пионером". Даже не имея опыта программирования, вы сможете написать задание, загрузить его на квадрокоптер и осуществить запуск. 
+TRIK studio is a graphical application intended to create robot missions using functional blocks. This approach simplifies your interaction with Pioneer. You don’t need programming experience to create and upload a mission to the drone. 
 
-Чтобы установить программу, нажмите `скачать TRIK Studio`_ и запустите загруженный .exe файл
+To install the app, click `download TRIK Studio`_ and run .exe file.
 
-.. _скачать TRIK Studio: https://dl.geoscan.aero/pioneer/upload/TRIKStudio/trik-studio-offline-installer.exe
+.. _download TRIK Studio: https://dl.geoscan.aero/pioneer/upload/TRIKStudio/trik-studio-offline-installer.exe
 
-Для синхронизации с "Пионером" вам понадобится `Pioneer Station`_. 
+You also need `Pioneer Station`_ to work with Pioneer.. 
 
 .. _Pioneer Station: ../pioneer_station/pioneer_station_main.html
 

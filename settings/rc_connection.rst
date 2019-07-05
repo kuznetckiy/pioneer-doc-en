@@ -1,23 +1,23 @@
-Связь пульта с приемником
+Receiver connection
 =========================
 
-Для того, чтобы пульт и приемник могли работать в паре, необходимо провести специальную процедуру привязки. Чтобы связать пульт с определенным приемником, необходимо выполнить действия, описанные ниже.
+To control the drone with RC transmitter, a binding operation is required. Follow this manual to perform it.
 
-.. attention:: Чтобы избежать ситуации одновременного управления несколькими квадрокоптерами с одного пульта, разрешается связывать только один пульт с одним приемником. 
+.. attention:: Controlling several drones using one RC transmitter might cause crashes. Do not bind more than one receiver to one controller.
 
 .. image:: /_static/images/rc_connection_1.png
 	:align: center
 
-1. Включите пульт дистанционного управления
-2. Войдите в меню настроек
-3. Во вкладке SYSTEM выберите пункт Rx Bind. Появится надпись «Binding to RX…»
-4. Найдите на приемнике кнопку с обозначением «BIND», нажмите и удерживайте ее.
-5. Держа кнопку зажатой, подайте питание на квадрокоптер, подключив аккумулятор
-6. Выйдите из настройки Rx Bind. Квадрокоптер должен отреагировать на это действие звуковым сигналом.
+1. Turn the RC transmitter on
+2. Use touchscreen to navigate the settings menu.
+3. Select Rx Bind in “System” tab. “Binding to Rx..” should appear on the screen.
+4. Press and hold “BIND” button on the receiver.
+5. While holding the button, plug in the battery to turn quadcopter on.
+6. Leave the Rx bind mode on the controller. The drone should beep once after this. A light on the receiver should not blink.
 
 
 
-В случае если моторы не вращаются, и квадрокоптер никак не реагирует на сигналы, посылаемые с пульта, повторите процедуру привязки или обратитесь в техническую поддержку по адресу: support@geoscan.aero 
+If the drone doesn’t react on controller signals, try to re-bind its receiver once again. If this doesn’t solve the problem, contact Geoscan helpdesk: support@geoscan.aero 
 
-.. important:: Процедура привязки работает только для приемника FlySky-A8S. При включении пульта квадрокоптер издаст звуковой сигнал.
+.. important:: Binding procedure works for FlySky-A8S receiver.
 

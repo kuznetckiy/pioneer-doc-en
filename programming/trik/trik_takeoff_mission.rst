@@ -1,23 +1,23 @@
-Взлет-Миссия-Посадка
-======================
+Takeoff-mission-landing
+==========================
 
-Для создания первой настоящей полетной программы можете взять за основу учебные примеры fly_square или fly_to_point, предлагаемые при запуске TRIK Studio. 
+To create real flight mission you can use examples fly_square or fly-to-point from TRIK library. 
 
 .. note::
-	Обратите внимание, что полет в точку осуществляется в локальной системе координат, которую обеспечивает работа `системы навигации в помещении`_. Систему нужно настроить и активировать **перед взлетом**.
+	Note that fly-to-point mission requires local positioning provided by `indoor navigation system`_. The system should be deployed and activated beforehand.
 
-Для работы в географических координатах необходим `модуль GPS ГЛОНАСС`_ 
+To fly in global coordinates, a `GPS module`_ is required.
 
-.. _системы навигации в помещении: ../../indoor_nav.html
+.. _indoor navigation system: ../../indoor_nav.html
 
-.. _модуль GPS ГЛОНАСС: ../../const/module/gps.html
+.. _GPS module: ../../const/module/gps.html
 
 .. image:: /_static/images/trik_programm.PNG
 	:align: center
 
-Добавьте блоки "Рыскание" и "Светодиод", постарайтесь разнообразить условия вашей программы. 
+Add “Yaw” and “Led” blocks to diversify your flight.
 
-Завершив создание диаграммы, не забудьте сгененрировать Lua код и проверить его на наличие ошибок. Загрузка программы в "Пионер" осуществляется `так же как в предыдущем примере`_
+Having created the diagram, don’t forget to generate Lua code and check it for errors. Mission upload is performed `similarly as before`_.
 
 
-.. _так же как в предыдущем примере: ../pioneer_station/pioneer_station_upload.html
+.. _similarly as before: ../pioneer_station/pioneer_station_upload.html

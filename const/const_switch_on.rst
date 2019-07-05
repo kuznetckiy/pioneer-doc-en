@@ -1,17 +1,17 @@
-Первое включение
+First switch-on
 ================
 
-Для включения "Пионера" вставьте аккумулятор в отсек АКБ и подключите разъем аккумулятора к разъему на базовой плате.
+To turn Pioneer on, place the LiPo battery in the bay and plug in its connector to the board.
 
 .. image:: /_static/images/first_switch_on_1.png
 	:align: center
 
-.. important:: * При подключении аккумулятора квадрокоптер издает звуковой сигнал и мигает светодиодами, отображая уровень заряда аккумулятора. Красный цвет – аккумулятор разряжен, зеленый – заряжен
-				* Быстро мигает белый светодиод – загрузка автопилота. 
-				* Медленно мигает синий светодиод – готов к эксплуатации
-				* Быстро мигает синий светодиод – на квадрокоптере запущено выполнение скрипта
-				* Быстро мигает белый светодиод - ошибка
-				* При падении напряжения аккумулятора ниже допустимого квадрокоптер издает звуковые сигналы
+.. important:: * When connected, the quadcopter makes a beeping sound and blinks with its leds to show the remaining charge level. Red lights - LiPo discharged, green - fully charged.
+				* White led blinking fast - autopilot loading. 
+				* Blue led blinking slowly - the quadcopter is ready to fly.
+				* Blue led blinking fast - the script is initialised
+				* White led blinking fast - error
+				* When the battery voltage drops down - quadcopter begins to beep every 5 seconds.
 
 
 
@@ -23,9 +23,9 @@
 
 
 .. attention::
-	"Пионер" оснащен системой отключения моторов при нештатных ситуациях:
-				* при наклоне квадрокоптера более чем на 90°;
-				* при ударе или падении;
+	Pioneer is able to switch off its motors in case of:
+				* pitch or roll angle more than 90°;
+				* strike or fall.
 
 
 

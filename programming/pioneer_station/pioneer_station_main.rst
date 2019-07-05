@@ -6,30 +6,30 @@ Pioneer Station
 	:align: center
 
 
-Программа **Pioneer station** - это удобный инструмент работы с квадрокоптером. Она позволяет:
+Pioneer Station is a tool to work with the drone. Using it, you can:
 
-* `Обновлять прошивку квадрокоптера`_
-* `Настроить параметры автопилота`_
-* Дигностировать системы и модули
-* `Разрабатывать и загружать полетные задания`_
-* Запускать скрипты для тестирования
+* `Update quadcopter's firmware`_
+* `Set autopilot parameters`_
+* Run modules diagnostics
+* `Create and upload flight missions`_
+* Test scripts
 
 
-.. _Обновлять прошивку квадрокоптера: ../../settings/firmware_upgrade.html
+.. _Update quadcopter's firmware: ../../settings/firmware_upgrade.html
 
-.. _Настроить параметры автопилота: ../../settings/autopilot_parameters.html
+.. _Set autopilot parameters: ../../settings/autopilot_parameters.html
 
-.. _Разрабатывать и загружать полетные задания: pioneer_station_upload.html
+.. _Create and upload flight missions: pioneer_station_upload.html
 
-Чтобы установить программу, нажмите `скачать Pioneer station`_ и запустите загруженный .exe файл
+To install the app, click `download Pioneer station`_ and run .exe file.
 
-.. _скачать Pioneer station: https://dl.geoscan.aero/pioneer/upload/GCS/GEOSCAN_Pioneer_Station_en.exe
+.. _download Pioneer station: https://dl.geoscan.aero/pioneer/upload/GCS/GEOSCAN_Pioneer_Station_en.exe
 
 
 .. note::
-	Если программа не запускается попробуйте `скачать 32bit версию`_, распаковать архив и запустить run.bat.
+	If program doesn’t start, download `32bit version`_, unpack the archive and run.bat
 
-.. _скачать 32bit версию: https://dl.geoscan.aero/pioneer/upload/GCS/PioneerStationWin32.zip
+.. _32bit version: https://dl.geoscan.aero/pioneer/upload/GCS/PioneerStationWin32.zip
 
 
 

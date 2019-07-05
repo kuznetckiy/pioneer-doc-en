@@ -5,22 +5,22 @@
 .. image:: /_static/images/programming.png
 	:align: center
 
-Стандартный набор "Пионера" позволяет выполнять программирование поведения светодиодов и программирование полетного задания. В зависимости от уровня пользователя предлагается два варианта программирования "Пионера":
+Standard Pioneer kit allows LEDs and flight mission programming. Two options are offered, depending on users competence:
 
-    Упрощенное визуально программирование полетного задания "Пионера" в ПО `TRIK Studio`_
+    Visual programming using  `TRIK Studio`_
 
     .. _TRIK Studio: ../trik/trik_main.html
 
-    Продвинутое программирование полетного задания "Пионера" на языке `Lua`_
+    Advanced programming using `Lua`_
 
     .. _Lua: lua.html
 
-Также основы языка Lua приведены в файле Learnlua.lua в папке pioneer station/examples. Откройте его с помощью Pioneer Station и ознакомьтесь с синтаксисом и базовыми командами.
+Lua basics are stated in Learnlua.lua at pioneer stations/examples. Open it with Pioneer Station and get used to syntax and basic command.
 
 
-.. important:: При подключении дополнительных модулей становится возможным программирование их поведения и совмещение в программе со стандартным функциями "Пионера"
+.. important:: External module can also be programmed and combined with standard Pioneer functions.
 
-В разделе Lua можно ознакомиться со списком команд, применяемых при программировании "Пионера"
+In Lua section you can learn basic functions used to program Pioneer.
 
 
 .. toctree::

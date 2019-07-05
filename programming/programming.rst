@@ -1,8 +1,7 @@
-Программирование
+Programming
 =========================
 
-Кроме полета на дистанционном управлении, "Пионер" может следовать заложенной перед взлетом программе и автономно выполнять прописанные задачи. Для удобства программирования квадрокоптер поддерживает работу с такими инструментами как Pioneer Station и TRIK Studio, которые позволяют сформировать полетное задание и загрузить его в память "Пионера" при подключении к компьютеру.
-В этом разделе вы научитесь работать с квадрокоптером через интерфейс Pioneer Station, рассмотрите примеры полетных сценариев и узнаете как программировать подключаемые модули.
+Besides flying in RC mode, Pioneer can execute pre-loaded flight mission autonomously. It supports Pioneer Station and TRIK studio to create and upload flight mission. In this section you will learn how to use Pioneer Station and see some mission examples.
 
 
  .. toctree::

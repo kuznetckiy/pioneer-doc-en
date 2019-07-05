@@ -1,23 +1,24 @@
 FAQ
 ===============
 
-**Если при попытке взлета квадрокоптер заваливается в сторону** - 
-Проверьте правильность установки моторов. Моторы должны быть расположены в соответствии с указаниями на раме. Белые и черные моторы располагаются по диагонали относительно друг друга.
+**The quadcopter is falling to its side while takeoff** - Check if motors and props are installed correctly according to the frame markers. White and black motors must be installed diagonally.
 
-**Если при увеличении газа квадрокоптер крутит винтами, но не взлетает** - Проверьте правильность установки воздушных винтов. Воздушные винты должны быть расположены в соответствии с указаниями на раме. Надписи на винтах должны быть сверху.
+**The quadcopter doesn’t take off while props are spinnig** - Check if props are installed correctly. The “R” marks should be on the motors with black caps.
 
-**Если при инициализации один или несколько моторов не крутятся** - Необходимо проверить надежность соединения моторов с платой.
+**The motor doesn’t spin after arm command** - Check the connectors between motor and the frame.
 
-**Если при запуске винтов с пульта квадрокоптер никак не реагирует** - Проверьте правильность настройки пульта и привяжите приемник к пульту еще раз.
+**The quadcopter doesn’t react on arming signal** - Check if the control unit is set up correctly and re-bind the receiver.
 
-**Если квадрокоптер плохо управляется** - Необходимо проверить заряд аккумуляторных батарей квадрокоптера и пульта дистанционного управления.
+**The quadcopter doesn’t react properly on controls** - check the LiPo and control unit battery charge.
 
-**Если при подключении аккумулятора квадрокоптер никак не реагирует** - Проверьте целостность аккумулятора и уровень напряжения, он должен быть не ниже 6,6 В.
+**The quadcopter doesn’t react on LiPo connection** - check the stuctural integrity of the battery and its voltage level, which should not be less than 6.6 V
 
-**Если в полете квадрокоптер сильно вибрирует** - Необходимо проверить правильность сборки рамы, защиты и крепления базовой платы. Также возможной причной может быть дефект пропеллера.
+**Quadcopter vibrates violently** - Check the frame assembly, base board connection. A propeller defect is also a possible issue.
 
-**Если при подключении к Pioneer Station список портов пуст** - проверьте USB кабель; скачайте и установите `драйвер виртуального порта`_ для вашей операционной системы.
+**Empty ports list when connected to Pioneer Station** - check USB cable; download and install `virtual port driver`_ for your OS
 
-.. _драйвер виртуального порта: https://www.silabs.com/products/development-tools/software/usb-to-uart-bridge-vcp-drivers
+**Empty window in Pioneer Station when opening parameters from file** - close the app, and activate run_extra.bat file in Pioneer Station directory
 
-**Пустое окно при открытии вкладки параметров из файла в Pioneer Station** - Закройте программу и запустите файл run_extra.bat из папки, в которой установлена Pioneer Station.
+.. _virtual port driver: https://www.silabs.com/products/development-tools/software/usb-to-uart-bridge-vcp-drivers
+
+**Empty window in Pioneer Station when opening parameters from file** - close the app, and activate run_extra.bat file in Pioneer Station directory

@@ -7,7 +7,7 @@ Settings
 
 Pioneers firmware can be upgraded. This section has necessary info on update process.
 
-If your RC transmitter or receiver were changed, proceed to `RC connection `_
+If your RC transmitter or receiver were changed, proceed to `RC connection`_
 
 You can `set up the transnitter`_ in case of malfunction.
 

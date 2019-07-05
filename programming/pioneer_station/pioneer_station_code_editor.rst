@@ -1,58 +1,58 @@
-Редактор кода
+Code editor
 =============
 
-Данный разде описывает работу в редакторе кода Pioneer station
+This section describes code editor operation in Pioneer Station
 
-Основное окно **Pioneer station** представлено редактором кода. В данном окне Вы можете вести разработку программного кода полетного задания "Пионера" на языке Lua.
+In **Pioneer Station**, main tab is used as a code editor. Here you can develop flight mission code for Pioneer.
 
-Главное меню редактора кода: 
+Code editor main menu:
 
 .. image:: /_static/images/_code_editor_0.png
 
 
-Назначение кнопок меню редактора:
+Control buttons:
 
-* Создать новый файл
+* Create new file
 	.. image:: /_static/images/_code_editor_1.png
 
-* Открыть файл из папки
+* Open file
 	.. image:: /_static/images/_code_editor_2.png
 
-* Сохранить файл
+* Save
 	.. image:: /_static/images/_code_editor_3.png
 
-* Сохранить как
+* Save as
 	.. image:: /_static/images/_code_editor_4.png
 
-* Выбор одной из готовых программ примеров
+* Open example
 	.. image:: /_static/images/_code_editor_5.png
 
-* Вырезать блок кода
+* Cut
 	.. image:: /_static/images/_code_editor_6.png
 
-* Скопировать блок кода
+* Copy
 	.. image:: /_static/images/_code_editor_7.png
 
-* Вставить блок кода
+* Paste
 	.. image:: /_static/images/_code_editor_8.png
 
-* Поиск
+* Search
 	.. image:: /_static/images/_code_editor_9.png
 
-* Замена
+* Insert
 	.. image:: /_static/images/_code_editor_10.png
 
-* Настройки редактора
+* Settings
 	.. image:: /_static/images/_code_editor_11.png
 
-* Справка
+* Help
 	.. image:: /_static/images/_code_editor_12.png
 
-* Увеличить масштаб
+* Zoom in
 	.. image:: /_static/images/_code_editor_13.png
 
-* Уменьшить масштаб
+* Zoom out
 	.. image:: /_static/images/_code_editor_14.png
 
-* Загрузить программу на "Пионер" (активна только при подключении к квадракоптеру)
+* Upload code to Pioneer (active when drone connected)
 	.. image:: /_static/images/_code_editor_15.png

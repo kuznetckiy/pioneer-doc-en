@@ -1,38 +1,34 @@
-Загрузка программы в "Пионер"
+Program upload to Pioneer
 -----------------------------
 
-Имея код программы, созданный в TRIK Studio или написанный в Pioneer Station, можно приступить к его загрузке на квадрокоптер. 
-Подключите "Пионер" к компьютеру USB кабелем и откройте нужную программу в Pioner Station.
+After you developed program using TRIK Studio or Pioneer Station, it is time to upload it to Pioneer. Connect the drone to your PC.
 
-В правом нижнем углу Pioneer Station выберите вариант подключения "По кабелю USB". В окне программы должы появиться текущие параметры "Пионера", углы наклона, напряжение питания и номер.
+Select “USB cable” connection in the bottom right corner of Pioneer Station window. Pioneer’s current parameters, lean angles and board number should appear on the screen.
 
 .. image:: /_static/images/pioneer_station_connect.png
 	:align: center
 
 .. note:: 
-	Попробуйте наклонять квадокоптер в разные стороны и убедитесь, что авиагоризонт корректно отображает его положение В случае ошибки соединения проверьте соединение кабеля и версию прошивки в Pioneer station, при необходимости `обновите`_ её.
+	Try tilting the drone in different directions and make sure the angles are represented correctly. In case of error, check cable connection and firmware version on Pioneer, `update`_ it if necessary.
 
-Если программа изначально была создана в TRIK studio, нажмите кнопку "Загрузить программу на "Пионер"". Текст программы должен появиться в окне Pioneer Station. Теперь нажмите кнопку "Загрузить".
+If program was created in TRIK studio, press “upload porgamm to Pioneer”. The code should appear in Pioneer Station window. Then press “Upload” button.
 
 .. image:: /_static/images/pioneer_station_upload.png
 	:align: center
 
-На плате "Пионера" должен несколько раз мигнуть светодиод "прием", а в программе появиться уведомление об успешной загрузке.
+"Receive" LED should blink on Pioneer board, and a message appear in the bootom right corner, indicating successful upload.
 
-Запустить выполенение программы можно разными способами. Если програма не предполагает полета, не отключая кабель от квадрокоптера нажмите кнопку "Старт прогр." в Pioneer Station, и через пять секунд сможете наблюдать результат ее работы. Питания от USB достаточно для работы светодиодов и некоторых `дополнительных модулей`_.
+There are different ways to start mission execution. If flight is not required, don’t disconnect USB cable and press “Mission start” in Pioneer Station. In five seconds you will observe mission execution. USB power is enough to turn LEDs and some `extension modules`_ on.
 
 --------------------------------------------------------------
 
-**При более сложных сценариях**, отключите квадрокоптер от компьютера, поместите его в комнату или площадку, достаточно просторную для выполнения задач, и подключите аккумулятор. После звукового сигнала и окончания мигания светодиодов нажмите кнопку "Старт" и отойдите от квадрокоптера. Через пять секунд начнется выполнение заданной программы.
+**In other cases**, disconnect Pioneer from your PC and place it somewhere spacious enough to perform the mission. Plug in the battery. Wait for LEDs to stop blinking and press “Start” button on its board. The mission will execute in 5 seconds.
 
 .. attention::
-	Для безопасного полета, на случай нештатной ситуации держите в руках пульт, связанный с вашим "Пионером". Настройте на пульте режим автоматического полёта. Для этого переведите рычаг B в нижнее положение. Рычаги А, С, D – в верхнем положении. Для экстренного завершения выполнения программы переведите рычаг В в верхнее положение, управление квадрокоптером перейдет к вам.
+	To fly safely, it is recommended to have an RC transmitter ready and bind it to the drone. Activate mission flight by switching SwB in lower position. All other switches should be in upper position. If necessary, switch SwB in upper position - and now you have controls of the drone.
 
 
+.. _update: ../../settings/firmware_upgrade.html
 
 
-
-.. _обновите: ../../settings/firmware_upgrade.html
-
-
-.. _дополнительных модулей: ../../module/module_main.html
+.. _extension modules: ../../module/module_main.html

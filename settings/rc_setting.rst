@@ -1,33 +1,33 @@
-Настройка пульта
-=================
+RC transmitter setting
+========================
 
-Для настройки пульта выполните последовательно следующие действия:
+To set up the controller, follow these steps:
 
-1.	Вставьте батарейки и включите пульт дистанционного управления. Для этого нажмите одновременно две кнопки включения питания и удерживайте их до включения экрана пульта.
-2.	При включении на экране должна появиться следующая картинка
+1.	Plug in the batteries in the battery compartment on the back of controller. To turn it on, press and hold two power buttons.
+2.	The default screen image looks like this:
 
 .. image:: /_static/images/rc_setting_1.png
 	:align: center 
 
-Если на экране отображается надпись «Warning!!! Place all switches in their up position», необходимо привести все переключатели в верхнее положение, а стик газ/курс в нижнее положение.
+“warning! Place all switches in their up position” means you have to check all flipswitches and place left stick to its lower position.
 
-3. Войдите в меню настроек, нажав на сенсорном экране значок настроек 
+3. Use touchscreen to navigate the menu and press settings icon. 
 
 .. image:: /_static/images/rc_setting_2.png
 
-4. В меню настроек имеется вкладка FUNCTION, в которой производится настройка пульта управления, а также вкладка SYSTEM, в которой производится настройка модели, управляемой пультом. 
+4. “Function” tab contains settings of the RC transmitter. “System” tab is used to change the model’s properties. 
 
 
-Во вкладке FUNCTION необходимо установить следующие настройки:
+Adjust the following settings in “system” tab:
 	1. REVERSE → Ch2 и Ch4 –Rev
-	2. AUX. CHANNELS → Channel 5 → → В открывшемся окне CH TYPE выбрать тип переключателя SWx → нажать на надпись SwA, и в открывшемся меню выбрать SwC.
-	3. AUX. CHANNELS → Channel 6 → → В открывшемся окне CH TYPE выбрать тип переключателя SWx → нажать на надпись SwA, и в открывшемся меню выбрать SwD.
-	4. AUX. CHANNELS → Channel 7 → → В открывшемся окне CH TYPE выбрать тип переключателя SWx → нажать на надпись SwA, и в открывшемся меню выбрать SwB.
-Во вкладке SYSTEM:
+	2. AUX. CHANNELS → Channel 5 → →select SWx switch type→ press SwA and select SwC in the opened menu.
+	3. AUX. CHANNELS → Channel 6 → → select switch type SWx→ press SwA and select SwD.
+	4. AUX. CHANNELS → Channel 7 → → select switch type SWx→ press SwA and select SwB.
+Select the SYSTEM tab:
 	5. OUTPUT MODE → Output → PPM
 	6. STICKS MODE → M2 (Mode 2)
 	   
-Для дальнейшей настройки перейдите в раздел `связь пульта с приемником`_ 
+For further setting proceed to `Receiver connection`_
 
-.. _связь пульта с приемником: rc_connection.html
+.. _Receiver connection: rc_connection.html
 

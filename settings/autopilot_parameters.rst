@@ -1,23 +1,22 @@
-Настройка параметров автопилота
+Autopilot parameters setting
 =================================
 
-Параметры полета квадрокоптера в автоматическом режиме можно тонко настроить, используя программу `Pioneer Station`_. Для этого подключите "Пионер" к компьютеру следуя `инструкции`_ и перейдите из вкладки "редактор кода" в "настройки параметров автопилота" 
+Autopilot parameters can be set precisely using `Pioneer Station`_. Follow the `manual`_ to connect Pioneer to your PC. Switch to “autopilot parameters setting” tab.
 
 .. _Pioneer Station: ../programming/pioneer_station/pioneer_station_main.html
 
-.. _инструкции: ../programming/pioneer_station/pioneer_station_upload.html
+.. _manual: ../programming/pioneer_station/pioneer_station_upload.html
 
-Для настройки "Пионер" должен быть подключен к компьютеру, его текущие параметры должны отображаться в правой части окна.
+To perform a setting, Pioneer should be connected to PC and its current parameters should be displayed in right part of Pioneer station window.
 
 .. image:: /_static/images/autopilot.PNG
 	:align: center
 
-Перейдите во вкладку "параметры автопилота". В первом столбце таблицы приведены названия параметров. Узнать, за что каждый из них отвечает, можно, посмотрев в крайний правый столбец. Во втором столбце отображаются текущие значения, присвоенные каждому из параметров. Если вы хотите поменять какое-либо из них, введите новое значение в столбец справа от текущего значения и нажмите Enter. 
-Завершив редактирование, не забудьте сохранить изменения, нажав кнопку **сохранить изменения на автопилот**. 
+Switch to “autopilot parameters” tab. Left column represents parameters, their current values are displayed in the second column. To change any of them, click to the right of selected parameter and type the new value in, then press Enter. Don’t forget to save the changes by clicking **save changes to autopilot**
 
-В верхней части окна также пристутствуют кнопки **LPS**, **GPS** и **OPT**. Каждая из них загружает в квадрокоптер стандартный набор параметров для полета, соответственно, в локальной системе позиционирования, с использованием модуля GPS/ГЛОНАСС и модуля оптического позиционирования. 
+**LPS**, **GPS** and **OPT** buttons are situated in the top part of the window. Each is responsible for loading a standard set of parameters for indoor positioning system, GPS and optical flow mode respectively.
 
 .. note::
-	Если вы хотите вернуться к заводским настройкам, нажмите кнопку **сбросить по умолчанию** над таблицей и подождите пока "Пионер" перезапустится.
+	If you want to return to factory preset, click **return to default** button above the table and wait until Pioneer reboots.
 
 
