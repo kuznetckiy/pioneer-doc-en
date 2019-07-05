@@ -1,4 +1,4 @@
-Модуль захвата груза
+Cargo module
 ====================
 
 .. image:: /_static/images/cargo_module.png

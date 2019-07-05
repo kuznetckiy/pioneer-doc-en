@@ -1,4 +1,4 @@
-Подвес для камеры GoPro
+GoPro camera gimbal
 =======================
 
 .. image:: /_static/images/gopro_gimbal.png

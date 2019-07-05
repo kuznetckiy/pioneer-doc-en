@@ -1,4 +1,4 @@
-Дополнительные модули
+Extension modules
 ========================
 
 .. image:: /_static/images/connecting_modules.png

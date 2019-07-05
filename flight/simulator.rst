@@ -1,4 +1,4 @@
-Cимулятор
+Simulator
 =====================
 
 If you don’t have proper drone control skills or you want to improve it, it is highly recommended for you to use simulator. It allows you to master the controls without risking the drone.

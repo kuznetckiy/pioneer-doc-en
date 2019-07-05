@@ -49,7 +49,7 @@ Use Pioneer to:
 
 .. toctree::
    :maxdepth: 2
-   :caption: Содержание:
+   :caption: Content:
 
    const/const_main
    settings/settings_main

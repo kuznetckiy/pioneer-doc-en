@@ -1,7 +1,7 @@
-Плата подключения дополнительных модулей
+Extension modules board
 ========================================
 
-ПExtension modules board provides the ability to plug in different module to the base board.
+Extension modules board provides the ability to plug in different module to the base board.
 
 .. image:: /_static/images/modules_board.png
 	:align: center

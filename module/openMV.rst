@@ -1,4 +1,4 @@
-Программируемая камера OpenMV
+OpenMV camera
 =============================
 
 .. image:: /_static/images/openmv_module.png

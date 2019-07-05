@@ -1,4 +1,4 @@
-FPV комплект
+FPV kit
 ================
 FPV (First Person View)
 
