@@ -25,6 +25,9 @@ To install the app, click `download Pioneer station`_ and run .exe file.
 
 .. _download Pioneer station: https://dl.geoscan.aero/pioneer/upload/GCS/GEOSCAN_Pioneer_Station_en.exe
 
+If you use Linux OS, download and unpack `PioneerStationLinux64`_
+
+.. _PioneerStationLinux64: https://dl.geoscan.aero/pioneer/upload/GCS/PioneerStationLinux64.zip
 
 .. note::
 	If program doesn’t start, download `32bit version`_, unpack the archive and run.bat
