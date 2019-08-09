@@ -6,7 +6,7 @@ Besides flying in RC mode, Pioneer can execute pre-loaded flight mission autonom
 
  .. toctree::
    :maxdepth: 2
-   :caption: Содержание:
+   :caption: Content:
 
 
    /programming/trik/trik_main
