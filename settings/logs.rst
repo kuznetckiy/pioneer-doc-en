@@ -11,8 +11,6 @@ To download the log file, connect Pioneer to the PC via USB and run Pioneer Stat
 .. image:: /_static/images/log1.png
 	:align: center 
 
-В открывшемся окне выберите папку и название, под которым файл будет сохранён. После этого начнётся скачивание файла с Пионера. После завершения квадрокоптер перезагрузится. 
-
 After that, select saving folder and file name. Log download will start automatically. Pioneer will reboot when it's finished. 
 
 Log preview
