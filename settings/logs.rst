@@ -6,7 +6,7 @@ From the moment of motors start, Pioneer's autopilot begins to log flight parame
 Log download
 ---------------------
 
-To download the log file, connect Pioneer to the PC via USB and run Pioneer Station. Setup the connection and open **work with logs - Download logs via PlazLink** menu tab.
+To download the log file, connect Pioneer to the PC via USB and run Pioneer Station. Setup the connection and open **Logs - Download logs from AP by PlazLink** menu tab.
 
 .. image:: /_static/images/log1.png
 	:align: center 
@@ -18,7 +18,7 @@ After that, select saving folder and file name. Log download will start automati
 Log preview
 -------------------
 
-To open log file, select **Work with logs - Open AP log** menu tab. 
+To open log file, select **Logs - Open AP log** menu tab. 
 
 .. image:: /_static/images/log2.png
 	:align: center 
@@ -28,11 +28,11 @@ You can inspect autopilot log data in the opened tab.
 .. image:: /_static/images/log3.jpg
 	:align: center 
 
-* Select the channel you need and  **add** it to the preview window.
+* Select the channel you need and  **Add** it to the preview window.
 * Customize data projection with checkboxes and plot color pallette.
 * Use right mouse button and mouse wheel for plot navigation and scale change.
 * To change time scale (horizontal), press and hold **Ctrl** and use mouse wheel. 
-* To clear the preview window, select unnecessary channels and press **Delete** button. This will not erase the log, just remove plot image. 
+* To clear the preview window, select unnecessary channels and press **Remove** button. This will not erase the log, just remove plot image. 
 
 
 
@@ -61,11 +61,11 @@ You can inspect autopilot log data in the opened tab.
 +-------------------+------------------------------------------------------+
 | NavVelocity       | 3-axis speed data using GPS                          |
 +-------------------+------------------------------------------------------+
-| OpticalFlow       | optical flow data                                    |
+| OpticalFlow       | Optical flow data                                    |
 +-------------------+------------------------------------------------------+
 | Orientation       | Copter orientation data                              |
 +-------------------+------------------------------------------------------+
 | RawAccelGyroData  | RAW accelerometer and gyroscope data and temperature |
 +-------------------+------------------------------------------------------+
-| RemoteControlData | control signals from RC unit                         |
+| RemoteControlData | Control signals from RC unit                         |
 +-------------------+------------------------------------------------------+
