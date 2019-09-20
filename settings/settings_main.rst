@@ -28,3 +28,4 @@ You can `set up the transnitter`_ in case of malfunction.
    rc_setting
    rc_connection
    autopilot_parameters
+   logs
