@@ -36,9 +36,9 @@ There is another check, run for the first 5 seconds after takeoff command:
 
 You may also need to customize PID parameters for different engines. If done incorrectly, this may result in noticable vibrations and oscillations during flight. 
 
-To customize PIDs, use the following parameters:
+To customize PIDs, adjust the following parameters:
 
 * **Copter_xyRate_ki** - controller's integral component. Lower it If the controls are sluggish. Increase it if low-frequency oscillations are present.
 * **Copter_xyRate_kp** - controller's proportional component. Lower it if the drone wobbles when hovering. Increase it if the controls feel sluggish. 
 
-.. note:: To evaluate necessary rpm values, look through accelerometer data chart in autopilot logs after manual-controlled flight. See :doc:`logs` section.
+.. note:: To evaluate necessary rpm values, look through **rpm** data chart in **motor-x** autopilot logs channel after manual-controlled flight. See :doc:`logs` section.
