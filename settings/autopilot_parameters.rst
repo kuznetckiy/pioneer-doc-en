@@ -20,3 +20,25 @@ Switch to “autopilot parameters” tab. Left column represents parameters, the
 	If you want to return to factory preset, click **return to default** button above the table and wait until Pioneer reboots.
 
 
+Parameters setting for motors change
+-----------------------------------------------
+
+Changing stock motors on Pioneer to more powerful (or any other at all) may result in different electrical specs. This, in turn, will lead to pre-flight checks fail, and Pioneer will not be able to take off. Use the following parameters to reset pre-flight checks:
+
+* **Copter_motorCheckTime** - duration (in seconds) of motors rpm check before takeoff. Set to zero to turn it off.
+* **Copter_startRpmMax** - Max rpm for pre-flight check pass.
+* **Copter_startRpmMin** - Min rpm for pre-flight check pass.
+* **Copter_startRpmSigma** - Max allowed inconsistency between motors rpm speeds.
+
+There is another check, run for the first 5 seconds after takeoff command:
+
+* **Copter_stallRpm** - max rpm after which sync fail is declared and motors stop. For custom motors, use its max possible rpm value (calculated as motor's *kv* multiplied by *battery voltage*) 
+
+You may also need to customize PID parameters for different engines. If done incorrectly, this may result in noticable vibrations and oscillations during flight. 
+
+To customize PIDs, use the following parameters:
+
+* **Copter_xyRate_ki** - controller's integral component. Lower it If the controls are sluggish. Increase it if low-frequency oscillations are present.
+* **Copter_xyRate_kp** - controller's proportional component. Lower it if the drone wobbles when hovering. Increase it if the controls feel sluggish. 
+
+.. note:: To evaluate necessary rpm values, look through accelerometer data chart in autopilot logs after manual-controlled flight. See :doc:`logs` section.
