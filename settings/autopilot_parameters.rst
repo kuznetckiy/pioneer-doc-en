@@ -23,7 +23,7 @@ Switch to “autopilot parameters” tab. Left column represents parameters, the
 Parameters setting for motors change
 -----------------------------------------------
 
-Changing stock motors on Pioneer to more powerful (or any other at all) may result in different electrical specs. This, in turn, will lead to pre-flight checks fail, and Pioneer will not be able to take off. Use the following parameters to reset pre-flight checks:
+Changing stock motors on Pioneer to more powerful (or any other at all) may result in different electrical specs. This, in turn, will lead to pre-flight checks fail, and Pioneer will not be able to take off. Adjust the following parameters to reset pre-flight checks:
 
 * **Copter_motorCheckTime** - duration (in seconds) of motors rpm check before takeoff. Set to zero to turn it off.
 * **Copter_startRpmMax** - Max rpm for pre-flight check pass.
