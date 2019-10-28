@@ -21,7 +21,7 @@ Select navigation system mode (Swb switch in middle position) to use optical flo
 Optical flow module firmware update
 -------------------------------------
 
-To update the module firmware you should have Pioneer Station installed on your computer. Select "firmware update" in program's menu and follow the wizard instructions.
+To update the module firmware you should have Pioneer Station installed on your computer. Select **"Firmware update"** in program's menu and follow the wizard instructions.
 On "device choice" tab you will see both Pioneer Base and Optical flow module. Click the module checkbox and proceed. 
 It is recommended to select "internal" firmware source. 
 Wait for update to end, the quadcopter will be reloaded to standard mode.
@@ -100,7 +100,7 @@ This is an example program for optical flow module. Use Pioneer Station to `uplo
 	-- condition processing function (created by autopilot automatically)
 	function callback(event)
 	    -- if set altitude reached, execute function from the array according to current condition
-	    if (event == Ev.ALTITUDE_REACHED) then
+	    if (event == Ev.TAKEOFF_COMPLETE) then
 	        action[curr_state]()
 	    end
 	    -- turn LEDs red in case of collision
