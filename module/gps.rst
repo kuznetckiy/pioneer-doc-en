@@ -50,91 +50,90 @@ GPS position and altitude error may reach 3 meters, keep this in mind while plan
 
 ::
 
-	-- number of leds on base board (4)
-	local ledNumber = 4
-	-- create led control port
-	local leds = Ledbar.new(ledNumber)
-	-- speeding up function calls
+	-- Simplification and caching table.unpack calls
 	local unpack = table.unpack
-
-	-- current state value
-	local curr_state = "PREPARE_FLIGHT"
-
-	-- function to change LEDs colour
+	
+	-- Base pcb number of RGB LEDs
+	local ledNumber = 4
+	-- RGB LED control port initialize
+	local leds = Ledbar.new(ledNumber)
+	
+	-- Function changes color on all LEDs
 	local function changeColor(color)
+	    -- Changing color on each LED one after another
 	    for i=0, ledNumber - 1, 1 do
 	        leds:set(i, unpack(color))
 	    end
 	end 
-
-	-- RGB colour code array to transfer changeColor
+	
+	-- Table of colors in RGB form for changeColor function
 	local colors = {
 	        {1, 0, 0}, -- red
-	        {1, 1, 1}, -- white
 	        {0, 1, 0}, -- green
-	        {1, 1, 0}, -- yellow
-	        {1, 0, 1}, -- purple
 	        {0, 0, 1}, -- blue
-	        {0, 0, 0}  -- black/LEDs turn off
+	        {1, 1, 0}, -- yellow
+	        {1, 0, 1}, -- violet
+	        {0, 1, 1}, -- cyan
+	        {1, 1, 1}, -- white
+	        {0, 0, 0}  -- black/switched off
 	}
-
-	-- array of functions, called depending on current condition
-	action = {
-	    ["PREPARE_FLIGHT"] = function(x)
-	        changeColor(colors[2]) -- change LED colour to white
-	        Timer.callLater(2, function () ap.push(Ev.MCE_PREFLIGHT) end) -- starting motors in 2 seconds
-	        Timer.callLater(4, function () changeColor(colors[3]) end)-- change colour to green in 2 more seconds (4 seconds in total since timers start one after another right away)
-	        Timer.callLater(6, function () 
-	            ap.push(Ev.MCE_TAKEOFF) -- takoff in 2 more seconds (6 in total after all 3 timers are being set)
-	            curr_state = "FLIGHT_TO_FIRST_POINT" -- next condition
-	        end)
-	    end,
-	    ["FLIGHT_TO_FIRST_POINT"] = function (x) 
-	        changeColor(colors[4]) -- change colour to yellow
-	        Timer.callLater(2, function ()
-	            ap.goToLocalPoint(0, 10, 3) -- go to point with coordinates (0 m, 10 m, 3 m)
-	            curr_state = "FLIGHT_TO_SECOND_POINT" -- next condition
-	        end) 
-	    end,
-	    ["FLIGHT_TO_SECOND_POINT"] = function (x) 
-	        changeColor(colors[5]) -- change colour to purple
-	        Timer.callLater(2, function ()
-	            ap.goToLocalPoint(0, 0, 1) -- go to next start with coordinates (0 m, 0 m, 1 m)
-	            curr_state = "PIONEER_LANDING" -- next condition
-	        end)
-	    end,
-	    ["PIONEER_LANDING"] = function (x) 
-	        changeColor(colors[6]) -- change colour to blue
-	        Timer.callLater(2, function () 
-	            ap.push(Ev.MCE_LANDING) -- perform landing
-	        end)
-	    end
+	
+	-- Flight mission points table formatted as {x,y,z}
+	local points = {
+	        {0, 0, 0.7},
+	        {0, 1, 0.7},
+	        {0.5, 1, 0.7},
+	        {0.5, 0, 0.7}
 	}
-
-	-- condition processing function (created by autopilot automatically)
-	function callback(event)
-	    -- if set altitude reached, execute function from the array according to current condition
-	    if (event == Ev.ALTITUDE_REACHED) then
-	        action[curr_state]()
+	-- Current point variable
+	local curr_point = 1
+	
+	-- Function that changes LEDs color and flies to the next point
+	local function nextPoint()
+	    -- Current color. % - modulo, # - table size
+	    -- This expression is used in order to circle through color's 	table even it is not the same size as points table
+	    curr_color = ((curr_point - 1) % (#colors - 2)) + 1
+	    -- Changing LEDs color
+	    changeColor(colors[curr_color])
+	    -- Flying to the next point if its number is less than number of 	points in the table "points"
+	    if(curr_point <= #points) then
+	        Timer.callLater(1, function()
+	            -- Fly to point command in Positioning system
+	            ap.goToLocalPoint(unpack(points[curr_point]))
+	            -- Current point variable increase
+	            curr_point = curr_point + 1
+	        end)
+	    -- Landing initiate if number of current point exceeds number of 	points in total
+	    else
+	        Timer.callLater(1, function()
+	            -- Landing command
+	            ap.push(Ev.MCE_LANDING)
+	        end)
 	    end
-	    -- turn LEDs red in case of collision
-	    if (event == Ev.SHOCK) then
-	        changeColor(colors[1])
-
-	    end
-	    -- if set waypoint reached, execute function from the array according to current condition
-	    if (event == Ev.POINT_REACHED) then
-	        action[curr_state]()
-	    end
-
-	    -- turn off LEDs after landing
-	    if (event == Ev.COPTER_LANDED) then
-	        changeColor(colors[7])
-	    end
-
 	end
-
-	-- turn red LED on
-	changeColor(colors[1])
-	-- start 2-second timer and execute first array function (flight preparation)
-	Timer.callLater(2, function () action[curr_state]() end)
+	
+	-- Event processing function called automatically by autopilot
+	function callback(event)
+	    -- After Pioneer reaches Flight_com_takeoffAlt, it starts mission 	flight
+	    if(event == Ev.TAKEOFF_COMPLETE) then
+	        nextPoint()
+	    end
+	    -- When Pioneer reaches current point it initiates flight to next 	point
+	    if(event == Ev.POINT_REACHED) then
+	        nextPoint()
+	    end
+	    -- After Pioneer lands, it switches off LEDs
+	    if (event == Ev.COPTER_LANDED) then
+	        changeColor(colors[8])
+	    end
+	end
+	
+	
+	
+	-- Pre-start preparations
+	ap.push(Ev.MCE_PREFLIGHT)
+	-- Changing LEDs color to white
+	changeColor(colors[7])
+	-- Timer, that calls takeoff function after 2 seconds
+	Timer.callLater(2, function() ap.push(Ev.MCE_TAKEOFF) end)
+	

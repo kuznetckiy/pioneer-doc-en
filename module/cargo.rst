@@ -14,48 +14,51 @@ Use 8 channel of the RC unit to operate the module. A free SwA flipswitch can be
 
 ::
 
-    -- https://learnxinyminutes.com/docs/lua/  - Lua  basic functional manual 
-    -- initialise PC3 port to control the cargo module (board version 1.2) 
-    local magneto = Gpio.new(Gpio.C, 3, Gpio.OUTPUT)
-    -- initialise PC3 port to control the cargo module (board version 1.2) (uncomment the string below and comment the string above)
-    -- local magneto = Gpio.new(Gpio.A, 1, Gpio.OUTPUT)
-    -- set led number (4 on the main board and 4 on the cargo module)
-    local led_number = 8
-    -- initialise leds
-    local leds = Ledbar.new(led_number)
-    local rc = Sensors.rc
-    local blink = 0
+    -- Magnet control port (PC3) initialize for Pioneer_Base v 1.2
+    local magnet = Gpio.new(Gpio.C, 3, Gpio.OUTPUT)
+    -- Magnet control port (PA1) initialize for Pioneer_Base v 1.1 (    uncomment line below and comment line above) 
+    -- local magnet = Gpio.new(Gpio.A, 1, Gpio.OUTPUT)
+    
+    -- Total number of LEDs (4 on base pcb and 4 on a cargo module)
+    local led_number = 8 
+    -- RGB LED control port initialize
+    local leds = Ledbar.new(led_number) 
+    -- Magnet state (switched on initially)
+    local magnet_state = true
+    
+    -- Function that sets LEDs color based of magnet state
+    local function setLed(state)
+        if (state == true) then
+            color = {1,1,1}                  -- If magnet is on, color is   white
+        else
+            color = {0,0,0}                  -- If magnet is off, color is  black (LEDs are off)
+        end
+        for i = 4, led_number - 1, 1 do      -- Set color for each of LEDs
+            leds:set(i, table.unpack(color)) 
+        end
+    end
+    
+    -- Magnet switch function
+    local function toggleMagnet()
+        if (magnet_state == true) then  -- If magnet is on, we switch it off
+            magnet:reset()
+        else                            -- If magnet is off, we switch it on
+            magnet:set()
+        end
+        magnet_state = not magnet_state -- Changing magnet state value to   appropriate state
+    end
+    
+    -- Required callback function to process events
     function callback(event)
     end
-
-    local function changeColor(red, green, blue)
-        for i=0, led_number - 1, 1 do
-            leds:set(i, red, green, blue)
-        end
-    end
-
-    cargoTimer = Timer.new(0.1, function () -- create timer to call the funcion every 0.1 second
-        _, _, _, _, _, _, _, ch8 = rc() -- get signal from channel 8 on the transmitter, range from -1 to +1
-        if(ch8 < 0) then  -- if singnal is -1 (upper position), turn off
-            magneto:set()
-            changeColor(0, 1, 0) -- and colour leds green to indicate
-        else if(ch8 > 0) then -- if signal is +1 (lower position), activate magnet
-            magneto:reset()
-            changeColor(1, 0, 0) -- colour led red to indicate 
-        else -- blinking blue to indicate loss of control signal 
-            if(blink < 5) then
-                changeColor(0, 0, 1)
-               blink = blink + 1
-            else
-                changeColor(0, 0, 0)
-                blink = 0
-            end
-        end
-    end
+    
+    -- Timer creation, that calls our function each second
+    cargoTimer = Timer.new(1, function ()
+        toggleMagnet()
+        setLed(magnet_state)
     end)
-     -- timer start
+    -- Timer start
     cargoTimer:start()
-
 
 
 
