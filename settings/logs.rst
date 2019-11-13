@@ -13,6 +13,9 @@ To download the log file, connect Pioneer to the PC via USB and run Pioneer Stat
 
 After that, select saving folder and file name. Log download will start automatically. Pioneer will reboot when it's finished. 
 
+.. note:: Older firmware versions do not support log download by Plazlink protocol. In that case, select **Logs - Download logs from AP by Payloader** menu tab. Follow the wizard instructions (press and hold "Start" button on Pioneer board and connect it to the computer). After that select folder and start log download.
+
+
 Log preview
 -------------------
 
